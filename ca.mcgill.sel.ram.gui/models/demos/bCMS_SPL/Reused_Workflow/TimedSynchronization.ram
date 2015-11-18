@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_drvw4NXbEeSe0KzZhaYdTQ" name="TimedSynchronization">
+  <structuralView xmi:id="_drvw4dXbEeSe0KzZhaYdTQ">
+    <types xsi:type="ram:RVoid" xmi:id="_drvw4tXbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_drvw49XbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_drvw5NXbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_drvw5dXbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_drvw5tXbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RString" xmi:id="_drvw59XbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_drvw6NXbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_drvw6dXbEeSe0KzZhaYdTQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_drvw6tXbEeSe0KzZhaYdTQ"/>
+  </structuralView>
+  <instantiations xmi:id="_drvw69XbEeSe0KzZhaYdTQ" type="Extends">
+    <externalAspect href="Outpath.ram#_2sfkEJOZEeSxiIO43J4lMw"/>
+  </instantiations>
+  <instantiations xmi:id="_drvw7NXbEeSe0KzZhaYdTQ" type="Extends">
+    <externalAspect href="ConditionalSynchronization.ram#_oyIKENXIEeStAcCJDCkcuA"/>
+  </instantiations>
+  <instantiations xmi:id="_r6QCINzaEeSdtMwgzhwN2Q">
+    <externalAspect href="Reused_Association/Woven_Association_Association_HashMap_KeyIndexed.ram#_OYXqsNywEeSZYMoKS7ZN-w"/>
+  </instantiations>
+  <instantiations xmi:id="_tuK20NzaEeSdtMwgzhwN2Q">
+    <externalAspect href="Reused_Association/Woven_Association_ArrayList_Association_Ordered.ram#_d2CSkNywEeSZYMoKS7ZN-w"/>
+  </instantiations>
+  <layout xmi:id="_drvw7dXbEeSe0KzZhaYdTQ">
+    <containers xmi:id="_drvw7tXbEeSe0KzZhaYdTQ" key="_drvw4dXbEeSe0KzZhaYdTQ"/>
+  </layout>
+</ram:Aspect>

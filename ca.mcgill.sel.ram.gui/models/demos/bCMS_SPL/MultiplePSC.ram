@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_PZCqkNZ7EeS_4sG2PJA2iA" name="MultiplePSC">
+  <realizes href="bCMS_SPL.core#_fqBE4NZeEeS_4sG2PJA2iA"/>
+  <structuralView xmi:id="_PZCqkdZ7EeS_4sG2PJA2iA">
+    <classes xsi:type="ram:Class" xmi:id="_PZCqktZ7EeS_4sG2PJA2iA" name="PSCManager"/>
+    <types xsi:type="ram:RVoid" xmi:id="_PZCqk9Z7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RAny" xmi:id="_PZCqlNZ7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_PZCqldZ7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RInt" xmi:id="_PZCqltZ7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RChar" xmi:id="_PZCql9Z7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RString" xmi:id="_PZCqmNZ7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_PZCqmdZ7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_PZCqmtZ7EeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RLong" xmi:id="_PZCqm9Z7EeS_4sG2PJA2iA"/>
+  </structuralView>
+  <instantiations xmi:id="_RM2KgNZ7EeS_4sG2PJA2iA">
+    <source xsi:type="ram:Aspect" href="Reused_Singleton/Woven_Singleton_Singleton.ram#_jdV3cNZcEeS_4sG2PJA2iA"/>
+  </instantiations>
+  <instantiations xmi:id="_SV_j4NZ7EeS_4sG2PJA2iA">
+    <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_HashMap_KeyIndexed.ram#_h85_cNZcEeS_4sG2PJA2iA"/>
+  </instantiations>
+  <instantiations xmi:id="_PHg5QN4cEeShWMZBxz4Iew">
+    <source xsi:type="ram:Aspect" href="PSC.ram#_BKXo8N4cEeShWMZBxz4Iew"/>
+  </instantiations>
+  <layout xmi:id="_PZCqndZ7EeS_4sG2PJA2iA">
+    <containers xmi:id="_PZCqntZ7EeS_4sG2PJA2iA" key="_PZCqkdZ7EeS_4sG2PJA2iA">
+      <value xmi:id="_PZCqn9Z7EeS_4sG2PJA2iA" key="_PZCqktZ7EeS_4sG2PJA2iA">
+        <value xmi:id="_PZCqoNZ7EeS_4sG2PJA2iA" x="452.0" y="240.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

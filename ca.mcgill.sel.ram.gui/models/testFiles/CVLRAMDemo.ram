@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_Viad0Qp8EeK8PobuQAuhHA" name="CVLRAMDemo">
+  <realizes xsi:type="fm:Feature" href="test/test.jucm#27"/>
+  <realizes xsi:type="fm:Feature" href="test2/test2.jucm#11"/>
+  <structuralView xmi:id="_Viad0gp8EeK8PobuQAuhHA">
+    <types xsi:type="ram:RVoid" xmi:id="_Viad0wp8EeK8PobuQAuhHA"/>
+    <types xsi:type="ram:RAny" xmi:id="_Viad1Ap8EeK8PobuQAuhHA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Viad1Qp8EeK8PobuQAuhHA"/>
+    <types xsi:type="ram:RInt" xmi:id="_Viad1gp8EeK8PobuQAuhHA"/>
+    <types xsi:type="ram:RChar" xmi:id="_Viad1wp8EeK8PobuQAuhHA"/>
+    <types xsi:type="ram:RString" xmi:id="_Viad2Ap8EeK8PobuQAuhHA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_Viad2Qp8EeK8PobuQAuhHA" type="Extends">
+    <externalAspect href="reusable_model_library/workflow/Synchronization.ram#_3WKkMNKtEeGrg5mJXcTORw"/>
+  </instantiations>
+  <instantiations xmi:id="_Viad2gp8EeK8PobuQAuhHA" type="Extends">
+    <externalAspect href="reusable_model_library/workflow/ParallelExecution.ram#_1VuvsIyfEeGpeIH37hJjzg"/>
+  </instantiations>
+  <instantiations xmi:id="_Viad2wp8EeK8PobuQAuhHA" type="Extends">
+    <externalAspect href="reusable_model_library/workflow/ConditionalExecution.ram#_V8m1AarNEeGxNpEWSISFVQ"/>
+  </instantiations>
+  <layout xmi:id="_091h4QqHEeKbl9qTO0iUfQ">
+    <containers xmi:id="_091h4gqHEeKbl9qTO0iUfQ" key="_Viad0gp8EeK8PobuQAuhHA"/>
+  </layout>
+</ram:Aspect>

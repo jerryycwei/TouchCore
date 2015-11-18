@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RAM Weaver
+Bundle-SymbolicName: ca.mcgill.sel.ram.weaver
+Bundle-Version: 3.0.0.qualifier
+Require-Bundle: ca.mcgill.sel.ram;bundle-version="2.8.0"
+Bundle-ClassPath: .
+Export-Package: ca.mcgill.sel.core.weaver,
+ ca.mcgill.sel.core.weaver.util,
+ ca.mcgill.sel.ram.weaver
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: SEL Team, McGill University

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_O11kULIzEeST8PytlU6Jyg" name="AllInOnePC">
+  <FeatureModel xmi:id="_O11kUbIzEeST8PytlU6Jyg" root="_O11kUrIzEeST8PytlU6Jyg">
+    <features xmi:id="_O11kUrIzEeST8PytlU6Jyg" name="AllInOnePC" children="_QALQgLIzEeST8PytlU6Jyg _QIUf4LIzEeST8PytlU6Jyg _QQrxsLIzEeST8PytlU6Jyg _QZcFELIzEeST8PytlU6Jyg"/>
+    <features xmi:id="_QALQgLIzEeST8PytlU6Jyg" name="Display Module" children="_XbRwILIzEeST8PytlU6Jyg _XviI4LIzEeST8PytlU6Jyg" parent="_O11kUrIzEeST8PytlU6Jyg" parentRelationship="Mandatory"/>
+    <features xmi:id="_QIUf4LIzEeST8PytlU6Jyg" name="CPU" children="_17ct4LIzEeST8PytlU6Jyg _2lS8ILIzEeST8PytlU6Jyg" parent="_O11kUrIzEeST8PytlU6Jyg" parentRelationship="Mandatory"/>
+    <features xmi:id="_QQrxsLIzEeST8PytlU6Jyg" name="Operating System" children="_7b-XMLIzEeST8PytlU6Jyg _7uEz0LIzEeST8PytlU6Jyg _7_48kLIzEeST8PytlU6Jyg" parent="_O11kUrIzEeST8PytlU6Jyg" parentRelationship="Mandatory"/>
+    <features xmi:id="_QZcFELIzEeST8PytlU6Jyg" name="Hardware Devices" children="_H_KK8LI0EeST8PytlU6Jyg _IIFdcLI0EeST8PytlU6Jyg _IUW-4LI0EeST8PytlU6Jyg _IcfnMLI0EeST8PytlU6Jyg" parent="_O11kUrIzEeST8PytlU6Jyg" parentRelationship="Mandatory"/>
+    <features xmi:id="_XbRwILIzEeST8PytlU6Jyg" name="Capacitive Display" parent="_QALQgLIzEeST8PytlU6Jyg" parentRelationship="XOR">
+      <contributions xmi:id="_j3wpgLI0EeST8PytlU6Jyg" name="50" impacted="_0xV1wrI0EeST8PytlU6Jyg" contributionValue="73"/>
+    </features>
+    <features xmi:id="_XviI4LIzEeST8PytlU6Jyg" name="Resistive Display" parent="_QALQgLIzEeST8PytlU6Jyg" parentRelationship="XOR">
+      <contributions xmi:id="_kOj_8LI0EeST8PytlU6Jyg" name="50" impacted="_0xV1wrI0EeST8PytlU6Jyg" contributionValue="24"/>
+    </features>
+    <features xmi:id="_17ct4LIzEeST8PytlU6Jyg" name="Processor A" parent="_QIUf4LIzEeST8PytlU6Jyg" parentRelationship="XOR"/>
+    <features xmi:id="_2lS8ILIzEeST8PytlU6Jyg" name="Processor B" parent="_QIUf4LIzEeST8PytlU6Jyg" parentRelationship="XOR"/>
+    <features xmi:id="_7b-XMLIzEeST8PytlU6Jyg" name="Android" parent="_QQrxsLIzEeST8PytlU6Jyg" parentRelationship="OR"/>
+    <features xmi:id="_7uEz0LIzEeST8PytlU6Jyg" name="iOS" parent="_QQrxsLIzEeST8PytlU6Jyg" parentRelationship="OR"/>
+    <features xmi:id="_7_48kLIzEeST8PytlU6Jyg" name="Windows" parent="_QQrxsLIzEeST8PytlU6Jyg" parentRelationship="OR"/>
+    <features xmi:id="_H_KK8LI0EeST8PytlU6Jyg" name="Built-in-Fan" parent="_QZcFELIzEeST8PytlU6Jyg" parentRelationship="Mandatory"/>
+    <features xmi:id="_IIFdcLI0EeST8PytlU6Jyg" name="Fan F" parent="_QZcFELIzEeST8PytlU6Jyg" parentRelationship="Optional">
+      <contributions xmi:id="_pxRakLI0EeST8PytlU6Jyg" name="50" impacted="_0xV1xrI0EeST8PytlU6Jyg" contributionValue="25"/>
+      <contributions xmi:id="_rJjcILI0EeST8PytlU6Jyg" name="50" impacted="_0xV1xLI0EeST8PytlU6Jyg" contributionValue="17"/>
+    </features>
+    <features xmi:id="_IUW-4LI0EeST8PytlU6Jyg" name="Fan G" parent="_QZcFELIzEeST8PytlU6Jyg" parentRelationship="Optional">
+      <contributions xmi:id="_qCH6ALI0EeST8PytlU6Jyg" name="50" impacted="_0xV1xrI0EeST8PytlU6Jyg" contributionValue="30"/>
+      <contributions xmi:id="_rZnRYLI0EeST8PytlU6Jyg" name="50" impacted="_0xV1xLI0EeST8PytlU6Jyg" contributionValue="33"/>
+    </features>
+    <features xmi:id="_IcfnMLI0EeST8PytlU6Jyg" name="Fan H" parent="_QZcFELIzEeST8PytlU6Jyg" parentRelationship="Optional">
+      <contributions xmi:id="_qSFBkLI0EeST8PytlU6Jyg" name="50" impacted="_0xV1xrI0EeST8PytlU6Jyg" contributionValue="45"/>
+      <contributions xmi:id="_rqjQYLI0EeST8PytlU6Jyg" name="50" impacted="_0xV1xLI0EeST8PytlU6Jyg" contributionValue="50"/>
+    </features>
+  </FeatureModel>
+  <ImpactModel xmi:id="_0xV1wLI0EeST8PytlU6Jyg" name="GM - Increase Convenience">
+    <impactModelElements xmi:id="_0xV1wbI0EeST8PytlU6Jyg" name="Increase Convenience"/>
+    <impactModelElements xmi:id="_0xV1wrI0EeST8PytlU6Jyg" name="Decrease Response Time">
+      <contributions xmi:id="_0xV1w7I0EeST8PytlU6Jyg" name="50" impacted="_0xV1wbI0EeST8PytlU6Jyg" contributionValue="69"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_0xV1xLI0EeST8PytlU6Jyg" name="Decrease Noise">
+      <contributions xmi:id="_0xV1xbI0EeST8PytlU6Jyg" name="50" impacted="_0xV1wbI0EeST8PytlU6Jyg" contributionValue="46"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_0xV1xrI0EeST8PytlU6Jyg" name="Decrease CPU Utilization">
+      <contributions xmi:id="_0xV1x7I0EeST8PytlU6Jyg" name="50" impacted="_0xV1wrI0EeST8PytlU6Jyg" contributionValue="39"/>
+    </impactModelElements>
+    <layout xmi:id="_1k8c8LI0EeST8PytlU6Jyg" key="_0xV1wbI0EeST8PytlU6Jyg">
+      <value xmi:id="_1k8c8bI0EeST8PytlU6Jyg" xPosition="706.9998" yPosition="135.16235"/>
+    </layout>
+    <layout xmi:id="_1k8c8rI0EeST8PytlU6Jyg" key="_0xV1wrI0EeST8PytlU6Jyg">
+      <value xmi:id="_1k8c87I0EeST8PytlU6Jyg" xPosition="520.9994" yPosition="289.1628"/>
+    </layout>
+    <layout xmi:id="_1k8c9LI0EeST8PytlU6Jyg" key="_0xV1xLI0EeST8PytlU6Jyg">
+      <value xmi:id="_1k8c9bI0EeST8PytlU6Jyg" xPosition="915.0001" yPosition="293.1624"/>
+    </layout>
+    <layout xmi:id="_1k9EALI0EeST8PytlU6Jyg" key="_0xV1xrI0EeST8PytlU6Jyg">
+      <value xmi:id="_1k9EAbI0EeST8PytlU6Jyg" xPosition="684.99994" yPosition="444.16248"/>
+    </layout>
+    <layout xmi:id="_1k9EArI0EeST8PytlU6Jyg" key="_XbRwILIzEeST8PytlU6Jyg">
+      <value xmi:id="_1k9EA7I0EeST8PytlU6Jyg" xPosition="135.99997" yPosition="473.0001"/>
+    </layout>
+    <layout xmi:id="_1k9EBLI0EeST8PytlU6Jyg" key="_XviI4LIzEeST8PytlU6Jyg">
+      <value xmi:id="_1k9EBbI0EeST8PytlU6Jyg" xPosition="357.00003" yPosition="556.99994"/>
+    </layout>
+    <layout xmi:id="_1k9EBrI0EeST8PytlU6Jyg" key="_IIFdcLI0EeST8PytlU6Jyg">
+      <value xmi:id="_1k9EB7I0EeST8PytlU6Jyg" xPosition="764.99994" yPosition="678.0"/>
+    </layout>
+    <layout xmi:id="_1k9ECLI0EeST8PytlU6Jyg" key="_IUW-4LI0EeST8PytlU6Jyg">
+      <value xmi:id="_1k9ECbI0EeST8PytlU6Jyg" xPosition="933.9998" yPosition="613.0"/>
+    </layout>
+    <layout xmi:id="_1k9ECrI0EeST8PytlU6Jyg" key="_IcfnMLI0EeST8PytlU6Jyg">
+      <value xmi:id="_1k9EC7I0EeST8PytlU6Jyg" xPosition="1059.0002" yPosition="468.9999"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

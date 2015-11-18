@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_jEv8ELYBEeSyMOLkioo2ig" name="OrderProcessing">
+  <FeatureModel xmi:id="_jEwjILYBEeSyMOLkioo2ig" root="_jEwjIbYBEeSyMOLkioo2ig">
+    <features xmi:id="_jEwjIbYBEeSyMOLkioo2ig" name="OrderProcessing" children="_mrnVELYBEeSyMOLkioo2ig _mzwkcLYBEeSyMOLkioo2ig _m-iRELYBEeSyMOLkioo2ig _nKd0QLYBEeSyMOLkioo2ig"/>
+    <features xmi:id="_mrnVELYBEeSyMOLkioo2ig" name="Transaction" children="_ucsrwLYBEeSyMOLkioo2ig _ujG1wLYBEeSyMOLkioo2ig _urjnILYBEeSyMOLkioo2ig _u0ZaELYBEeSyMOLkioo2ig" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_mzwkcLYBEeSyMOLkioo2ig" name="Approval" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Optional">
+      <contributions xmi:id="_fbzYELYEEeSyMOLkioo2ig" name="50" impacted="_-QiQlbYEEeSyMOLkioo2ig" contributionValue="30"/>
+      <contributions xmi:id="_foP4oLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="70"/>
+    </features>
+    <features xmi:id="_m-iRELYBEeSyMOLkioo2ig" name="Basket" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Optional"/>
+    <features xmi:id="_nKd0QLYBEeSyMOLkioo2ig" name="Fulfillment" children="_C0ttwLYCEeSyMOLkioo2ig _DMeGcLYCEeSyMOLkioo2ig" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_ucsrwLYBEeSyMOLkioo2ig" name="Payment" children="_PD_uELYCEeSyMOLkioo2ig _PrbhgLYCEeSyMOLkioo2ig _QC178LYCEeSyMOLkioo2ig _QXFGkLYCEeSyMOLkioo2ig" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_ujG1wLYBEeSyMOLkioo2ig" name="Tax" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_urjnILYBEeSyMOLkioo2ig" name="Invoice" children="_LYz1wLYCEeSyMOLkioo2ig _LxcYMLYCEeSyMOLkioo2ig" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_u0ZaELYBEeSyMOLkioo2ig" name="ShipmentCost" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Optional"/>
+    <features xmi:id="_C0ttwLYCEeSyMOLkioo2ig" name="Shipping" children="_IHjgYLYCEeSyMOLkioo2ig _IOzX4LYCEeSyMOLkioo2ig" parent="_nKd0QLYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_4xGMYLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="20"/>
+    </features>
+    <features xmi:id="_DMeGcLYCEeSyMOLkioo2ig" name="ElectronicDelivery" parent="_nKd0QLYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_4IRR0LYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="80"/>
+    </features>
+    <features xmi:id="_IHjgYLYCEeSyMOLkioo2ig" name="PackageTrackingNo" parent="_C0ttwLYCEeSyMOLkioo2ig" parentRelationship="Optional">
+      <contributions xmi:id="_tzX6kLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="40"/>
+    </features>
+    <features xmi:id="_IOzX4LYCEeSyMOLkioo2ig" name="PackageSlip" parent="_C0ttwLYCEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_LYz1wLYCEeSyMOLkioo2ig" name="Online" parent="_urjnILYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_2VoPgLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="40"/>
+    </features>
+    <features xmi:id="_LxcYMLYCEeSyMOLkioo2ig" name="Printed" parent="_urjnILYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_2mVlALYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="20"/>
+    </features>
+    <features xmi:id="_PD_uELYCEeSyMOLkioo2ig" name="Bill" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR">
+      <contributions xmi:id="_lEuIYLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="60"/>
+    </features>
+    <features xmi:id="_PrbhgLYCEeSyMOLkioo2ig" name="PayOnDelivery" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR">
+      <contributions xmi:id="_f2AAwLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQlbYEEeSyMOLkioo2ig" contributionValue="40"/>
+      <contributions xmi:id="_27vPcLYTEeS8u5uLo6Uadg" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="50"/>
+    </features>
+    <features xmi:id="_QC178LYCEeSyMOLkioo2ig" name="FrequentFlyer" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR"/>
+    <features xmi:id="_QXFGkLYCEeSyMOLkioo2ig" name="CreditCard" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR">
+      <contributions xmi:id="_fJ8zELYEEeSyMOLkioo2ig" name="50" impacted="_-QiQlbYEEeSyMOLkioo2ig" contributionValue="20"/>
+    </features>
+  </FeatureModel>
+  <ImpactModel xmi:id="_-QhpgLYEEeSyMOLkioo2ig" name="GM - Increase Convenience">
+    <impactModelElements xmi:id="_-QiQkLYEEeSyMOLkioo2ig" name="Increase Convenience"/>
+    <impactModelElements xmi:id="_-QiQkbYEEeSyMOLkioo2ig" name="Increase Security of System">
+      <contributions xmi:id="_-QiQkrYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkLYEEeSyMOLkioo2ig" contributionValue="40"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_-QiQk7YEEeSyMOLkioo2ig" name="Provide Fast Delivery">
+      <contributions xmi:id="_-QiQlLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkLYEEeSyMOLkioo2ig" contributionValue="80"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_-QiQlbYEEeSyMOLkioo2ig" name="Increase Internal Security">
+      <contributions xmi:id="_-QiQlrYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkbYEEeSyMOLkioo2ig" contributionValue="30"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_-QiQl7YEEeSyMOLkioo2ig" name="Security Measures for User">
+      <contributions xmi:id="_-QiQmLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkbYEEeSyMOLkioo2ig" contributionValue="60"/>
+    </impactModelElements>
+    <layout xmi:id="_4R-CkLYTEeS8u5uLo6Uadg" key="_-QiQkLYEEeSyMOLkioo2ig">
+      <value xmi:id="_4R-CkbYTEeS8u5uLo6Uadg" xPosition="526.0" yPosition="118.162445"/>
+    </layout>
+    <layout xmi:id="_4R-CkrYTEeS8u5uLo6Uadg" key="_-QiQkbYEEeSyMOLkioo2ig">
+      <value xmi:id="_4R-Ck7YTEeS8u5uLo6Uadg" xPosition="407.99966" yPosition="261.16248"/>
+    </layout>
+    <layout xmi:id="_4R-ClLYTEeS8u5uLo6Uadg" key="_-QiQk7YEEeSyMOLkioo2ig">
+      <value xmi:id="_4R-ClbYTEeS8u5uLo6Uadg" xPosition="799.0" yPosition="260.16257"/>
+    </layout>
+    <layout xmi:id="_4R-ClrYTEeS8u5uLo6Uadg" key="_-QiQlbYEEeSyMOLkioo2ig">
+      <value xmi:id="_4R-Cl7YTEeS8u5uLo6Uadg" xPosition="263.0" yPosition="420.16254"/>
+    </layout>
+    <layout xmi:id="_4R-CmLYTEeS8u5uLo6Uadg" key="_-QiQl7YEEeSyMOLkioo2ig">
+      <value xmi:id="_4R-CmbYTEeS8u5uLo6Uadg" xPosition="550.0" yPosition="420.1625"/>
+    </layout>
+    <layout xmi:id="_4R-CmrYTEeS8u5uLo6Uadg" key="_mzwkcLYBEeSyMOLkioo2ig">
+      <value xmi:id="_4R-Cm7YTEeS8u5uLo6Uadg" xPosition="173.99994" yPosition="570.99994"/>
+    </layout>
+    <layout xmi:id="_4R-CnLYTEeS8u5uLo6Uadg" key="_PrbhgLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-CnbYTEeS8u5uLo6Uadg" xPosition="319.99985" yPosition="569.00006"/>
+    </layout>
+    <layout xmi:id="_4R-CnrYTEeS8u5uLo6Uadg" key="_QXFGkLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-Cn7YTEeS8u5uLo6Uadg" xPosition="24.999664" yPosition="569.0001"/>
+    </layout>
+    <layout xmi:id="_4R-CoLYTEeS8u5uLo6Uadg" key="_PD_uELYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-CobYTEeS8u5uLo6Uadg" xPosition="515.00006" yPosition="566.99994"/>
+    </layout>
+    <layout xmi:id="_4R-CorYTEeS8u5uLo6Uadg" key="_LYz1wLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-Co7YTEeS8u5uLo6Uadg" xPosition="611.0" yPosition="419.0"/>
+    </layout>
+    <layout xmi:id="_4R-CpLYTEeS8u5uLo6Uadg" key="_LxcYMLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-CpbYTEeS8u5uLo6Uadg" xPosition="709.0002" yPosition="417.99985"/>
+    </layout>
+    <layout xmi:id="_4R-CprYTEeS8u5uLo6Uadg" key="_IHjgYLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-Cp7YTEeS8u5uLo6Uadg" xPosition="595.0002" yPosition="567.99994"/>
+    </layout>
+    <layout xmi:id="_4R-CqLYTEeS8u5uLo6Uadg" key="_DMeGcLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-CqbYTEeS8u5uLo6Uadg" xPosition="811.0002" yPosition="417.00006"/>
+    </layout>
+    <layout xmi:id="_4R-CqrYTEeS8u5uLo6Uadg" key="_C0ttwLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4R-Cq7YTEeS8u5uLo6Uadg" xPosition="918.0003" yPosition="344.0"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_5z1OkN1-EeSVPpLIbDFIoA" name="CrisisMultiplicity">
+  <realizes href="bCMS_SPL.core#_Lx45gNaCEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_5z1Okd1-EeSVPpLIbDFIoA">
+    <classes xsi:type="ram:Class" xmi:id="_5z1Okt1-EeSVPpLIbDFIoA" name="Crisis"/>
+    <types xsi:type="ram:RVoid" xmi:id="_5z1Ok91-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RAny" xmi:id="_5z1OlN1-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_5z1Old1-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RInt" xmi:id="_5z1Olt1-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RChar" xmi:id="_5z1Ol91-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RString" xmi:id="_5z1OmN1-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_5z11oN1-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_5z11od1-EeSVPpLIbDFIoA"/>
+    <types xsi:type="ram:RLong" xmi:id="_5z11ot1-EeSVPpLIbDFIoA"/>
+  </structuralView>
+  <layout xmi:id="_5z11o91-EeSVPpLIbDFIoA">
+    <containers xmi:id="_5z11pN1-EeSVPpLIbDFIoA" key="_5z1Okd1-EeSVPpLIbDFIoA">
+      <value xmi:id="_5z11pd1-EeSVPpLIbDFIoA" key="_5z1Okt1-EeSVPpLIbDFIoA">
+        <value xmi:id="_5z11pt1-EeSVPpLIbDFIoA" x="585.0" y="259.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

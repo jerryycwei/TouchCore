@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_5cAJ4N4tEeS1koPVI5W3kQ" name="EmergencyVPManagement">
+  <modelReuses xmi:id="_koblYOLwEeSL-_lRREviTQ" compositions="_koblYeLwEeSL-_lRREviTQ"/>
+  <realizes href="bCMS_SPL.core#_R8NtwNaCEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_5cAJ4d4tEeS1koPVI5W3kQ">
+    <types xsi:type="ram:RVoid" xmi:id="_5cAJ4t4tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_5cAJ494tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_5cAJ5N4tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_5cAJ5d4tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_5cAJ5t4tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RString" xmi:id="_5cAJ594tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_5cAJ6N4tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_5cAJ6d4tEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_5cAJ6t4tEeS1koPVI5W3kQ"/>
+  </structuralView>
+  <instantiations xmi:id="_5cAJ694tEeS1koPVI5W3kQ">
+    <source xsi:type="ram:Aspect" href="BCMS.ram#_oUzpENUREeSfLpvXIPYz0g"/>
+  </instantiations>
+  <instantiations xmi:id="_koblYeLwEeSL-_lRREviTQ" source="_5cAJ4N4tEeS1koPVI5W3kQ">
+    <source xsi:type="ram:Aspect" href="Reused_ResourceManagement/Woven_ResourceManagement_Allocation_ResourceManagement_Search.ram#_7ilb4N4tEeS1koPVI5W3kQ"/>
+  </instantiations>
+  <layout xmi:id="_5cAJ7N4tEeS1koPVI5W3kQ">
+    <containers xmi:id="_5cAJ7d4tEeS1koPVI5W3kQ" key="_5cAJ4d4tEeS1koPVI5W3kQ"/>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_qBJvgcPfEeKBBdr5oGqsPg" name="Metering">
+  <structuralView xmi:id="_qBJvgsPfEeKBBdr5oGqsPg">
+    <classes xsi:type="ram:Class" xmi:id="_qBJvg8PfEeKBBdr5oGqsPg" name="Meter">
+      <operations  xmi:id="_qBJvhMPfEeKBBdr5oGqsPg" name="create" returnType="_qBJvg8PfEeKBBdr5oGqsPg" visibility="public">
+        <parameters xmi:id="_qBJvhcPfEeKBBdr5oGqsPg" name="initialValue" type="_qBJvl8PfEeKBBdr5oGqsPg"/>
+        <parameters xmi:id="_qBJvhsPfEeKBBdr5oGqsPg" name="name" type="_qBJvmcPfEeKBBdr5oGqsPg"/>
+      </operations>
+      <operations  xmi:id="_qBJvh8PfEeKBBdr5oGqsPg" name="updateMeter" extendedVisibility="package" returnType="_qBJvlMPfEeKBBdr5oGqsPg" visibility="public">
+        <parameters xmi:id="_qBJviMPfEeKBBdr5oGqsPg" name="s" type="_qBJvjMPfEeKBBdr5oGqsPg"/>
+      </operations>
+      <operations  xmi:id="_qBJvicPfEeKBBdr5oGqsPg" name="attachMeter" returnType="_qBJvlMPfEeKBBdr5oGqsPg" visibility="public">
+        <parameters xmi:id="_qBJvisPfEeKBBdr5oGqsPg" name="s" type="_qBJvjMPfEeKBBdr5oGqsPg"/>
+      </operations>
+      <attributes xmi:id="_qBJvi8PfEeKBBdr5oGqsPg" name="value" type="_qBJvl8PfEeKBBdr5oGqsPg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_qBJvjMPfEeKBBdr5oGqsPg" name="InterceptStateChange" partiality="public">
+      <operations  xmi:id="_qBJvjcPfEeKBBdr5oGqsPg" name="modifyData" returnType="_qBJvlcPfEeKBBdr5oGqsPg" partiality="public" visibility="public">
+        <parameters xmi:id="_qBJvjsPfEeKBBdr5oGqsPg" name="value" type="_qBJvl8PfEeKBBdr5oGqsPg"/>
+      </operations>
+      <attributes xmi:id="_qBJvkMPfEeKBBdr5oGqsPg" name="data" type="_qBJvl8PfEeKBBdr5oGqsPg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_qBJvkcPfEeKBBdr5oGqsPg" name="AdditiveMeter" superTypes="_qBJvg8PfEeKBBdr5oGqsPg">
+      <operations  xmi:id="_qBJvksPfEeKBBdr5oGqsPg" name="updateMeter" extendedVisibility="package" returnType="_qBJvlMPfEeKBBdr5oGqsPg" visibility="public">
+        <parameters xmi:id="_qBJvk8PfEeKBBdr5oGqsPg" name="s" type="_qBJvjMPfEeKBBdr5oGqsPg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__eh-McR7EeKz9tBybJfzJg" name="CountingMeter" superTypes="_qBJvg8PfEeKBBdr5oGqsPg">
+      <operations  xmi:id="_Wngr8MR8EeKz9tBybJfzJg" name="updateMeter" extendedVisibility="package" returnType="_qBJvlMPfEeKBBdr5oGqsPg" visibility="public">
+        <parameters xmi:id="_Wngr8cR8EeKz9tBybJfzJg" name="s" type="_qBJvjMPfEeKBBdr5oGqsPg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_l4GxEccBEeKnDvQavNDAaA" name="StandardMeter" superTypes="_qBJvg8PfEeKBBdr5oGqsPg _l4GxEccBEeKnDvQavNDAaA">
+      <operations  xmi:id="_4w9tcMcBEeKnDvQavNDAaA" name="updateMeter" extendedVisibility="package" returnType="_qBJvlMPfEeKBBdr5oGqsPg" visibility="public">
+        <parameters xmi:id="_8ojqEMcBEeKnDvQavNDAaA" name="s" type="_qBJvjMPfEeKBBdr5oGqsPg"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_qBJvlMPfEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RAny" xmi:id="_qBJvlcPfEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_qBJvlsPfEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RInt" xmi:id="_qBJvl8PfEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RChar" xmi:id="_qBJvmMPfEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RString" xmi:id="_qBJvmcPfEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_qBJvmsPfEeKBBdr5oGqsPg">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_qBJvm8PfEeKBBdr5oGqsPg" to="_qBJvjMPfEeKBBdr5oGqsPg">
+      <operationMappings xmi:id="_qBJvnMPfEeKBBdr5oGqsPg" to="_qBJvjcPfEeKBBdr5oGqsPg">
+        <from href="../reusable_model_library/design_patterns/Observer.ram#_v3dgcIo_EeGYMOvWx4MkYQ"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="../reusable_model_library/design_patterns/Observer.ram#_e7XywIo_EeGYMOvWx4MkYQ"/>
+    </mappings>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_qBJvncPfEeKBBdr5oGqsPg" to="_qBJvg8PfEeKBBdr5oGqsPg">
+      <operationMappings xmi:id="_qBJvnsPfEeKBBdr5oGqsPg" to="_qBJvh8PfEeKBBdr5oGqsPg">
+        <from href="../reusable_model_library/design_patterns/Observer.ram#_6sBPMIo_EeGYMOvWx4MkYQ"/>
+      </operationMappings>
+      <operationMappings xmi:id="_qBJvn8PfEeKBBdr5oGqsPg" to="_qBJvicPfEeKBBdr5oGqsPg">
+        <from href="../reusable_model_library/design_patterns/Observer.ram#_06EesIo_EeGYMOvWx4MkYQ"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="../reusable_model_library/design_patterns/Observer.ram#_rSUhUIo_EeGYMOvWx4MkYQ"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="../reusable_model_library/design_patterns/Observer.ram#_apfG0Io_EeGYMOvWx4MkYQ"/>
+  </instantiations>
+  <instantiations xmi:id="_qBJvoMPfEeKBBdr5oGqsPg">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_qBJvocPfEeKBBdr5oGqsPg" to="_qBJvg8PfEeKBBdr5oGqsPg">
+      <from xsi:type="ram:Class" href="../reusable_model_library/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="../reusable_model_library/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <layout xmi:id="_qBJvosPfEeKBBdr5oGqsPg">
+    <containers xmi:id="_qBJvo8PfEeKBBdr5oGqsPg" key="_qBJvgsPfEeKBBdr5oGqsPg">
+      <value xmi:id="_qBJvpMPfEeKBBdr5oGqsPg" key="_qBJvg8PfEeKBBdr5oGqsPg">
+        <value xmi:id="_qBJvpcPfEeKBBdr5oGqsPg" x="1019.2053" y="178.55202"/>
+      </value>
+      <value xmi:id="_qBJvpsPfEeKBBdr5oGqsPg">
+        <value xmi:id="_qBJvp8PfEeKBBdr5oGqsPg" x="590.32965" y="139.013"/>
+      </value>
+      <value xmi:id="_qBJvqMPfEeKBBdr5oGqsPg" key="_qBJvjMPfEeKBBdr5oGqsPg">
+        <value xmi:id="_qBJvqcPfEeKBBdr5oGqsPg" x="748.1616" y="-33.377758"/>
+      </value>
+      <value xmi:id="_qBJvqsPfEeKBBdr5oGqsPg" key="_qBJvkcPfEeKBBdr5oGqsPg">
+        <value xmi:id="_qBJvq8PfEeKBBdr5oGqsPg" x="802.8327" y="424.58157"/>
+      </value>
+      <value xmi:id="__eilQMR7EeKz9tBybJfzJg" key="__eh-McR7EeKz9tBybJfzJg">
+        <value xmi:id="__eilQcR7EeKz9tBybJfzJg" x="1257.1453" y="421.26605"/>
+      </value>
+      <value xmi:id="_l4H_MMcBEeKnDvQavNDAaA" key="_l4GxEccBEeKnDvQavNDAaA">
+        <value xmi:id="_l4H_MccBEeKnDvQavNDAaA" x="1106.1627" y="567.03375"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

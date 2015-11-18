@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/1.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_FkXOYN4kEeS1koPVI5W3kQ" name="Encryption" models="_FkX1cN4kEeS1koPVI5W3kQ">
+  <featureModel xmi:id="_FkX1cN4kEeS1koPVI5W3kQ" coreConcern="_FkXOYN4kEeS1koPVI5W3kQ" root="_FkX1cd4kEeS1koPVI5W3kQ">
+    <features xmi:id="_FkX1cd4kEeS1koPVI5W3kQ" name="Encryption" children="_HjtagN4lEeS1koPVI5W3kQ _H9M4kN4lEeS1koPVI5W3kQ _IZMRAN4lEeS1koPVI5W3kQ _HQXgYN4oEeS1koPVI5W3kQ">
+      <realizedBy xsi:type="ram:Aspect" href="Encryption.ram#_EzmDUN4lEeS1koPVI5W3kQ"/>
+    </features>
+    <features xmi:id="_HjtagN4lEeS1koPVI5W3kQ" name="RSA" parent="_FkX1cd4kEeS1koPVI5W3kQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="RSA.ram#_a8yIAN4lEeS1koPVI5W3kQ"/>
+    </features>
+    <features xmi:id="_H9M4kN4lEeS1koPVI5W3kQ" name="DES" parent="_FkX1cd4kEeS1koPVI5W3kQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="DES.ram#_4jegEN4lEeS1koPVI5W3kQ"/>
+    </features>
+    <features xmi:id="_IZMRAN4lEeS1koPVI5W3kQ" name="AES" parent="_FkX1cd4kEeS1koPVI5W3kQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="AES.ram#_7-WEcN4lEeS1koPVI5W3kQ"/>
+    </features>
+    <features xmi:id="_HQXgYN4oEeS1koPVI5W3kQ" name="SHA512" parent="_FkX1cd4kEeS1koPVI5W3kQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="SHA512.ram#_NLUb4N4oEeS1koPVI5W3kQ"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

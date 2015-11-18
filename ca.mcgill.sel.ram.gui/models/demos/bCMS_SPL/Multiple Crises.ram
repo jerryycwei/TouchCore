@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_SoFlYOLwEeSL-_lRREviTQ" name="Multiple Crises">
+  <modelReuses xmi:id="_WH-zsOLwEeSL-_lRREviTQ" compositions="_WH-zseLwEeSL-_lRREviTQ"/>
+  <modelReuses xmi:id="_agpdEOLwEeSL-_lRREviTQ" compositions="_agpdEeLwEeSL-_lRREviTQ"/>
+  <realizes href="bCMS_SPL.core#_IbpmkOLwEeSL-_lRREviTQ"/>
+  <structuralView xmi:id="_SoFlYeLwEeSL-_lRREviTQ">
+    <classes xsi:type="ram:Class" xmi:id="_SoFlYuLwEeSL-_lRREviTQ" name="Aaaa"/>
+    <types xsi:type="ram:RVoid" xmi:id="_SoFlY-LwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_SoFlZOLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_SoFlZeLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_SoFlZuLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_SoFlZ-LwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RString" xmi:id="_SoFlaOLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_SoFlaeLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_SoFlauLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_SoFla-LwEeSL-_lRREviTQ"/>
+  </structuralView>
+  <instantiations xmi:id="_WH-zseLwEeSL-_lRREviTQ" source="_SoFlYOLwEeSL-_lRREviTQ">
+    <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_HashMap_KeyIndexed.ram#_h85_cNZcEeS_4sG2PJA2iA"/>
+  </instantiations>
+  <instantiations xmi:id="_agpdEeLwEeSL-_lRREviTQ" source="_SoFlYOLwEeSL-_lRREviTQ">
+    <source xsi:type="ram:Aspect" href="Reused_Singleton/Woven_Singleton_Singleton.ram#_jdV3cNZcEeS_4sG2PJA2iA"/>
+  </instantiations>
+  <layout xmi:id="_SoFlbOLwEeSL-_lRREviTQ">
+    <containers xmi:id="_SoFlbeLwEeSL-_lRREviTQ" key="_SoFlYeLwEeSL-_lRREviTQ">
+      <value xmi:id="_SoFlbuLwEeSL-_lRREviTQ" key="_SoFlYuLwEeSL-_lRREviTQ">
+        <value xmi:id="_SoFlb-LwEeSL-_lRREviTQ" x="476.0" y="318.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

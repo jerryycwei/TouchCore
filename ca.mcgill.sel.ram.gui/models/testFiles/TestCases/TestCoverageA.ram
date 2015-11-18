@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_sLXTMHslEeScXMllMu3aKQ" name="TestCoverageA">
+  <structuralView xmi:id="_sLX6QHslEeScXMllMu3aKQ">
+    <classes xsi:type="ram:Class" xmi:id="_sLX6QXslEeScXMllMu3aKQ" name="A">
+      <operations  xmi:id="_sLX6QnslEeScXMllMu3aKQ" name="lime" returnType="_sLX6SnslEeScXMllMu3aKQ" visibility="public"/>
+      <operations  xmi:id="_sLX6Q3slEeScXMllMu3aKQ" name="plum" extendedVisibility="private" returnType="_sLX6U3slEeScXMllMu3aKQ" visibility="public"/>
+      <attributes xmi:id="_sLX6RHslEeScXMllMu3aKQ" name="appleCount" type="_sLX6TXslEeScXMllMu3aKQ"/>
+      <attributes xmi:id="_sLX6RXslEeScXMllMu3aKQ" name="name" type="_sLX6T3slEeScXMllMu3aKQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_sLX6RnslEeScXMllMu3aKQ" name="D">
+      <operations  xmi:id="_sLX6R3slEeScXMllMu3aKQ" name="beet" returnType="_sLX6SnslEeScXMllMu3aKQ" visibility="public">
+        <parameters xmi:id="_sLX6SHslEeScXMllMu3aKQ" name="count" type="_sLX6TXslEeScXMllMu3aKQ"/>
+      </operations>
+      <attributes xmi:id="_sLX6SXslEeScXMllMu3aKQ" name="isFresh" type="_sLX6THslEeScXMllMu3aKQ"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_sLX6SnslEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_sLX6S3slEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_sLX6THslEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_sLX6TXslEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_sLX6TnslEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RString" xmi:id="_sLX6T3slEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_sLX6UHslEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_sLX6UXslEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_sLX6UnslEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RSet" xmi:id="_sLX6U3slEeScXMllMu3aKQ" type="_sLX6TXslEeScXMllMu3aKQ"/>
+  </structuralView>
+  <instantiations xmi:id="_thvQQHslEeScXMllMu3aKQ" type="Extends">
+    <mappings xmi:id="_viaHgHslEeScXMllMu3aKQ" toElement="_sLX6QXslEeScXMllMu3aKQ">
+      <operationMappings xmi:id="_wMfmUHslEeScXMllMu3aKQ" toElement="_sLX6QnslEeScXMllMu3aKQ">
+        <fromElement href="TestCoverageB.ram#_aMAKo3slEeSfoP1hOKWpPg"/>
+      </operationMappings>
+      <attributeMappings xmi:id="_w_fJgHslEeScXMllMu3aKQ" toElement="_sLX6RHslEeScXMllMu3aKQ">
+        <fromElement href="TestCoverageB.ram#_aMAKpXslEeSfoP1hOKWpPg"/>
+      </attributeMappings>
+      <fromElement xsi:type="ram:Class" href="TestCoverageB.ram#_aMAKonslEeSfoP1hOKWpPg"/>
+    </mappings>
+    <externalAspect href="TestCoverageB.ram#_aMAKoHslEeSfoP1hOKWpPg"/>
+  </instantiations>
+  <layout xmi:id="_sLYhUHslEeScXMllMu3aKQ">
+    <containers xmi:id="_sLYhUXslEeScXMllMu3aKQ" key="_sLX6QHslEeScXMllMu3aKQ">
+      <value xmi:id="_sLYhUnslEeScXMllMu3aKQ" key="_sLX6QXslEeScXMllMu3aKQ">
+        <value xmi:id="_sLYhU3slEeScXMllMu3aKQ" x="406.00012" y="357.00015"/>
+      </value>
+      <value xmi:id="_sLYhVHslEeScXMllMu3aKQ" key="_sLX6RnslEeScXMllMu3aKQ">
+        <value xmi:id="_sLYhVXslEeScXMllMu3aKQ" x="798.99994" y="259.99988"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

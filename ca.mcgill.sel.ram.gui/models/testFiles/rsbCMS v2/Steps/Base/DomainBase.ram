@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_Q4mNcJFDEeGgKbKNsvKi6A" name="DomainBase">
+  <structuralView xmi:id="_Q4mNcZFDEeGgKbKNsvKi6A">
+    <classes xsi:type="ram:Class" xmi:id="_yN4fQIzyEeGpeIH37hJjzg" name="Vehicle">
+      <operations  xmi:id="_dUotkIz0EeGpeIH37hJjzg" name="create" returnType="_yN4fQIzyEeGpeIH37hJjzg" visibility="public">
+        <parameters xmi:id="_u3zpYIz0EeGpeIH37hJjzg" name="licensePlate" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+      </operations>
+      <operations  xmi:id="_dfPXUJFjEeGX1PgMyJUdIQ" name="getLicensePlate" returnType="_9zh5sZFFEeGcPpQhqZFqFA" visibility="public"/>
+      <operations  xmi:id="_h6id8JFjEeGX1PgMyJUdIQ" name="setLicensePlate" returnType="_9zgrkZFFEeGcPpQhqZFqFA" visibility="public">
+        <parameters xmi:id="_h6id8ZFjEeGX1PgMyJUdIQ" name="licensePlate" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_9zgrkZFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RAny" xmi:id="_9zhSoJFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_9zhSoZFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RInt" xmi:id="_9zhSopFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RChar" xmi:id="_9zh5sJFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RString" xmi:id="_9zh5sZFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RSet" xmi:id="_VGarwIzwEeGpeIH37hJjzg" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+  </structuralView>
+  <instantiations xmi:id="_Cb6_wLDEEeGxbeX_hHD8lQ">
+    <mappings xmi:id="_Cb8N4LDEEeGxbeX_hHD8lQ" toElement="_yN4fQIzyEeGpeIH37hJjzg">
+      <fromElement xsi:type="ram:Class" href="../../Lib/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <mappings xmi:id="_DhC0wLDEEeGxbeX_hHD8lQ" toElement="_dfPXUJFjEeGX1PgMyJUdIQ">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/util/Named.ram#_coJYcIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <mappings xmi:id="_FtLVILDEEeGxbeX_hHD8lQ" toElement="_h6id8JFjEeGX1PgMyJUdIQ">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/util/Named.ram#_dQHXYIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <layout xmi:id="_I3n34LDEEeGxbeX_hHD8lQ">
+    <containers xmi:id="_I3n34bDEEeGxbeX_hHD8lQ" key="_Q4mNcZFDEeGgKbKNsvKi6A">
+      <value xmi:id="_I3n34rDEEeGxbeX_hHD8lQ" key="_yN4fQIzyEeGpeIH37hJjzg">
+        <value xmi:id="_I3n347DEEeGxbeX_hHD8lQ" x="325.00037" y="202.00027"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

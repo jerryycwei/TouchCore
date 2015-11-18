@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_ToTGYN4oEeS1koPVI5W3kQ" name="Encryption&lt;RSA,Encryption>">
+  <structuralView xmi:id="_ToTGYd4oEeS1koPVI5W3kQ">
+    <classes xsi:type="ram:Class" xmi:id="_ToTGYt4oEeS1koPVI5W3kQ" name="Encryptable" comesFrom="_ToTGcN4oEeS1koPVI5W3kQ">
+      <operations  xmi:id="_ToTGY94oEeS1koPVI5W3kQ" name="encryptedMethod" comesFrom="_ToTGcN4oEeS1koPVI5W3kQ" returnType="_ToTGZd4oEeS1koPVI5W3kQ" partiality="public" visibility="public"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_ToTGZN4oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_ToTGZd4oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_ToTGZt4oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_ToTGZ94oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_ToTGaN4oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RString" xmi:id="_ToTGad4oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_ToTGat4oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_ToTGa94oEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_ToTGbN4oEeS1koPVI5W3kQ"/>
+  </structuralView>
+  <layout xmi:id="_ToTGbd4oEeS1koPVI5W3kQ">
+    <containers xmi:id="_ToTGbt4oEeS1koPVI5W3kQ" key="_ToTGYd4oEeS1koPVI5W3kQ"/>
+  </layout>
+  <wovenAspects xmi:id="_ToTGb94oEeS1koPVI5W3kQ" name="RSA">
+    <comesFrom href="RSA.ram#_a8yIAN4lEeS1koPVI5W3kQ"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_ToTGcN4oEeS1koPVI5W3kQ" name="Encryption">
+    <comesFrom href="Encryption.ram#_EzmDUN4lEeS1koPVI5W3kQ"/>
+  </wovenAspects>
+</ram:Aspect>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_a8yIAN4lEeS1koPVI5W3kQ" name="RSA">
+  <realizes href="Encryption.core#_HjtagN4lEeS1koPVI5W3kQ"/>
+  <structuralView xmi:id="_a8yIAd4lEeS1koPVI5W3kQ">
+    <types xsi:type="ram:RVoid" xmi:id="_a8yIAt4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_a8yIA94lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_a8yIBN4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_a8yIBd4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_a8yIBt4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RString" xmi:id="_a8yIB94lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_a8yICN4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_a8yICd4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_a8yICt4lEeS1koPVI5W3kQ"/>
+  </structuralView>
+  <layout xmi:id="_a8yIC94lEeS1koPVI5W3kQ">
+    <containers xmi:id="_a8yIDN4lEeS1koPVI5W3kQ" key="_a8yIAd4lEeS1koPVI5W3kQ"/>
+  </layout>
+</ram:Aspect>

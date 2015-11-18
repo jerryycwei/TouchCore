@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_hFgokJChEeGugPZgpnT0jg" name="Woven_requestDriverConfirmation">
+  <structuralView xmi:id="_hFgokZChEeGugPZgpnT0jg">
+    <classes xsi:type="ram:Class" xmi:id="_hFgokpChEeGugPZgpnT0jg" name="showVehicleListOutput" superTypes="_hFgoqZChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgok5ChEeGugPZgpnT0jg" name="execute" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgolJChEeGugPZgpnT0jg" name="showVehicleList" superTypes="_hFgorpChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgolZChEeGugPZgpnT0jg" name="execute" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgolpChEeGugPZgpnT0jg" name="requestDriverConfirmationInput" superTypes="_hFgonpChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgol5ChEeGugPZgpnT0jg" name="execute" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <attributes xmi:id="_hFgomJChEeGugPZgpnT0jg" name="lincensePlate" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgomZChEeGugPZgpnT0jg" name="showAssignmentOutput" superTypes="_hFgoqZChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgompChEeGugPZgpnT0jg" name="send" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgom5ChEeGugPZgpnT0jg" name="s" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgonJChEeGugPZgpnT0jg" name="showAssignment" superTypes="_hFgorpChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgonZChEeGugPZgpnT0jg" name="execute" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgonpChEeGugPZgpnT0jg" name="InputData">
+      <associationEnds xmi:id="_hFgon5ChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp1ZChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgooJChEeGugPZgpnT0jg" name="getInputQueueName" extendedVisibility="package" returnType="_hFgp55ChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgooZChEeGugPZgpnT0jg" name="getSender" extendedVisibility="package" returnType="_hFgp55ChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgoopChEeGugPZgpnT0jg" name="setSender" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgoo5ChEeGugPZgpnT0jg" name="sender" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgopJChEeGugPZgpnT0jg" name="setInputQueueName" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgopZChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgoppChEeGugPZgpnT0jg" name="getQueueName" extendedVisibility="package" returnType="_hFgp55ChEeGugPZgpnT0jg" visibility="public"/>
+      <attributes xmi:id="_hFgop5ChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      <attributes xmi:id="_hFgoqJChEeGugPZgpnT0jg" name="inputdataName" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgoqZChEeGugPZgpnT0jg" name="OutputData" superTypes="_hFgpnJChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgoqpChEeGugPZgpnT0jg" name="send" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgoq5ChEeGugPZgpnT0jg" name="host" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgorJChEeGugPZgpnT0jg" name="execute" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <attributes xmi:id="_hFgorZChEeGugPZgpnT0jg" name="responseQueueName" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgorpChEeGugPZgpnT0jg" name="CustomizableNode" superTypes="_hFgo1JChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgor5ChEeGugPZgpnT0jg" name="execute" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgosJChEeGugPZgpnT0jg" name="execute" returnType="_hFgp5pChEeGugPZgpnT0jg" partiality="public" visibility="public">
+        <parameters xmi:id="_hFgosZChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgospChEeGugPZgpnT0jg" name="LocalContextWithDriverleInfo">
+      <operations  xmi:id="_hFgos5ChEeGugPZgpnT0jg" name="addVehicle" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgotJChEeGugPZgpnT0jg" name="removeVehicle" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgotZChEeGugPZgpnT0jg" name="getVehicles" returnType="_hFgp6JChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgotpChEeGugPZgpnT0jg" name="getDriver" returnType="_hFgoupChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgot5ChEeGugPZgpnT0jg" name="getVehicle" returnType="_hFgowZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgouJChEeGugPZgpnT0jg" name="licensePlate" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <attributes xmi:id="_hFgouZChEeGugPZgpnT0jg" name="licensePlate" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgoupChEeGugPZgpnT0jg" name="Driver">
+      <associationEnds xmi:id="_hFgou5ChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp1JChEeGugPZgpnT0jg" lowerBound="1"/>
+      <operations  xmi:id="_hFgovJChEeGugPZgpnT0jg" name="create" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgovZChEeGugPZgpnT0jg" name="id" type="_hFgp55ChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgovpChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <attributes xmi:id="_hFgov5ChEeGugPZgpnT0jg" name="ID" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      <attributes xmi:id="_hFgowJChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgowZChEeGugPZgpnT0jg" name="Vehicle">
+      <associationEnds xmi:id="_hFgowpChEeGugPZgpnT0jg" name="myDriver" assoc="_hFgp1JChEeGugPZgpnT0jg" lowerBound="1"/>
+      <operations  xmi:id="_hFgow5ChEeGugPZgpnT0jg" name="create" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgoxJChEeGugPZgpnT0jg" name="linceseNum" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgoxZChEeGugPZgpnT0jg" name="getDriver" returnType="_hFgoupChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgoxpChEeGugPZgpnT0jg" name="setDriver" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgox5ChEeGugPZgpnT0jg" name="driver" type="_hFgoupChEeGugPZgpnT0jg"/>
+      </operations>
+      <attributes xmi:id="_hFgoyJChEeGugPZgpnT0jg" name="licensePlace" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgoyZChEeGugPZgpnT0jg" name="String"/>
+    <classes xsi:type="ram:Class" xmi:id="_hFgoypChEeGugPZgpnT0jg" name="WorkflowNode">
+      <associationEnds xmi:id="_hFgoy5ChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp2pChEeGugPZgpnT0jg" upperBound="-1"/>
+      <associationEnds xmi:id="_hFgozJChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp25ChEeGugPZgpnT0jg" upperBound="-1"/>
+      <associationEnds xmi:id="_hFgozZChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp3ZChEeGugPZgpnT0jg" upperBound="-1"/>
+      <associationEnds xmi:id="_hFgozpChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp4pChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgoz5ChEeGugPZgpnT0jg" name="WaitForInput" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgo0JChEeGugPZgpnT0jg" name="depositToken" abstract="true" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo0ZChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo0pChEeGugPZgpnT0jg" name="addNextNode" abstract="true" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo05ChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgo1JChEeGugPZgpnT0jg" name="SequenceNode" superTypes="_hFgoypChEeGugPZgpnT0jg">
+      <associationEnds xmi:id="_hFgo1ZChEeGugPZgpnT0jg" name="next" assoc="_hFgp3ZChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgo1pChEeGugPZgpnT0jg" name="depositToken" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo15ChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo2JChEeGugPZgpnT0jg" name="addNextNode" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo2ZChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgo2pChEeGugPZgpnT0jg" name="WorkflowExecutor" superTypes="_hFgpcJChEeGugPZgpnT0jg">
+      <associationEnds xmi:id="_hFgo25ChEeGugPZgpnT0jg" name="myInput" assoc="_hFgp1ZChEeGugPZgpnT0jg"/>
+      <associationEnds xmi:id="_hFgo3JChEeGugPZgpnT0jg" name="myInputQueue" assoc="_hFgp1pChEeGugPZgpnT0jg" lowerBound="1"/>
+      <associationEnds xmi:id="_hFgo3ZChEeGugPZgpnT0jg" name="start" assoc="_hFgp2pChEeGugPZgpnT0jg" lowerBound="1"/>
+      <associationEnds xmi:id="_hFgo3pChEeGugPZgpnT0jg" name="next" assoc="_hFgp25ChEeGugPZgpnT0jg"/>
+      <associationEnds xmi:id="_hFgo35ChEeGugPZgpnT0jg" name="myContext" assoc="_hFgp3JChEeGugPZgpnT0jg" lowerBound="1"/>
+      <operations  xmi:id="_hFgo4JChEeGugPZgpnT0jg" name="getMyInputQueue" extendedVisibility="package" returnType="_hFgpMZChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgo4ZChEeGugPZgpnT0jg" name="setMyInputQueue" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo4pChEeGugPZgpnT0jg" name="q" type="_hFgpMZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo45ChEeGugPZgpnT0jg" name="setMyInput" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo5JChEeGugPZgpnT0jg" name="i" type="_hFgonpChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo5ZChEeGugPZgpnT0jg" name="getCurrenctInput" extendedVisibility="package" returnType="_hFgonpChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgo5pChEeGugPZgpnT0jg" name="getMyInput" extendedVisibility="private" returnType="_hFgonpChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgo55ChEeGugPZgpnT0jg" name="spawnExecution" returnType="_hFgp5pChEeGugPZgpnT0jg" static="true" visibility="public">
+        <parameters xmi:id="_hFgo6JChEeGugPZgpnT0jg" name="start" type="_hFgoypChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgo6ZChEeGugPZgpnT0jg" name="myContext" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo6pChEeGugPZgpnT0jg" name="getCurrecntExecutor" returnType="_hFgo2pChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgo65ChEeGugPZgpnT0jg" name="scheduleNextNote" returnType="_hFgp5pChEeGugPZgpnT0jg" static="true" visibility="public">
+        <parameters xmi:id="_hFgo7JChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo7ZChEeGugPZgpnT0jg" name="getCurrentContext" returnType="_hFgpOJChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgo7pChEeGugPZgpnT0jg" name="create" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo75ChEeGugPZgpnT0jg" name="start" type="_hFgpcZChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgo8JChEeGugPZgpnT0jg" name="myContext" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo8ZChEeGugPZgpnT0jg" name="getMyContext" returnType="_hFgpOJChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgo8pChEeGugPZgpnT0jg" name="setNext" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo85ChEeGugPZgpnT0jg" name="next" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo9JChEeGugPZgpnT0jg" name="run" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgo9ZChEeGugPZgpnT0jg" name="InputNode" superTypes="_hFgo1JChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgo9pChEeGugPZgpnT0jg" name="depositToken" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo95ChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgo-JChEeGugPZgpnT0jg" name="CommunicationChannel" superTypes="_hFgpWJChEeGugPZgpnT0jg">
+      <associationEnds xmi:id="_hFgo-ZChEeGugPZgpnT0jg" name="self" assoc="_hFgp15ChEeGugPZgpnT0jg"/>
+      <associationEnds xmi:id="_hFgo-pChEeGugPZgpnT0jg" name="" assoc="_hFgp15ChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgo-5ChEeGugPZgpnT0jg" name="getInstance" extendedVisibility="package" returnType="_hFgo-JChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgo_JChEeGugPZgpnT0jg" name="create" extendedVisibility="private" returnType="_hFgo-JChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgo_ZChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgo-JChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgo_pChEeGugPZgpnT0jg" name="myPort" type="_hFgp65ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgo_5ChEeGugPZgpnT0jg" name="createAndConnect" extendedVisibility="package" returnType="_hFgo-JChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpAJChEeGugPZgpnT0jg" name="host" type="_hFgp55ChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpAZChEeGugPZgpnT0jg" name="port" type="_hFgp65ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpApChEeGugPZgpnT0jg" name="send" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpA5ChEeGugPZgpnT0jg" name="cmd" type="_hFgonpChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpBJChEeGugPZgpnT0jg" name="host" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpBZChEeGugPZgpnT0jg" name="acceptsCommandFrom" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpBpChEeGugPZgpnT0jg" name="host" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpB5ChEeGugPZgpnT0jg" name="addSocket" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpCJChEeGugPZgpnT0jg" name="from" type="_hFgp55ChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpCZChEeGugPZgpnT0jg" name="s" type="_hFgpZZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpCpChEeGugPZgpnT0jg" name="getSocket" extendedVisibility="package" returnType="_hFgpZZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpC5ChEeGugPZgpnT0jg" name="from" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpDJChEeGugPZgpnT0jg" name="run" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpDZChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpDpChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpD5ChEeGugPZgpnT0jg" name="getValue" extendedVisibility="package" returnType="_hFgpZZChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpEJChEeGugPZgpnT0jg" name="getKeys" extendedVisibility="package" returnType="_hFgp-ZChEeGugPZgpnT0jg" visibility="public"/>
+      <attributes xmi:id="_hFgpEZChEeGugPZgpnT0jg" name="myPort" type="_hFgp65ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpEpChEeGugPZgpnT0jg" name="InputQueueFinder">
+      <associationEnds xmi:id="_hFgpE5ChEeGugPZgpnT0jg" name="self" assoc="_hFgp2JChEeGugPZgpnT0jg"/>
+      <associationEnds xmi:id="_hFgpFJChEeGugPZgpnT0jg" name="" assoc="_hFgp2JChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgpFZChEeGugPZgpnT0jg" name="getInstance" extendedVisibility="package" returnType="_hFgpEpChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgpFpChEeGugPZgpnT0jg" name="findInputQueue" extendedVisibility="package" returnType="_hFgpMZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpF5ChEeGugPZgpnT0jg" name="s" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpGJChEeGugPZgpnT0jg" name="addInputQueue" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpGZChEeGugPZgpnT0jg" name="s" type="_hFgp55ChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpGpChEeGugPZgpnT0jg" name="q" type="_hFgpMZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpG5ChEeGugPZgpnT0jg" name="create" extendedVisibility="private" returnType="_hFgpEpChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgpHJChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpHZChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpHpChEeGugPZgpnT0jg" name="getKeys" extendedVisibility="package" returnType="_hFgp8ZChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpH5ChEeGugPZgpnT0jg" name="ParallelExecutionNode" superTypes="_hFgpgJChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgpIJChEeGugPZgpnT0jg" name="chooseNextNodes" extendedVisibility="package" returnType="_hFgp9JChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpIZChEeGugPZgpnT0jg" name="addNextNode" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpIpChEeGugPZgpnT0jg" name="outpathName" type="_hFgp55ChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpI5ChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpJJChEeGugPZgpnT0jg" name="addOutpath" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpJZChEeGugPZgpnT0jg" name="pathname" type="_hFgp55ChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpJpChEeGugPZgpnT0jg" name="n" type="_hFgplZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpJ5ChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpKJChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpKZChEeGugPZgpnT0jg" name="getOutpath" extendedVisibility="package" returnType="_hFgplZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpKpChEeGugPZgpnT0jg" name="outPathname" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpK5ChEeGugPZgpnT0jg" name="getKeys" extendedVisibility="package" returnType="_hFgqApChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpLJChEeGugPZgpnT0jg" name="ContinuousInputNode" superTypes="_hFgpH5ChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgpLZChEeGugPZgpnT0jg" name="depositToken" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpLpChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpL5ChEeGugPZgpnT0jg" name="addNextNode" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpMJChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpMZChEeGugPZgpnT0jg" name="InputQueue">
+      <associationEnds xmi:id="_hFgpMpChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp1pChEeGugPZgpnT0jg" upperBound="-1"/>
+      <operations  xmi:id="_hFgpM5ChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpMZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpNJChEeGugPZgpnT0jg" name="qName" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpNZChEeGugPZgpnT0jg" name="setName" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpNpChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <attributes xmi:id="_hFgpN5ChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpOJChEeGugPZgpnT0jg" name="LocalContext">
+      <associationEnds xmi:id="_hFgpOZChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp3JChEeGugPZgpnT0jg" upperBound="-1"/>
+      <operations  xmi:id="_hFgpOpChEeGugPZgpnT0jg" name="copy" extendedVisibility="package" returnType="_hFgpOJChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpO5ChEeGugPZgpnT0jg" name="a" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpPJChEeGugPZgpnT0jg" name="create" extendedVisibility="private" returnType="_hFgpOJChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpPZChEeGugPZgpnT0jg" name="a" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpPpChEeGugPZgpnT0jg" name="replaceStateWith" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpP5ChEeGugPZgpnT0jg" name="from" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpQJChEeGugPZgpnT0jg" name="Map">
+      <operations  xmi:id="_hFgpQZChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpQJChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpQpChEeGugPZgpnT0jg" name="put" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpQ5ChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpRJChEeGugPZgpnT0jg" name="v" type="_hFgowZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpRZChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpRpChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpR5ChEeGugPZgpnT0jg" name="get" extendedVisibility="package" returnType="_hFgowZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpSJChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpSZChEeGugPZgpnT0jg" name="keySet" extendedVisibility="package" returnType="_hFgp7ZChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpSpChEeGugPZgpnT0jg" name="getValues" extendedVisibility="package" returnType="_hFgp7pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpS5ChEeGugPZgpnT0jg" name="destroy" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpTJChEeGugPZgpnT0jg" name="Map">
+      <operations  xmi:id="_hFgpTZChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpTJChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpTpChEeGugPZgpnT0jg" name="put" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpT5ChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpUJChEeGugPZgpnT0jg" name="v" type="_hFgpMZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpUZChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpUpChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpU5ChEeGugPZgpnT0jg" name="get" extendedVisibility="package" returnType="_hFgpMZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpVJChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpVZChEeGugPZgpnT0jg" name="keySet" extendedVisibility="package" returnType="_hFgp8pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpVpChEeGugPZgpnT0jg" name="getValues" extendedVisibility="package" returnType="_hFgp85ChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpV5ChEeGugPZgpnT0jg" name="destroy" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpWJChEeGugPZgpnT0jg" name="Runnable" abstract="true">
+      <operations  xmi:id="_hFgpWZChEeGugPZgpnT0jg" name="run" abstract="true" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpWpChEeGugPZgpnT0jg" name="CommandExecutor" superTypes="_hFgpWJChEeGugPZgpnT0jg">
+      <associationEnds xmi:id="_hFgpW5ChEeGugPZgpnT0jg" name="in" assoc="_hFgp2ZChEeGugPZgpnT0jg" lowerBound="1"/>
+      <operations  xmi:id="_hFgpXJChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpWpChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpXZChEeGugPZgpnT0jg" name="in" type="_hFgpYZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpXpChEeGugPZgpnT0jg" name="run" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpX5ChEeGugPZgpnT0jg" name="ChannelWithAutoExecution" superTypes="_hFgo-JChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgpYJChEeGugPZgpnT0jg" name="run" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpYZChEeGugPZgpnT0jg" name="Stream">
+      <associationEnds xmi:id="_hFgpYpChEeGugPZgpnT0jg" navigable="false" assoc="_hFgp2ZChEeGugPZgpnT0jg"/>
+      <associationEnds xmi:id="_hFgpY5ChEeGugPZgpnT0jg" navigable="false" assoc="_hFgp3pChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgpZJChEeGugPZgpnT0jg" name="readFrom" extendedVisibility="package" returnType="_hFgoqZChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpZZChEeGugPZgpnT0jg" name="Socket">
+      <associationEnds xmi:id="_hFgpZpChEeGugPZgpnT0jg" name="myInput" assoc="_hFgp3pChEeGugPZgpnT0jg"/>
+      <associationEnds xmi:id="_hFgpZ5ChEeGugPZgpnT0jg" name="myOutput" assoc="_hFgp35ChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgpaJChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpZZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpaZChEeGugPZgpnT0jg" name="host" type="_hFgp55ChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpapChEeGugPZgpnT0jg" name="port" type="_hFgp65ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpa5ChEeGugPZgpnT0jg" name="close" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpbJChEeGugPZgpnT0jg" name="isConnected" extendedVisibility="package" returnType="_hFgp6pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpbZChEeGugPZgpnT0jg" name="getInput" extendedVisibility="package" returnType="_hFgpYZChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpbpChEeGugPZgpnT0jg" name="getOutput" extendedVisibility="package" returnType="_hFgpoZChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpb5ChEeGugPZgpnT0jg" name="getRemoteSocketAddress" extendedVisibility="package" returnType="_hFgppZChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpcJChEeGugPZgpnT0jg" name="Thread"/>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpcZChEeGugPZgpnT0jg" name="Workflow">
+      <associationEnds xmi:id="_hFgpcpChEeGugPZgpnT0jg" name="mySet" assoc="_hFgp45ChEeGugPZgpnT0jg" lowerBound="1" referenceType="Composition"/>
+      <associationEnds xmi:id="_hFgpc5ChEeGugPZgpnT0jg" name="mySet" assoc="_hFgp5JChEeGugPZgpnT0jg" lowerBound="1" referenceType="Composition"/>
+      <operations  xmi:id="_hFgpdJChEeGugPZgpnT0jg" name="addNode" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpdZChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpdpChEeGugPZgpnT0jg" name="getNodes" returnType="_hFgoypChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpd5ChEeGugPZgpnT0jg" name="addStartupNode" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpeJChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpeZChEeGugPZgpnT0jg" name="getStartupNodes" returnType="_hFgoypChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpepChEeGugPZgpnT0jg" name="launch" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpe5ChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpfJChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpfZChEeGugPZgpnT0jg" name="a" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpfpChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpf5ChEeGugPZgpnT0jg" name="a" type="_hFgpjpChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpgJChEeGugPZgpnT0jg" name="ControlFlowNode" abstract="true" superTypes="_hFgoypChEeGugPZgpnT0jg">
+      <associationEnds xmi:id="_hFgpgZChEeGugPZgpnT0jg" name="mySet" assoc="_hFgp4ZChEeGugPZgpnT0jg" lowerBound="1" referenceType="Composition"/>
+      <operations  xmi:id="_hFgpgpChEeGugPZgpnT0jg" name="depositToken" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpg5ChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgphJChEeGugPZgpnT0jg" name="addNextNode" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgphZChEeGugPZgpnT0jg" name="n" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgphpChEeGugPZgpnT0jg" name="getNextNodes" returnType="_hFgoypChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgph5ChEeGugPZgpnT0jg" name="chooseNextNodes" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpiJChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpiZChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpipChEeGugPZgpnT0jg" name="a" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpi5ChEeGugPZgpnT0jg" name="EndNode" superTypes="_hFgpgJChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgpjJChEeGugPZgpnT0jg" name="chooseNextNodes" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpjZChEeGugPZgpnT0jg" name="c" type="_hFgpOJChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpjpChEeGugPZgpnT0jg" name="StartupNode" superTypes="_hFgo1JChEeGugPZgpnT0jg">
+      <associationEnds xmi:id="_hFgpj5ChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp5ZChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpkJChEeGugPZgpnT0jg" name="GlobalContext">
+      <associationEnds xmi:id="_hFgpkZChEeGugPZgpnT0jg" name="self" assoc="_hFgp4JChEeGugPZgpnT0jg"/>
+      <associationEnds xmi:id="_hFgpkpChEeGugPZgpnT0jg" name="" assoc="_hFgp4JChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgpk5ChEeGugPZgpnT0jg" name="getGlobalContext" returnType="_hFgpkJChEeGugPZgpnT0jg" static="true" visibility="public"/>
+      <operations  xmi:id="_hFgplJChEeGugPZgpnT0jg" name="create" extendedVisibility="private" returnType="_hFgpkJChEeGugPZgpnT0jg" static="true" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgplZChEeGugPZgpnT0jg" name="OutpathNode" superTypes="_hFgo1JChEeGugPZgpnT0jg">
+      <operations  xmi:id="_hFgplpChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgplZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpl5ChEeGugPZgpnT0jg" name="outpathName" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpmJChEeGugPZgpnT0jg" name="getName" extendedVisibility="package" returnType="_hFgp55ChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpmZChEeGugPZgpnT0jg" name="setName" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpmpChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+      </operations>
+      <attributes xmi:id="_hFgpm5ChEeGugPZgpnT0jg" name="name" type="_hFgp55ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpnJChEeGugPZgpnT0jg" name="Serializable" abstract="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpnZChEeGugPZgpnT0jg" name="ServerSocket">
+      <operations  xmi:id="_hFgpnpChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpnZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpn5ChEeGugPZgpnT0jg" name="port" type="_hFgp65ChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpoJChEeGugPZgpnT0jg" name="accept" extendedVisibility="package" returnType="_hFgpZZChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpoZChEeGugPZgpnT0jg" name="OutputStream">
+      <associationEnds xmi:id="_hFgpopChEeGugPZgpnT0jg" navigable="false" assoc="_hFgp35ChEeGugPZgpnT0jg"/>
+      <operations  xmi:id="_hFgpo5ChEeGugPZgpnT0jg" name="writeTo" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgppJChEeGugPZgpnT0jg" name="s" type="_hFgoqZChEeGugPZgpnT0jg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgppZChEeGugPZgpnT0jg" name="SocketAddress"/>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpppChEeGugPZgpnT0jg" name="Map">
+      <operations  xmi:id="_hFgpp5ChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpppChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpqJChEeGugPZgpnT0jg" name="put" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpqZChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpqpChEeGugPZgpnT0jg" name="v" type="_hFgpZZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpq5ChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgprJChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgprZChEeGugPZgpnT0jg" name="get" extendedVisibility="package" returnType="_hFgpZZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgprpChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpr5ChEeGugPZgpnT0jg" name="keySet" extendedVisibility="package" returnType="_hFgp-pChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpsJChEeGugPZgpnT0jg" name="getValues" extendedVisibility="package" returnType="_hFgp-5ChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpsZChEeGugPZgpnT0jg" name="destroy" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpspChEeGugPZgpnT0jg" name="Set">
+      <associationEnds xmi:id="_hFgps5ChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp4ZChEeGugPZgpnT0jg" upperBound="-1"/>
+      <associationEnds xmi:id="_hFgptJChEeGugPZgpnT0jg" name="myAssociated" assoc="_hFgp4pChEeGugPZgpnT0jg" upperBound="-1" referenceType="Aggregation"/>
+      <associationEnds xmi:id="_hFgptZChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp45ChEeGugPZgpnT0jg" upperBound="-1"/>
+      <operations  xmi:id="_hFgptpChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpspChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpt5ChEeGugPZgpnT0jg" name="add" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpuJChEeGugPZgpnT0jg" name="a" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpuZChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpupChEeGugPZgpnT0jg" name="a" type="_hFgoypChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpu5ChEeGugPZgpnT0jg" name="delete" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <attributes xmi:id="_hFgpvJChEeGugPZgpnT0jg" name="size" type="_hFgp65ChEeGugPZgpnT0jg"/>
+      <attributes xmi:id="_hFgpvZChEeGugPZgpnT0jg" name="setSize" type="_hFgp65ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpvpChEeGugPZgpnT0jg" name="Set">
+      <associationEnds xmi:id="_hFgpv5ChEeGugPZgpnT0jg" name="" navigable="false" assoc="_hFgp5JChEeGugPZgpnT0jg" upperBound="-1"/>
+      <associationEnds xmi:id="_hFgpwJChEeGugPZgpnT0jg" name="myAssociated" assoc="_hFgp5ZChEeGugPZgpnT0jg" upperBound="-1" referenceType="Aggregation"/>
+      <operations  xmi:id="_hFgpwZChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpvpChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpwpChEeGugPZgpnT0jg" name="add" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpw5ChEeGugPZgpnT0jg" name="a" type="_hFgpjpChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpxJChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpxZChEeGugPZgpnT0jg" name="a" type="_hFgpjpChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpxpChEeGugPZgpnT0jg" name="delete" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+      <attributes xmi:id="_hFgpx5ChEeGugPZgpnT0jg" name="size" type="_hFgp65ChEeGugPZgpnT0jg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_hFgpyJChEeGugPZgpnT0jg" name="Map">
+      <operations  xmi:id="_hFgpyZChEeGugPZgpnT0jg" name="create" extendedVisibility="package" returnType="_hFgpyJChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgpypChEeGugPZgpnT0jg" name="put" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpy5ChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+        <parameters xmi:id="_hFgpzJChEeGugPZgpnT0jg" name="v" type="_hFgplZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpzZChEeGugPZgpnT0jg" name="remove" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgpzpChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgpz5ChEeGugPZgpnT0jg" name="get" extendedVisibility="package" returnType="_hFgplZChEeGugPZgpnT0jg" visibility="public">
+        <parameters xmi:id="_hFgp0JChEeGugPZgpnT0jg" name="k" type="_hFgoyZChEeGugPZgpnT0jg"/>
+      </operations>
+      <operations  xmi:id="_hFgp0ZChEeGugPZgpnT0jg" name="keySet" extendedVisibility="package" returnType="_hFgqA5ChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgp0pChEeGugPZgpnT0jg" name="getValues" extendedVisibility="package" returnType="_hFgqBJChEeGugPZgpnT0jg" visibility="public"/>
+      <operations  xmi:id="_hFgp05ChEeGugPZgpnT0jg" name="destroy" extendedVisibility="package" returnType="_hFgp5pChEeGugPZgpnT0jg" visibility="public"/>
+    </classes>
+    <associations xmi:id="_hFgp1JChEeGugPZgpnT0jg" name="ASSOC_VEHICLE_DRIVER" ends="_hFgowpChEeGugPZgpnT0jg _hFgou5ChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp1ZChEeGugPZgpnT0jg" name="WFE_INPUTDATA_ASSOC" ends="_hFgon5ChEeGugPZgpnT0jg _hFgo25ChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp1pChEeGugPZgpnT0jg" name="WFE_INPUTQUEUE_ASSOC" ends="_hFgo3JChEeGugPZgpnT0jg _hFgpMpChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp15ChEeGugPZgpnT0jg" name="instance" ends="_hFgo-ZChEeGugPZgpnT0jg _hFgo-pChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp2JChEeGugPZgpnT0jg" name="instance" ends="_hFgpE5ChEeGugPZgpnT0jg _hFgpFJChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp2ZChEeGugPZgpnT0jg" name="COMMANDEXECUTOR_STREAM_ASSOC" ends="_hFgpW5ChEeGugPZgpnT0jg _hFgpYpChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp2pChEeGugPZgpnT0jg" name="WFE_WFN_START_ASSOC" ends="_hFgo3ZChEeGugPZgpnT0jg _hFgoy5ChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp25ChEeGugPZgpnT0jg" name="WFE_WFN_NEXT_ASSOC" ends="_hFgo3pChEeGugPZgpnT0jg _hFgozJChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp3JChEeGugPZgpnT0jg" name="WFE_LOCALCONTEXT_MYCONTEXT_ASSOC" ends="_hFgo35ChEeGugPZgpnT0jg _hFgpOZChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp3ZChEeGugPZgpnT0jg" name="SN_WFN_NEXT_ASSOC" ends="_hFgozZChEeGugPZgpnT0jg _hFgo1ZChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp3pChEeGugPZgpnT0jg" name="SOCKET_INPUTSTREAM_ASSOC" ends="_hFgpZpChEeGugPZgpnT0jg _hFgpY5ChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp35ChEeGugPZgpnT0jg" name="SOCKET_MYOUTPUT_ASSOC" ends="_hFgpZ5ChEeGugPZgpnT0jg _hFgpopChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp4JChEeGugPZgpnT0jg" name="instance" ends="_hFgpkZChEeGugPZgpnT0jg _hFgpkpChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp4ZChEeGugPZgpnT0jg" name="DATA_SET_ASSOC" ends="_hFgpgZChEeGugPZgpnT0jg _hFgps5ChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp4pChEeGugPZgpnT0jg" name="SET_ASSOCIATED_ASSOC" ends="_hFgozpChEeGugPZgpnT0jg _hFgptJChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp45ChEeGugPZgpnT0jg" name="DATA_SET_ASSOC" ends="_hFgpcpChEeGugPZgpnT0jg _hFgptZChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp5JChEeGugPZgpnT0jg" name="DATA_SET_ASSOC" ends="_hFgpc5ChEeGugPZgpnT0jg _hFgpv5ChEeGugPZgpnT0jg"/>
+    <associations xmi:id="_hFgp5ZChEeGugPZgpnT0jg" name="SET_ASSOCIATED_ASSOC" ends="_hFgpj5ChEeGugPZgpnT0jg _hFgpwJChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_hFgp5pChEeGugPZgpnT0jg" name="void"/>
+    <types xsi:type="ram:RString" xmi:id="_hFgp55ChEeGugPZgpnT0jg" name="String"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp6JChEeGugPZgpnT0jg" name="Set&lt;Vehicle>" type="_hFgowZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RAny" xmi:id="_hFgp6ZChEeGugPZgpnT0jg" name="*"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_hFgp6pChEeGugPZgpnT0jg" name="boolean"/>
+    <types xsi:type="ram:RInt" xmi:id="_hFgp65ChEeGugPZgpnT0jg" name="int"/>
+    <types xsi:type="ram:RChar" xmi:id="_hFgp7JChEeGugPZgpnT0jg" name="char"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp7ZChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp7pChEeGugPZgpnT0jg" type="_hFgowZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp75ChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp8JChEeGugPZgpnT0jg" type="_hFgpMZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp8ZChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp8pChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp85ChEeGugPZgpnT0jg" type="_hFgpMZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp9JChEeGugPZgpnT0jg" type="_hFgoypChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp9ZChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp9pChEeGugPZgpnT0jg" type="_hFgpZZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp95ChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp-JChEeGugPZgpnT0jg" type="_hFgpZZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp-ZChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp-pChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp-5ChEeGugPZgpnT0jg" type="_hFgpZZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp_JChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp_ZChEeGugPZgpnT0jg" type="_hFgplZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp_pChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgp_5ChEeGugPZgpnT0jg" type="_hFgplZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgqAJChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgqAZChEeGugPZgpnT0jg" type="_hFgplZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgqApChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgqA5ChEeGugPZgpnT0jg" type="_hFgoyZChEeGugPZgpnT0jg"/>
+    <types xsi:type="ram:RSet" xmi:id="_hFgqBJChEeGugPZgpnT0jg" type="_hFgplZChEeGugPZgpnT0jg"/>
+  </structuralView>
+  <layout xmi:id="_L3iZgJCiEeGugPZgpnT0jg">
+    <containers xmi:id="_L3iZgZCiEeGugPZgpnT0jg" key="_hFgokZChEeGugPZgpnT0jg">
+      <value xmi:id="_L3iZgpCiEeGugPZgpnT0jg" key="_hFgoupChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZg5CiEeGugPZgpnT0jg" x="3895.0637" y="1881.8856"/>
+      </value>
+      <value xmi:id="_L3iZhJCiEeGugPZgpnT0jg" key="_hFgo-JChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZhZCiEeGugPZgpnT0jg" x="1924.1761" y="838.5441"/>
+      </value>
+      <value xmi:id="_L3iZhpCiEeGugPZgpnT0jg" key="_hFgpspChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZh5CiEeGugPZgpnT0jg" x="4361.1484" y="727.7724"/>
+      </value>
+      <value xmi:id="_L3iZiJCiEeGugPZgpnT0jg" key="_hFgo2pChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZiZCiEeGugPZgpnT0jg" x="2858.1804" y="85.801765"/>
+      </value>
+      <value xmi:id="_L3iZipCiEeGugPZgpnT0jg" key="_hFgo9ZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZi5CiEeGugPZgpnT0jg" x="642.7511" y="259.50934"/>
+      </value>
+      <value xmi:id="_L3iZjJCiEeGugPZgpnT0jg" key="_hFgokpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZjZCiEeGugPZgpnT0jg" x="3577.273" y="2019.1938"/>
+      </value>
+      <value xmi:id="_L3iZjpCiEeGugPZgpnT0jg" key="_hFgpcZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZj5CiEeGugPZgpnT0jg" x="3764.491" y="108.45923"/>
+      </value>
+      <value xmi:id="_L3iZkJCiEeGugPZgpnT0jg" key="_hFgpYZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZkZCiEeGugPZgpnT0jg" x="944.85583" y="1037.4299"/>
+      </value>
+      <value xmi:id="_L3iZkpCiEeGugPZgpnT0jg" key="_hFgonpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZk5CiEeGugPZgpnT0jg" x="2828.3086" y="1306.1619"/>
+      </value>
+      <value xmi:id="_L3iZlJCiEeGugPZgpnT0jg" key="_hFgpvpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZlZCiEeGugPZgpnT0jg" x="4366.225" y="1051.3925"/>
+      </value>
+      <value xmi:id="_L3iZlpCiEeGugPZgpnT0jg" key="_hFgpoZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZl5CiEeGugPZgpnT0jg" x="403.5863" y="788.1935"/>
+      </value>
+      <value xmi:id="_L3iZmJCiEeGugPZgpnT0jg" key="_hFgplZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZmZCiEeGugPZgpnT0jg" x="1284.721" y="189.0184"/>
+      </value>
+      <value xmi:id="_L3iZmpCiEeGugPZgpnT0jg" key="_hFgpEpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZm5CiEeGugPZgpnT0jg" x="169.45532" y="1994.0906"/>
+      </value>
+      <value xmi:id="_L3iZnJCiEeGugPZgpnT0jg" key="_hFgppZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZnZCiEeGugPZgpnT0jg" x="177.00665" y="790.7106"/>
+      </value>
+      <value xmi:id="_L3iZnpCiEeGugPZgpnT0jg" key="_hFgolpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZn5CiEeGugPZgpnT0jg" x="2413.6926" y="1460.3646"/>
+      </value>
+      <value xmi:id="_L3iZoJCiEeGugPZgpnT0jg" key="_hFgpX5ChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZoZCiEeGugPZgpnT0jg" x="1899.0005" y="1485.5498"/>
+      </value>
+      <value xmi:id="_L3iZopCiEeGugPZgpnT0jg" key="_hFgpWpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZo5CiEeGugPZgpnT0jg" x="1873.8247" y="85.80027"/>
+      </value>
+      <value xmi:id="_L3iZpJCiEeGugPZgpnT0jg" key="_hFgpLJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZpZCiEeGugPZgpnT0jg" x="1035.4873" y="2014.232"/>
+      </value>
+      <value xmi:id="_L3iZppCiEeGugPZgpnT0jg" key="_hFgpppChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZp5CiEeGugPZgpnT0jg" x="4386.3247" y="178.94939"/>
+      </value>
+      <value xmi:id="_L3iZqJCiEeGugPZgpnT0jg" key="_hFgpOJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZqZCiEeGugPZgpnT0jg" x="3278.608" y="2286.125"/>
+      </value>
+      <value xmi:id="_L3iZqpCiEeGugPZgpnT0jg" key="_hFgoypChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZq5CiEeGugPZgpnT0jg" x="1289.7561" y="1601.3558"/>
+      </value>
+      <value xmi:id="_L3iZrJCiEeGugPZgpnT0jg" key="_hFgolJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZrZCiEeGugPZgpnT0jg" x="2789.0205" y="2294.3315"/>
+      </value>
+      <value xmi:id="_L3iZrpCiEeGugPZgpnT0jg" key="_hFgpTJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZr5CiEeGugPZgpnT0jg" x="4429.12" y="1709.6106"/>
+      </value>
+      <value xmi:id="_L3iZsJCiEeGugPZgpnT0jg" key="_hFgpkJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZsZCiEeGugPZgpnT0jg" x="161.9018" y="2417.0361"/>
+      </value>
+      <value xmi:id="_L3iZspCiEeGugPZgpnT0jg" key="_hFgpZZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZs5CiEeGugPZgpnT0jg" x="874.36414" y="604.4134"/>
+      </value>
+      <value xmi:id="_L3iZtJCiEeGugPZgpnT0jg" key="_hFgoyZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZtZCiEeGugPZgpnT0jg" x="537.1418" y="641.6084"/>
+      </value>
+      <value xmi:id="_L3iZtpCiEeGugPZgpnT0jg" key="_hFgorpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZt5CiEeGugPZgpnT0jg" x="2841.1501" y="1779.3572"/>
+      </value>
+      <value xmi:id="_L3iZuJCiEeGugPZgpnT0jg" key="_hFgpnJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZuZCiEeGugPZgpnT0jg" x="3364.2034" y="1246.384"/>
+      </value>
+      <value xmi:id="_L3iZupCiEeGugPZgpnT0jg" key="_hFgospChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZu5CiEeGugPZgpnT0jg" x="3824.1975" y="1573.2207"/>
+      </value>
+      <value xmi:id="_L3iZvJCiEeGugPZgpnT0jg" key="_hFgonJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZvZCiEeGugPZgpnT0jg" x="3036.288" y="2482.3655"/>
+      </value>
+      <value xmi:id="_L3iZvpCiEeGugPZgpnT0jg" key="_hFgpMZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZv5CiEeGugPZgpnT0jg" x="174.4896" y="1155.753"/>
+      </value>
+      <value xmi:id="_L3iZwJCiEeGugPZgpnT0jg" key="_hFgpQJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZwZCiEeGugPZgpnT0jg" x="4471.9194" y="2087.2415"/>
+      </value>
+      <value xmi:id="_L3iZwpCiEeGugPZgpnT0jg" key="_hFgo1JChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZw5CiEeGugPZgpnT0jg" x="1521.3701" y="486.0891"/>
+      </value>
+      <value xmi:id="_L3iZxJCiEeGugPZgpnT0jg" key="_hFgowZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZxZCiEeGugPZgpnT0jg" x="3936.7705" y="2212.157"/>
+      </value>
+      <value xmi:id="_L3iZxpCiEeGugPZgpnT0jg" key="_hFgoqZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZx5CiEeGugPZgpnT0jg" x="3363.205" y="1703.9331"/>
+      </value>
+      <value xmi:id="_L3iZyJCiEeGugPZgpnT0jg" key="_hFgomZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZyZCiEeGugPZgpnT0jg" x="3703.1775" y="1281.2323"/>
+      </value>
+      <value xmi:id="_L3iZypCiEeGugPZgpnT0jg" key="_hFgpWJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZy5CiEeGugPZgpnT0jg" x="2321.9456" y="372.79932"/>
+      </value>
+      <value xmi:id="_L3iZzJCiEeGugPZgpnT0jg" key="_hFgpi5ChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZzZCiEeGugPZgpnT0jg" x="2198.586" y="2500.1157"/>
+      </value>
+      <value xmi:id="_L3iZzpCiEeGugPZgpnT0jg" key="_hFgpcJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZz5CiEeGugPZgpnT0jg" x="2656.7761" y="579.2372"/>
+      </value>
+      <value xmi:id="_L3iZ0JCiEeGugPZgpnT0jg" key="_hFgpH5ChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZ0ZCiEeGugPZgpnT0jg" x="954.9247" y="2308.7822"/>
+      </value>
+      <value xmi:id="_L3iZ0pCiEeGugPZgpnT0jg" key="_hFgpgJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZ05CiEeGugPZgpnT0jg" x="2135.649" y="2094.7925"/>
+      </value>
+      <value xmi:id="_L3iZ1JCiEeGugPZgpnT0jg" key="_hFgpyJChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZ1ZCiEeGugPZgpnT0jg" x="4405.228" y="1335.3724"/>
+      </value>
+      <value xmi:id="_L3iZ1pCiEeGugPZgpnT0jg" key="_hFgpnZChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZ15CiEeGugPZgpnT0jg" x="161.90132" y="956.86774"/>
+      </value>
+      <value xmi:id="_L3iZ2JCiEeGugPZgpnT0jg" key="_hFgpjpChEeGugPZgpnT0jg">
+        <value xmi:id="_L3iZ2ZCiEeGugPZgpnT0jg" x="3719.1775" y="684.97437"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

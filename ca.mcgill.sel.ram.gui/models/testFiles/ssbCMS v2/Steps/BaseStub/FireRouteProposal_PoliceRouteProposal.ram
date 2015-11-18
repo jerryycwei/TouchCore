@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="__kXecLCwEeGH1pppjuoo8A" name="FireRouteProposal_PoliceRouteProposal">
+  <structuralView xmi:id="__kXecbCwEeGH1pppjuoo8A">
+    <classes xsi:type="ram:Class" xmi:id="__kXecrCwEeGH1pppjuoo8A" name="LocalContext"/>
+    <classes xsi:type="ram:Class" xmi:id="__kXec7CwEeGH1pppjuoo8A" name="ProcessFireRouteProposal">
+      <operations  xmi:id="__kXedLCwEeGH1pppjuoo8A" name="execute" returnType="__kXeg7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__kXedbCwEeGH1pppjuoo8A" name="c" type="__kXecrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__kXedrCwEeGH1pppjuoo8A" name="ProcessPoliceRouteProposal">
+      <operations  xmi:id="__kXed7CwEeGH1pppjuoo8A" name="execute" returnType="__kXeg7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__kXeeLCwEeGH1pppjuoo8A" name="c" type="__kXecrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__kXeebCwEeGH1pppjuoo8A" name="FireRouteProposalInput"/>
+    <classes xsi:type="ram:Class" xmi:id="__kXeerCwEeGH1pppjuoo8A" name="PoliceRouteProposalInput"/>
+    <classes xsi:type="ram:Class" xmi:id="__kXee7CwEeGH1pppjuoo8A" name="ProposedRouteToFSC">
+      <operations  xmi:id="__kXefLCwEeGH1pppjuoo8A" name="execute" returnType="__kXeg7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__kXefbCwEeGH1pppjuoo8A" name="c" type="__kXecrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__kXefrCwEeGH1pppjuoo8A" name="ProposedRouteToFSCOutput"/>
+    <classes xsi:type="ram:Class" xmi:id="__kXef7CwEeGH1pppjuoo8A" name="AlertFSCNotCoordinated">
+      <operations  xmi:id="__kXegLCwEeGH1pppjuoo8A" name="execute" returnType="__kXeg7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__kXegbCwEeGH1pppjuoo8A" name="c" type="__kXecrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__kXegrCwEeGH1pppjuoo8A" name="AlertFSCNotCoordinatedOutput"/>
+    <types xsi:type="ram:RVoid" xmi:id="__kXeg7CwEeGH1pppjuoo8A" name="void"/>
+  </structuralView>
+  <instantiations xmi:id="__kXehLCwEeGH1pppjuoo8A" type="Extends">
+    <mappings xmi:id="__kXehbCwEeGH1pppjuoo8A" toElement="__kXec7CwEeGH1pppjuoo8A __kXedrCwEeGH1pppjuoo8A __kXee7CwEeGH1pppjuoo8A __kXef7CwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <mappings xmi:id="__kYFgLCwEeGH1pppjuoo8A" toElement="__kXedLCwEeGH1pppjuoo8A __kXed7CwEeGH1pppjuoo8A __kXefLCwEeGH1pppjuoo8A __kXegLCwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/workflow/Workflow.ram#_Cl0A8IdWEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="__kYFgbCwEeGH1pppjuoo8A" type="Extends">
+    <mappings xmi:id="__kYFgrCwEeGH1pppjuoo8A" toElement="__kXeebCwEeGH1pppjuoo8A __kXeerCwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Input.ram#_mhaIQZTNEeGJh_L7_SakMQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Input.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="__kYFg7CwEeGH1pppjuoo8A" type="Extends">
+    <mappings xmi:id="__kYFhLCwEeGH1pppjuoo8A" toElement="__kXefrCwEeGH1pppjuoo8A __kXegrCwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Output.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Output.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

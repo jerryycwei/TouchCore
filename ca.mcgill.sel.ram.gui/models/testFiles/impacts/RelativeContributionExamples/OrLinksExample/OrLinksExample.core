@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_-7-G4MLAEeSaS7z7CAQg5g" name="OrLinksExample">
+  <FeatureModel xmi:id="_-7-t8MLAEeSaS7z7CAQg5g" root="_-7_VAMLAEeSaS7z7CAQg5g">
+    <features xmi:id="_-7_VAMLAEeSaS7z7CAQg5g" name="OrLinksExample" children="__nUJ8MLAEeSaS7z7CAQg5g __wgiMMLAEeSaS7z7CAQg5g __5-AMMLAEeSaS7z7CAQg5g"/>
+    <features xmi:id="__nUJ8MLAEeSaS7z7CAQg5g" name="A" children="_D0Kk4MLBEeSaS7z7CAQg5g _D8zjgMLBEeSaS7z7CAQg5g" parent="_-7_VAMLAEeSaS7z7CAQg5g" parentRelationship="Optional">
+      <contributions xmi:id="_gRtjkMLBEeSaS7z7CAQg5g" name="50" impacted="_jP0TccLBEeSaS7z7CAQg5g" contributionValue="5"/>
+    </features>
+    <features xmi:id="__wgiMMLAEeSaS7z7CAQg5g" name="B" parent="_-7_VAMLAEeSaS7z7CAQg5g" parentRelationship="Optional">
+      <contributions xmi:id="_MaBAYMLBEeSaS7z7CAQg5g" name="50" impacted="_R5TTkcLBEeSaS7z7CAQg5g" contributionValue="5"/>
+    </features>
+    <features xmi:id="__5-AMMLAEeSaS7z7CAQg5g" name="G" parent="_-7_VAMLAEeSaS7z7CAQg5g" parentRelationship="Optional"/>
+    <features xmi:id="_D0Kk4MLBEeSaS7z7CAQg5g" name="C" children="_F8PEoMLBEeSaS7z7CAQg5g" parent="__nUJ8MLAEeSaS7z7CAQg5g" parentRelationship="Optional">
+      <contributions xmi:id="_MsvIEMLBEeSaS7z7CAQg5g" name="50" impacted="_R5TTkcLBEeSaS7z7CAQg5g" contributionValue="20"/>
+      <contributions xmi:id="_gdfVwMLBEeSaS7z7CAQg5g" name="50" impacted="_jP0TccLBEeSaS7z7CAQg5g" contributionValue="10"/>
+    </features>
+    <features xmi:id="_D8zjgMLBEeSaS7z7CAQg5g" name="D" parent="__nUJ8MLAEeSaS7z7CAQg5g" parentRelationship="Optional">
+      <contributions xmi:id="_M7_FAMLBEeSaS7z7CAQg5g" name="50" impacted="_R5TTkcLBEeSaS7z7CAQg5g" contributionValue="60"/>
+      <contributions xmi:id="_gn-HcMLBEeSaS7z7CAQg5g" name="50" impacted="_jP0TccLBEeSaS7z7CAQg5g" contributionValue="20"/>
+    </features>
+    <features xmi:id="_F8PEoMLBEeSaS7z7CAQg5g" name="E" parent="_D0Kk4MLBEeSaS7z7CAQg5g" parentRelationship="Optional">
+      <contributions xmi:id="_NK7f8MLBEeSaS7z7CAQg5g" name="50" impacted="_R5TTkcLBEeSaS7z7CAQg5g" contributionValue="90"/>
+      <contributions xmi:id="_g2mZUMLBEeSaS7z7CAQg5g" name="50" impacted="_jP0TccLBEeSaS7z7CAQg5g" contributionValue="40"/>
+    </features>
+  </FeatureModel>
+  <ImpactModel xmi:id="_R5TTkMLBEeSaS7z7CAQg5g" name="Impact Model 0">
+    <impactModelElements xmi:id="_R5TTkcLBEeSaS7z7CAQg5g" name="TheGoal"/>
+    <layout xmi:id="_T1WwkMLBEeSaS7z7CAQg5g" key="_R5TTkcLBEeSaS7z7CAQg5g">
+      <value xmi:id="_T1WwkcLBEeSaS7z7CAQg5g" xPosition="415.0" yPosition="133.16254"/>
+    </layout>
+    <layout xmi:id="_T1WwksLBEeSaS7z7CAQg5g" key="__wgiMMLAEeSaS7z7CAQg5g">
+      <value xmi:id="_T1Wwk8LBEeSaS7z7CAQg5g" xPosition="188.99976" yPosition="281.99997"/>
+    </layout>
+    <layout xmi:id="_T1WwlMLBEeSaS7z7CAQg5g" key="_D0Kk4MLBEeSaS7z7CAQg5g">
+      <value xmi:id="_T1WwlcLBEeSaS7z7CAQg5g" xPosition="287.9999" yPosition="355.0"/>
+    </layout>
+    <layout xmi:id="_T1WwlsLBEeSaS7z7CAQg5g" key="_D8zjgMLBEeSaS7z7CAQg5g">
+      <value xmi:id="_T1Wwl8LBEeSaS7z7CAQg5g" xPosition="426.99988" yPosition="358.99985"/>
+    </layout>
+    <layout xmi:id="_T1WwmMLBEeSaS7z7CAQg5g" key="_F8PEoMLBEeSaS7z7CAQg5g">
+      <value xmi:id="_T1WwmcLBEeSaS7z7CAQg5g" xPosition="552.0" yPosition="320.9998"/>
+    </layout>
+  </ImpactModel>
+  <ImpactModel xmi:id="_jP0TcMLBEeSaS7z7CAQg5g" name="Impact Model 1">
+    <impactModelElements xmi:id="_jP0TccLBEeSaS7z7CAQg5g" name="SimpleGoal"/>
+    <layout xmi:id="_jP0TcsLBEeSaS7z7CAQg5g" key="_jP0TccLBEeSaS7z7CAQg5g">
+      <value xmi:id="_jP0Tc8LBEeSaS7z7CAQg5g" xPosition="487.5" yPosition="96.081154"/>
+    </layout>
+    <layout xmi:id="_jP0TdMLBEeSaS7z7CAQg5g" key="__nUJ8MLAEeSaS7z7CAQg5g">
+      <value xmi:id="_jP0TdcLBEeSaS7z7CAQg5g" xPosition="290.0" yPosition="198.99976"/>
+    </layout>
+    <layout xmi:id="_jP0TdsLBEeSaS7z7CAQg5g" key="_D0Kk4MLBEeSaS7z7CAQg5g">
+      <value xmi:id="_jP0Td8LBEeSaS7z7CAQg5g" xPosition="381.99994" yPosition="283.99994"/>
+    </layout>
+    <layout xmi:id="_jP0TeMLBEeSaS7z7CAQg5g" key="_D8zjgMLBEeSaS7z7CAQg5g">
+      <value xmi:id="_jP0TecLBEeSaS7z7CAQg5g" xPosition="484.00012" yPosition="283.9999"/>
+    </layout>
+    <layout xmi:id="_jP0TesLBEeSaS7z7CAQg5g" key="_F8PEoMLBEeSaS7z7CAQg5g">
+      <value xmi:id="_jP0Te8LBEeSaS7z7CAQg5g" xPosition="602.0001" yPosition="254.99985"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

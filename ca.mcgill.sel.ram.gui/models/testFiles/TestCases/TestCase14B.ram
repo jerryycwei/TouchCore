@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_uDMv8HTBEeS9RoWmm9ud-A" name="TestCase14B">
+  <structuralView xmi:id="_uDMv8XTBEeS9RoWmm9ud-A">
+    <classes xsi:type="ram:Class" xmi:id="_uDMv8nTBEeS9RoWmm9ud-A" name="B" partiality="public">
+      <operations  xmi:id="_uDMv83TBEeS9RoWmm9ud-A" name="count" returnType="_uDMv-XTBEeS9RoWmm9ud-A" visibility="public"/>
+      <operations  xmi:id="_uDMv9HTBEeS9RoWmm9ud-A" name="isMoose" extendedVisibility="package" returnType="_uDMv-HTBEeS9RoWmm9ud-A" visibility="public"/>
+      <operations  xmi:id="_uDMv9XTBEeS9RoWmm9ud-A" name="secret" extendedVisibility="private" returnType="_uDMv9nTBEeS9RoWmm9ud-A" visibility="public"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_uDMv9nTBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RAny" xmi:id="_uDMv93TBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_uDMv-HTBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RInt" xmi:id="_uDMv-XTBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RChar" xmi:id="_uDMv-nTBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RString" xmi:id="_uDMv-3TBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RDouble" xmi:id="_uDMv_HTBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RFloat" xmi:id="_uDMv_XTBEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RLong" xmi:id="_uDMv_nTBEeS9RoWmm9ud-A"/>
+  </structuralView>
+  <layout xmi:id="_uDMv_3TBEeS9RoWmm9ud-A">
+    <containers xmi:id="_uDMwAHTBEeS9RoWmm9ud-A" key="_uDMv8XTBEeS9RoWmm9ud-A">
+      <value xmi:id="_uDMwAXTBEeS9RoWmm9ud-A" key="_uDMv8nTBEeS9RoWmm9ud-A">
+        <value xmi:id="_uDMwAnTBEeS9RoWmm9ud-A" x="521.0" y="266.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_J0bo8HTHEeSClP9URdCAqA" name="TestCase17B">
+  <structuralView xmi:id="_J0bo8XTHEeSClP9URdCAqA">
+    <classes xsi:type="ram:Class" xmi:id="_J0bo8nTHEeSClP9URdCAqA" name="B" partiality="public">
+      <associationEnds xmi:id="_J0bo83THEeSClP9URdCAqA" name="myC" lowerBound="1" assoc="_J0bo93THEeSClP9URdCAqA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_J0bo9HTHEeSClP9URdCAqA" name="C">
+      <associationEnds xmi:id="_J0bo9XTHEeSClP9URdCAqA" name="myB" lowerBound="1" assoc="_J0bo93THEeSClP9URdCAqA"/>
+      <attributes xmi:id="_J0bo9nTHEeSClP9URdCAqA" name="count" type="_J0bo-3THEeSClP9URdCAqA"/>
+    </classes>
+    <associations xmi:id="_J0bo93THEeSClP9URdCAqA" name="B_C" ends="_J0bo83THEeSClP9URdCAqA _J0bo9XTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_J0bo-HTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RAny" xmi:id="_J0bo-XTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_J0bo-nTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RInt" xmi:id="_J0bo-3THEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RChar" xmi:id="_J0bo_HTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RString" xmi:id="_J0bo_XTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_J0bo_nTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_J0bo_3THEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RLong" xmi:id="_J0bpAHTHEeSClP9URdCAqA"/>
+  </structuralView>
+  <layout xmi:id="_J0c3EHTHEeSClP9URdCAqA">
+    <containers xmi:id="_J0c3EXTHEeSClP9URdCAqA" key="_J0bo8XTHEeSClP9URdCAqA">
+      <value xmi:id="_J0c3EnTHEeSClP9URdCAqA" key="_J0bo8nTHEeSClP9URdCAqA">
+        <value xmi:id="_J0c3E3THEeSClP9URdCAqA" x="548.0" y="361.0"/>
+      </value>
+      <value xmi:id="_J0c3FHTHEeSClP9URdCAqA" key="_J0bo9HTHEeSClP9URdCAqA">
+        <value xmi:id="_J0c3FXTHEeSClP9URdCAqA" x="893.0" y="472.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

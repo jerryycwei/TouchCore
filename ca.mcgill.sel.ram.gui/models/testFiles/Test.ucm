@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ucm:UseCaseMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm="http://cs.mcgill.ca/sel/ucm/1.0">
+  <connections source="//@nodes.0" target="//@nodes.2"/>
+  <connections source="//@nodes.2" target="//@nodes.1"/>
+  <nodes xsi:type="ucm:StartPoint" successors="//@connections.0"/>
+  <nodes xsi:type="ucm:EndPoint" name="" predecessors="//@connections.1"/>
+  <nodes xsi:type="ucm:ResponsibilityRef" successors="//@connections.1" predecessors="//@connections.0" responsibilityDefinition="//@responsibilities.0"/>
+  <responsibilities responsibilityReferences="//@nodes.2"/>
+</ucm:UseCaseMap>

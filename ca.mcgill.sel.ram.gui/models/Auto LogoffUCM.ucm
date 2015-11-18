@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ucm:UseCaseMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm="http://cs.mcgill.ca/sel/ucm/1.0" xmi:id="_RlmCsFVkEeWoU7F2bo28bg" name="Auto LogoffUCM">
+  <realizes href="reusable_concern_library/security/Authentication/authentication.core#_hTvfYKAyEeSaEq_8EhRMPA"/>
+  <coreConcern href="reusable_concern_library/security/Authentication/authentication.core#_gFhYwKAyEeSaEq_8EhRMPA"/>
+  <connections xmi:id="_RlmCsVVkEeWoU7F2bo28bg" source="_RlmCs1VkEeWoU7F2bo28bg" target="_RlmpwFVkEeWoU7F2bo28bg"/>
+  <connections xmi:id="_RlmCslVkEeWoU7F2bo28bg" source="_RlmpwFVkEeWoU7F2bo28bg" target="_RlmpwVVkEeWoU7F2bo28bg"/>
+  <nodes xsi:type="ucm:StartPoint" xmi:id="_RlmCs1VkEeWoU7F2bo28bg" name="PathNode" successors="_RlmCsVVkEeWoU7F2bo28bg"/>
+  <nodes xsi:type="ucm:ResponsibilityRef" xmi:id="_RlmpwFVkEeWoU7F2bo28bg" name="PathNode1" successors="_RlmCslVkEeWoU7F2bo28bg" predecessors="_RlmCsVVkEeWoU7F2bo28bg"/>
+  <nodes xsi:type="ucm:EndPoint" xmi:id="_RlmpwVVkEeWoU7F2bo28bg" name="PathNode2" predecessors="_RlmCslVkEeWoU7F2bo28bg"/>
+  <layoutMaps xmi:id="_RlmpwlVkEeWoU7F2bo28bg" key="_RlmCs1VkEeWoU7F2bo28bg">
+    <value xmi:id="_Rlmpw1VkEeWoU7F2bo28bg" x="100.0" y="200.0"/>
+  </layoutMaps>
+  <layoutMaps xmi:id="_RlmpxFVkEeWoU7F2bo28bg" key="_RlmpwFVkEeWoU7F2bo28bg">
+    <value xmi:id="_RlmpxVVkEeWoU7F2bo28bg" x="300.0" y="200.0"/>
+  </layoutMaps>
+  <layoutMaps xmi:id="_RlmpxlVkEeWoU7F2bo28bg" key="_RlmpwVVkEeWoU7F2bo28bg">
+    <value xmi:id="_Rlmpx1VkEeWoU7F2bo28bg" x="500.0" y="200.0"/>
+  </layoutMaps>
+</ucm:UseCaseMap>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_MbH5ANZcEeS_4sG2PJA2iA" name="BCMS_SPL" models="_MbH5AdZcEeS_4sG2PJA2iA">
+  <featureModel xmi:id="_MbH5AdZcEeS_4sG2PJA2iA" coreConcern="_MbH5ANZcEeS_4sG2PJA2iA" root="_MbH5AtZcEeS_4sG2PJA2iA">
+    <features xmi:id="_MbH5AtZcEeS_4sG2PJA2iA" name="BCMS_SPL" children="_Lx45gNaCEeSpcrzfbE9JKQ _O2jkYNaCEeSpcrzfbE9JKQ _R8NtwNaCEeSpcrzfbE9JKQ _XWMDINaCEeSpcrzfbE9JKQ _w2RG8NaJEeSpcrzfbE9JKQ _WFSIANaaEeSpcrzfbE9JKQ _a67oUNaaEeSpcrzfbE9JKQ">
+      <realizedBy xsi:type="ram:Aspect" href="BCMS.ram#_oUzpENUREeSfLpvXIPYz0g"/>
+    </features>
+    <features xmi:id="_Lx45gNaCEeSpcrzfbE9JKQ" name="CrisisMultiplicity" children="_W3NZYNaIEeSpcrzfbE9JKQ _IbpmkOLwEeSL-_lRREviTQ" parent="_MbH5AtZcEeS_4sG2PJA2iA" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="CrisisMultiplicity.ram#_5z1OkN1-EeSVPpLIbDFIoA"/>
+    </features>
+    <features xmi:id="_O2jkYNaCEeSpcrzfbE9JKQ" name="CoordinatorMultiplicity" children="_tcz8ANaCEeSpcrzfbE9JKQ _uz8uENaCEeSpcrzfbE9JKQ" parent="_MbH5AtZcEeS_4sG2PJA2iA" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="CoordinatorMultiplicity.ram#_-RNEcN4QEeShWMZBxz4Iew"/>
+    </features>
+    <features xmi:id="_R8NtwNaCEeSpcrzfbE9JKQ" name="EmergencyVPManagement" parent="_MbH5AtZcEeS_4sG2PJA2iA" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="EmergencyVPManagement.ram#_5cAJ4N4tEeS1koPVI5W3kQ"/>
+      <reuses xmi:id="_knrXcOLwEeSL-_lRREviTQ" selectedConfiguration="_knrXceLwEeSL-_lRREviTQ">
+        <reusedConcern href="Reused_ResourceManagement/ResourceManagement.core#_wIiXQN4pEeS1koPVI5W3kQ"/>
+        <configurations xmi:id="_knrXceLwEeSL-_lRREviTQ">
+          <selected href="Reused_ResourceManagement/ResourceManagement.core#_wIiXQt4pEeS1koPVI5W3kQ"/>
+          <selected href="Reused_ResourceManagement/ResourceManagement.core#_zyoqcN4pEeS1koPVI5W3kQ"/>
+          <selected href="Reused_ResourceManagement/ResourceManagement.core#_ze4A8N4pEeS1koPVI5W3kQ"/>
+          <reexposed href="Reused_ResourceManagement/ResourceManagement.core#_kJG7YN4qEeS1koPVI5W3kQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_XWMDINaCEeSpcrzfbE9JKQ" name="MissionMonitoring" children="_Z5gUcNaCEeSpcrzfbE9JKQ _cPbC8NaCEeSpcrzfbE9JKQ" parent="_MbH5AtZcEeS_4sG2PJA2iA" parentRelationship="Mandatory"/>
+    <features xmi:id="_Z5gUcNaCEeSpcrzfbE9JKQ" name="MissionExecution" children="_F8HIkN47EeS1koPVI5W3kQ _IA98QN47EeS1koPVI5W3kQ _jjdA4N47EeS1koPVI5W3kQ _qPn98N47EeS1koPVI5W3kQ _swHkwN47EeS1koPVI5W3kQ _7B8roN47EeS1koPVI5W3kQ _Mw0hIN48EeS1koPVI5W3kQ _DIth8N49EeS1koPVI5W3kQ" parent="_XWMDINaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="MissionExecution.ram#_q536oNaBEeS_4sG2PJA2iA"/>
+      <reuses xmi:id="_N9Mb0OUaEeSuxqasVTKvXA" selectedConfiguration="_N9Mb0eUaEeSuxqasVTKvXA">
+        <reusedConcern href="Reused_Workflow/Workflow.core#_hHHIMKsgEeSFZ4ae5sBgYg"/>
+        <configurations xmi:id="_N9Mb0eUaEeSuxqasVTKvXA">
+          <selected href="Reused_Workflow/Workflow.core#_hHHIMqsgEeSFZ4ae5sBgYg"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_oTfhgOUXEeSnOL7SrAbYYw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_RmhCgKusEeSDH71cDqVaSw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_RKaVUKusEeSDH71cDqVaSw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_ipe0QKusEeSDH71cDqVaSw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_9GU3QOUXEeSnOL7SrAbYYw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_40Dw0OUXEeSnOL7SrAbYYw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_gYbXoKusEeSDH71cDqVaSw"/>
+          <reexposed href="Reused_Workflow/Reused_Named/Named.core#_wQJE4KBAEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Workflow/Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_2ZH_cOUXEeSnOL7SrAbYYw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_lWfNEKusEeSDH71cDqVaSw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_7DF0MOUXEeSnOL7SrAbYYw"/>
+          <reexposed href="Reused_Workflow/Workflow.core#_EZO-UKurEeSDH71cDqVaSw"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_cPbC8NaCEeSpcrzfbE9JKQ" name="Feedback" children="_e2cvkNaCEeSpcrzfbE9JKQ" parent="_XWMDINaCEeSpcrzfbE9JKQ" parentRelationship="Optional"/>
+    <features xmi:id="_e2cvkNaCEeSpcrzfbE9JKQ" name="NotificationMeans" children="_kvIaMNaCEeSpcrzfbE9JKQ _lKHtENaCEeSpcrzfbE9JKQ" parent="_cPbC8NaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_kvIaMNaCEeSpcrzfbE9JKQ" name="MobileNotification" parent="_e2cvkNaCEeSpcrzfbE9JKQ" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="MobileNotification.ram#_sPJyAOOnEeSpQIlmI1xStA"/>
+      <reuses xmi:id="_vi0iMOOnEeSpQIlmI1xStA" selectedConfiguration="_vi0iMeOnEeSpQIlmI1xStA">
+        <reusedConcern href="Reused_Observer/Observer.core#_GcFioKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_vi0iMeOnEeSpQIlmI1xStA">
+          <selected href="Reused_Observer/Observer.core#_GcFioqBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Observer/Observer.core#_PJW0wKBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Observer/Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_nBOCIKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_Z-w4cKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Observer.core#_Rj3IUKBBEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_UmyuMKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_a0V1kKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_qMXIcKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Observer.core#_PPTEsKBBEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_oodswKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_ePV80KpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_SzWaoKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_hu-scKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Observer.core#_Rq5kcKBBEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_VFHB4KpPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_lKHtENaCEeSpcrzfbE9JKQ" name="DesktopNotification" parent="_e2cvkNaCEeSpcrzfbE9JKQ" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Desktop%20Notification.ram#_979u0OOjEeSK_sZKrYdfrg"/>
+      <reuses xmi:id="_8_TVcOOnEeSpQIlmI1xStA" selectedConfiguration="_8_TVceOnEeSpQIlmI1xStA">
+        <reusedConcern href="Reused_CommunicationProtocol/CommunicationProtocol.core#_kkd1cNzcEeSHzvt1c4u95Q"/>
+        <configurations xmi:id="_8_TVceOnEeSpQIlmI1xStA">
+          <selected href="Reused_CommunicationProtocol/CommunicationProtocol.core#_kkd1ctzcEeSHzvt1c4u95Q"/>
+          <reexposed href="Reused_CommunicationProtocol/CommunicationProtocol.core#_J5qbMNzmEeSgAJE1ei2YzA"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="__BjhEOOnEeSpQIlmI1xStA" selectedConfiguration="__BjhEeOnEeSpQIlmI1xStA">
+        <reusedConcern href="Reused_Observer/Observer.core#_GcFioKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="__BjhEeOnEeSpQIlmI1xStA">
+          <selected href="Reused_Observer/Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Observer/Observer.core#_PJW0wKBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Observer/Observer.core#_GcFioqBBEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_Z-w4cKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_UmyuMKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_qMXIcKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_ePV80KpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_hu-scKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_nBOCIKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Observer.core#_PPTEsKBBEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Observer/Observer.core#_Rq5kcKBBEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_a0V1kKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_SzWaoKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_oodswKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Observer/Observer.core#_Rj3IUKBBEeS-cby9IJCtzQ"/>
+          <reexposed href="Reused_Observer/Reused_Association/Association.core#_VFHB4KpPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_tcz8ANaCEeSpcrzfbE9JKQ" name="PSC" children="_1sTF8NaCEeSpcrzfbE9JKQ _2GfuoNaCEeSpcrzfbE9JKQ" parent="_O2jkYNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="PSC.ram#_BKXo8N4cEeShWMZBxz4Iew"/>
+    </features>
+    <features xmi:id="_uz8uENaCEeSpcrzfbE9JKQ" name="FSC" children="_2xcJENaCEeSpcrzfbE9JKQ _3NQiYNaCEeSpcrzfbE9JKQ" parent="_O2jkYNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="FSC.ram#_G_3csN4cEeShWMZBxz4Iew"/>
+    </features>
+    <features xmi:id="_1sTF8NaCEeSpcrzfbE9JKQ" name="MultipleCoordinators" parent="_tcz8ANaCEeSpcrzfbE9JKQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="MultiplePSC.ram#_PZCqkNZ7EeS_4sG2PJA2iA"/>
+    </features>
+    <features xmi:id="_2GfuoNaCEeSpcrzfbE9JKQ" name="SingleCoordinator" parent="_tcz8ANaCEeSpcrzfbE9JKQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="SinglePSC.ram#_OlhYYNZ6EeS_4sG2PJA2iA"/>
+    </features>
+    <features xmi:id="_2xcJENaCEeSpcrzfbE9JKQ" name="MultipleCoordinators" parent="_uz8uENaCEeSpcrzfbE9JKQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="MultipleFSC.ram#_ioN9kNZtEeS_4sG2PJA2iA"/>
+    </features>
+    <features xmi:id="_3NQiYNaCEeSpcrzfbE9JKQ" name="SingleCoordinator" parent="_uz8uENaCEeSpcrzfbE9JKQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="SingleFSC.ram#_CspOQNZsEeS_4sG2PJA2iA"/>
+    </features>
+    <features xmi:id="_W3NZYNaIEeSpcrzfbE9JKQ" name="SingleCrisis" parent="_Lx45gNaCEeSpcrzfbE9JKQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="SingleCrisis.ram#_XsjY4NZ7EeS_4sG2PJA2iA"/>
+    </features>
+    <features xmi:id="_w2RG8NaJEeSpcrzfbE9JKQ" name="Authentication" parent="_MbH5AtZcEeS_4sG2PJA2iA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Authentication.ram#_gX4-ENaLEeSpcrzfbE9JKQ"/>
+      <reuses xmi:id="_up3OEOLwEeSL-_lRREviTQ" selectedConfiguration="_up3OEeLwEeSL-_lRREviTQ">
+        <reusedConcern href="Reused_Authentication/Authentication.core#_gFhYwKAyEeSaEq_8EhRMPA"/>
+        <configurations xmi:id="_up3OEeLwEeSL-_lRREviTQ">
+          <selected href="Reused_Authentication/Authentication.core#_hq6pQKAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_gFhYwqAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_MbwYcKrpEeStCcnk_Fh-rQ"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_nKvvAKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_oJ77IKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_hTvfYKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_hZb3sKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_nEKl4KAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_w8fV4KAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_wz1JIKAyEeSaEq_8EhRMPA"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_WFSIANaaEeSpcrzfbE9JKQ" name="Encryption" parent="_MbH5AtZcEeS_4sG2PJA2iA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Encryption.ram#_RBMhQN4oEeS1koPVI5W3kQ"/>
+      <reuses xmi:id="_1aWqcOLwEeSL-_lRREviTQ" selectedConfiguration="_1aWqceLwEeSL-_lRREviTQ">
+        <reusedConcern href="Reused_Encryption/Encryption.core#_FkXOYN4kEeS1koPVI5W3kQ"/>
+        <configurations xmi:id="_1aWqceLwEeSL-_lRREviTQ">
+          <selected href="Reused_Encryption/Encryption.core#_FkX1cd4kEeS1koPVI5W3kQ"/>
+          <reexposed href="Reused_Encryption/Encryption.core#_HQXgYN4oEeS1koPVI5W3kQ"/>
+          <reexposed href="Reused_Encryption/Encryption.core#_H9M4kN4lEeS1koPVI5W3kQ"/>
+          <reexposed href="Reused_Encryption/Encryption.core#_IZMRAN4lEeS1koPVI5W3kQ"/>
+          <reexposed href="Reused_Encryption/Encryption.core#_HjtagN4lEeS1koPVI5W3kQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_a67oUNaaEeSpcrzfbE9JKQ" name="CommunicationProtocol" parent="_MbH5AtZcEeS_4sG2PJA2iA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="CommunicationProtocol.ram#_PwazMNzmEeSgAJE1ei2YzA"/>
+      <reuses xmi:id="_Fz1aUOLxEeSL-_lRREviTQ" selectedConfiguration="_Fz1aUeLxEeSL-_lRREviTQ">
+        <reusedConcern href="Reused_CommunicationProtocol/CommunicationProtocol.core#_kkd1cNzcEeSHzvt1c4u95Q"/>
+        <configurations xmi:id="_Fz1aUeLxEeSL-_lRREviTQ">
+          <selected href="Reused_CommunicationProtocol/CommunicationProtocol.core#_kkd1ctzcEeSHzvt1c4u95Q"/>
+          <reexposed href="Reused_CommunicationProtocol/CommunicationProtocol.core#_HurKUNzmEeSgAJE1ei2YzA"/>
+          <reexposed href="Reused_CommunicationProtocol/CommunicationProtocol.core#_J5qbMNzmEeSgAJE1ei2YzA"/>
+          <reexposed href="Reused_CommunicationProtocol/CommunicationProtocol.core#_GIoZkNzmEeSgAJE1ei2YzA"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_F8HIkN47EeS1koPVI5W3kQ" name="Identify" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_IA98QN47EeS1koPVI5W3kQ" name="RouteConfirmation" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_jjdA4N47EeS1koPVI5W3kQ" name="CrisisDetails" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_qPn98N47EeS1koPVI5W3kQ" name="CrisisSeverity" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_swHkwN47EeS1koPVI5W3kQ" name="Start" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_7B8roN47EeS1koPVI5W3kQ" name="ExchangeCrisisDetails" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_Mw0hIN48EeS1koPVI5W3kQ" name="Reasons" children="_hmOCsN48EeS1koPVI5W3kQ _iTVnYN48EeS1koPVI5W3kQ" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_hmOCsN48EeS1koPVI5W3kQ" name="FSC" parent="_Mw0hIN48EeS1koPVI5W3kQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_iTVnYN48EeS1koPVI5W3kQ" name="PSC" parent="_Mw0hIN48EeS1koPVI5W3kQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_DIth8N49EeS1koPVI5W3kQ" name="ID" parent="_Z5gUcNaCEeSpcrzfbE9JKQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_IbpmkOLwEeSL-_lRREviTQ" name="Multiple crises" parent="_Lx45gNaCEeSpcrzfbE9JKQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Multiple%20Crises.ram#_SoFlYOLwEeSL-_lRREviTQ"/>
+      <reuses xmi:id="_WHY90OLwEeSL-_lRREviTQ" selectedConfiguration="_WHY90eLwEeSL-_lRREviTQ">
+        <reusedConcern href="Reused_Association/Association.core#_R-i5kKpPEeSChcgNbAqzEQ"/>
+        <configurations xmi:id="_WHY90eLwEeSL-_lRREviTQ">
+          <selected href="Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_VFHB4KpPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_oodswKpPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_agAj4OLwEeSL-_lRREviTQ" selectedConfiguration="_agAj4eLwEeSL-_lRREviTQ">
+        <reusedConcern href="Reused_Singleton/Singleton.core#_d1_oUKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_agAj4eLwEeSL-_lRREviTQ">
+          <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

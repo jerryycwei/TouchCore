@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_ycZRMMQHEeS_baJO7P7Ezw" name="TC9_MixedC">
+  <FeatureModel xmi:id="_ycZ4QMQHEeS_baJO7P7Ezw" root="_ycZ4QcQHEeS_baJO7P7Ezw">
+    <features xmi:id="_ycZ4QcQHEeS_baJO7P7Ezw" name="TC9_MixedC" children="_-TIOoMQHEeSRLrpfuAv_5w _-bNzoMQHEeSRLrpfuAv_5w _-1xBoMQHEeSRLrpfuAv_5w _--I6gMQHEeSRLrpfuAv_5w __LAR0MQHEeSRLrpfuAv_5w"/>
+    <features xmi:id="_-TIOoMQHEeSRLrpfuAv_5w" name="child0" children="_DiVecMQIEeSRLrpfuAv_5w _DpvG8MQIEeSRLrpfuAv_5w _Dz-oEMQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="OR"/>
+    <features xmi:id="_-bNzoMQHEeSRLrpfuAv_5w" name="child1" children="_XE77YMQIEeSRLrpfuAv_5w _XQd18MQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="OR"/>
+    <features xmi:id="_-1xBoMQHEeSRLrpfuAv_5w" name="F1" children="_fcuFsMQIEeSRLrpfuAv_5w _flIa0MQIEeSRLrpfuAv_5w _fuUMAMQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="OR">
+      <contributions xmi:id="_Ced6EMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="9"/>
+      <contributions xmi:id="_DjC8gMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAbcUpEeS6poUNuQgPcQ" contributionValue="7"/>
+      <contributions xmi:id="_E1L50MUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAYcUpEeS6poUNuQgPcQ" contributionValue="2"/>
+      <contributions xmi:id="_GKguAMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAZ8UpEeS6poUNuQgPcQ" contributionValue="6"/>
+    </features>
+    <features xmi:id="_--I6gMQHEeSRLrpfuAv_5w" name="F2" children="_nzEFkMQIEeSRLrpfuAv_5w _n8P2wMQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="OR"/>
+    <features xmi:id="__LAR0MQHEeSRLrpfuAv_5w" name="child4" children="_ty7WQMQIEeSRLrpfuAv_5w _t7KFMMQIEeSRLrpfuAv_5w _uGlSEMQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="OR"/>
+    <features xmi:id="_DiVecMQIEeSRLrpfuAv_5w" name="F3" children="_J0YEQMQIEeSRLrpfuAv_5w _J97o4MQIEeSRLrpfuAv_5w" parent="_-TIOoMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_JydFEMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="10"/>
+    </features>
+    <features xmi:id="_DpvG8MQIEeSRLrpfuAv_5w" name="child3" parent="_-TIOoMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_Dz-oEMQIEeSRLrpfuAv_5w" name="child5" children="_PKBTQMQIEeSRLrpfuAv_5w _PRd_EMQIEeSRLrpfuAv_5w" parent="_-TIOoMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_J0YEQMQIEeSRLrpfuAv_5w" name="child2" children="_MExZkMQIEeSRLrpfuAv_5w _MNEZ8MQIEeSRLrpfuAv_5w" parent="_DiVecMQIEeSRLrpfuAv_5w" parentRelationship="XOR"/>
+    <features xmi:id="_J97o4MQIEeSRLrpfuAv_5w" name="F8" parent="_DiVecMQIEeSRLrpfuAv_5w" parentRelationship="XOR">
+      <contributions xmi:id="_Wab5QMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAZ8UpEeS6poUNuQgPcQ" contributionValue="2"/>
+      <contributions xmi:id="_YAAI4MUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAdcUpEeS6poUNuQgPcQ" contributionValue="5"/>
+    </features>
+    <features xmi:id="_MExZkMQIEeSRLrpfuAv_5w" name="F18" parent="_J0YEQMQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="__fe5EMUwEeS2KuPi9kTPuA" name="50" impacted="_iDgAa8UpEeS6poUNuQgPcQ" contributionValue="8"/>
+      <contributions xmi:id="_A50wIMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="2"/>
+    </features>
+    <features xmi:id="_MNEZ8MQIEeSRLrpfuAv_5w" name="F19" parent="_J0YEQMQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_DpIPAMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAdcUpEeS6poUNuQgPcQ" contributionValue="5"/>
+    </features>
+    <features xmi:id="_PKBTQMQIEeSRLrpfuAv_5w" name="F9" children="_RGg1IMQIEeSRLrpfuAv_5w _RN52kMQIEeSRLrpfuAv_5w _RV6jEMQIEeSRLrpfuAv_5w" parent="_Dz-oEMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_PRd_EMQIEeSRLrpfuAv_5w" name="child7" parent="_Dz-oEMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_RGg1IMQIEeSRLrpfuAv_5w" name="child6" parent="_PKBTQMQIEeSRLrpfuAv_5w" parentRelationship="OR"/>
+    <features xmi:id="_RN52kMQIEeSRLrpfuAv_5w" name="F20" parent="_PKBTQMQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_Hiz2UMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAacUpEeS6poUNuQgPcQ" contributionValue="8"/>
+      <contributions xmi:id="_I2d2kMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAZcUpEeS6poUNuQgPcQ" contributionValue="2"/>
+      <contributions xmi:id="_KBPAkMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAa8UpEeS6poUNuQgPcQ" contributionValue="8"/>
+    </features>
+    <features xmi:id="_RV6jEMQIEeSRLrpfuAv_5w" name="F21" parent="_PKBTQMQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_X92FYMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAYcUpEeS6poUNuQgPcQ" contributionValue="5"/>
+      <contributions xmi:id="_Y8gtEMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAa8UpEeS6poUNuQgPcQ" contributionValue="7"/>
+    </features>
+    <features xmi:id="_XE77YMQIEeSRLrpfuAv_5w" name="F4" parent="_-bNzoMQHEeSRLrpfuAv_5w" parentRelationship="XOR"/>
+    <features xmi:id="_XQd18MQIEeSRLrpfuAv_5w" name="child9" children="_ZaqcoMQIEeSRLrpfuAv_5w _ZhHC4MQIEeSRLrpfuAv_5w _ZnVmsMQIEeSRLrpfuAv_5w" parent="_-bNzoMQHEeSRLrpfuAv_5w" parentRelationship="XOR"/>
+    <features xmi:id="_ZaqcoMQIEeSRLrpfuAv_5w" name="F10" parent="_XQd18MQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_cC26UMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAbcUpEeS6poUNuQgPcQ" contributionValue="4"/>
+    </features>
+    <features xmi:id="_ZhHC4MQIEeSRLrpfuAv_5w" name="F11" children="_cwbekMQIEeSRLrpfuAv_5w _c3M08MQIEeSRLrpfuAv_5w" parent="_XQd18MQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_hXZWEMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAc8UpEeS6poUNuQgPcQ" contributionValue="1"/>
+      <contributions xmi:id="_itoJMMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="1"/>
+    </features>
+    <features xmi:id="_ZnVmsMQIEeSRLrpfuAv_5w" name="child11" parent="_XQd18MQIEeSRLrpfuAv_5w" parentRelationship="OR"/>
+    <features xmi:id="_cwbekMQIEeSRLrpfuAv_5w" name="child8" parent="_ZhHC4MQIEeSRLrpfuAv_5w" parentRelationship="OR"/>
+    <features xmi:id="_c3M08MQIEeSRLrpfuAv_5w" name="F22" parent="_ZhHC4MQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_eYGMAMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAa8UpEeS6poUNuQgPcQ" contributionValue="9"/>
+    </features>
+    <features xmi:id="_fcuFsMQIEeSRLrpfuAv_5w" name="F5" parent="_-1xBoMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_L1QqUMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAZcUpEeS6poUNuQgPcQ" contributionValue="2"/>
+      <contributions xmi:id="_NIB5wMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAdcUpEeS6poUNuQgPcQ" contributionValue="5"/>
+    </features>
+    <features xmi:id="_flIa0MQIEeSRLrpfuAv_5w" name="F6" children="_i1kQ0MQIEeSRLrpfuAv_5w _i-_5oMQIEeSRLrpfuAv_5w _jHJJAMQIEeSRLrpfuAv_5w _jPoWoMQIEeSRLrpfuAv_5w" parent="_-1xBoMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_QEttUMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAacUpEeS6poUNuQgPcQ" contributionValue="10"/>
+    </features>
+    <features xmi:id="_fuUMAMQIEeSRLrpfuAv_5w" name="child13" parent="_-1xBoMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_i1kQ0MQIEeSRLrpfuAv_5w" name="child10" parent="_flIa0MQIEeSRLrpfuAv_5w" parentRelationship="XOR"/>
+    <features xmi:id="_i-_5oMQIEeSRLrpfuAv_5w" name="F12" parent="_flIa0MQIEeSRLrpfuAv_5w" parentRelationship="XOR">
+      <contributions xmi:id="_lVpUUMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="4"/>
+      <contributions xmi:id="_m9qbAMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAbcUpEeS6poUNuQgPcQ" contributionValue="8"/>
+      <contributions xmi:id="_qk2kIMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAdcUpEeS6poUNuQgPcQ" contributionValue="6"/>
+    </features>
+    <features xmi:id="_jHJJAMQIEeSRLrpfuAv_5w" name="child14" parent="_flIa0MQIEeSRLrpfuAv_5w" parentRelationship="XOR"/>
+    <features xmi:id="_jPoWoMQIEeSRLrpfuAv_5w" name="F13" parent="_flIa0MQIEeSRLrpfuAv_5w" parentRelationship="XOR">
+      <contributions xmi:id="_tfODgMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAc8UpEeS6poUNuQgPcQ" contributionValue="6"/>
+    </features>
+    <features xmi:id="_nzEFkMQIEeSRLrpfuAv_5w" name="child12" children="_o47hcMQIEeSRLrpfuAv_5w _pAKx4MQIEeSRLrpfuAv_5w _pHJjoMQIEeSRLrpfuAv_5w" parent="_--I6gMQHEeSRLrpfuAv_5w" parentRelationship="OR"/>
+    <features xmi:id="_n8P2wMQIEeSRLrpfuAv_5w" name="child15" parent="_--I6gMQHEeSRLrpfuAv_5w" parentRelationship="OR"/>
+    <features xmi:id="_o47hcMQIEeSRLrpfuAv_5w" name="F14" parent="_nzEFkMQIEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_vpPrEMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAa8UpEeS6poUNuQgPcQ" contributionValue="8"/>
+    </features>
+    <features xmi:id="_pAKx4MQIEeSRLrpfuAv_5w" name="child17" children="_scjZMMQIEeSRLrpfuAv_5w _smCFUMQIEeSRLrpfuAv_5w" parent="_nzEFkMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_pHJjoMQIEeSRLrpfuAv_5w" name="F15" parent="_nzEFkMQIEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_1BrIUMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="9"/>
+      <contributions xmi:id="_2dBsAMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAc8UpEeS6poUNuQgPcQ" contributionValue="8"/>
+    </features>
+    <features xmi:id="_scjZMMQIEeSRLrpfuAv_5w" name="child16" parent="_pAKx4MQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_smCFUMQIEeSRLrpfuAv_5w" name="child18" parent="_pAKx4MQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_ty7WQMQIEeSRLrpfuAv_5w" name="F7" children="_wV_I4MQIEeSRLrpfuAv_5w _wdna4MQIEeSRLrpfuAv_5w" parent="__LAR0MQHEeSRLrpfuAv_5w" parentRelationship="XOR">
+      <contributions xmi:id="_SUTKUMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAZcUpEeS6poUNuQgPcQ" contributionValue="2"/>
+      <contributions xmi:id="_UIGqQMUuEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="6"/>
+    </features>
+    <features xmi:id="_t7KFMMQIEeSRLrpfuAv_5w" name="child20" parent="__LAR0MQHEeSRLrpfuAv_5w" parentRelationship="XOR"/>
+    <features xmi:id="_uGlSEMQIEeSRLrpfuAv_5w" name="child21" children="_yM-fsMQIEeSRLrpfuAv_5w _yU_MMMQIEeSRLrpfuAv_5w" parent="__LAR0MQHEeSRLrpfuAv_5w" parentRelationship="XOR"/>
+    <features xmi:id="_wV_I4MQIEeSRLrpfuAv_5w" name="child19" parent="_ty7WQMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_wdna4MQIEeSRLrpfuAv_5w" name="F16" children="_0ejgwMQIEeSRLrpfuAv_5w _0lJQ8MQIEeSRLrpfuAv_5w _0tetkMQIEeSRLrpfuAv_5w" parent="_ty7WQMQIEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_hlH-IMUwEeS2KuPi9kTPuA" name="50" impacted="_iDgAZ8UpEeS6poUNuQgPcQ" contributionValue="7"/>
+      <contributions xmi:id="_ihQPMMUwEeS2KuPi9kTPuA" name="50" impacted="_iDgAacUpEeS6poUNuQgPcQ" contributionValue="5"/>
+      <contributions xmi:id="_kjpkwMUwEeS2KuPi9kTPuA" name="50" impacted="_iDgAdcUpEeS6poUNuQgPcQ" contributionValue="8"/>
+    </features>
+    <features xmi:id="_yM-fsMQIEeSRLrpfuAv_5w" name="F17" parent="_uGlSEMQIEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_v8uV0MUwEeS2KuPi9kTPuA" name="50" impacted="_iDgAacUpEeS6poUNuQgPcQ" contributionValue="5"/>
+      <contributions xmi:id="_yhIMQMUwEeS2KuPi9kTPuA" name="50" impacted="_iDgAa8UpEeS6poUNuQgPcQ" contributionValue="9"/>
+      <contributions xmi:id="_4uE2sMUwEeS2KuPi9kTPuA" name="50" impacted="_iDgAZ8UpEeS6poUNuQgPcQ" contributionValue="10"/>
+    </features>
+    <features xmi:id="_yU_MMMQIEeSRLrpfuAv_5w" name="child23" children="_z0eB8MQIEeSRLrpfuAv_5w _z73DYMQIEeSRLrpfuAv_5w" parent="_uGlSEMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_z0eB8MQIEeSRLrpfuAv_5w" name="child22" parent="_yU_MMMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_z73DYMQIEeSRLrpfuAv_5w" name="child24" parent="_yU_MMMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_0ejgwMQIEeSRLrpfuAv_5w" name="F23" parent="_wdna4MQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_l_sPgMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAc8UpEeS6poUNuQgPcQ" contributionValue="1"/>
+      <contributions xmi:id="_oNkcUMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAbcUpEeS6poUNuQgPcQ" contributionValue="3"/>
+      <contributions xmi:id="_qMmU0MUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAd8UpEeS6poUNuQgPcQ" contributionValue="9"/>
+      <contributions xmi:id="_r4vtkMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAa8UpEeS6poUNuQgPcQ" contributionValue="9"/>
+    </features>
+    <features xmi:id="_0lJQ8MQIEeSRLrpfuAv_5w" name="F24" parent="_wdna4MQIEeSRLrpfuAv_5w" parentRelationship="OR">
+      <contributions xmi:id="_iegAsMUxEeS2KuPi9kTPuA" name="50" impacted="_iDgAc8UpEeS6poUNuQgPcQ" contributionValue="2"/>
+    </features>
+    <features xmi:id="_0tetkMQIEeSRLrpfuAv_5w" name="F25" parent="_wdna4MQIEeSRLrpfuAv_5w" parentRelationship="OR"/>
+  </FeatureModel>
+  <ImpactModel xmi:id="_iDfZUMUpEeS6poUNuQgPcQ" name="ImpactModel">
+    <impactModelElements xmi:id="_iDfZUcUpEeS6poUNuQgPcQ" name="RootGoal"/>
+    <impactModelElements xmi:id="_iDfZUsUpEeS6poUNuQgPcQ" name="Parent1">
+      <contributions xmi:id="_iDgAYMUpEeS6poUNuQgPcQ" name="50" impacted="_iDfZUcUpEeS6poUNuQgPcQ" contributionValue="6"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAYcUpEeS6poUNuQgPcQ" name="GoalF">
+      <contributions xmi:id="_iDgAYsUpEeS6poUNuQgPcQ" name="50" impacted="_iDfZUcUpEeS6poUNuQgPcQ" contributionValue="3"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAY8UpEeS6poUNuQgPcQ" name="Parent2">
+      <contributions xmi:id="_iDgAZMUpEeS6poUNuQgPcQ" name="50" impacted="_iDfZUcUpEeS6poUNuQgPcQ" contributionValue="10"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAZcUpEeS6poUNuQgPcQ" name="GoalA">
+      <contributions xmi:id="_iDgAZsUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAb8UpEeS6poUNuQgPcQ" contributionValue="1"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAZ8UpEeS6poUNuQgPcQ" name="GoalB">
+      <contributions xmi:id="_iDgAaMUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAb8UpEeS6poUNuQgPcQ" contributionValue="3"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAacUpEeS6poUNuQgPcQ" name="GoalC">
+      <contributions xmi:id="_iDgAasUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAb8UpEeS6poUNuQgPcQ" contributionValue="7"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAa8UpEeS6poUNuQgPcQ" name="GoalD">
+      <contributions xmi:id="_iDgAbMUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAccUpEeS6poUNuQgPcQ" contributionValue="7"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAbcUpEeS6poUNuQgPcQ" name="GoalE">
+      <contributions xmi:id="_iDgAbsUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAccUpEeS6poUNuQgPcQ" contributionValue="10"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAb8UpEeS6poUNuQgPcQ" name="Parent3">
+      <contributions xmi:id="_iDgAcMUpEeS6poUNuQgPcQ" name="50" impacted="_iDfZUsUpEeS6poUNuQgPcQ" contributionValue="7"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAccUpEeS6poUNuQgPcQ" name="Parent4">
+      <contributions xmi:id="_iDgAcsUpEeS6poUNuQgPcQ" name="50" impacted="_iDfZUsUpEeS6poUNuQgPcQ" contributionValue="6"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAc8UpEeS6poUNuQgPcQ" name="GoalG">
+      <contributions xmi:id="_iDgAdMUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAecUpEeS6poUNuQgPcQ" contributionValue="3"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAdcUpEeS6poUNuQgPcQ" name="GoalH">
+      <contributions xmi:id="_iDgAdsUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAecUpEeS6poUNuQgPcQ" contributionValue="8"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAd8UpEeS6poUNuQgPcQ" name="GoalK">
+      <contributions xmi:id="_iDgAeMUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAY8UpEeS6poUNuQgPcQ" contributionValue="4"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_iDgAecUpEeS6poUNuQgPcQ" name="Parent5">
+      <contributions xmi:id="_iDgAesUpEeS6poUNuQgPcQ" name="50" impacted="_iDgAY8UpEeS6poUNuQgPcQ" contributionValue="10"/>
+    </impactModelElements>
+    <layout xmi:id="_vQH5EMUxEeS2KuPi9kTPuA" key="_iDfZUcUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5EcUxEeS2KuPi9kTPuA" xPosition="817.9995" yPosition="-507.75662"/>
+    </layout>
+    <layout xmi:id="_vQH5EsUxEeS2KuPi9kTPuA" key="_iDfZUsUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5E8UxEeS2KuPi9kTPuA" xPosition="481.4995" yPosition="-323.75662"/>
+    </layout>
+    <layout xmi:id="_vQH5FMUxEeS2KuPi9kTPuA" key="_iDgAYcUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5FcUxEeS2KuPi9kTPuA" xPosition="942.4994" yPosition="11.243589"/>
+    </layout>
+    <layout xmi:id="_vQH5FsUxEeS2KuPi9kTPuA" key="_iDgAY8UpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5F8UxEeS2KuPi9kTPuA" xPosition="1329.4995" yPosition="-319.7568"/>
+    </layout>
+    <layout xmi:id="_vQH5GMUxEeS2KuPi9kTPuA" key="_iDgAZcUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5GcUxEeS2KuPi9kTPuA" xPosition="-25.000732" yPosition="10.243345"/>
+    </layout>
+    <layout xmi:id="_vQH5GsUxEeS2KuPi9kTPuA" key="_iDgAZ8UpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5G8UxEeS2KuPi9kTPuA" xPosition="158.99896" yPosition="12.243345"/>
+    </layout>
+    <layout xmi:id="_vQH5HMUxEeS2KuPi9kTPuA" key="_iDgAacUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5HcUxEeS2KuPi9kTPuA" xPosition="343.49988" yPosition="14.243467"/>
+    </layout>
+    <layout xmi:id="_vQH5HsUxEeS2KuPi9kTPuA" key="_iDgAa8UpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5H8UxEeS2KuPi9kTPuA" xPosition="546.49945" yPosition="13.243345"/>
+    </layout>
+    <layout xmi:id="_vQH5IMUxEeS2KuPi9kTPuA" key="_iDgAbcUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5IcUxEeS2KuPi9kTPuA" xPosition="736.9992" yPosition="13.243467"/>
+    </layout>
+    <layout xmi:id="_vQH5IsUxEeS2KuPi9kTPuA" key="_iDgAb8UpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5I8UxEeS2KuPi9kTPuA" xPosition="193.49936" yPosition="-153.7568"/>
+    </layout>
+    <layout xmi:id="_vQH5JMUxEeS2KuPi9kTPuA" key="_iDgAccUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5JcUxEeS2KuPi9kTPuA" xPosition="623.4993" yPosition="-146.7568"/>
+    </layout>
+    <layout xmi:id="_vQH5JsUxEeS2KuPi9kTPuA" key="_iDgAc8UpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5J8UxEeS2KuPi9kTPuA" xPosition="1155.9994" yPosition="11.243589"/>
+    </layout>
+    <layout xmi:id="_vQH5KMUxEeS2KuPi9kTPuA" key="_iDgAdcUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5KcUxEeS2KuPi9kTPuA" xPosition="1327.4998" yPosition="11.243223"/>
+    </layout>
+    <layout xmi:id="_vQH5KsUxEeS2KuPi9kTPuA" key="_iDgAd8UpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQH5K8UxEeS2KuPi9kTPuA" xPosition="1516.9996" yPosition="10.243101"/>
+    </layout>
+    <layout xmi:id="_vQIgIMUxEeS2KuPi9kTPuA" key="_iDgAecUpEeS6poUNuQgPcQ">
+      <value xmi:id="_vQIgIcUxEeS2KuPi9kTPuA" xPosition="1247.4998" yPosition="-143.75693"/>
+    </layout>
+    <layout xmi:id="_vQIgIsUxEeS2KuPi9kTPuA" key="_-1xBoMQHEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgI8UxEeS2KuPi9kTPuA" xPosition="894.99927" yPosition="593.9994"/>
+    </layout>
+    <layout xmi:id="_vQIgJMUxEeS2KuPi9kTPuA" key="_DiVecMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgJcUxEeS2KuPi9kTPuA" xPosition="1478.9996" yPosition="582.99915"/>
+    </layout>
+    <layout xmi:id="_vQIgJsUxEeS2KuPi9kTPuA" key="_fcuFsMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgJ8UxEeS2KuPi9kTPuA" xPosition="676.9994" yPosition="594.9994"/>
+    </layout>
+    <layout xmi:id="_vQIgKMUxEeS2KuPi9kTPuA" key="_flIa0MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgKcUxEeS2KuPi9kTPuA" xPosition="311.99933" yPosition="596.99963"/>
+    </layout>
+    <layout xmi:id="_vQIgKsUxEeS2KuPi9kTPuA" key="_ty7WQMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgK8UxEeS2KuPi9kTPuA" xPosition="381.99942" yPosition="597.9989"/>
+    </layout>
+    <layout xmi:id="_vQIgLMUxEeS2KuPi9kTPuA" key="_J97o4MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgLcUxEeS2KuPi9kTPuA" xPosition="442.99963" yPosition="599.9995"/>
+    </layout>
+    <layout xmi:id="_vQIgLsUxEeS2KuPi9kTPuA" key="_ZaqcoMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgL8UxEeS2KuPi9kTPuA" xPosition="741.99945" yPosition="593.9993"/>
+    </layout>
+    <layout xmi:id="_vQIgMMUxEeS2KuPi9kTPuA" key="_ZhHC4MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgMcUxEeS2KuPi9kTPuA" xPosition="1300.9995" yPosition="585.9999"/>
+    </layout>
+    <layout xmi:id="_vQIgMsUxEeS2KuPi9kTPuA" key="_i-_5oMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgM8UxEeS2KuPi9kTPuA" xPosition="1392.0002" yPosition="584.0001"/>
+    </layout>
+    <layout xmi:id="_vQIgNMUxEeS2KuPi9kTPuA" key="_jPoWoMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgNcUxEeS2KuPi9kTPuA" xPosition="1165.9991" yPosition="669.9999"/>
+    </layout>
+    <layout xmi:id="_vQIgNsUxEeS2KuPi9kTPuA" key="_o47hcMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgN8UxEeS2KuPi9kTPuA" xPosition="587.99915" yPosition="596.99963"/>
+    </layout>
+    <layout xmi:id="_vQIgOMUxEeS2KuPi9kTPuA" key="_pHJjoMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgOcUxEeS2KuPi9kTPuA" xPosition="1210.0" yPosition="587.9995"/>
+    </layout>
+    <layout xmi:id="_vQIgOsUxEeS2KuPi9kTPuA" key="_wdna4MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgO8UxEeS2KuPi9kTPuA" xPosition="200.99985" yPosition="595.9995"/>
+    </layout>
+    <layout xmi:id="_vQIgPMUxEeS2KuPi9kTPuA" key="_yM-fsMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgPcUxEeS2KuPi9kTPuA" xPosition="97.00037" yPosition="593.9996"/>
+    </layout>
+    <layout xmi:id="_vQIgPsUxEeS2KuPi9kTPuA" key="_MExZkMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgP8UxEeS2KuPi9kTPuA" xPosition="1035.0004" yPosition="589.9996"/>
+    </layout>
+    <layout xmi:id="_vQIgQMUxEeS2KuPi9kTPuA" key="_MNEZ8MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgQcUxEeS2KuPi9kTPuA" xPosition="961.9997" yPosition="589.9997"/>
+    </layout>
+    <layout xmi:id="_vQIgQsUxEeS2KuPi9kTPuA" key="_RN52kMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQIgQ8UxEeS2KuPi9kTPuA" xPosition="2.0002747" yPosition="592.00006"/>
+    </layout>
+    <layout xmi:id="_vQJHMMUxEeS2KuPi9kTPuA" key="_RV6jEMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQJHMcUxEeS2KuPi9kTPuA" xPosition="819.00024" yPosition="596.9995"/>
+    </layout>
+    <layout xmi:id="_vQJHMsUxEeS2KuPi9kTPuA" key="_c3M08MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQJHM8UxEeS2KuPi9kTPuA" xPosition="507.00006" yPosition="597.9999"/>
+    </layout>
+    <layout xmi:id="_vQJHNMUxEeS2KuPi9kTPuA" key="_0ejgwMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQJHNcUxEeS2KuPi9kTPuA" xPosition="1129.0004" yPosition="590.9996"/>
+    </layout>
+    <layout xmi:id="_vQJHNsUxEeS2KuPi9kTPuA" key="_0lJQ8MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_vQJHN8UxEeS2KuPi9kTPuA" xPosition="1085.001" yPosition="675.99945"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

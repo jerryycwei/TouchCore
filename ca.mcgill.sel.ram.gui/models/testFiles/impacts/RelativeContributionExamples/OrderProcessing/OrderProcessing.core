@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_jEv8ELYBEeSyMOLkioo2ig" name="OrderProcessing">
+  <FeatureModel xmi:id="_jEwjILYBEeSyMOLkioo2ig" root="_jEwjIbYBEeSyMOLkioo2ig">
+    <features xmi:id="_jEwjIbYBEeSyMOLkioo2ig" name="OrderProcessing" children="_mrnVELYBEeSyMOLkioo2ig _mzwkcLYBEeSyMOLkioo2ig _m-iRELYBEeSyMOLkioo2ig _nKd0QLYBEeSyMOLkioo2ig"/>
+    <features xmi:id="_mrnVELYBEeSyMOLkioo2ig" name="Transaction" children="_ucsrwLYBEeSyMOLkioo2ig _ujG1wLYBEeSyMOLkioo2ig _urjnILYBEeSyMOLkioo2ig _u0ZaELYBEeSyMOLkioo2ig" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_mzwkcLYBEeSyMOLkioo2ig" name="Approval" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Optional">
+      <contributions xmi:id="_fbzYELYEEeSyMOLkioo2ig" name="50" impacted="_-QiQlbYEEeSyMOLkioo2ig" contributionValue="30"/>
+      <contributions xmi:id="_foP4oLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="70"/>
+    </features>
+    <features xmi:id="_m-iRELYBEeSyMOLkioo2ig" name="Basket" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Optional"/>
+    <features xmi:id="_nKd0QLYBEeSyMOLkioo2ig" name="Fulfillment" children="_C0ttwLYCEeSyMOLkioo2ig _DMeGcLYCEeSyMOLkioo2ig" parent="_jEwjIbYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_ucsrwLYBEeSyMOLkioo2ig" name="Payment" children="_PD_uELYCEeSyMOLkioo2ig _PrbhgLYCEeSyMOLkioo2ig _QC178LYCEeSyMOLkioo2ig _QXFGkLYCEeSyMOLkioo2ig" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_ujG1wLYBEeSyMOLkioo2ig" name="Tax" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_urjnILYBEeSyMOLkioo2ig" name="Invoice" children="_LYz1wLYCEeSyMOLkioo2ig _LxcYMLYCEeSyMOLkioo2ig" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_u0ZaELYBEeSyMOLkioo2ig" name="ShipmentCost" parent="_mrnVELYBEeSyMOLkioo2ig" parentRelationship="Optional"/>
+    <features xmi:id="_C0ttwLYCEeSyMOLkioo2ig" name="Shipping" children="_IHjgYLYCEeSyMOLkioo2ig _IOzX4LYCEeSyMOLkioo2ig" parent="_nKd0QLYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_4xGMYLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="20"/>
+      <contributions xmi:id="_1Lug4Le0EeS1ZYAujr8ECA" name="50" impacted="_GrJakLe0EeS1ZYAujr8ECA" contributionValue="45"/>
+      <contributions xmi:id="_cZHmELe4EeSBc84ZEIFmtg" name="50" impacted="_rhQp5re4EeSBc84ZEIFmtg" contributionValue="2"/>
+    </features>
+    <features xmi:id="_DMeGcLYCEeSyMOLkioo2ig" name="ElectronicDelivery" parent="_nKd0QLYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_4IRR0LYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="80"/>
+      <contributions xmi:id="_4zWH0Le0EeS1ZYAujr8ECA" name="50" impacted="_EtZUcLe0EeS1ZYAujr8ECA" contributionValue="30"/>
+      <contributions xmi:id="_cnfZQLe4EeSBc84ZEIFmtg" name="50" impacted="_rhQp5re4EeSBc84ZEIFmtg" contributionValue="90"/>
+      <contributions xmi:id="_hZIjULe4EeSBc84ZEIFmtg" name="50" impacted="_rhQp6Le4EeSBc84ZEIFmtg" contributionValue="60"/>
+    </features>
+    <features xmi:id="_IHjgYLYCEeSyMOLkioo2ig" name="PackageTrackingNo" parent="_C0ttwLYCEeSyMOLkioo2ig" parentRelationship="Optional">
+      <contributions xmi:id="_tzX6kLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="40"/>
+      <contributions xmi:id="_ifedILe0EeS1ZYAujr8ECA" name="50" impacted="__uZD0LezEeS1ZYAujr8ECA" contributionValue="20"/>
+      <contributions xmi:id="_mew9MLe0EeS1ZYAujr8ECA" name="50" impacted="_GrJakLe0EeS1ZYAujr8ECA" contributionValue="15"/>
+      <contributions xmi:id="_mQUUsLe4EeSBc84ZEIFmtg" name="50" impacted="_rhQp6Le4EeSBc84ZEIFmtg" contributionValue="20"/>
+    </features>
+    <features xmi:id="_IOzX4LYCEeSyMOLkioo2ig" name="PackageSlip" parent="_C0ttwLYCEeSyMOLkioo2ig" parentRelationship="Mandatory"/>
+    <features xmi:id="_LYz1wLYCEeSyMOLkioo2ig" name="Online" parent="_urjnILYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_2VoPgLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="40"/>
+      <contributions xmi:id="_6jR0YLe0EeS1ZYAujr8ECA" name="50" impacted="_EtZUcLe0EeS1ZYAujr8ECA" contributionValue="20"/>
+      <contributions xmi:id="_kIOm0Le4EeSBc84ZEIFmtg" name="50" impacted="_rhQp6Le4EeSBc84ZEIFmtg" contributionValue="80"/>
+    </features>
+    <features xmi:id="_LxcYMLYCEeSyMOLkioo2ig" name="Printed" parent="_urjnILYBEeSyMOLkioo2ig" parentRelationship="XOR">
+      <contributions xmi:id="_2mVlALYEEeSyMOLkioo2ig" name="50" impacted="_-QiQk7YEEeSyMOLkioo2ig" contributionValue="20"/>
+      <contributions xmi:id="_8_O5cLe0EeS1ZYAujr8ECA" name="50" impacted="_GrJakLe0EeS1ZYAujr8ECA" contributionValue="5"/>
+      <contributions xmi:id="__DB9MLe0EeS1ZYAujr8ECA" name="50" impacted="_EtZUcLe0EeS1ZYAujr8ECA" contributionValue="2"/>
+      <contributions xmi:id="_lbXCoLe4EeSBc84ZEIFmtg" name="50" impacted="_rhQp6Le4EeSBc84ZEIFmtg" contributionValue="4"/>
+    </features>
+    <features xmi:id="_PD_uELYCEeSyMOLkioo2ig" name="Bill" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR">
+      <contributions xmi:id="_lEuIYLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="60"/>
+      <contributions xmi:id="_ajuukLe0EeS1ZYAujr8ECA" name="50" impacted="__uZD0LezEeS1ZYAujr8ECA" contributionValue="5"/>
+    </features>
+    <features xmi:id="_PrbhgLYCEeSyMOLkioo2ig" name="PayOnDelivery" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR">
+      <contributions xmi:id="_f2AAwLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQlbYEEeSyMOLkioo2ig" contributionValue="40"/>
+      <contributions xmi:id="_nZ7HYLYTEeSEjab9yOggEg" name="50" impacted="_-QiQl7YEEeSyMOLkioo2ig" contributionValue="50"/>
+      <contributions xmi:id="_heBnMLe0EeS1ZYAujr8ECA" name="50" impacted="__uZD0LezEeS1ZYAujr8ECA" contributionValue="8"/>
+    </features>
+    <features xmi:id="_QC178LYCEeSyMOLkioo2ig" name="FrequentFlyer" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR">
+      <contributions xmi:id="_gNFjwLe0EeS1ZYAujr8ECA" name="50" impacted="__uZD0LezEeS1ZYAujr8ECA" contributionValue="15"/>
+    </features>
+    <features xmi:id="_QXFGkLYCEeSyMOLkioo2ig" name="CreditCard" parent="_ucsrwLYBEeSyMOLkioo2ig" parentRelationship="OR">
+      <contributions xmi:id="_fJ8zELYEEeSyMOLkioo2ig" name="50" impacted="_-QiQlbYEEeSyMOLkioo2ig" contributionValue="20"/>
+      <contributions xmi:id="_e_pgQLe0EeS1ZYAujr8ECA" name="50" impacted="__uZD0LezEeS1ZYAujr8ECA" contributionValue="60"/>
+    </features>
+  </FeatureModel>
+  <ImpactModel xmi:id="_-QhpgLYEEeSyMOLkioo2ig" name="GM - Increase Convenience">
+    <impactModelElements xmi:id="_-QiQkLYEEeSyMOLkioo2ig" name="Increase Convenience"/>
+    <impactModelElements xmi:id="_-QiQkbYEEeSyMOLkioo2ig" name="Increase Security of System">
+      <contributions xmi:id="_-QiQkrYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkLYEEeSyMOLkioo2ig" contributionValue="40"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_-QiQk7YEEeSyMOLkioo2ig" name="Provide Fast Delivery">
+      <contributions xmi:id="_-QiQlLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkLYEEeSyMOLkioo2ig" contributionValue="80"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_-QiQlbYEEeSyMOLkioo2ig" name="Increase Internal Security">
+      <contributions xmi:id="_-QiQlrYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkbYEEeSyMOLkioo2ig" contributionValue="30"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_-QiQl7YEEeSyMOLkioo2ig" name="Security Measures for User">
+      <contributions xmi:id="_-QiQmLYEEeSyMOLkioo2ig" name="50" impacted="_-QiQkbYEEeSyMOLkioo2ig" contributionValue="60"/>
+    </impactModelElements>
+    <layout xmi:id="_4RLS0LhMEeS7iIh0wOp0ig" key="_-QiQkLYEEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS0bhMEeS7iIh0wOp0ig" xPosition="813.0003" yPosition="69.48764"/>
+    </layout>
+    <layout xmi:id="_4RLS0rhMEeS7iIh0wOp0ig" key="_-QiQkbYEEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS07hMEeS7iIh0wOp0ig" xPosition="522.99994" yPosition="198.48747"/>
+    </layout>
+    <layout xmi:id="_4RLS1LhMEeS7iIh0wOp0ig" key="_-QiQk7YEEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS1bhMEeS7iIh0wOp0ig" xPosition="1097.9998" yPosition="210.48758"/>
+    </layout>
+    <layout xmi:id="_4RLS1rhMEeS7iIh0wOp0ig" key="_-QiQlbYEEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS17hMEeS7iIh0wOp0ig" xPosition="262.9999" yPosition="330.4877"/>
+    </layout>
+    <layout xmi:id="_4RLS2LhMEeS7iIh0wOp0ig" key="_-QiQl7YEEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS2bhMEeS7iIh0wOp0ig" xPosition="721.9997" yPosition="366.48755"/>
+    </layout>
+    <layout xmi:id="_4RLS2rhMEeS7iIh0wOp0ig" key="_mzwkcLYBEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS27hMEeS7iIh0wOp0ig" xPosition="234.00003" yPosition="529.99994"/>
+    </layout>
+    <layout xmi:id="_4RLS3LhMEeS7iIh0wOp0ig" key="_PrbhgLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS3bhMEeS7iIh0wOp0ig" xPosition="401.99976" yPosition="554.99994"/>
+    </layout>
+    <layout xmi:id="_4RLS3rhMEeS7iIh0wOp0ig" key="_QXFGkLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RLS37hMEeS7iIh0wOp0ig" xPosition="78.999664" yPosition="516.0"/>
+    </layout>
+    <layout xmi:id="_4RL54LhMEeS7iIh0wOp0ig" key="_PD_uELYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RL54bhMEeS7iIh0wOp0ig" xPosition="669.99994" yPosition="549.99976"/>
+    </layout>
+    <layout xmi:id="_4RL54rhMEeS7iIh0wOp0ig" key="_LYz1wLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RL547hMEeS7iIh0wOp0ig" xPosition="926.99976" yPosition="352.0001"/>
+    </layout>
+    <layout xmi:id="_4RL55LhMEeS7iIh0wOp0ig" key="_LxcYMLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RL55bhMEeS7iIh0wOp0ig" xPosition="1019.0003" yPosition="483.00003"/>
+    </layout>
+    <layout xmi:id="_4RL55rhMEeS7iIh0wOp0ig" key="_IHjgYLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RL557hMEeS7iIh0wOp0ig" xPosition="797.0003" yPosition="550.0"/>
+    </layout>
+    <layout xmi:id="_4RL56LhMEeS7iIh0wOp0ig" key="_DMeGcLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RL56bhMEeS7iIh0wOp0ig" xPosition="1219.0001" yPosition="411.00003"/>
+    </layout>
+    <layout xmi:id="_4RL56rhMEeS7iIh0wOp0ig" key="_C0ttwLYCEeSyMOLkioo2ig">
+      <value xmi:id="_4RL567hMEeS7iIh0wOp0ig" xPosition="1107.0004" yPosition="432.0"/>
+    </layout>
+  </ImpactModel>
+  <ImpactModel xmi:id="_46SSwLezEeS1ZYAujr8ECA" name="GM - Decrease Cost">
+    <impactModelElements xmi:id="_46SSwbezEeS1ZYAujr8ECA" name="Decrease Cost"/>
+    <impactModelElements xmi:id="__uZD0LezEeS1ZYAujr8ECA" name="Decrease Infrastructure Cost">
+      <contributions xmi:id="_Kps60Le0EeS1ZYAujr8ECA" name="50" impacted="_46SSwbezEeS1ZYAujr8ECA" contributionValue="10"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_BbYxILe0EeS1ZYAujr8ECA" name="Decrease Ongoing Cost">
+      <contributions xmi:id="_KcovMLe0EeS1ZYAujr8ECA" name="50" impacted="_46SSwbezEeS1ZYAujr8ECA" contributionValue="30"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_EtZUcLe0EeS1ZYAujr8ECA" name="Decrease Maintenance Cost">
+      <contributions xmi:id="_OixeILe0EeS1ZYAujr8ECA" name="50" impacted="_BbYxILe0EeS1ZYAujr8ECA" contributionValue="20"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_GrJakLe0EeS1ZYAujr8ECA" name="Decrease Cost per Order">
+      <contributions xmi:id="_OwcGsLe0EeS1ZYAujr8ECA" name="50" impacted="_BbYxILe0EeS1ZYAujr8ECA" contributionValue="60"/>
+    </impactModelElements>
+    <layout xmi:id="_xDincLhMEeS7iIh0wOp0ig" key="_46SSwbezEeS1ZYAujr8ECA">
+      <value xmi:id="_xDincbhMEeS7iIh0wOp0ig" xPosition="749.00055" yPosition="70.65019"/>
+    </layout>
+    <layout xmi:id="_xDincrhMEeS7iIh0wOp0ig" key="__uZD0LezEeS1ZYAujr8ECA">
+      <value xmi:id="_xDinc7hMEeS7iIh0wOp0ig" xPosition="1060.0002" yPosition="256.56854"/>
+    </layout>
+    <layout xmi:id="_xDindLhMEeS7iIh0wOp0ig" key="_BbYxILe0EeS1ZYAujr8ECA">
+      <value xmi:id="_xDindbhMEeS7iIh0wOp0ig" xPosition="512.00024" yPosition="208.56895"/>
+    </layout>
+    <layout xmi:id="_xDindrhMEeS7iIh0wOp0ig" key="_EtZUcLe0EeS1ZYAujr8ECA">
+      <value xmi:id="_xDind7hMEeS7iIh0wOp0ig" xPosition="373.50018" yPosition="306.56885"/>
+    </layout>
+    <layout xmi:id="_xDineLhMEeS7iIh0wOp0ig" key="_GrJakLe0EeS1ZYAujr8ECA">
+      <value xmi:id="_xDinebhMEeS7iIh0wOp0ig" xPosition="705.0001" yPosition="328.56894"/>
+    </layout>
+    <layout xmi:id="_xDinerhMEeS7iIh0wOp0ig" key="_PD_uELYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDine7hMEeS7iIh0wOp0ig" xPosition="936.0006" yPosition="630.99994"/>
+    </layout>
+    <layout xmi:id="_xDinfLhMEeS7iIh0wOp0ig" key="_QC178LYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDinfbhMEeS7iIh0wOp0ig" xPosition="1106.0006" yPosition="439.00012"/>
+    </layout>
+    <layout xmi:id="_xDinfrhMEeS7iIh0wOp0ig" key="_QXFGkLYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDinf7hMEeS7iIh0wOp0ig" xPosition="784.00037" yPosition="578.9999"/>
+    </layout>
+    <layout xmi:id="_xDjOgLhMEeS7iIh0wOp0ig" key="_PrbhgLYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDjOgbhMEeS7iIh0wOp0ig" xPosition="1032.0006" yPosition="565.9999"/>
+    </layout>
+    <layout xmi:id="_xDjOgrhMEeS7iIh0wOp0ig" key="_IHjgYLYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDjOg7hMEeS7iIh0wOp0ig" xPosition="624.00006" yPosition="490.99988"/>
+    </layout>
+    <layout xmi:id="_xDjOhLhMEeS7iIh0wOp0ig" key="_LYz1wLYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDjOhbhMEeS7iIh0wOp0ig" xPosition="128.00006" yPosition="480.00012"/>
+    </layout>
+    <layout xmi:id="_xDjOhrhMEeS7iIh0wOp0ig" key="_DMeGcLYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDjOh7hMEeS7iIh0wOp0ig" xPosition="217.00006" yPosition="564.9998"/>
+    </layout>
+    <layout xmi:id="_xDjOiLhMEeS7iIh0wOp0ig" key="_LxcYMLYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDjOibhMEeS7iIh0wOp0ig" xPosition="390.00067" yPosition="468.00006"/>
+    </layout>
+    <layout xmi:id="_xDjOirhMEeS7iIh0wOp0ig" key="_C0ttwLYCEeSyMOLkioo2ig">
+      <value xmi:id="_xDjOi7hMEeS7iIh0wOp0ig" xPosition="493.00006" yPosition="560.0001"/>
+    </layout>
+  </ImpactModel>
+  <ImpactModel xmi:id="_rhQp4Le4EeSBc84ZEIFmtg" name="GM - Minimize Footprint">
+    <impactModelElements xmi:id="_rhQp4be4EeSBc84ZEIFmtg" name="Minimize Footprint"/>
+    <impactModelElements xmi:id="_rhQp4re4EeSBc84ZEIFmtg" name="Minimize Usage of Natural Resources">
+      <contributions xmi:id="_rhQp47e4EeSBc84ZEIFmtg" name="50" impacted="_rhQp4be4EeSBc84ZEIFmtg" contributionValue="30"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_rhQp5Le4EeSBc84ZEIFmtg" name="Minimize Pollution">
+      <contributions xmi:id="_rhQp5be4EeSBc84ZEIFmtg" name="50" impacted="_rhQp4be4EeSBc84ZEIFmtg" contributionValue="40"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_rhQp5re4EeSBc84ZEIFmtg" name="Decrease Oil Consumption">
+      <contributions xmi:id="_rhQp57e4EeSBc84ZEIFmtg" name="50" impacted="_rhQp5Le4EeSBc84ZEIFmtg" contributionValue="80"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_rhQp6Le4EeSBc84ZEIFmtg" name="Decrease Usage of Paper Products">
+      <contributions xmi:id="_rhQp6be4EeSBc84ZEIFmtg" name="50" impacted="_rhQp5Le4EeSBc84ZEIFmtg" contributionValue="30"/>
+      <contributions xmi:id="_rhQp6re4EeSBc84ZEIFmtg" name="50" impacted="_rhQp4re4EeSBc84ZEIFmtg" contributionValue="70"/>
+    </impactModelElements>
+    <layout xmi:id="_7ITQ8LhMEeS7iIh0wOp0ig" key="_rhQp4be4EeSBc84ZEIFmtg">
+      <value xmi:id="_7ITQ8bhMEeS7iIh0wOp0ig" xPosition="509.0" yPosition="82.16258"/>
+    </layout>
+    <layout xmi:id="_7ITQ8rhMEeS7iIh0wOp0ig" key="_rhQp4re4EeSBc84ZEIFmtg">
+      <value xmi:id="_7ITQ87hMEeS7iIh0wOp0ig" xPosition="823.0" yPosition="232.16245"/>
+    </layout>
+    <layout xmi:id="_7IT4ALhMEeS7iIh0wOp0ig" key="_rhQp5Le4EeSBc84ZEIFmtg">
+      <value xmi:id="_7IT4AbhMEeS7iIh0wOp0ig" xPosition="375.99966" yPosition="231.16255"/>
+    </layout>
+    <layout xmi:id="_7IT4ArhMEeS7iIh0wOp0ig" key="_rhQp5re4EeSBc84ZEIFmtg">
+      <value xmi:id="_7IT4A7hMEeS7iIh0wOp0ig" xPosition="251.99982" yPosition="385.16254"/>
+    </layout>
+    <layout xmi:id="_7IT4BLhMEeS7iIh0wOp0ig" key="_rhQp6Le4EeSBc84ZEIFmtg">
+      <value xmi:id="_7IT4BbhMEeS7iIh0wOp0ig" xPosition="643.99976" yPosition="384.1626"/>
+    </layout>
+    <layout xmi:id="_7IT4BrhMEeS7iIh0wOp0ig" key="_C0ttwLYCEeSyMOLkioo2ig">
+      <value xmi:id="_7IT4B7hMEeS7iIh0wOp0ig" xPosition="54.0" yPosition="545.00006"/>
+    </layout>
+    <layout xmi:id="_7IT4CLhMEeS7iIh0wOp0ig" key="_DMeGcLYCEeSyMOLkioo2ig">
+      <value xmi:id="_7IT4CbhMEeS7iIh0wOp0ig" xPosition="228.99973" yPosition="550.00037"/>
+    </layout>
+    <layout xmi:id="_7IT4CrhMEeS7iIh0wOp0ig" key="_IHjgYLYCEeSyMOLkioo2ig">
+      <value xmi:id="_7IT4C7hMEeS7iIh0wOp0ig" xPosition="767.0001" yPosition="557.99976"/>
+    </layout>
+    <layout xmi:id="_7IT4DLhMEeS7iIh0wOp0ig" key="_LYz1wLYCEeSyMOLkioo2ig">
+      <value xmi:id="_7IT4DbhMEeS7iIh0wOp0ig" xPosition="608.99963" yPosition="552.9998"/>
+    </layout>
+    <layout xmi:id="_7IT4DrhMEeS7iIh0wOp0ig" key="_LxcYMLYCEeSyMOLkioo2ig">
+      <value xmi:id="_7IT4D7hMEeS7iIh0wOp0ig" xPosition="472.00015" yPosition="549.99994"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

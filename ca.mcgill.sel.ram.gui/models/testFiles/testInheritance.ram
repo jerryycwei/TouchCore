@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_nQvIoX9yEeGCw_D1HgsaPA" name="TestInheritance">
+  <structuralView xmi:id="_nQw90H9yEeGCw_D1HgsaPA">
+    <classes xsi:type="ram:Class" xmi:id="_nQxk4H9yEeGCw_D1HgsaPA" name="A" superTypes="_nQyL9H9yEeGCw_D1HgsaPA">
+      
+      <associationEnds xmi:id="_nQyL8H9yEeGCw_D1HgsaPA" name="role1" assoc="_nQ8kAH9yEeGCw_D1HgsaPA"/>
+      <associationEnds xmi:id="_nQyL8X9yEeGCw_D1HgsaPA" name="myRole" assoc="_nQ8kAX9yEeGCw_D1HgsaPA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_nQyL8n9yEeGCw_D1HgsaPA" name="D" partiality="public">
+      
+      <associationEnds xmi:id="_nQyL839yEeGCw_D1HgsaPA" name="role2" assoc="_nQ8kAH9yEeGCw_D1HgsaPA" upperBound="-1" referenceType="Composition"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_nQyL9H9yEeGCw_D1HgsaPA" name="C">
+      
+      <associationEnds xmi:id="_nQyzAH9yEeGCw_D1HgsaPA" name="Caccount" assoc="_nQ8kAX9yEeGCw_D1HgsaPA"/>
+      <attributes xmi:id="_nQ788H9yEeGCw_D1HgsaPA" name="foo" type="_vtHUgH9xEeGhx8hfQRstDA"/>
+    </classes>
+    <associations xmi:id="_nQ8kAH9yEeGCw_D1HgsaPA" name="Parts" ends="_nQyL839yEeGCw_D1HgsaPA _nQyL8H9yEeGCw_D1HgsaPA"/>
+    <associations xmi:id="_nQ8kAX9yEeGCw_D1HgsaPA" name="Accounts" ends="_nQyzAH9yEeGCw_D1HgsaPA _nQyL8X9yEeGCw_D1HgsaPA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_vtGtcX9xEeGhx8hfQRstDA"/>
+    <types xsi:type="ram:RString" xmi:id="_vtHUgH9xEeGhx8hfQRstDA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_nRFt8H9yEeGCw_D1HgsaPA"/>
+    <types xsi:type="ram:RChar" xmi:id="_nRFt8X9yEeGCw_D1HgsaPA"/>
+    <types xsi:type="ram:RAny" xmi:id="_nRGVAH9yEeGCw_D1HgsaPA"/>
+    <types xsi:type="ram:RInt" xmi:id="_nRGVAX9yEeGCw_D1HgsaPA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+</ram:Aspect>

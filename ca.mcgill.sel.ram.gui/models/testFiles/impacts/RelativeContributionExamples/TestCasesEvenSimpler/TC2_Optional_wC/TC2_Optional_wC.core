@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_ycZRMMQHEeS_baJO7P7Ezw" name="TC2_Optional_wC">
+  <FeatureModel xmi:id="_ycZ4QMQHEeS_baJO7P7Ezw" root="_ycZ4QcQHEeS_baJO7P7Ezw">
+    <features xmi:id="_ycZ4QcQHEeS_baJO7P7Ezw" name="TC2_Optional_wC" children="_-TIOoMQHEeSRLrpfuAv_5w _-bNzoMQHEeSRLrpfuAv_5w _-1xBoMQHEeSRLrpfuAv_5w _--I6gMQHEeSRLrpfuAv_5w"/>
+    <features xmi:id="_-TIOoMQHEeSRLrpfuAv_5w" name="F1" children="_DiVecMQIEeSRLrpfuAv_5w _DpvG8MQIEeSRLrpfuAv_5w _Dz-oEMQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="Optional" requires="_n8P2wMQIEeSRLrpfuAv_5w">
+      <contributions xmi:id="_Xytk4MVcEeSyhOystWCx1A" name="50" impacted="_gcX-1sVbEeSXCfPV07aWSA" contributionValue="6"/>
+      <contributions xmi:id="_YpxIsMVcEeSyhOystWCx1A" name="50" impacted="_gcX-4sVbEeSXCfPV07aWSA" contributionValue="7"/>
+    </features>
+    <features xmi:id="_-bNzoMQHEeSRLrpfuAv_5w" name="child0" children="_XE77YMQIEeSRLrpfuAv_5w _XQd18MQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="Optional"/>
+    <features xmi:id="_-1xBoMQHEeSRLrpfuAv_5w" name="F2" children="_fcuFsMQIEeSRLrpfuAv_5w _flIa0MQIEeSRLrpfuAv_5w _fuUMAMQIEeSRLrpfuAv_5w" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="Optional">
+      <contributions xmi:id="_aboH4MVcEeSyhOystWCx1A" name="50" impacted="_gcX-2MVbEeSXCfPV07aWSA" contributionValue="7"/>
+    </features>
+    <features xmi:id="_--I6gMQHEeSRLrpfuAv_5w" name="child1" children="_n8P2wMQIEeSRLrpfuAv_5w _rK7osMVaEeSXCfPV07aWSA _rcR3YMVaEeSXCfPV07aWSA _r-yHgMVaEeSXCfPV07aWSA _sL4vYMVaEeSXCfPV07aWSA" parent="_ycZ4QcQHEeS_baJO7P7Ezw" parentRelationship="Optional"/>
+    <features xmi:id="_DiVecMQIEeSRLrpfuAv_5w" name="F3" children="_J0YEQMQIEeSRLrpfuAv_5w _J97o4MQIEeSRLrpfuAv_5w" parent="_-TIOoMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_byGLkMVcEeSyhOystWCx1A" name="50" impacted="_gcX-1MVbEeSXCfPV07aWSA" contributionValue="5"/>
+    </features>
+    <features xmi:id="_DpvG8MQIEeSRLrpfuAv_5w" name="F4" parent="_-TIOoMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_dwACsMVcEeSyhOystWCx1A" name="50" impacted="_gcX-4MVbEeSXCfPV07aWSA" contributionValue="10"/>
+    </features>
+    <features xmi:id="_Dz-oEMQIEeSRLrpfuAv_5w" name="child2" parent="_-TIOoMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_J0YEQMQIEeSRLrpfuAv_5w" name="F5" parent="_DiVecMQIEeSRLrpfuAv_5w" parentRelationship="Optional" excludes="_XQd18MQIEeSRLrpfuAv_5w">
+      <contributions xmi:id="_feAcoMVcEeSyhOystWCx1A" name="50" impacted="_gcX-5MVbEeSXCfPV07aWSA" contributionValue="3"/>
+      <contributions xmi:id="_hCKXAMVcEeSyhOystWCx1A" name="50" impacted="_gcX-2MVbEeSXCfPV07aWSA" contributionValue="2"/>
+      <contributions xmi:id="_jRShAMVcEeSyhOystWCx1A" name="50" impacted="_gcX-1MVbEeSXCfPV07aWSA" contributionValue="9"/>
+    </features>
+    <features xmi:id="_J97o4MQIEeSRLrpfuAv_5w" name="F6" parent="_DiVecMQIEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_k3lJYMVcEeSyhOystWCx1A" name="50" impacted="_gcX-3sVbEeSXCfPV07aWSA" contributionValue="2"/>
+    </features>
+    <features xmi:id="_XE77YMQIEeSRLrpfuAv_5w" name="child3" children="_J2IAIMVaEeSXCfPV07aWSA _J-CmAMVaEeSXCfPV07aWSA _KGQt4MVaEeSXCfPV07aWSA _KPOcoMVaEeSXCfPV07aWSA" parent="_-bNzoMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_XQd18MQIEeSRLrpfuAv_5w" name="F9" parent="_-bNzoMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_v0PrQMVcEeSyhOystWCx1A" name="50" impacted="_gcX-1sVbEeSXCfPV07aWSA" contributionValue="2"/>
+    </features>
+    <features xmi:id="_fcuFsMQIEeSRLrpfuAv_5w" name="child4" parent="_-1xBoMQHEeSRLrpfuAv_5w" parentRelationship="Optional" requires="_DpvG8MQIEeSRLrpfuAv_5w"/>
+    <features xmi:id="_flIa0MQIEeSRLrpfuAv_5w" name="child5" children="_i-_5oMQIEeSRLrpfuAv_5w _jHJJAMQIEeSRLrpfuAv_5w" parent="_-1xBoMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_fuUMAMQIEeSRLrpfuAv_5w" name="child6" parent="_-1xBoMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_i-_5oMQIEeSRLrpfuAv_5w" name="child11" parent="_flIa0MQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_jHJJAMQIEeSRLrpfuAv_5w" name="child12" parent="_flIa0MQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_n8P2wMQIEeSRLrpfuAv_5w" name="F10" parent="_--I6gMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_xgqw0MVcEeSyhOystWCx1A" name="50" impacted="_gcX-1sVbEeSXCfPV07aWSA" contributionValue="7"/>
+      <contributions xmi:id="_ywyU4MVcEeSyhOystWCx1A" name="50" impacted="_gcX-4sVbEeSXCfPV07aWSA" contributionValue="1"/>
+      <contributions xmi:id="_0hUeYMVcEeSyhOystWCx1A" name="50" impacted="_gcX-0sVbEeSXCfPV07aWSA" contributionValue="6"/>
+      <contributions xmi:id="_3exuAMVcEeSyhOystWCx1A" name="50" impacted="_gcX-3sVbEeSXCfPV07aWSA" contributionValue="7"/>
+    </features>
+    <features xmi:id="_J2IAIMVaEeSXCfPV07aWSA" name="F7" parent="_XE77YMQIEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_mfOcoMVcEeSyhOystWCx1A" name="50" impacted="_gcX-4MVbEeSXCfPV07aWSA" contributionValue="9"/>
+      <contributions xmi:id="_oWHs0MVcEeSyhOystWCx1A" name="50" impacted="_gcX-1MVbEeSXCfPV07aWSA" contributionValue="4"/>
+    </features>
+    <features xmi:id="_J-CmAMVaEeSXCfPV07aWSA" name="F8" parent="_XE77YMQIEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_rM6TwMVcEeSyhOystWCx1A" name="50" impacted="_gcX-1sVbEeSXCfPV07aWSA" contributionValue="5"/>
+      <contributions xmi:id="_sWHXgMVcEeSyhOystWCx1A" name="50" impacted="_gcX-4sVbEeSXCfPV07aWSA" contributionValue="10"/>
+      <contributions xmi:id="_ti9lIMVcEeSyhOystWCx1A" name="50" impacted="_gcX-0sVbEeSXCfPV07aWSA" contributionValue="9"/>
+    </features>
+    <features xmi:id="_KGQt4MVaEeSXCfPV07aWSA" name="child9" parent="_XE77YMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_KPOcoMVaEeSXCfPV07aWSA" name="child10" parent="_XE77YMQIEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_rK7osMVaEeSXCfPV07aWSA" name="F11" parent="_--I6gMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_6jQLoMVcEeSyhOystWCx1A" name="50" impacted="_gcX-5MVbEeSXCfPV07aWSA" contributionValue="5"/>
+      <contributions xmi:id="_76WhcMVcEeSyhOystWCx1A" name="50" impacted="_gcX-1sVbEeSXCfPV07aWSA" contributionValue="1"/>
+      <contributions xmi:id="_-TlpsMVcEeSyhOystWCx1A" name="50" impacted="_gcX-4sVbEeSXCfPV07aWSA" contributionValue="10"/>
+      <contributions xmi:id="__7jGAMVcEeSyhOystWCx1A" name="50" impacted="_gcX-0sVbEeSXCfPV07aWSA" contributionValue="1"/>
+    </features>
+    <features xmi:id="_rcR3YMVaEeSXCfPV07aWSA" name="F12" parent="_--I6gMQHEeSRLrpfuAv_5w" parentRelationship="Optional">
+      <contributions xmi:id="_CXoG4MVdEeSyhOystWCx1A" name="50" impacted="_gcX-4MVbEeSXCfPV07aWSA" contributionValue="9"/>
+      <contributions xmi:id="_Dw-fcMVdEeSyhOystWCx1A" name="50" impacted="_gcX-2MVbEeSXCfPV07aWSA" contributionValue="2"/>
+      <contributions xmi:id="_FNLXsMVdEeSyhOystWCx1A" name="50" impacted="_gcX-0sVbEeSXCfPV07aWSA" contributionValue="5"/>
+    </features>
+    <features xmi:id="_r-yHgMVaEeSXCfPV07aWSA" name="child7" parent="_--I6gMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+    <features xmi:id="_sL4vYMVaEeSXCfPV07aWSA" name="child8" parent="_--I6gMQHEeSRLrpfuAv_5w" parentRelationship="Optional"/>
+  </FeatureModel>
+  <ImpactModel xmi:id="_gcX-0MVbEeSXCfPV07aWSA" name="ImpactModel">
+    <impactModelElements xmi:id="_gcX-0cVbEeSXCfPV07aWSA" name="RootGoal"/>
+    <impactModelElements xmi:id="_gcX-0sVbEeSXCfPV07aWSA" name="GoalA">
+      <contributions xmi:id="_gcX-08VbEeSXCfPV07aWSA" name="50" impacted="_gcX-2sVbEeSXCfPV07aWSA" contributionValue="1"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-1MVbEeSXCfPV07aWSA" name="GoalB">
+      <contributions xmi:id="_gcX-1cVbEeSXCfPV07aWSA" name="50" impacted="_gcX-2sVbEeSXCfPV07aWSA" contributionValue="3"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-1sVbEeSXCfPV07aWSA" name="GoalC">
+      <contributions xmi:id="_gcX-18VbEeSXCfPV07aWSA" name="50" impacted="_gcX-2sVbEeSXCfPV07aWSA" contributionValue="7"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-2MVbEeSXCfPV07aWSA" name="GoalD">
+      <contributions xmi:id="_gcX-2cVbEeSXCfPV07aWSA" name="50" impacted="_gcX-3MVbEeSXCfPV07aWSA" contributionValue="5"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-2sVbEeSXCfPV07aWSA" name="Parent3">
+      <contributions xmi:id="_gcX-28VbEeSXCfPV07aWSA" name="50" impacted="_gcX-3MVbEeSXCfPV07aWSA" contributionValue="7"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-3MVbEeSXCfPV07aWSA" name="Parent1">
+      <contributions xmi:id="_gcX-3cVbEeSXCfPV07aWSA" name="50" impacted="_gcX-0cVbEeSXCfPV07aWSA" contributionValue="6"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-3sVbEeSXCfPV07aWSA" name="GoalE">
+      <contributions xmi:id="_gcX-38VbEeSXCfPV07aWSA" name="50" impacted="_gcX-0cVbEeSXCfPV07aWSA" contributionValue="10"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-4MVbEeSXCfPV07aWSA" name="GoalF">
+      <contributions xmi:id="_gcX-4cVbEeSXCfPV07aWSA" name="50" impacted="_gcX-5sVbEeSXCfPV07aWSA" contributionValue="3"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-4sVbEeSXCfPV07aWSA" name="GoalG">
+      <contributions xmi:id="_gcX-48VbEeSXCfPV07aWSA" name="50" impacted="_gcX-5sVbEeSXCfPV07aWSA" contributionValue="8"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-5MVbEeSXCfPV07aWSA" name="GoalH">
+      <contributions xmi:id="_gcX-5cVbEeSXCfPV07aWSA" name="50" impacted="_gcX-6MVbEeSXCfPV07aWSA" contributionValue="10"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-5sVbEeSXCfPV07aWSA" name="Parent4">
+      <contributions xmi:id="_gcX-58VbEeSXCfPV07aWSA" name="50" impacted="_gcX-6MVbEeSXCfPV07aWSA" contributionValue="4"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_gcX-6MVbEeSXCfPV07aWSA" name="Parent2">
+      <contributions xmi:id="_gcX-6cVbEeSXCfPV07aWSA" name="50" impacted="_gcX-0cVbEeSXCfPV07aWSA" contributionValue="3"/>
+    </impactModelElements>
+    <layout xmi:id="_HtZRsMVdEeSyhOystWCx1A" key="_gcX-0cVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZRscVdEeSyhOystWCx1A" xPosition="754.9998" yPosition="-118.83742"/>
+    </layout>
+    <layout xmi:id="_HtZRssVdEeSyhOystWCx1A" key="_gcX-0sVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZRs8VdEeSyhOystWCx1A" xPosition="139.99982" yPosition="407.16275"/>
+    </layout>
+    <layout xmi:id="_HtZRtMVdEeSyhOystWCx1A" key="_gcX-1MVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZRtcVdEeSyhOystWCx1A" xPosition="289.99988" yPosition="407.16263"/>
+    </layout>
+    <layout xmi:id="_HtZRtsVdEeSyhOystWCx1A" key="_gcX-1sVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZRt8VdEeSyhOystWCx1A" xPosition="447.00006" yPosition="409.16257"/>
+    </layout>
+    <layout xmi:id="_HtZRuMVdEeSyhOystWCx1A" key="_gcX-2MVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZRucVdEeSyhOystWCx1A" xPosition="617.9995" yPosition="405.16245"/>
+    </layout>
+    <layout xmi:id="_HtZRusVdEeSyhOystWCx1A" key="_gcX-2sVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZRu8VdEeSyhOystWCx1A" xPosition="301.99997" yPosition="227.1623"/>
+    </layout>
+    <layout xmi:id="_HtZ4wMVdEeSyhOystWCx1A" key="_gcX-3MVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ4wcVdEeSyhOystWCx1A" xPosition="454.00015" yPosition="73.16248"/>
+    </layout>
+    <layout xmi:id="_HtZ4wsVdEeSyhOystWCx1A" key="_gcX-3sVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ4w8VdEeSyhOystWCx1A" xPosition="785.0" yPosition="400.16245"/>
+    </layout>
+    <layout xmi:id="_HtZ4xMVdEeSyhOystWCx1A" key="_gcX-4MVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ4xcVdEeSyhOystWCx1A" xPosition="961.99994" yPosition="398.16263"/>
+    </layout>
+    <layout xmi:id="_HtZ4xsVdEeSyhOystWCx1A" key="_gcX-4sVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ4x8VdEeSyhOystWCx1A" xPosition="1118.0001" yPosition="397.1625"/>
+    </layout>
+    <layout xmi:id="_HtZ4yMVdEeSyhOystWCx1A" key="_gcX-5MVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ4ycVdEeSyhOystWCx1A" xPosition="1284.0001" yPosition="395.16263"/>
+    </layout>
+    <layout xmi:id="_HtZ4ysVdEeSyhOystWCx1A" key="_gcX-5sVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ4y8VdEeSyhOystWCx1A" xPosition="1041.0005" yPosition="232.1625"/>
+    </layout>
+    <layout xmi:id="_HtZ4zMVdEeSyhOystWCx1A" key="_gcX-6MVbEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ4zcVdEeSyhOystWCx1A" xPosition="1133.9999" yPosition="67.16256"/>
+    </layout>
+    <layout xmi:id="_HtZ4zsVdEeSyhOystWCx1A" key="_-TIOoMQHEeSRLrpfuAv_5w">
+      <value xmi:id="_HtZ4z8VdEeSyhOystWCx1A" xPosition="989.9999" yPosition="821.0004"/>
+    </layout>
+    <layout xmi:id="_HtZ40MVdEeSyhOystWCx1A" key="_n8P2wMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_HtZ40cVdEeSyhOystWCx1A" xPosition="829.99994" yPosition="835.0004"/>
+    </layout>
+    <layout xmi:id="_HtZ40sVdEeSyhOystWCx1A" key="_rK7osMVaEeSXCfPV07aWSA">
+      <value xmi:id="_HtZ408VdEeSyhOystWCx1A" xPosition="687.00024" yPosition="561.0002"/>
+    </layout>
+    <layout xmi:id="_Htaf0MVdEeSyhOystWCx1A" key="_rcR3YMVaEeSXCfPV07aWSA">
+      <value xmi:id="_Htaf0cVdEeSyhOystWCx1A" xPosition="113.99994" yPosition="659.00006"/>
+    </layout>
+    <layout xmi:id="_Htaf0sVdEeSyhOystWCx1A" key="_-1xBoMQHEeSRLrpfuAv_5w">
+      <value xmi:id="_Htaf08VdEeSyhOystWCx1A" xPosition="597.0" yPosition="650.9998"/>
+    </layout>
+    <layout xmi:id="_Htaf1MVdEeSyhOystWCx1A" key="_DiVecMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_Htaf1cVdEeSyhOystWCx1A" xPosition="269.99988" yPosition="659.00006"/>
+    </layout>
+    <layout xmi:id="_Htaf1sVdEeSyhOystWCx1A" key="_DpvG8MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_Htaf18VdEeSyhOystWCx1A" xPosition="925.00024" yPosition="623.00006"/>
+    </layout>
+    <layout xmi:id="_Htaf2MVdEeSyhOystWCx1A" key="_J0YEQMQIEeSRLrpfuAv_5w">
+      <value xmi:id="_Htaf2cVdEeSyhOystWCx1A" xPosition="439.99982" yPosition="835.00037"/>
+    </layout>
+    <layout xmi:id="_Htaf2sVdEeSyhOystWCx1A" key="_J97o4MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_Htaf28VdEeSyhOystWCx1A" xPosition="770.0003" yPosition="617.0"/>
+    </layout>
+    <layout xmi:id="_Htaf3MVdEeSyhOystWCx1A" key="_J2IAIMVaEeSXCfPV07aWSA">
+      <value xmi:id="_Htaf3cVdEeSyhOystWCx1A" xPosition="697.0001" yPosition="841.0002"/>
+    </layout>
+    <layout xmi:id="_Htaf3sVdEeSyhOystWCx1A" key="_J-CmAMVaEeSXCfPV07aWSA">
+      <value xmi:id="_Htaf38VdEeSyhOystWCx1A" xPosition="566.00037" yPosition="837.00024"/>
+    </layout>
+    <layout xmi:id="_Htaf4MVdEeSyhOystWCx1A" key="_XQd18MQIEeSRLrpfuAv_5w">
+      <value xmi:id="_Htaf4cVdEeSyhOystWCx1A" xPosition="428.99982" yPosition="658.0"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

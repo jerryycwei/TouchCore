@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ca.mcgill.sel.ucm/src" modelPluginID="ca.mcgill.sel.ucm"
+    modelName="UCM" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    usedGenPackages="../../ca.mcgill.sel.core/model/CORE.genmodel#//core" importOrganizing="true">
+  <foreignModel>UCM.ecore</foreignModel>
+  <genPackages prefix="UCM" basePackage="ca.mcgill.sel" resource="XMI" disposableProviderFactory="true"
+      ecorePackage="UCM.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UCM.ecore#//ComponentKind">
+      <genEnumLiterals ecoreEnumLiteral="UCM.ecore#//ComponentKind/Team"/>
+      <genEnumLiterals ecoreEnumLiteral="UCM.ecore#//ComponentKind/Actor"/>
+    </genEnums>
+    <genClasses ecoreClass="UCM.ecore#//AndFork"/>
+    <genClasses ecoreClass="UCM.ecore#//AndJoin"/>
+    <genClasses ecoreClass="UCM.ecore#//OrFork"/>
+    <genClasses ecoreClass="UCM.ecore#//OrJoin"/>
+    <genClasses ecoreClass="UCM.ecore#//EmptyPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UCM.ecore#//EmptyPoint/direction"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//PathNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//PathNode/successors"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//PathNode/predecessors"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//PathNode/componentReference"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//ResponsibilityRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//ResponsibilityRef/responsibilityDefinition"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//Responsibility">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//Responsibility/responsibilityReferences"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//StartPoint"/>
+    <genClasses ecoreClass="UCM.ecore#//NodeConnection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UCM.ecore#//NodeConnection/condition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//NodeConnection/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//NodeConnection/target"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//UCMModelElement"/>
+    <genClasses ecoreClass="UCM.ecore#//UseCaseMap">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UCM.ecore#//UseCaseMap/connections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UCM.ecore#//UseCaseMap/nodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UCM.ecore#//UseCaseMap/responsibilities"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UCM.ecore#//UseCaseMap/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UCM.ecore#//UseCaseMap/componentReferences"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UCM.ecore#//UseCaseMap/layoutMaps"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//ComponentReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//ComponentReference/componentDefinition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//ComponentReference/children"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//ComponentReference/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//ComponentReference/nodes"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//Component">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//Component/componentReferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//Component/children"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UCM.ecore#//Component/parents"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UCM.ecore#//Component/kind"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//Condition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UCM.ecore#//Condition/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="UCM.ecore#//EndPoint"/>
+  </genPackages>
+</genmodel:GenModel>

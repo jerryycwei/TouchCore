@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_tX0xkJU9EeG1U-m28TVE4A" name="AskForRoutes">
+  <structuralView xmi:id="_tX0xkZU9EeG1U-m28TVE4A">
+    <classes xsi:type="ram:Class" xmi:id="_tX0xkpU9EeG1U-m28TVE4A" name="ProcessPoliceRouteParameters">
+      <operations  xmi:id="_ZuIvAJVaEeGFi8IrjLMWVg" name="execute" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_ZuIvAZVaEeGFi8IrjLMWVg" name="context" type="_-biggJVZEeGFi8IrjLMWVg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xk5U9EeG1U-m28TVE4A" name="ProcessFireRouteParameters">
+      <operations  xmi:id="_bnjHsJVaEeGFi8IrjLMWVg" name="execute" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_bnjHsZVaEeGFi8IrjLMWVg" name="context" type="_-biggJVZEeGFi8IrjLMWVg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xlJU9EeG1U-m28TVE4A" name="ProcessFSCRouteConfirmation">
+      <operations  xmi:id="_Imy-IJVbEeGhw6xdMkV_cA" name="execute" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_Imy-IZVbEeGhw6xdMkV_cA" name="context" type="_-biggJVZEeGFi8IrjLMWVg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xlZU9EeG1U-m28TVE4A" name="FireRouteParametersInput">
+      <operations  xmi:id="_i8u6oJVcEeGhw6xdMkV_cA" name="getNumberOfFireTrucks" returnType="_wODHE5VZEeGFi8IrjLMWVg" visibility="public"/>
+      <attributes xmi:id="_3_-yUJVZEeGFi8IrjLMWVg" name="numberOfFireTrucks" type="_wODHE5VZEeGFi8IrjLMWVg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xlpU9EeG1U-m28TVE4A" name="FSCRouteConfirmationInput">
+      <operations  xmi:id="_IUYjAJVcEeGhw6xdMkV_cA" name="isRouteConfirmed" returnType="_wODHEpVZEeGFi8IrjLMWVg" visibility="public"/>
+      <attributes xmi:id="_G1R9MJVbEeGhw6xdMkV_cA" name="routeConfirmed" type="_wODHEpVZEeGFi8IrjLMWVg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xl5U9EeG1U-m28TVE4A" name="PoliceRouteParametersInput">
+      <operations  xmi:id="_lDqK4JVcEeGhw6xdMkV_cA" name="getNumberOfPoliceCars" returnType="_wODHE5VZEeGFi8IrjLMWVg" visibility="public"/>
+      <attributes xmi:id="_5eG9MJVZEeGFi8IrjLMWVg" name="numberOfPoliceCars" type="_wODHE5VZEeGFi8IrjLMWVg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xmJU9EeG1U-m28TVE4A" name="AskForPoliceRouteOutput">
+      <operations  xmi:id="__fn-QJVaEeGhw6xdMkV_cA" name="getMessage" returnType="_wODHFZVZEeGFi8IrjLMWVg" visibility="public"/>
+      <operations  xmi:id="_A-fwAJVbEeGhw6xdMkV_cA" name="setMessage" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_A-fwAZVbEeGhw6xdMkV_cA" name="message" type="_wODHFZVZEeGFi8IrjLMWVg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xmZU9EeG1U-m28TVE4A" name="AskForPoliceRoute">
+      <operations  xmi:id="_5NlYcJVaEeGhw6xdMkV_cA" name="execute" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_5NlYcZVaEeGhw6xdMkV_cA" name="context" type="_-biggJVZEeGFi8IrjLMWVg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xmpU9EeG1U-m28TVE4A" name="AskForFireRouteOutput">
+      <operations  xmi:id="_B9V94JVbEeGhw6xdMkV_cA" name="getMessage" returnType="_wODHFZVZEeGFi8IrjLMWVg" visibility="public"/>
+      <operations  xmi:id="_DcutAJVbEeGhw6xdMkV_cA" name="setMessage" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_DcutAZVbEeGhw6xdMkV_cA" name="message" type="_wODHFZVZEeGFi8IrjLMWVg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xm5U9EeG1U-m28TVE4A" name="AskForFireRoute">
+      <operations  xmi:id="_8cPs0JVaEeGhw6xdMkV_cA" name="execute" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_8cPs0ZVaEeGhw6xdMkV_cA" name="context" type="_-biggJVZEeGFi8IrjLMWVg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-biggJVZEeGFi8IrjLMWVg" name="LocalContext">
+      <operations  xmi:id="_IJqLoJVaEeGFi8IrjLMWVg" name="getNumberOfPoliceCars" returnType="_wODHE5VZEeGFi8IrjLMWVg" visibility="public"/>
+      <operations  xmi:id="_Ku-BAJVaEeGFi8IrjLMWVg" name="setNumberOfPoliceCars" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_Ku-BAZVaEeGFi8IrjLMWVg" name="number" type="_wODHE5VZEeGFi8IrjLMWVg"/>
+      </operations>
+      <operations  xmi:id="_PENi8JVaEeGFi8IrjLMWVg" name="getNumberOfFireTrucks" returnType="_wODHE5VZEeGFi8IrjLMWVg" visibility="public"/>
+      <operations  xmi:id="_RO9jQJVaEeGFi8IrjLMWVg" name="setNumberOfFireTrucks" returnType="_wODHEJVZEeGFi8IrjLMWVg" visibility="public">
+        <parameters xmi:id="_RO9jQZVaEeGFi8IrjLMWVg" name="number" type="_wODHE5VZEeGFi8IrjLMWVg"/>
+      </operations>
+      <attributes xmi:id="_BCIIQJVaEeGFi8IrjLMWVg" name="numberOfPoliceCars" type="_wODHE5VZEeGFi8IrjLMWVg"/>
+      <attributes xmi:id="_CNPQgJVaEeGFi8IrjLMWVg" name="numberOfFireTrucks" type="_wODHE5VZEeGFi8IrjLMWVg"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_wODHEJVZEeGFi8IrjLMWVg"/>
+    <types xsi:type="ram:RAny" xmi:id="_wODHEZVZEeGFi8IrjLMWVg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_wODHEpVZEeGFi8IrjLMWVg"/>
+    <types xsi:type="ram:RInt" xmi:id="_wODHE5VZEeGFi8IrjLMWVg"/>
+    <types xsi:type="ram:RChar" xmi:id="_wODHFJVZEeGFi8IrjLMWVg"/>
+    <types xsi:type="ram:RString" xmi:id="_wODHFZVZEeGFi8IrjLMWVg"/>
+  </structuralView>
+  <instantiations xmi:id="_tX0xnJU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_tX0xnZU9EeG1U-m28TVE4A" toElement="_tX0xkpU9EeG1U-m28TVE4A _tX0xk5U9EeG1U-m28TVE4A _tX0xlJU9EeG1U-m28TVE4A _tX0xmZU9EeG1U-m28TVE4A _tX0xm5U9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_tX0xnpU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_tX0xn5U9EeG1U-m28TVE4A" toElement="_tX0xlZU9EeG1U-m28TVE4A _tX0xlpU9EeG1U-m28TVE4A _tX0xl5U9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Input.ram#_mhaIQZTNEeGJh_L7_SakMQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Input.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_tX0xoJU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_tX0xoZU9EeG1U-m28TVE4A" toElement="_tX0xmJU9EeG1U-m28TVE4A _tX0xmpU9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Output.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Output.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_TsWywJVaEeGFi8IrjLMWVg">
+    <mappings xmi:id="_TsXZ0JVaEeGFi8IrjLMWVg" toElement="_-biggJVZEeGFi8IrjLMWVg">
+      <fromElement xsi:type="ram:Class" href="../../ssbCMS_Domain.ram#_u2p6gZVSEeGXxKEJllDFfA"/>
+    </mappings>
+    <externalAspect href="../../ssbCMS_Domain.ram#_DCv9EJRmEeGOVPsJ2LtqbA"/>
+  </instantiations>
+  <instantiations xmi:id="_M59ccJVbEeGhw6xdMkV_cA">
+    <mappings xmi:id="_M5-DgJVbEeGhw6xdMkV_cA" toElement="_tX0xmJU9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <mappings xmi:id="_PhSEAJVbEeGhw6xdMkV_cA" toElement="_A-fwAJVbEeGhw6xdMkV_cA">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/util/Named.ram#_coJYcIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <mappings xmi:id="_R-BMMJVbEeGhw6xdMkV_cA" toElement="_A-fwAJVbEeGhw6xdMkV_cA">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/util/Named.ram#_dQHXYIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <instantiations xmi:id="_NhHjEJVbEeGhw6xdMkV_cA">
+    <mappings xmi:id="_NhIKIJVbEeGhw6xdMkV_cA" toElement="_tX0xmpU9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <mappings xmi:id="_UquDAJVbEeGhw6xdMkV_cA" toElement="_B9V94JVbEeGhw6xdMkV_cA">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/util/Named.ram#_coJYcIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <mappings xmi:id="_VuDvUJVbEeGhw6xdMkV_cA" toElement="_DcutAJVbEeGhw6xdMkV_cA">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/util/Named.ram#_dQHXYIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <layout xmi:id="_LZ6IgJVnEeGhd9ujKgqTjg">
+    <containers xmi:id="_LZ6IgZVnEeGhd9ujKgqTjg" key="_tX0xkZU9EeG1U-m28TVE4A">
+      <value xmi:id="_LZ6IgpVnEeGhd9ujKgqTjg" key="_tX0xk5U9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6Ig5VnEeGhd9ujKgqTjg" x="822.8221" y="344.86542"/>
+      </value>
+      <value xmi:id="_LZ6IhJVnEeGhd9ujKgqTjg" key="_tX0xl5U9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6IhZVnEeGhd9ujKgqTjg" x="383.04657" y="172.989"/>
+      </value>
+      <value xmi:id="_LZ6IhpVnEeGhd9ujKgqTjg" key="_tX0xmpU9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6Ih5VnEeGhd9ujKgqTjg" x="717.2267" y="556.77686"/>
+      </value>
+      <value xmi:id="_LZ6IiJVnEeGhd9ujKgqTjg" key="_tX0xlpU9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6IiZVnEeGhd9ujKgqTjg" x="1319.9164" y="569.7337"/>
+      </value>
+      <value xmi:id="_LZ6IipVnEeGhd9ujKgqTjg" key="_tX0xmZU9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6Ii5VnEeGhd9ujKgqTjg" x="225.11882" y="797.73456"/>
+      </value>
+      <value xmi:id="_LZ6IjJVnEeGhd9ujKgqTjg" key="_-biggJVZEeGFi8IrjLMWVg">
+        <value xmi:id="_LZ6IjZVnEeGhd9ujKgqTjg" x="1342.3351" y="159.44127"/>
+      </value>
+      <value xmi:id="_LZ6IjpVnEeGhd9ujKgqTjg" key="_tX0xlZU9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6Ij5VnEeGhd9ujKgqTjg" x="832.64264" y="153.82726"/>
+      </value>
+      <value xmi:id="_LZ6IkJVnEeGhd9ujKgqTjg" key="_tX0xkpU9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6IkZVnEeGhd9ujKgqTjg" x="358.00754" y="338.24637"/>
+      </value>
+      <value xmi:id="_LZ6IkpVnEeGhd9ujKgqTjg" key="_tX0xmJU9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6Ik5VnEeGhd9ujKgqTjg" x="238.59773" y="571.43414"/>
+      </value>
+      <value xmi:id="_LZ6IlJVnEeGhd9ujKgqTjg" key="_tX0xm5U9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6IlZVnEeGhd9ujKgqTjg" x="687.8632" y="799.7259"/>
+      </value>
+      <value xmi:id="_LZ6IlpVnEeGhd9ujKgqTjg" key="_tX0xlJU9EeG1U-m28TVE4A">
+        <value xmi:id="_LZ6Il5VnEeGhd9ujKgqTjg" x="1289.7588" y="764.516"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

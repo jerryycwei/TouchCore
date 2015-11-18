@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/1.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_kkd1cNzcEeSHzvt1c4u95Q" name="CommunicationProtocol" models="_kkd1cdzcEeSHzvt1c4u95Q">
+  <featureModel xmi:id="_kkd1cdzcEeSHzvt1c4u95Q" coreConcern="_kkd1cNzcEeSHzvt1c4u95Q" root="_kkd1ctzcEeSHzvt1c4u95Q">
+    <features xmi:id="_kkd1ctzcEeSHzvt1c4u95Q" name="CommunicationProtocol" children="_GIoZkNzmEeSgAJE1ei2YzA _HurKUNzmEeSgAJE1ei2YzA _J5qbMNzmEeSgAJE1ei2YzA">
+      <realizedBy xsi:type="ram:Aspect" href="CommunicationProtocol.ram#_kValcNzfEeSgAJE1ei2YzA"/>
+      <reuses xmi:id="_myLi0NzfEeSgAJE1ei2YzA" selectedConfiguration="_myLi0dzfEeSgAJE1ei2YzA">
+        <reusedConcern href="Reused_Networking/Networking.core#__iNx0Kr2EeSFZ4ae5sBgYg"/>
+        <configurations xmi:id="_myLi0dzfEeSgAJE1ei2YzA">
+          <selected href="Reused_Networking/Networking.core#__iNx0qr2EeSFZ4ae5sBgYg"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_GIoZkNzmEeSgAJE1ei2YzA" name="HTTP" parent="_kkd1ctzcEeSHzvt1c4u95Q" parentRelationship="Optional"/>
+    <features xmi:id="_HurKUNzmEeSgAJE1ei2YzA" name="SOAP" parent="_kkd1ctzcEeSHzvt1c4u95Q" parentRelationship="Optional"/>
+    <features xmi:id="_J5qbMNzmEeSgAJE1ei2YzA" name="SMTP" parent="_kkd1ctzcEeSHzvt1c4u95Q" parentRelationship="Optional"/>
+  </featureModel>
+</core:COREConcern>

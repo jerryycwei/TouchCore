@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_sPJyAOOnEeSpQIlmI1xStA" name="MobileNotification">
+  <modelReuses xmi:id="_vj-_0OOnEeSpQIlmI1xStA" compositions="_vj_m4OOnEeSpQIlmI1xStA"/>
+  <realizes href="bCMS_SPL.core#_kvIaMNaCEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_sPJyAeOnEeSpQIlmI1xStA">
+    <types xsi:type="ram:RVoid" xmi:id="_sPJyAuOnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RAny" xmi:id="_sPJyA-OnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_sPJyBOOnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RInt" xmi:id="_sPJyBeOnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RChar" xmi:id="_sPJyBuOnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RString" xmi:id="_sPJyB-OnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_sPJyCOOnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_sPJyCeOnEeSpQIlmI1xStA"/>
+    <types xsi:type="ram:RLong" xmi:id="_sPJyCuOnEeSpQIlmI1xStA"/>
+  </structuralView>
+  <instantiations xmi:id="_vj_m4OOnEeSpQIlmI1xStA" source="_sPJyAOOnEeSpQIlmI1xStA">
+    <source xsi:type="ram:Aspect" href="Reused_Observer/Woven_Observer_Association_Observer.ram#_2Wv0cOOkEeSK_sZKrYdfrg"/>
+  </instantiations>
+  <layout xmi:id="_sPLAIOOnEeSpQIlmI1xStA">
+    <containers xmi:id="_sPLAIeOnEeSpQIlmI1xStA" key="_sPJyAeOnEeSpQIlmI1xStA"/>
+  </layout>
+</ram:Aspect>

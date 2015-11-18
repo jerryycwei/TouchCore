@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_myYXINzfEeSgAJE1ei2YzA" name="Networking&lt;Networking>">
+  <structuralView xmi:id="_myYXIdzfEeSgAJE1ei2YzA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_myYXItzfEeSgAJE1ei2YzA" name="Socket" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" instanceClassName="java.net.Socket">
+      <operations  xmi:id="_myYXI9zfEeSgAJE1ei2YzA" name="Socket" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" returnType="_myYXItzfEeSgAJE1ei2YzA" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_myYXJNzfEeSgAJE1ei2YzA" name="arg0" type="_myYXOdzfEeSgAJE1ei2YzA"/>
+        <parameters xmi:id="_myYXJdzfEeSgAJE1ei2YzA" name="arg1" type="_myYXN9zfEeSgAJE1ei2YzA"/>
+      </operations>
+      <operations  xmi:id="_myYXJtzfEeSgAJE1ei2YzA" name="close" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" returnType="_myYXNNzfEeSgAJE1ei2YzA" visibility="public"/>
+      <operations  xmi:id="_myYXJ9zfEeSgAJE1ei2YzA" name="isConnected" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" returnType="_myYXNtzfEeSgAJE1ei2YzA" visibility="public"/>
+      <operations  xmi:id="_myYXKNzfEeSgAJE1ei2YzA" name="getOutputStream" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" returnType="_myYXLtzfEeSgAJE1ei2YzA" visibility="public"/>
+      <operations  xmi:id="_myYXKdzfEeSgAJE1ei2YzA" name="getInputStream" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" returnType="_myYXMNzfEeSgAJE1ei2YzA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_myYXKtzfEeSgAJE1ei2YzA" name="ServerSocket" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" instanceClassName="java.net.ServerSocket">
+      <operations  xmi:id="_myYXK9zfEeSgAJE1ei2YzA" name="ServerSocket" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" returnType="_myYXKtzfEeSgAJE1ei2YzA" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_myYXLNzfEeSgAJE1ei2YzA" name="arg0" type="_myYXN9zfEeSgAJE1ei2YzA"/>
+      </operations>
+      <operations  xmi:id="_myYXLdzfEeSgAJE1ei2YzA" name="accept" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" returnType="_myYXItzfEeSgAJE1ei2YzA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_myYXLtzfEeSgAJE1ei2YzA" name="OutputStream" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" instanceClassName="java.io.OutputStream"/>
+    <classes xsi:type="ram:Class" xmi:id="_myYXL9zfEeSgAJE1ei2YzA" name="InputStreamImpl" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" superTypes="_myYXMNzfEeSgAJE1ei2YzA"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_myYXMNzfEeSgAJE1ei2YzA" name="InputStream" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" instanceClassName="java.io.InputStream"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_myYXMdzfEeSgAJE1ei2YzA" name="Serializable" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" instanceClassName="java.io.Serializable" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_myYXMtzfEeSgAJE1ei2YzA" name="SocketAddress" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" instanceClassName="java.net.SocketAddress"/>
+    <classes xsi:type="ram:Class" xmi:id="_myYXM9zfEeSgAJE1ei2YzA" name="Sendable" comesFrom="_myYXP9zfEeSgAJE1ei2YzA" partiality="public" superTypes="_myYXMdzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_myYXNNzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RAny" xmi:id="_myYXNdzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_myYXNtzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RInt" xmi:id="_myYXN9zfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RChar" xmi:id="_myYXONzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RString" xmi:id="_myYXOdzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_myYXOtzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_myYXO9zfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RLong" xmi:id="_myYXPNzfEeSgAJE1ei2YzA"/>
+  </structuralView>
+  <layout xmi:id="_myYXPdzfEeSgAJE1ei2YzA">
+    <containers xmi:id="_myYXPtzfEeSgAJE1ei2YzA" key="_myYXIdzfEeSgAJE1ei2YzA"/>
+  </layout>
+  <wovenAspects xmi:id="_myYXP9zfEeSgAJE1ei2YzA" name="Networking">
+    <comesFrom href="Networking.ram#_STbk8F1iEeS-crAw_TocNg"/>
+  </wovenAspects>
+</ram:Aspect>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<checkstyle-configurations file-format-version="5.0.0" default-check-configuration="TouchRAM Checks">
+  <check-configuration name="TouchRAM Checks" location="/ca.mcgill.sel.commons/touchram_checkstyle.xml" type="project" description="">
+    <additional-data name="protect-config-file" value="false"/>
+  </check-configuration>
+</checkstyle-configurations>

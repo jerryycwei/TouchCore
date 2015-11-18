@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_q536oNaBEeS_4sG2PJA2iA" name="MissionExecution">
+  <modelReuses xmi:id="_ODa_oOUaEeSuxqasVTKvXA" compositions="_ODbmsOUaEeSuxqasVTKvXA"/>
+  <realizes href="bCMS_SPL.core#_Z5gUcNaCEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_q536odaBEeS_4sG2PJA2iA">
+    <types xsi:type="ram:RVoid" xmi:id="_q536otaBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RAny" xmi:id="_q536o9aBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_q536pNaBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RInt" xmi:id="_q536pdaBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RChar" xmi:id="_q536ptaBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RString" xmi:id="_q536p9aBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_q536qNaBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_q536qdaBEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RLong" xmi:id="_q536qtaBEeS_4sG2PJA2iA"/>
+  </structuralView>
+  <instantiations xmi:id="_q536q9aBEeS_4sG2PJA2iA">
+    <source xsi:type="ram:Aspect" href="BCMS.ram#_oUzpENUREeSfLpvXIPYz0g"/>
+  </instantiations>
+  <instantiations xmi:id="_2W4JcNaBEeS_4sG2PJA2iA">
+    <source xsi:type="ram:Aspect" href="Reused_Named/Woven_Named_Named.ram#_ZDE4ANZcEeS_4sG2PJA2iA"/>
+  </instantiations>
+  <instantiations xmi:id="_ODbmsOUaEeSuxqasVTKvXA" source="_q536oNaBEeS_4sG2PJA2iA">
+    <source xsi:type="ram:Aspect" href="Reused_Workflow/Woven_Workflow_Workflow.ram#_OCi14OUaEeSuxqasVTKvXA"/>
+  </instantiations>
+  <layout xmi:id="_q536rNaBEeS_4sG2PJA2iA">
+    <containers xmi:id="_q536rdaBEeS_4sG2PJA2iA" key="_q536odaBEeS_4sG2PJA2iA"/>
+  </layout>
+</ram:Aspect>

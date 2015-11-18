@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_D5txcH2VEeGoA-SWkq1ANA" name="FSCDidntAgree _requestFireRoute_requestPoliceRoute">
+  <structuralView xmi:id="_D5txcX2VEeGoA-SWkq1ANA">
+    <classes xsi:type="ram:Class" xmi:id="_D5txcn2VEeGoA-SWkq1ANA" name="ProcessrequestFireRoute" superTypes="_D5txgn2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txc32VEeGoA-SWkq1ANA" name="ProcessrequestPoliceRoute" superTypes="_D5txgn2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txdH2VEeGoA-SWkq1ANA" name="ProcessFSCDidntAgree " superTypes="_D5txgn2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txdX2VEeGoA-SWkq1ANA" name="requestPoliceRouteInput" superTypes="_D5txgH2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txdn2VEeGoA-SWkq1ANA" name="FSCDidntAgree Input" superTypes="_D5txgH2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txd32VEeGoA-SWkq1ANA" name="EnterNumFireTruckOutput" superTypes="_D5txgX2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txeH2VEeGoA-SWkq1ANA" name="EnterNumFireTruck" superTypes="_D5txgn2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txeX2VEeGoA-SWkq1ANA" name="requestFireRouteInput" superTypes="_D5txgH2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txen2VEeGoA-SWkq1ANA" name="AskForPoliceVehiclesOutput" superTypes="_D5txgX2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txe32VEeGoA-SWkq1ANA" name="AskForPoliceVehicles" superTypes="_D5txgn2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txfH2VEeGoA-SWkq1ANA" name="AskForfireVehiclesOutput" superTypes="_D5txgX2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txfX2VEeGoA-SWkq1ANA" name="AskForfireVehicles" superTypes="_D5txgn2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txfn2VEeGoA-SWkq1ANA" name="EnterNumPoliceVehicleOutput" superTypes="_D5txgX2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txf32VEeGoA-SWkq1ANA" name="EnterNumPoliceVehicle" superTypes="_D5txgn2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txgH2VEeGoA-SWkq1ANA" name="InputData"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txgX2VEeGoA-SWkq1ANA" name="OutputData"/>
+    <classes xsi:type="ram:Class" xmi:id="_D5txgn2VEeGoA-SWkq1ANA" name="CustomizableNode"/>
+  </structuralView>
+  <instantiations xmi:id="_D5txg32VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D5txhH2VEeGoA-SWkq1ANA" toElement="_D5txgH2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#//@structuralView/@classes.0"/>
+    </mappings>
+    <mappings xmi:id="_D5txhX2VEeGoA-SWkq1ANA" toElement="_D5txgX2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#//@structuralView/@classes.1"/>
+    </mappings>
+    <externalAspect href="../../Lib/ReactiveSystemWorkflow.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_D5txhn2VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D5txh32VEeGoA-SWkq1ANA" toElement="_D5txgn2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/Workflow.ram#//@structuralView/@classes.0"/>
+    </mappings>
+    <externalAspect href="../../Lib/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_D3e80H2VEeGoA-SWkq1ANA" name="FireRoutePropose_PoliceRoutePropose">
+  <structuralView xmi:id="_D3e80X2VEeGoA-SWkq1ANA">
+    <classes xsi:type="ram:Class" xmi:id="_D3e80n2VEeGoA-SWkq1ANA" name="ProcessPoliceRoutePropose" superTypes="_D3e83H2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e8032VEeGoA-SWkq1ANA" name="ProcessFireRoutePropose" superTypes="_D3e83H2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e81H2VEeGoA-SWkq1ANA" name="FireRouteProposeInput" superTypes="_D3e82n2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e81X2VEeGoA-SWkq1ANA" name="PoliceRouteProposeInput" superTypes="_D3e82n2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e81n2VEeGoA-SWkq1ANA" name="ProposedRouteToFSCOutput" superTypes="_D3e8232VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e8132VEeGoA-SWkq1ANA" name="ProposedRouteToFSC" superTypes="_D3e83H2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e82H2VEeGoA-SWkq1ANA" name="AlertFSCNotCoordinatedOutput" superTypes="_D3e8232VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e82X2VEeGoA-SWkq1ANA" name="AlertFSCNotCoordinated" superTypes="_D3e83H2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e82n2VEeGoA-SWkq1ANA" name="InputData"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e8232VEeGoA-SWkq1ANA" name="OutputData"/>
+    <classes xsi:type="ram:Class" xmi:id="_D3e83H2VEeGoA-SWkq1ANA" name="CustomizableNode"/>
+  </structuralView>
+  <instantiations xmi:id="_D3e83X2VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D3e83n2VEeGoA-SWkq1ANA" toElement="_D3e82n2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#//@structuralView/@classes.0"/>
+    </mappings>
+    <mappings xmi:id="_D3e8332VEeGoA-SWkq1ANA" toElement="_D3e8232VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#//@structuralView/@classes.1"/>
+    </mappings>
+    <externalAspect href="../../Lib/ReactiveSystemWorkflow.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_D3e84H2VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D3e84X2VEeGoA-SWkq1ANA" toElement="_D3e83H2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/Workflow.ram#//@structuralView/@classes.0"/>
+    </mappings>
+    <externalAspect href="../../Lib/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

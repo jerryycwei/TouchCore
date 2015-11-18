@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_SCiH8IimEeGxqtZ4yVqVGg" name="Map">
+  <structuralView xmi:id="_T2q_EIimEeGxqtZ4yVqVGg">
+    <classes xsi:type="ram:Class" xmi:id="_UYHfQIimEeGxqtZ4yVqVGg" name="Data" partiality="public">
+      <associationEnds xmi:id="_qL_GAJF_EeG3VMQxtz3U0g" name="myMap" assoc="_n1PREZF_EeG3VMQxtz3U0g" lowerBound="1"/>
+      <operations  xmi:id="_2UdB4IimEeGxqtZ4yVqVGg" name="add" visibility="public">
+        <returnType xsi:type="ram:RVoid" href="SocketCommunication.ram#_5l6-QIpJEeG5EZ-nvE23vQ"/>
+        <parameters xmi:id="_IVmyEIqHEeGP-shl74zfPQ" name="key" type="_5Eij4IimEeGxqtZ4yVqVGg"/>
+        <parameters xmi:id="_JAEEUIqHEeGP-shl74zfPQ" name="value" type="_VHQdMIimEeGxqtZ4yVqVGg"/>
+      </operations>
+      <operations  xmi:id="_2sV9cIimEeGxqtZ4yVqVGg" name="remove" returnType="_GKx5QIqHEeGP-shl74zfPQ" visibility="public">
+        <parameters xmi:id="_zOSNgIqbEeGP-shl74zfPQ" name="k" type="_5Eij4IimEeGxqtZ4yVqVGg"/>
+      </operations>
+      <operations  xmi:id="_3BB0AIimEeGxqtZ4yVqVGg" name="getValue" returnType="_VHQdMIimEeGxqtZ4yVqVGg" visibility="public"/>
+      <operations  xmi:id="_4Pl44IimEeGxqtZ4yVqVGg" name="getKeys" returnType="_IA8XkIqxEeGP-shl74zfPQ" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Uy0eQIimEeGxqtZ4yVqVGg" name="Map">
+      <associationEnds xmi:id="_qyMxcJF_EeG3VMQxtz3U0g" name="" navigable="false" assoc="_n1PREZF_EeG3VMQxtz3U0g"/>
+      <associationEnds xmi:id="_r6FmkJF_EeG3VMQxtz3U0g" name="myValue" assoc="_oXH2IJF_EeG3VMQxtz3U0g" upperBound="-1"/>
+      <operations  xmi:id="_ZMfFQIqrEeGP-shl74zfPQ" name="create" extendedVisibility="package" returnType="_Uy0eQIimEeGxqtZ4yVqVGg" visibility="public"/>
+      <operations  xmi:id="_Z0KJQIqrEeGP-shl74zfPQ" name="put" extendedVisibility="package" visibility="public">
+        <returnType xsi:type="ram:RVoid" href="NetworkCommand.ram#_Tj5XoIpUEeG5EZ-nvE23vQ"/>
+        <parameters xmi:id="_xqprAIqwEeGP-shl74zfPQ" name="k" type="_5Eij4IimEeGxqtZ4yVqVGg"/>
+        <parameters xmi:id="_yNCmYIqwEeGP-shl74zfPQ" name="v" type="_VHQdMIimEeGxqtZ4yVqVGg"/>
+      </operations>
+      <operations  xmi:id="_aX2sMIqrEeGP-shl74zfPQ" name="remove" extendedVisibility="package" visibility="public">
+        <returnType xsi:type="ram:RVoid" href="NetworkCommand.ram#_Tj5XoIpUEeG5EZ-nvE23vQ"/>
+        <parameters xmi:id="_7DfpsIqwEeGP-shl74zfPQ" name="k" type="_5Eij4IimEeGxqtZ4yVqVGg"/>
+      </operations>
+      <operations  xmi:id="_a4giMIqrEeGP-shl74zfPQ" name="get" extendedVisibility="package" returnType="_VHQdMIimEeGxqtZ4yVqVGg" visibility="public">
+        <parameters xmi:id="_BZydYIqxEeGP-shl74zfPQ" name="k" type="_5Eij4IimEeGxqtZ4yVqVGg"/>
+      </operations>
+      <operations  xmi:id="_bfBIkIqrEeGP-shl74zfPQ" name="keySet" extendedVisibility="package" returnType="_IA8XkIqxEeGP-shl74zfPQ" visibility="public"/>
+      <operations  xmi:id="_cAIRkIqrEeGP-shl74zfPQ" name="getValues" extendedVisibility="package" returnType="_suKIYIqbEeGP-shl74zfPQ" visibility="public"/>
+      <operations  xmi:id="_clXFkIqrEeGP-shl74zfPQ" name="destroy" extendedVisibility="package" visibility="public">
+        <returnType xsi:type="ram:RVoid" href="NetworkCommand.ram#_Tj5XoIpUEeG5EZ-nvE23vQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_VHQdMIimEeGxqtZ4yVqVGg" name="Value" partiality="public">
+      <associationEnds xmi:id="_stQI4JF_EeG3VMQxtz3U0g" name="" navigable="false" assoc="_oXH2IJF_EeG3VMQxtz3U0g"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_5Eij4IimEeGxqtZ4yVqVGg" name="Key" partiality="public"/>
+    <associations xmi:id="_n1PREZF_EeG3VMQxtz3U0g" name="DATA_MAP_ASSOC" ends="_qL_GAJF_EeG3VMQxtz3U0g _qyMxcJF_EeG3VMQxtz3U0g"/>
+    <associations xmi:id="_oXH2IJF_EeG3VMQxtz3U0g" name="MAP_VALUE_ASSOC" ends="_r6FmkJF_EeG3VMQxtz3U0g _stQI4JF_EeG3VMQxtz3U0g"/>
+    <types xsi:type="ram:RVoid" xmi:id="_GKx5QIqHEeGP-shl74zfPQ"/>
+    <types xsi:type="ram:RSet" xmi:id="_suKIYIqbEeGP-shl74zfPQ" type="_VHQdMIimEeGxqtZ4yVqVGg"/>
+    <types xsi:type="ram:RSet" xmi:id="_IA8XkIqxEeGP-shl74zfPQ" type="_5Eij4IimEeGxqtZ4yVqVGg"/>
+  </structuralView>
+</ram:Aspect>

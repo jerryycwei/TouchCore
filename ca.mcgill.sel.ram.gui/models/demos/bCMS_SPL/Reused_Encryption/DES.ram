@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_4jegEN4lEeS1koPVI5W3kQ" name="DES">
+  <realizes href="Encryption.core#_H9M4kN4lEeS1koPVI5W3kQ"/>
+  <structuralView xmi:id="_4jegEd4lEeS1koPVI5W3kQ">
+    <types xsi:type="ram:RVoid" xmi:id="_4jfHIN4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_4jfHId4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_4jfHIt4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_4jfHI94lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_4jfHJN4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RString" xmi:id="_4jfHJd4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_4jfHJt4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_4jfHJ94lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_4jfHKN4lEeS1koPVI5W3kQ"/>
+  </structuralView>
+  <layout xmi:id="_4jfHKd4lEeS1koPVI5W3kQ">
+    <containers xmi:id="_4jfHKt4lEeS1koPVI5W3kQ" key="_4jegEd4lEeS1koPVI5W3kQ"/>
+  </layout>
+</ram:Aspect>

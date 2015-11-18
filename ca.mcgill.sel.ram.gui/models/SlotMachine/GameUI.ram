@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_cyIo4cSBEeKHNqMRHw52-A" name="GameUI">
+  <structuralView xmi:id="_cyIo4sSBEeKHNqMRHw52-A">
+    <classes xsi:type="ram:Class" xmi:id="_cyIo48SBEeKHNqMRHw52-A" name="Reel">
+      <operations  xmi:id="_cyIo5MSBEeKHNqMRHw52-A" name="getCurrentPosition" returnType="_cyIo-cSBEeKHNqMRHw52-A" visibility="public"/>
+      <associationEnds xmi:id="_y3d2YcSDEeKuTeWWr_Je2w" name="myReelView" lowerBound="1" navigable="false" assoc="_y3d2YsSDEeKuTeWWr_Je2w"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_cyIo5sSBEeKHNqMRHw52-A" name="Window">
+      <operations  xmi:id="_cyIo58SBEeKHNqMRHw52-A" name="animatePlay" returnType="_cyIo9sSBEeKHNqMRHw52-A" visibility="public"/>
+      <associationEnds xmi:id="_zspK4MSDEeKuTeWWr_Je2w" name="myReelView" lowerBound="1" assoc="_zspK4sSDEeKuTeWWr_Je2w"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_cyIo6cSBEeKHNqMRHw52-A" name="ReelView">
+      <operations  xmi:id="_cyIo6sSBEeKHNqMRHw52-A" name="stop" returnType="_cyIo9sSBEeKHNqMRHw52-A" visibility="public"/>
+      <operations  xmi:id="_cyIo68SBEeKHNqMRHw52-A" name="spin" returnType="_cyIo9sSBEeKHNqMRHw52-A" visibility="public"/>
+      <associationEnds xmi:id="_y3d2YMSDEeKuTeWWr_Je2w" name="myReel" lowerBound="1" assoc="_y3d2YsSDEeKuTeWWr_Je2w"/>
+      <associationEnds xmi:id="_zspK4cSDEeKuTeWWr_Je2w" name="myWindow" lowerBound="1" navigable="false" assoc="_zspK4sSDEeKuTeWWr_Je2w"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_cyIo7sSBEeKHNqMRHw52-A" name="Symbol">
+      <operations  xmi:id="_cyIo78SBEeKHNqMRHw52-A" name="create" returnType="_cyIo7sSBEeKHNqMRHw52-A" visibility="public">
+        <parameters xmi:id="_cyIo8MSBEeKHNqMRHw52-A" name="textualRepresentation" type="_cyIo-8SBEeKHNqMRHw52-A"/>
+      </operations>
+      <operations  xmi:id="_cyIo8cSBEeKHNqMRHw52-A" name="getSymbolText" returnType="_cyIo-8SBEeKHNqMRHw52-A" visibility="public"/>
+      <operations  xmi:id="_cyIo8sSBEeKHNqMRHw52-A" name="setSymbolText" extendedVisibility="private" returnType="_cyIo9sSBEeKHNqMRHw52-A" visibility="public">
+        <parameters xmi:id="_cyIo88SBEeKHNqMRHw52-A" name="name" type="_cyIo-8SBEeKHNqMRHw52-A"/>
+      </operations>
+    </classes>
+    <associations xmi:id="_y3d2YsSDEeKuTeWWr_Je2w" name="ReelView_Reel" ends="_y3d2YMSDEeKuTeWWr_Je2w _y3d2YcSDEeKuTeWWr_Je2w"/>
+    <associations xmi:id="_zspK4sSDEeKuTeWWr_Je2w" name="Window_ReelView" ends="_zspK4MSDEeKuTeWWr_Je2w _zspK4cSDEeKuTeWWr_Je2w"/>
+    <types xsi:type="ram:RVoid" xmi:id="_cyIo9sSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RAny" xmi:id="_cyIo98SBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_cyIo-MSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RInt" xmi:id="_cyIo-cSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RChar" xmi:id="_cyIo-sSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RString" xmi:id="_cyIo-8SBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_cyIo_MSBEeKHNqMRHw52-A">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_cyIo_cSBEeKHNqMRHw52-A" to="_cyIo7sSBEeKHNqMRHw52-A">
+      <operationMappings xmi:id="_cyIo_sSBEeKHNqMRHw52-A" to="_cyIo8cSBEeKHNqMRHw52-A">
+        <from href="../reusable_model_library/util/Named.ram#_coJYcIybEeGP-shl74zfPQ"/>
+      </operationMappings>
+      <operationMappings xmi:id="_cyIo_8SBEeKHNqMRHw52-A" to="_cyIo8sSBEeKHNqMRHw52-A">
+        <from href="../reusable_model_library/util/Named.ram#_dQHXYIybEeGP-shl74zfPQ"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="../reusable_model_library/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="../reusable_model_library/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <instantiations xmi:id="_cyIpAMSBEeKHNqMRHw52-A">
+    <source xsi:type="ram:Aspect" href="Game.ram#_zlzjUMPkEeK6GJcfYETlBw"/>
+  </instantiations>
+  <layout xmi:id="_cyJP8MSBEeKHNqMRHw52-A">
+    <containers xmi:id="_cyJP8cSBEeKHNqMRHw52-A" key="_cyIo4sSBEeKHNqMRHw52-A">
+      <value xmi:id="_cyJP8sSBEeKHNqMRHw52-A" key="_cyIo48SBEeKHNqMRHw52-A">
+        <value xmi:id="_cyJP88SBEeKHNqMRHw52-A" x="688.0997" y="266.52478"/>
+      </value>
+      <value xmi:id="_cyJP9MSBEeKHNqMRHw52-A" key="_cyIo5sSBEeKHNqMRHw52-A">
+        <value xmi:id="_cyJP9cSBEeKHNqMRHw52-A" x="1267.0682" y="554.6427"/>
+      </value>
+      <value xmi:id="_cyJP9sSBEeKHNqMRHw52-A" key="_cyIo6cSBEeKHNqMRHw52-A">
+        <value xmi:id="_cyJP98SBEeKHNqMRHw52-A" x="1314.4684" y="316.09027"/>
+      </value>
+      <value xmi:id="_cyJP-MSBEeKHNqMRHw52-A">
+        <value xmi:id="_cyJP-cSBEeKHNqMRHw52-A" x="1366.0769" y="49.068268"/>
+      </value>
+      <value xmi:id="_cyJP-sSBEeKHNqMRHw52-A" key="_cyIo7sSBEeKHNqMRHw52-A">
+        <value xmi:id="_cyJP-8SBEeKHNqMRHw52-A" x="1177.0349" y="98.64215"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

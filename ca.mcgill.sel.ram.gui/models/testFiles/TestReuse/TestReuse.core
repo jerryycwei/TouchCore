@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/1.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_gMKZQMazEeS2YoBQeVOIhQ" name="TestReuse">
+  <FeatureModel xmi:id="_gMLnYMazEeS2YoBQeVOIhQ" root="_gMLnYcazEeS2YoBQeVOIhQ">
+    <features xmi:id="_gMLnYcazEeS2YoBQeVOIhQ" name="TestReuse">
+      <realizedBy xsi:type="ram:Aspect" href="TestReuse.ram#_jKEU0MazEeS2YoBQeVOIhQ"/>
+      <reuses xmi:id="_thxTAMa0EeSet6k_vXBH5w" selected="_thxTAca0EeSet6k_vXBH5w">
+        <reusedConcern href="Reused_Association/Association.core#_R-i5kKpPEeSChcgNbAqzEQ"/>
+        <configurations xmi:id="_thxTAca0EeSet6k_vXBH5w">
+          <selected href="Reused_Association/Association.core#_hu-scKpPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_UmyuMKpPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+    </features>
+  </FeatureModel>
+</core:COREConcern>

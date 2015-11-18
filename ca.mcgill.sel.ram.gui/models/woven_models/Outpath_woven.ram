@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_Qu1xYQM6EeKsf4cy5w6-cA" name="Outpath_woven">
+  <structuralView xmi:id="_Qu1xYgM6EeKsf4cy5w6-cA">
+    <classes xsi:type="ram:Class" xmi:id="_Qu1xYwM6EeKsf4cy5w6-cA" name="ICFNWithOutpaths" partiality="public" superTypes="_Qu2YhAM6EeKsf4cy5w6-cA">
+      <operations  xmi:id="_Qu1xZAM6EeKsf4cy5w6-cA" name="addNextNode" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YcAM6EeKsf4cy5w6-cA" name="outpathName" type="_Qu3mlAM6EeKsf4cy5w6-cA"/>
+        <parameters xmi:id="_Qu2YcQM6EeKsf4cy5w6-cA" name="n" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YcgM6EeKsf4cy5w6-cA" name="getOutpath" returnType="_Qu2YdwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YcwM6EeKsf4cy5w6-cA" name="outPathname" type="_Qu3mlAM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YdAM6EeKsf4cy5w6-cA" name="addOutpath" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YdQM6EeKsf4cy5w6-cA" name="pathname" type="_Qu3mlAM6EeKsf4cy5w6-cA"/>
+        <parameters xmi:id="_Qu2YdgM6EeKsf4cy5w6-cA" name="n" type="_Qu2YdwM6EeKsf4cy5w6-cA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2YdwM6EeKsf4cy5w6-cA" name="OutpathNode" superTypes="_Qu2YfgM6EeKsf4cy5w6-cA">
+      <operations  xmi:id="_Qu2YeAM6EeKsf4cy5w6-cA" name="create" returnType="_Qu2YdwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YeQM6EeKsf4cy5w6-cA" name="outpathName" type="_Qu3mlAM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YegM6EeKsf4cy5w6-cA" name="getName" visibility="public">
+        <returnType xsi:type="ram:RString" href="../reusable_model_library/util/Named.ram#_YKx1QIybEeGP-shl74zfPQ"/>
+      </operations>
+      <operations  xmi:id="_Qu2YewM6EeKsf4cy5w6-cA" name="setName" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YfAM6EeKsf4cy5w6-cA" name="name" type="_Qu3mlAM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <attributes xmi:id="_Qu2YfQM6EeKsf4cy5w6-cA" name="name" type="_Qu3mlAM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2YfgM6EeKsf4cy5w6-cA" name="SequenceNode" superTypes="_Qu2YjwM6EeKsf4cy5w6-cA">
+      <operations  xmi:id="_Qu2YfwM6EeKsf4cy5w6-cA" name="depositToken" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YgAM6EeKsf4cy5w6-cA" name="c" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YgQM6EeKsf4cy5w6-cA" name="addNextNode" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YggM6EeKsf4cy5w6-cA" name="n" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <associationEnds xmi:id="_Qu2YgwM6EeKsf4cy5w6-cA" name="next" assoc="_Qu2_vQM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2YhAM6EeKsf4cy5w6-cA" name="ControlFlowNode" superTypes="_Qu2YjwM6EeKsf4cy5w6-cA">
+      <operations  xmi:id="_Qu2YhQM6EeKsf4cy5w6-cA" name="depositToken" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YhgM6EeKsf4cy5w6-cA" name="c" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YhwM6EeKsf4cy5w6-cA" name="addNextNode" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YiAM6EeKsf4cy5w6-cA" name="n" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YiQM6EeKsf4cy5w6-cA" name="getNextNodes" extendedVisibility="protected" returnType="_Qu2YjwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <operations  xmi:id="_Qu2YigM6EeKsf4cy5w6-cA" name="chooseNextNodes" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YiwM6EeKsf4cy5w6-cA" name="c" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YjAM6EeKsf4cy5w6-cA" name="remove" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YjQM6EeKsf4cy5w6-cA" name="a" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <associationEnds xmi:id="_Qu2YjgM6EeKsf4cy5w6-cA" name="mySet" lowerBound="1" referenceType="Composition" assoc="_Qu2_vwM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2YjwM6EeKsf4cy5w6-cA" name="WorkflowNode">
+      <operations  xmi:id="_Qu2YkAM6EeKsf4cy5w6-cA" name="depositToken" abstract="true" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YkQM6EeKsf4cy5w6-cA" name="c" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YkgM6EeKsf4cy5w6-cA" name="addNextNode" abstract="true" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YkwM6EeKsf4cy5w6-cA" name="n" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YlAM6EeKsf4cy5w6-cA" name="initializeNode" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <associationEnds xmi:id="_Qu2YlQM6EeKsf4cy5w6-cA" name="" upperBound="-1" navigable="false" assoc="_Qu2_ugM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2YlgM6EeKsf4cy5w6-cA" name="" upperBound="-1" navigable="false" assoc="_Qu2_uwM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2YlwM6EeKsf4cy5w6-cA" name="" upperBound="-1" navigable="false" assoc="_Qu2_vQM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2YmAM6EeKsf4cy5w6-cA" name="" navigable="false" assoc="_Qu2_wAM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2YmQM6EeKsf4cy5w6-cA" name="CustomizableNode" partiality="public" superTypes="_Qu2YfgM6EeKsf4cy5w6-cA">
+      <operations  xmi:id="_Qu2YmgM6EeKsf4cy5w6-cA" name="execute" extendedVisibility="private" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" partiality="public" visibility="public">
+        <parameters xmi:id="_Qu2YmwM6EeKsf4cy5w6-cA" name="c" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2YnAM6EeKsf4cy5w6-cA" name="Thread"/>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2YnQM6EeKsf4cy5w6-cA" name="WorkflowExecutor" superTypes="_Qu2YnAM6EeKsf4cy5w6-cA">
+      <operations  xmi:id="_Qu2YngM6EeKsf4cy5w6-cA" name="spawnExecution" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" static="true" visibility="public">
+        <parameters xmi:id="_Qu2YnwM6EeKsf4cy5w6-cA" name="start" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+        <parameters xmi:id="_Qu2YoAM6EeKsf4cy5w6-cA" name="myContext" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YoQM6EeKsf4cy5w6-cA" name="getCurrentExecutor" returnType="_Qu2YnQM6EeKsf4cy5w6-cA" static="true" visibility="public"/>
+      <operations  xmi:id="_Qu2YogM6EeKsf4cy5w6-cA" name="scheduleNextNode" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" static="true" visibility="public">
+        <parameters xmi:id="_Qu2YowM6EeKsf4cy5w6-cA" name="n" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YpAM6EeKsf4cy5w6-cA" name="getCurrentContext" returnType="_Qu2_mwM6EeKsf4cy5w6-cA" static="true" visibility="public"/>
+      <operations  xmi:id="_Qu2YpQM6EeKsf4cy5w6-cA" name="create" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YpgM6EeKsf4cy5w6-cA" name="start" type="_Qu2_gQM6EeKsf4cy5w6-cA"/>
+        <parameters xmi:id="_Qu2YpwM6EeKsf4cy5w6-cA" name="myContext" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YqAM6EeKsf4cy5w6-cA" name="getMyContext" extendedVisibility="package" returnType="_Qu2_mwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <operations  xmi:id="_Qu2YqQM6EeKsf4cy5w6-cA" name="setNext" extendedVisibility="private" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2YqgM6EeKsf4cy5w6-cA" name="next" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2YqwM6EeKsf4cy5w6-cA" name="run" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <associationEnds xmi:id="_Qu2YrAM6EeKsf4cy5w6-cA" name="start" lowerBound="1" assoc="_Qu2_ugM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2YrQM6EeKsf4cy5w6-cA" name="next" assoc="_Qu2_uwM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2_gAM6EeKsf4cy5w6-cA" name="myContext" lowerBound="1" assoc="_Qu2_vAM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_gQM6EeKsf4cy5w6-cA" name="Workflow">
+      <operations  xmi:id="_Qu2_ggM6EeKsf4cy5w6-cA" name="addNode" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_gwM6EeKsf4cy5w6-cA" name="n" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_hAM6EeKsf4cy5w6-cA" name="getNodes" returnType="_Qu2YjwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <operations  xmi:id="_Qu2_hQM6EeKsf4cy5w6-cA" name="addStartupNode" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_hgM6EeKsf4cy5w6-cA" name="n" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_hwM6EeKsf4cy5w6-cA" name="getStartupNodes" returnType="_Qu2YjwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <operations  xmi:id="_Qu2_iAM6EeKsf4cy5w6-cA" name="launch" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_iQM6EeKsf4cy5w6-cA" name="c" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_igM6EeKsf4cy5w6-cA" name="initialize" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <operations  xmi:id="_Qu2_iwM6EeKsf4cy5w6-cA" name="remove" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_jAM6EeKsf4cy5w6-cA" name="a" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_jQM6EeKsf4cy5w6-cA" name="remove" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_jgM6EeKsf4cy5w6-cA" name="a" type="_Qu2_lAM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <associationEnds xmi:id="_Qu2_jwM6EeKsf4cy5w6-cA" name="mySet" lowerBound="1" referenceType="Composition" assoc="_Qu3mkAM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2_kAM6EeKsf4cy5w6-cA" name="mySet" lowerBound="1" referenceType="Composition" assoc="_Qu3mkQM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_kQM6EeKsf4cy5w6-cA" name="EndNode" superTypes="_Qu2YhAM6EeKsf4cy5w6-cA">
+      <operations  xmi:id="_Qu2_kgM6EeKsf4cy5w6-cA" name="chooseNextNodes" extendedVisibility="protected" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_kwM6EeKsf4cy5w6-cA" name="c" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_lAM6EeKsf4cy5w6-cA" name="StartupNode" superTypes="_Qu2YfgM6EeKsf4cy5w6-cA">
+      <associationEnds xmi:id="_Qu2_lQM6EeKsf4cy5w6-cA" name="" navigable="false" assoc="_Qu3mkgM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_lgM6EeKsf4cy5w6-cA" name="GlobalContext">
+      <operations  xmi:id="_Qu2_lwM6EeKsf4cy5w6-cA" name="getGlobalContext" returnType="_Qu2_lgM6EeKsf4cy5w6-cA" static="true" visibility="public"/>
+      <operations  xmi:id="_Qu2_mAM6EeKsf4cy5w6-cA" name="create" extendedVisibility="private" returnType="_Qu2_lgM6EeKsf4cy5w6-cA" visibility="public"/>
+      <associationEnds xmi:id="_Qu2_mQM6EeKsf4cy5w6-cA" name="instance" static="true" assoc="_Qu2_vgM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2_mgM6EeKsf4cy5w6-cA" name="" navigable="false" assoc="_Qu2_vgM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_mwM6EeKsf4cy5w6-cA" name="LocalContext">
+      <operations  xmi:id="_Qu2_nAM6EeKsf4cy5w6-cA" name="copy" extendedVisibility="package" returnType="_Qu2_mwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_nQM6EeKsf4cy5w6-cA" name="a" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_ngM6EeKsf4cy5w6-cA" name="create" extendedVisibility="private" returnType="_Qu2_mwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_nwM6EeKsf4cy5w6-cA" name="a" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_oAM6EeKsf4cy5w6-cA" name="replaceStateWith" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_oQM6EeKsf4cy5w6-cA" name="from" type="_Qu2_mwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <associationEnds xmi:id="_Qu2_ogM6EeKsf4cy5w6-cA" name="" upperBound="-1" navigable="false" assoc="_Qu2_vAM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_owM6EeKsf4cy5w6-cA" name="WorkflowExecutionException"/>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_pAM6EeKsf4cy5w6-cA" name="Set">
+      <operations  xmi:id="_Qu2_pQM6EeKsf4cy5w6-cA" name="create" extendedVisibility="package" returnType="_Qu2_pAM6EeKsf4cy5w6-cA" visibility="public"/>
+      <operations  xmi:id="_Qu2_pgM6EeKsf4cy5w6-cA" name="add" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_pwM6EeKsf4cy5w6-cA" name="a" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_qAM6EeKsf4cy5w6-cA" name="remove" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_qQM6EeKsf4cy5w6-cA" name="a" type="_Qu2YjwM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_qgM6EeKsf4cy5w6-cA" name="delete" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <associationEnds xmi:id="_Qu2_qwM6EeKsf4cy5w6-cA" name="" upperBound="-1" navigable="false" assoc="_Qu2_vwM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2_rAM6EeKsf4cy5w6-cA" name="myAssociated" upperBound="-1" referenceType="Aggregation" assoc="_Qu2_wAM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2_rQM6EeKsf4cy5w6-cA" name="" upperBound="-1" navigable="false" assoc="_Qu3mkAM6EeKsf4cy5w6-cA"/>
+      <attributes xmi:id="_Qu2_rgM6EeKsf4cy5w6-cA" name="size" type="_Qu3mlwM6EeKsf4cy5w6-cA"/>
+      <attributes xmi:id="_Qu2_rwM6EeKsf4cy5w6-cA" name="setSize" type="_Qu3mlwM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Qu2_sAM6EeKsf4cy5w6-cA" name="Set">
+      <operations  xmi:id="_Qu2_sQM6EeKsf4cy5w6-cA" name="create" extendedVisibility="package" returnType="_Qu2_sAM6EeKsf4cy5w6-cA" visibility="public"/>
+      <operations  xmi:id="_Qu2_sgM6EeKsf4cy5w6-cA" name="add" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_swM6EeKsf4cy5w6-cA" name="a" type="_Qu2_lAM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_tAM6EeKsf4cy5w6-cA" name="remove" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public">
+        <parameters xmi:id="_Qu2_tQM6EeKsf4cy5w6-cA" name="a" type="_Qu2_lAM6EeKsf4cy5w6-cA"/>
+      </operations>
+      <operations  xmi:id="_Qu2_tgM6EeKsf4cy5w6-cA" name="delete" extendedVisibility="package" returnType="_Qu3mkwM6EeKsf4cy5w6-cA" visibility="public"/>
+      <associationEnds xmi:id="_Qu2_twM6EeKsf4cy5w6-cA" name="" upperBound="-1" navigable="false" assoc="_Qu3mkQM6EeKsf4cy5w6-cA"/>
+      <associationEnds xmi:id="_Qu2_uAM6EeKsf4cy5w6-cA" name="myAssociated" upperBound="-1" referenceType="Aggregation" assoc="_Qu3mkgM6EeKsf4cy5w6-cA"/>
+      <attributes xmi:id="_Qu2_uQM6EeKsf4cy5w6-cA" name="size" type="_Qu3mlwM6EeKsf4cy5w6-cA"/>
+    </classes>
+    <associations xmi:id="_Qu2_ugM6EeKsf4cy5w6-cA" name="WFE_WFN_START_ASSOC" ends="_Qu2YrAM6EeKsf4cy5w6-cA _Qu2YlQM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu2_uwM6EeKsf4cy5w6-cA" name="WFE_WFN_NEXT_ASSOC" ends="_Qu2YrQM6EeKsf4cy5w6-cA _Qu2YlgM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu2_vAM6EeKsf4cy5w6-cA" name="WFE_LOCALCONTEXT_MYCONTEXT_ASSOC" ends="_Qu2_gAM6EeKsf4cy5w6-cA _Qu2_ogM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu2_vQM6EeKsf4cy5w6-cA" name="SN_WFN_NEXT_ASSOC" ends="_Qu2YlwM6EeKsf4cy5w6-cA _Qu2YgwM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu2_vgM6EeKsf4cy5w6-cA" name="instance" ends="_Qu2_mQM6EeKsf4cy5w6-cA _Qu2_mgM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu2_vwM6EeKsf4cy5w6-cA" name="DATA_SET_ASSOC" ends="_Qu2YjgM6EeKsf4cy5w6-cA _Qu2_qwM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu2_wAM6EeKsf4cy5w6-cA" name="SET_ASSOCIATED_ASSOC" ends="_Qu2YmAM6EeKsf4cy5w6-cA _Qu2_rAM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu3mkAM6EeKsf4cy5w6-cA" name="DATA_SET_ASSOC" ends="_Qu2_jwM6EeKsf4cy5w6-cA _Qu2_rQM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu3mkQM6EeKsf4cy5w6-cA" name="DATA_SET_ASSOC" ends="_Qu2_kAM6EeKsf4cy5w6-cA _Qu2_twM6EeKsf4cy5w6-cA"/>
+    <associations xmi:id="_Qu3mkgM6EeKsf4cy5w6-cA" name="SET_ASSOCIATED_ASSOC" ends="_Qu2_lQM6EeKsf4cy5w6-cA _Qu2_uAM6EeKsf4cy5w6-cA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_Qu3mkwM6EeKsf4cy5w6-cA"/>
+    <types xsi:type="ram:RString" xmi:id="_Qu3mlAM6EeKsf4cy5w6-cA"/>
+    <types xsi:type="ram:RAny" xmi:id="_Qu3mlQM6EeKsf4cy5w6-cA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Qu3mlgM6EeKsf4cy5w6-cA"/>
+    <types xsi:type="ram:RInt" xmi:id="_Qu3mlwM6EeKsf4cy5w6-cA"/>
+    <types xsi:type="ram:RChar" xmi:id="_Qu3mmAM6EeKsf4cy5w6-cA"/>
+  </structuralView>
+  <layout xmi:id="_Qu40sAM6EeKsf4cy5w6-cA">
+    <containers xmi:id="_Qu40sQM6EeKsf4cy5w6-cA" key="_Qu1xYgM6EeKsf4cy5w6-cA">
+      <value xmi:id="_Qu40sgM6EeKsf4cy5w6-cA" key="_Qu2_lgM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40swM6EeKsf4cy5w6-cA" x="1411.1935" y="1613.2767"/>
+      </value>
+      <value xmi:id="_Qu40tAM6EeKsf4cy5w6-cA" key="_Qu2_mwM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40tQM6EeKsf4cy5w6-cA" x="3860.0864" y="966.4695"/>
+      </value>
+      <value xmi:id="_Qu40tgM6EeKsf4cy5w6-cA" key="_Qu1xYwM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40twM6EeKsf4cy5w6-cA" x="3301.7148" y="1354.6111"/>
+      </value>
+      <value xmi:id="_Qu40uAM6EeKsf4cy5w6-cA" key="_Qu2YjwM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40uQM6EeKsf4cy5w6-cA" x="2493.4404" y="450.72858"/>
+      </value>
+      <value xmi:id="_Qu40ugM6EeKsf4cy5w6-cA" key="_Qu2YnAM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40uwM6EeKsf4cy5w6-cA" x="4092.2969" y="206.82646"/>
+      </value>
+      <value xmi:id="_Qu40vAM6EeKsf4cy5w6-cA" key="_Qu2_owM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40vQM6EeKsf4cy5w6-cA" x="2228.8213" y="1640.198"/>
+      </value>
+      <value xmi:id="_Qu40vgM6EeKsf4cy5w6-cA" key="_Qu2_lAM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40vwM6EeKsf4cy5w6-cA" x="1971.3768" y="1117.4432"/>
+      </value>
+      <value xmi:id="_Qu40wAM6EeKsf4cy5w6-cA" key="_Qu2YnQM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40wQM6EeKsf4cy5w6-cA" x="3701.116" y="409.49182"/>
+      </value>
+      <value xmi:id="_Qu40wgM6EeKsf4cy5w6-cA" key="_Qu2_kQM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40wwM6EeKsf4cy5w6-cA" x="2986.0996" y="1641.5856"/>
+      </value>
+      <value xmi:id="_Qu40xAM6EeKsf4cy5w6-cA" key="_Qu2_pAM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40xQM6EeKsf4cy5w6-cA" x="1967.5907" y="442.93216"/>
+      </value>
+      <value xmi:id="_Qu40xgM6EeKsf4cy5w6-cA" key="_Qu2YmQM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40xwM6EeKsf4cy5w6-cA" x="2130.3452" y="1361.2493"/>
+      </value>
+      <value xmi:id="_Qu40yAM6EeKsf4cy5w6-cA" key="_Qu2_gQM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40yQM6EeKsf4cy5w6-cA" x="1199.2382" y="381.18393"/>
+      </value>
+      <value xmi:id="_Qu40ygM6EeKsf4cy5w6-cA" key="_Qu2YhAM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40ywM6EeKsf4cy5w6-cA" x="2984.2585" y="914.4965"/>
+      </value>
+      <value xmi:id="_Qu40zAM6EeKsf4cy5w6-cA" key="_Qu2YfgM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40zQM6EeKsf4cy5w6-cA" x="2438.0903" y="912.1424"/>
+      </value>
+      <value xmi:id="_Qu40zgM6EeKsf4cy5w6-cA" key="_Qu2_sAM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu40zwM6EeKsf4cy5w6-cA" x="1259.5552" y="1048.5304"/>
+      </value>
+      <value xmi:id="_Qu400AM6EeKsf4cy5w6-cA" key="_Qu2YdwM6EeKsf4cy5w6-cA">
+        <value xmi:id="_Qu400QM6EeKsf4cy5w6-cA" x="2645.9446" y="1354.8882"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

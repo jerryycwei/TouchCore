@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_th8W4JU9EeG1U-m28TVE4A" name="develop">
+  <structuralView xmi:id="_th8W4ZU9EeG1U-m28TVE4A">
+    <classes xsi:type="ram:Class" xmi:id="_th8W4pU9EeG1U-m28TVE4A" name="EnterNumPoliceVehicleOutput"/>
+    <classes xsi:type="ram:Class" xmi:id="_th8W45U9EeG1U-m28TVE4A" name="EnterNumPoliceVehicle"/>
+    <classes xsi:type="ram:Class" xmi:id="_th8W5JU9EeG1U-m28TVE4A" name="EnterNumFireTruckOutput"/>
+    <classes xsi:type="ram:Class" xmi:id="_th8W5ZU9EeG1U-m28TVE4A" name="EnterNumFireTruck"/>
+  </structuralView>
+  <instantiations xmi:id="_th8W5pU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_th8W55U9EeG1U-m28TVE4A" toElement="_th8W45U9EeG1U-m28TVE4A _th8W5ZU9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_th8W6JU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_th8W6ZU9EeG1U-m28TVE4A" toElement="_th8W4pU9EeG1U-m28TVE4A _th8W5JU9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Output.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Output.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_tQKCEOUSEeSLOfY-6avEMg" name="Counter&lt;Counter>">
+  <structuralView xmi:id="_tQKCEeUSEeSLOfY-6avEMg">
+    <classes xsi:type="ram:Class" xmi:id="_tQKCEuUSEeSLOfY-6avEMg" name="Counter" comesFrom="_tQKDrOUSEeSLOfY-6avEMg _tQKDreUSEeSLOfY-6avEMg">
+      <operations  xmi:id="_tQKCE-USEeSLOfY-6avEMg" name="create" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCEuUSEeSLOfY-6avEMg" operationType="Constructor" visibility="public"/>
+      <operations  xmi:id="_tQKCFOUSEeSLOfY-6avEMg" name="increment" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCSuUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCFeUSEeSLOfY-6avEMg" name="k" type="_tQKCK-USEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCFuUSEeSLOfY-6avEMg" name="decrement" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCSuUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCF-USEeSLOfY-6avEMg" name="k" type="_tQKCK-USEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCGOUSEeSLOfY-6avEMg" name="getCount" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCSuUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCGeUSEeSLOfY-6avEMg" name="k" type="_tQKCK-USEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCGuUSEeSLOfY-6avEMg" name="decrementAll" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCR-USEeSLOfY-6avEMg" visibility="public"/>
+      <operations  xmi:id="_tQKCG-USEeSLOfY-6avEMg" name="getMaximumKey" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCK-USEeSLOfY-6avEMg" visibility="public"/>
+      <operations  xmi:id="_tQKCHOUSEeSLOfY-6avEMg" name="getMinimumKey" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCK-USEeSLOfY-6avEMg" visibility="public"/>
+      <operations  xmi:id="_tQKCHeUSEeSLOfY-6avEMg" name="add" comesFrom="_tQKDreUSEeSLOfY-6avEMg" extendedVisibility="package" returnType="_tQKCR-USEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCHuUSEeSLOfY-6avEMg" name="k" type="_tQKCK-USEeSLOfY-6avEMg"/>
+        <parameters xmi:id="_tQKCH-USEeSLOfY-6avEMg" name="a" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCIOUSEeSLOfY-6avEMg" name="remove" comesFrom="_tQKDreUSEeSLOfY-6avEMg" extendedVisibility="package" returnType="_tQKCR-USEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCIeUSEeSLOfY-6avEMg" name="k" type="_tQKCK-USEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCIuUSEeSLOfY-6avEMg" name="contains" comesFrom="_tQKDreUSEeSLOfY-6avEMg" extendedVisibility="package" returnType="_tQKCSeUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCI-USEeSLOfY-6avEMg" name="a" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCJOUSEeSLOfY-6avEMg" name="containsKey" comesFrom="_tQKDreUSEeSLOfY-6avEMg" extendedVisibility="package" returnType="_tQKCSeUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCJeUSEeSLOfY-6avEMg" name="k" type="_tQKCK-USEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCJuUSEeSLOfY-6avEMg" name="get" comesFrom="_tQKDreUSEeSLOfY-6avEMg" extendedVisibility="package" returnType="_tQKCLOUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCJ-USEeSLOfY-6avEMg" name="k" type="_tQKCK-USEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCKOUSEeSLOfY-6avEMg" name="keySet" comesFrom="_tQKDreUSEeSLOfY-6avEMg" extendedVisibility="package" returnType="_tQKCROUSEeSLOfY-6avEMg" visibility="public"/>
+      <operations  xmi:id="_tQKCKeUSEeSLOfY-6avEMg" name="values" comesFrom="_tQKDreUSEeSLOfY-6avEMg" extendedVisibility="package" returnType="_tQKCMOUSEeSLOfY-6avEMg" visibility="public"/>
+      <associationEnds xmi:id="_tQKCKuUSEeSLOfY-6avEMg" name="hashMap" lowerBound="1" referenceType="Composition" assoc="_tQKCRuUSEeSLOfY-6avEMg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_tQKCK-USEeSLOfY-6avEMg" name="Key" comesFrom="_tQKDrOUSEeSLOfY-6avEMg _tQKDreUSEeSLOfY-6avEMg" partiality="public"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_tQKCLOUSEeSLOfY-6avEMg" name="Integer" comesFrom="_tQKDrOUSEeSLOfY-6avEMg _tQKDreUSEeSLOfY-6avEMg" instanceClassName="java.lang.Integer">
+      <operations  xmi:id="_tQKCLeUSEeSLOfY-6avEMg" name="Integer" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCLOUSEeSLOfY-6avEMg" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_tQKCLuUSEeSLOfY-6avEMg" name="arg0" type="_tQKCSuUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCL-USEeSLOfY-6avEMg" name="intValue" comesFrom="_tQKDrOUSEeSLOfY-6avEMg" returnType="_tQKCSuUSEeSLOfY-6avEMg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_tQKCMOUSEeSLOfY-6avEMg" name="Collection" comesFrom="_tQKDreUSEeSLOfY-6avEMg" instanceClassName="java.util.Collection" interface="true">
+      <typeParameters xmi:id="_tQKCMeUSEeSLOfY-6avEMg" name="E" genericType="_tQKCLOUSEeSLOfY-6avEMg"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_tQKCMuUSEeSLOfY-6avEMg" name="Object" comesFrom="_tQKDreUSEeSLOfY-6avEMg" instanceClassName="java.lang.Object"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_tQKCM-USEeSLOfY-6avEMg" name="HashMap" comesFrom="_tQKDreUSEeSLOfY-6avEMg" instanceClassName="java.util.HashMap">
+      <operations  xmi:id="_tQKCNOUSEeSLOfY-6avEMg" name="put" comesFrom="_tQKDreUSEeSLOfY-6avEMg" returnType="_tQKCLOUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCNeUSEeSLOfY-6avEMg" name="arg0" type="_tQKCK-USEeSLOfY-6avEMg"/>
+        <parameters xmi:id="_tQKCNuUSEeSLOfY-6avEMg" name="arg1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCN-USEeSLOfY-6avEMg" name="remove" comesFrom="_tQKDreUSEeSLOfY-6avEMg" returnType="_tQKCLOUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCOOUSEeSLOfY-6avEMg" name="arg0" type="_tQKCMuUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCOeUSEeSLOfY-6avEMg" name="containsValue" comesFrom="_tQKDreUSEeSLOfY-6avEMg" returnType="_tQKCSeUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCOuUSEeSLOfY-6avEMg" name="arg0" type="_tQKCMuUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCO-USEeSLOfY-6avEMg" name="containsKey" comesFrom="_tQKDreUSEeSLOfY-6avEMg" returnType="_tQKCSeUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCPOUSEeSLOfY-6avEMg" name="arg0" type="_tQKCMuUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCPeUSEeSLOfY-6avEMg" name="get" comesFrom="_tQKDreUSEeSLOfY-6avEMg" returnType="_tQKCLOUSEeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_tQKCPuUSEeSLOfY-6avEMg" name="arg0" type="_tQKCMuUSEeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_tQKCP-USEeSLOfY-6avEMg" name="keySet" comesFrom="_tQKDreUSEeSLOfY-6avEMg" returnType="_tQKCROUSEeSLOfY-6avEMg" visibility="public"/>
+      <operations  xmi:id="_tQKCQOUSEeSLOfY-6avEMg" name="values" comesFrom="_tQKDreUSEeSLOfY-6avEMg" returnType="_tQKCMOUSEeSLOfY-6avEMg" visibility="public"/>
+      <associationEnds xmi:id="_tQKCQeUSEeSLOfY-6avEMg" name="data" lowerBound="1" navigable="false" assoc="_tQKCRuUSEeSLOfY-6avEMg"/>
+      <typeParameters xmi:id="_tQKCQuUSEeSLOfY-6avEMg" name="K" genericType="_tQKCK-USEeSLOfY-6avEMg"/>
+      <typeParameters xmi:id="_tQKCQ-USEeSLOfY-6avEMg" name="V" genericType="_tQKCLOUSEeSLOfY-6avEMg"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_tQKCROUSEeSLOfY-6avEMg" name="Set" comesFrom="_tQKDreUSEeSLOfY-6avEMg" instanceClassName="java.util.Set" interface="true">
+      <typeParameters xmi:id="_tQKCReUSEeSLOfY-6avEMg" name="E" genericType="_tQKCK-USEeSLOfY-6avEMg"/>
+    </classes>
+    <associations xmi:id="_tQKCRuUSEeSLOfY-6avEMg" name="Data_HashMap" ends="_tQKCQeUSEeSLOfY-6avEMg _tQKCKuUSEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_tQKCR-USEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RAny" xmi:id="_tQKCSOUSEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_tQKCSeUSEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RInt" xmi:id="_tQKCSuUSEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RChar" xmi:id="_tQKCS-USEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RString" xmi:id="_tQKCTOUSEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_tQKCTeUSEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_tQKCTuUSEeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RLong" xmi:id="_tQKCT-USEeSLOfY-6avEMg"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKCUOUSEeSLOfY-6avEMg" specifies="_tQKCFOUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKCUeUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCUuUSEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCaOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCU-USEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCbuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCVOUSEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCbuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKCVeUSEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg _tQKCZ-USEeSLOfY-6avEMg">
+        <operands xmi:id="_tQKCVuUSEeSLOfY-6avEMg">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCV-USEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCeeUSEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCWOUSEeSLOfY-6avEMg" covered="_tQKCZ-USEeSLOfY-6avEMg" message="_tQKCeeUSEeSLOfY-6avEMg"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKCWeUSEeSLOfY-6avEMg" body="integerCount != null" language="java"/>
+        </operands>
+        <operands xmi:id="_tQKCWuUSEeSLOfY-6avEMg">
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKCW-USEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKCXOUSEeSLOfY-6avEMg" body="currentCount = 0" language="java"/>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKCXeUSEeSLOfY-6avEMg"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKCXuUSEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKCX-USEeSLOfY-6avEMg" body="currentCount++" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCYOUSEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCceUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCYeUSEeSLOfY-6avEMg" covered="_tQKCZuUSEeSLOfY-6avEMg" message="_tQKCceUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCYuUSEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCdOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCY-USEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCdOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCZOUSEeSLOfY-6avEMg" covered="_tQKCZeUSEeSLOfY-6avEMg" message="_tQKCbOUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCZeUSEeSLOfY-6avEMg" represents="_tQKCeuUSEeSLOfY-6avEMg" coveredBy="_tQKCUuUSEeSLOfY-6avEMg _tQKCZOUSEeSLOfY-6avEMg _tQKCU-USEeSLOfY-6avEMg _tQKCVOUSEeSLOfY-6avEMg _tQKCYOUSEeSLOfY-6avEMg _tQKCXuUSEeSLOfY-6avEMg _tQKCYuUSEeSLOfY-6avEMg _tQKCY-USEeSLOfY-6avEMg _tQKCVeUSEeSLOfY-6avEMg _tQKCW-USEeSLOfY-6avEMg _tQKCV-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCZuUSEeSLOfY-6avEMg" represents="_tQKCauUSEeSLOfY-6avEMg" coveredBy="_tQKCYeUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCZ-USEeSLOfY-6avEMg" represents="_tQKCaeUSEeSLOfY-6avEMg" coveredBy="_tQKCVeUSEeSLOfY-6avEMg _tQKCWOUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKCaOUSEeSLOfY-6avEMg" sendEvent="_tQKCe-USEeSLOfY-6avEMg" receiveEvent="_tQKCUuUSEeSLOfY-6avEMg" signature="_tQKCFOUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKCaeUSEeSLOfY-6avEMg" name="integerCount" lowerBound="1">
+          <type xsi:type="ram:Class" href="Woven_Association.ram#_dhunIkWtEeSR4ZQFE0bgdQ"/>
+        </localProperties>
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKCauUSEeSLOfY-6avEMg" name="newCount" lowerBound="1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_tQKCa-USEeSLOfY-6avEMg" name="currentCount" type="_tQKCSuUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKCbOUSEeSLOfY-6avEMg" sendEvent="_tQKCZOUSEeSLOfY-6avEMg" receiveEvent="_tQKCfOUSEeSLOfY-6avEMg" signature="_tQKCFOUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKCbeUSEeSLOfY-6avEMg" value="_tQKCauUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKCbuUSEeSLOfY-6avEMg" sendEvent="_tQKCU-USEeSLOfY-6avEMg" receiveEvent="_tQKCVOUSEeSLOfY-6avEMg" assignTo="_tQKCaeUSEeSLOfY-6avEMg">
+        <signature href="Woven_Association.ram#_dhunPUWtEeSR4ZQFE0bgdQ"/>
+        <arguments xmi:id="_tQKCb-USEeSLOfY-6avEMg">
+          <parameter href="Woven_Association.ram#_dhunPkWtEeSR4ZQFE0bgdQ"/>
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKCcOUSEeSLOfY-6avEMg" parameter="_tQKCFeUSEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_tQKCceUSEeSLOfY-6avEMg" sendEvent="_tQKCYOUSEeSLOfY-6avEMg" receiveEvent="_tQKCYeUSEeSLOfY-6avEMg" signature="_tQKCLeUSEeSLOfY-6avEMg" assignTo="_tQKCauUSEeSLOfY-6avEMg" messageSort="createMessage">
+        <arguments xmi:id="_tQKCcuUSEeSLOfY-6avEMg" parameter="_tQKCLuUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKCc-USEeSLOfY-6avEMg" value="_tQKCa-USEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_tQKCdOUSEeSLOfY-6avEMg" sendEvent="_tQKCYuUSEeSLOfY-6avEMg" receiveEvent="_tQKCY-USEeSLOfY-6avEMg">
+        <signature href="Woven_Association.ram#_dhunNEWtEeSR4ZQFE0bgdQ"/>
+        <arguments xmi:id="_tQKCdeUSEeSLOfY-6avEMg">
+          <parameter href="Woven_Association.ram#_dhunNUWtEeSR4ZQFE0bgdQ"/>
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKCduUSEeSLOfY-6avEMg" parameter="_tQKCFeUSEeSLOfY-6avEMg"/>
+        </arguments>
+        <arguments xmi:id="_tQKCd-USEeSLOfY-6avEMg">
+          <parameter href="Woven_Association.ram#_dhunNkWtEeSR4ZQFE0bgdQ"/>
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKCeOUSEeSLOfY-6avEMg" value="_tQKCauUSEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_tQKCeeUSEeSLOfY-6avEMg" sendEvent="_tQKCV-USEeSLOfY-6avEMg" receiveEvent="_tQKCWOUSEeSLOfY-6avEMg" signature="_tQKCL-USEeSLOfY-6avEMg" assignTo="_tQKCa-USEeSLOfY-6avEMg"/>
+      <properties xmi:id="_tQKCeuUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKCe-USEeSLOfY-6avEMg" message="_tQKCaOUSEeSLOfY-6avEMg" name="in_increment"/>
+      <formalGates xmi:id="_tQKCfOUSEeSLOfY-6avEMg" message="_tQKCbOUSEeSLOfY-6avEMg" name="out_increment"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKCfeUSEeSLOfY-6avEMg" specifies="_tQKCFuUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKCfuUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCf-USEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCleUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCgOUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCm-USEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCgeUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCm-USEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKCguUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg _tQKCk-USEeSLOfY-6avEMg">
+        <operands xmi:id="_tQKCg-USEeSLOfY-6avEMg">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKChOUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCnuUSEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCheUSEeSLOfY-6avEMg" covered="_tQKCk-USEeSLOfY-6avEMg" message="_tQKCnuUSEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKChuUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKCh-USEeSLOfY-6avEMg" body="newCount--" language="java"/>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKCiOUSEeSLOfY-6avEMg" body="currentCount != null" language="java"/>
+        </operands>
+        <operands xmi:id="_tQKCieUSEeSLOfY-6avEMg">
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKCiuUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKCi-USEeSLOfY-6avEMg" body="newCount = 0" language="java"/>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKCjOUSEeSLOfY-6avEMg"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCjeUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCn-USEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCjuUSEeSLOfY-6avEMg" covered="_tQKClOUSEeSLOfY-6avEMg" message="_tQKCn-USEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCj-USEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCouUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCkOUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCouUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCkeUSEeSLOfY-6avEMg" covered="_tQKCkuUSEeSLOfY-6avEMg" message="_tQKCmeUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCkuUSEeSLOfY-6avEMg" represents="_tQKCp-USEeSLOfY-6avEMg" coveredBy="_tQKCf-USEeSLOfY-6avEMg _tQKCkeUSEeSLOfY-6avEMg _tQKCguUSEeSLOfY-6avEMg _tQKChOUSEeSLOfY-6avEMg _tQKCiuUSEeSLOfY-6avEMg _tQKChuUSEeSLOfY-6avEMg _tQKCjeUSEeSLOfY-6avEMg _tQKCj-USEeSLOfY-6avEMg _tQKCkOUSEeSLOfY-6avEMg _tQKCgOUSEeSLOfY-6avEMg _tQKCgeUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCk-USEeSLOfY-6avEMg" represents="_tQKCluUSEeSLOfY-6avEMg" coveredBy="_tQKCguUSEeSLOfY-6avEMg _tQKCheUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKClOUSEeSLOfY-6avEMg" represents="_tQKCmOUSEeSLOfY-6avEMg" coveredBy="_tQKCjuUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKCleUSEeSLOfY-6avEMg" sendEvent="_tQKCqOUSEeSLOfY-6avEMg" receiveEvent="_tQKCf-USEeSLOfY-6avEMg" signature="_tQKCFuUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKCluUSEeSLOfY-6avEMg" name="currentCount" lowerBound="1">
+          <type xsi:type="ram:Class" href="Woven_Association.ram#_dhunIkWtEeSR4ZQFE0bgdQ"/>
+        </localProperties>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_tQKCl-USEeSLOfY-6avEMg" name="newCount" type="_tQKCSuUSEeSLOfY-6avEMg"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKCmOUSEeSLOfY-6avEMg" name="newInt" lowerBound="1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKCmeUSEeSLOfY-6avEMg" sendEvent="_tQKCkeUSEeSLOfY-6avEMg" receiveEvent="_tQKCqeUSEeSLOfY-6avEMg" signature="_tQKCFuUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKCmuUSEeSLOfY-6avEMg" value="_tQKCl-USEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKCm-USEeSLOfY-6avEMg" sendEvent="_tQKCgOUSEeSLOfY-6avEMg" receiveEvent="_tQKCgeUSEeSLOfY-6avEMg" assignTo="_tQKCluUSEeSLOfY-6avEMg">
+        <signature href="Woven_Association.ram#_dhunPUWtEeSR4ZQFE0bgdQ"/>
+        <arguments xmi:id="_tQKCnOUSEeSLOfY-6avEMg">
+          <parameter href="Woven_Association.ram#_dhunPkWtEeSR4ZQFE0bgdQ"/>
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKCneUSEeSLOfY-6avEMg" parameter="_tQKCF-USEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_tQKCnuUSEeSLOfY-6avEMg" sendEvent="_tQKChOUSEeSLOfY-6avEMg" receiveEvent="_tQKCheUSEeSLOfY-6avEMg" signature="_tQKCL-USEeSLOfY-6avEMg" assignTo="_tQKCl-USEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKCn-USEeSLOfY-6avEMg" sendEvent="_tQKCjeUSEeSLOfY-6avEMg" receiveEvent="_tQKCjuUSEeSLOfY-6avEMg" signature="_tQKCLeUSEeSLOfY-6avEMg" assignTo="_tQKCmOUSEeSLOfY-6avEMg" messageSort="createMessage">
+        <arguments xmi:id="_tQKCoOUSEeSLOfY-6avEMg" parameter="_tQKCLuUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKCoeUSEeSLOfY-6avEMg" value="_tQKCl-USEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_tQKCouUSEeSLOfY-6avEMg" sendEvent="_tQKCj-USEeSLOfY-6avEMg" receiveEvent="_tQKCkOUSEeSLOfY-6avEMg">
+        <signature href="Woven_Association.ram#_dhunNEWtEeSR4ZQFE0bgdQ"/>
+        <arguments xmi:id="_tQKCo-USEeSLOfY-6avEMg">
+          <parameter href="Woven_Association.ram#_dhunNUWtEeSR4ZQFE0bgdQ"/>
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKCpOUSEeSLOfY-6avEMg" parameter="_tQKCF-USEeSLOfY-6avEMg"/>
+        </arguments>
+        <arguments xmi:id="_tQKCpeUSEeSLOfY-6avEMg">
+          <parameter href="Woven_Association.ram#_dhunNkWtEeSR4ZQFE0bgdQ"/>
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKCpuUSEeSLOfY-6avEMg" value="_tQKCmOUSEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKCp-USEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKCqOUSEeSLOfY-6avEMg" message="_tQKCleUSEeSLOfY-6avEMg" name="in_decrement"/>
+      <formalGates xmi:id="_tQKCqeUSEeSLOfY-6avEMg" message="_tQKCmeUSEeSLOfY-6avEMg" name="out_decrement"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKCquUSEeSLOfY-6avEMg" specifies="_tQKCGOUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKCq-USEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCrOUSEeSLOfY-6avEMg" covered="_tQKCsuUSEeSLOfY-6avEMg" message="_tQKCtOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCreUSEeSLOfY-6avEMg" covered="_tQKCsuUSEeSLOfY-6avEMg" message="_tQKCueUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCruUSEeSLOfY-6avEMg" covered="_tQKCsuUSEeSLOfY-6avEMg" message="_tQKCueUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCr-USEeSLOfY-6avEMg" covered="_tQKCsuUSEeSLOfY-6avEMg" message="_tQKCvOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCsOUSEeSLOfY-6avEMg" covered="_tQKCs-USEeSLOfY-6avEMg" message="_tQKCvOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCseUSEeSLOfY-6avEMg" covered="_tQKCsuUSEeSLOfY-6avEMg" message="_tQKCt-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCsuUSEeSLOfY-6avEMg" represents="_tQKCveUSEeSLOfY-6avEMg" coveredBy="_tQKCrOUSEeSLOfY-6avEMg _tQKCseUSEeSLOfY-6avEMg _tQKCreUSEeSLOfY-6avEMg _tQKCruUSEeSLOfY-6avEMg _tQKCr-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCs-USEeSLOfY-6avEMg" represents="_tQKCteUSEeSLOfY-6avEMg" coveredBy="_tQKCsOUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKCtOUSEeSLOfY-6avEMg" sendEvent="_tQKCvuUSEeSLOfY-6avEMg" receiveEvent="_tQKCrOUSEeSLOfY-6avEMg" signature="_tQKCGOUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKCteUSEeSLOfY-6avEMg" name="currentCount" lowerBound="1">
+          <type xsi:type="ram:Class" href="Woven_Association.ram#_dhunIkWtEeSR4ZQFE0bgdQ"/>
+        </localProperties>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_tQKCtuUSEeSLOfY-6avEMg" name="currentValue" type="_tQKCSuUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKCt-USEeSLOfY-6avEMg" sendEvent="_tQKCseUSEeSLOfY-6avEMg" receiveEvent="_tQKCv-USEeSLOfY-6avEMg" signature="_tQKCGOUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKCuOUSEeSLOfY-6avEMg" value="_tQKCtuUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKCueUSEeSLOfY-6avEMg" sendEvent="_tQKCreUSEeSLOfY-6avEMg" receiveEvent="_tQKCruUSEeSLOfY-6avEMg" assignTo="_tQKCteUSEeSLOfY-6avEMg">
+        <signature href="Woven_Association.ram#_dhunPUWtEeSR4ZQFE0bgdQ"/>
+        <arguments xmi:id="_tQKCuuUSEeSLOfY-6avEMg">
+          <parameter href="Woven_Association.ram#_dhunPkWtEeSR4ZQFE0bgdQ"/>
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKCu-USEeSLOfY-6avEMg" parameter="_tQKCGeUSEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_tQKCvOUSEeSLOfY-6avEMg" sendEvent="_tQKCr-USEeSLOfY-6avEMg" receiveEvent="_tQKCsOUSEeSLOfY-6avEMg" signature="_tQKCL-USEeSLOfY-6avEMg" assignTo="_tQKCtuUSEeSLOfY-6avEMg"/>
+      <properties xmi:id="_tQKCveUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKCvuUSEeSLOfY-6avEMg" message="_tQKCtOUSEeSLOfY-6avEMg" name="in_getCount"/>
+      <formalGates xmi:id="_tQKCv-USEeSLOfY-6avEMg" message="_tQKCt-USEeSLOfY-6avEMg" name="out_getCount"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKCwOUSEeSLOfY-6avEMg" specifies="_tQKCGuUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKCweUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCwuUSEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" message="_tQKCz-USEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKCw-USEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" interactionOperator="critical">
+        <operands xmi:id="_tQKCxOUSEeSLOfY-6avEMg">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCxeUSEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" message="_tQKC0-USEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCxuUSEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" message="_tQKC0-USEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKCx-USEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" interactionOperator="opt">
+            <operands xmi:id="_tQKCyOUSEeSLOfY-6avEMg">
+              <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCyeUSEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" message="_tQKC1OUSEeSLOfY-6avEMg"/>
+              <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCyuUSEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" message="_tQKC1OUSEeSLOfY-6avEMg"/>
+              <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKCy-USEeSLOfY-6avEMg" body="e within elements" language="java"/>
+            </operands>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKCzOUSEeSLOfY-6avEMg" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKCzeUSEeSLOfY-6avEMg" covered="_tQKCzuUSEeSLOfY-6avEMg" message="_tQKC0uUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKCzuUSEeSLOfY-6avEMg" represents="_tQKC1-USEeSLOfY-6avEMg" coveredBy="_tQKCwuUSEeSLOfY-6avEMg _tQKCzeUSEeSLOfY-6avEMg _tQKCw-USEeSLOfY-6avEMg _tQKCx-USEeSLOfY-6avEMg _tQKCxeUSEeSLOfY-6avEMg _tQKCxuUSEeSLOfY-6avEMg _tQKCyeUSEeSLOfY-6avEMg _tQKCyuUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKCz-USEeSLOfY-6avEMg" sendEvent="_tQKC2OUSEeSLOfY-6avEMg" receiveEvent="_tQKCwuUSEeSLOfY-6avEMg" signature="_tQKCGuUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKC0OUSEeSLOfY-6avEMg" name="elements" lowerBound="1" type="_tQKCROUSEeSLOfY-6avEMg"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_tQKC0eUSEeSLOfY-6avEMg" name="decrement" type="_tQKCSuUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKC0uUSEeSLOfY-6avEMg" sendEvent="_tQKCzeUSEeSLOfY-6avEMg" receiveEvent="_tQKC2eUSEeSLOfY-6avEMg" signature="_tQKCGuUSEeSLOfY-6avEMg" messageSort="reply"/>
+      <messages xmi:id="_tQKC0-USEeSLOfY-6avEMg" sendEvent="_tQKCxeUSEeSLOfY-6avEMg" receiveEvent="_tQKCxuUSEeSLOfY-6avEMg" signature="_tQKCKOUSEeSLOfY-6avEMg" assignTo="_tQKC0OUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKC1OUSEeSLOfY-6avEMg" sendEvent="_tQKCyeUSEeSLOfY-6avEMg" receiveEvent="_tQKCyuUSEeSLOfY-6avEMg" signature="_tQKCFuUSEeSLOfY-6avEMg" assignTo="_tQKC0eUSEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKC1eUSEeSLOfY-6avEMg" parameter="_tQKCF-USEeSLOfY-6avEMg">
+          <value xsi:type="ram:OpaqueExpression" xmi:id="_tQKC1uUSEeSLOfY-6avEMg" body="e" language=""/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKC1-USEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKC2OUSEeSLOfY-6avEMg" message="_tQKCz-USEeSLOfY-6avEMg" name="in_decrementAll"/>
+      <formalGates xmi:id="_tQKC2eUSEeSLOfY-6avEMg" message="_tQKC0uUSEeSLOfY-6avEMg" name="out_decrementAll"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKC2uUSEeSLOfY-6avEMg" specifies="_tQKCG-USEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKC2-USEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKC3OUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" message="_tQKC9OUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKC3eUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" interactionOperator="critical">
+        <operands xmi:id="_tQKC3uUSEeSLOfY-6avEMg">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKC3-USEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" message="_tQKC-eUSEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKC4OUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" message="_tQKC-eUSEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKC4eUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKC4uUSEeSLOfY-6avEMg" body="|Key maxKey = null" language="java"/>
+          </fragments>
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKC4-USEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKC5OUSEeSLOfY-6avEMg" body="int max = Integer.MIN_VALUE" language="java"/>
+          </fragments>
+          <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKC5eUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" interactionOperator="loop">
+            <operands xmi:id="_tQKC5uUSEeSLOfY-6avEMg">
+              <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKC5-USEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" message="_tQKC-uUSEeSLOfY-6avEMg"/>
+              <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKC6OUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" message="_tQKC-uUSEeSLOfY-6avEMg"/>
+              <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKC6eUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" interactionOperator="opt">
+                <operands xmi:id="_tQKC6uUSEeSLOfY-6avEMg">
+                  <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKC6-USEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg">
+                    <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKC7OUSEeSLOfY-6avEMg" body="max = value" language="java"/>
+                  </fragments>
+                  <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKC7eUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg">
+                    <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKC7uUSEeSLOfY-6avEMg" body="maxKey = e" language="java"/>
+                  </fragments>
+                  <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKC7-USEeSLOfY-6avEMg" body="value > max" language="java"/>
+                </operands>
+              </fragments>
+              <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKC8OUSEeSLOfY-6avEMg" body="e within elements" language="java"/>
+            </operands>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKC8eUSEeSLOfY-6avEMg" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKC8uUSEeSLOfY-6avEMg" covered="_tQKC8-USEeSLOfY-6avEMg" message="_tQKC9-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKC8-USEeSLOfY-6avEMg" represents="_tQKC_eUSEeSLOfY-6avEMg" coveredBy="_tQKC3OUSEeSLOfY-6avEMg _tQKC8uUSEeSLOfY-6avEMg _tQKC3eUSEeSLOfY-6avEMg _tQKC3-USEeSLOfY-6avEMg _tQKC4OUSEeSLOfY-6avEMg _tQKC5eUSEeSLOfY-6avEMg _tQKC6eUSEeSLOfY-6avEMg _tQKC4-USEeSLOfY-6avEMg _tQKC5-USEeSLOfY-6avEMg _tQKC6OUSEeSLOfY-6avEMg _tQKC6-USEeSLOfY-6avEMg _tQKC4eUSEeSLOfY-6avEMg _tQKC7eUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKC9OUSEeSLOfY-6avEMg" sendEvent="_tQKC_uUSEeSLOfY-6avEMg" receiveEvent="_tQKC3OUSEeSLOfY-6avEMg" signature="_tQKCG-USEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKC9eUSEeSLOfY-6avEMg" name="elements" lowerBound="1" type="_tQKCROUSEeSLOfY-6avEMg"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKC9uUSEeSLOfY-6avEMg" name="value" lowerBound="1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKC9-USEeSLOfY-6avEMg" sendEvent="_tQKC8uUSEeSLOfY-6avEMg" receiveEvent="_tQKC_-USEeSLOfY-6avEMg" signature="_tQKCG-USEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:OpaqueExpression" xmi:id="_tQKC-OUSEeSLOfY-6avEMg" body="maxKey"/>
+      </messages>
+      <messages xmi:id="_tQKC-eUSEeSLOfY-6avEMg" sendEvent="_tQKC3-USEeSLOfY-6avEMg" receiveEvent="_tQKC4OUSEeSLOfY-6avEMg" signature="_tQKCKOUSEeSLOfY-6avEMg" assignTo="_tQKC9eUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKC-uUSEeSLOfY-6avEMg" sendEvent="_tQKC5-USEeSLOfY-6avEMg" receiveEvent="_tQKC6OUSEeSLOfY-6avEMg" signature="_tQKCJuUSEeSLOfY-6avEMg" assignTo="_tQKC9uUSEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKC--USEeSLOfY-6avEMg" parameter="_tQKCJ-USEeSLOfY-6avEMg">
+          <value xsi:type="ram:OpaqueExpression" xmi:id="_tQKC_OUSEeSLOfY-6avEMg" body="e"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKC_eUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKC_uUSEeSLOfY-6avEMg" message="_tQKC9OUSEeSLOfY-6avEMg" name="in_getMaximumKey"/>
+      <formalGates xmi:id="_tQKC_-USEeSLOfY-6avEMg" message="_tQKC9-USEeSLOfY-6avEMg" name="out_getMaximumKey"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDAOUSEeSLOfY-6avEMg" specifies="_tQKCHOUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDAeUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDAuUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" message="_tQKDGuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKDA-USEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" interactionOperator="critical">
+        <operands xmi:id="_tQKDBOUSEeSLOfY-6avEMg">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDBeUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" message="_tQKDH-USEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDBuUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" message="_tQKDH-USEeSLOfY-6avEMg"/>
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKDB-USEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKDCOUSEeSLOfY-6avEMg" body="|Key minKey = null" language="java"/>
+          </fragments>
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKDCeUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKDCuUSEeSLOfY-6avEMg" body="int min = Integer.MAX_VALUE" language="java"/>
+          </fragments>
+          <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKDC-USEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" interactionOperator="loop">
+            <operands xmi:id="_tQKDDOUSEeSLOfY-6avEMg">
+              <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDDeUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" message="_tQKDIOUSEeSLOfY-6avEMg"/>
+              <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDDuUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" message="_tQKDIOUSEeSLOfY-6avEMg"/>
+              <fragments xsi:type="ram:CombinedFragment" xmi:id="_tQKDD-USEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" interactionOperator="opt">
+                <operands xmi:id="_tQKDEOUSEeSLOfY-6avEMg">
+                  <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKDEeUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg">
+                    <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKDEuUSEeSLOfY-6avEMg" body="min = value" language="java"/>
+                  </fragments>
+                  <fragments xsi:type="ram:ExecutionStatement" xmi:id="_tQKDE-USEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg">
+                    <specification xsi:type="ram:OpaqueExpression" xmi:id="_tQKDFOUSEeSLOfY-6avEMg" body="minKey = e" language="java"/>
+                  </fragments>
+                  <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKDFeUSEeSLOfY-6avEMg" body="value &lt; min" language="java"/>
+                </operands>
+              </fragments>
+              <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKDFuUSEeSLOfY-6avEMg" body="e within elements" language="java"/>
+            </operands>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_tQKDF-USEeSLOfY-6avEMg" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDGOUSEeSLOfY-6avEMg" covered="_tQKDGeUSEeSLOfY-6avEMg" message="_tQKDHeUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDGeUSEeSLOfY-6avEMg" represents="_tQKDI-USEeSLOfY-6avEMg" coveredBy="_tQKDAuUSEeSLOfY-6avEMg _tQKDGOUSEeSLOfY-6avEMg _tQKDA-USEeSLOfY-6avEMg _tQKDBeUSEeSLOfY-6avEMg _tQKDBuUSEeSLOfY-6avEMg _tQKDC-USEeSLOfY-6avEMg _tQKDD-USEeSLOfY-6avEMg _tQKDCeUSEeSLOfY-6avEMg _tQKDDeUSEeSLOfY-6avEMg _tQKDDuUSEeSLOfY-6avEMg _tQKDEeUSEeSLOfY-6avEMg _tQKDB-USEeSLOfY-6avEMg _tQKDE-USEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDGuUSEeSLOfY-6avEMg" sendEvent="_tQKDJOUSEeSLOfY-6avEMg" receiveEvent="_tQKDAuUSEeSLOfY-6avEMg" signature="_tQKCG-USEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKDG-USEeSLOfY-6avEMg" name="elements" lowerBound="1" type="_tQKCROUSEeSLOfY-6avEMg"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKDHOUSEeSLOfY-6avEMg" name="value" lowerBound="1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDHeUSEeSLOfY-6avEMg" sendEvent="_tQKDGOUSEeSLOfY-6avEMg" receiveEvent="_tQKDJeUSEeSLOfY-6avEMg" signature="_tQKCG-USEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:OpaqueExpression" xmi:id="_tQKDHuUSEeSLOfY-6avEMg" body="minKey"/>
+      </messages>
+      <messages xmi:id="_tQKDH-USEeSLOfY-6avEMg" sendEvent="_tQKDBeUSEeSLOfY-6avEMg" receiveEvent="_tQKDBuUSEeSLOfY-6avEMg" signature="_tQKCKOUSEeSLOfY-6avEMg" assignTo="_tQKDG-USEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDIOUSEeSLOfY-6avEMg" sendEvent="_tQKDDeUSEeSLOfY-6avEMg" receiveEvent="_tQKDDuUSEeSLOfY-6avEMg" signature="_tQKCJuUSEeSLOfY-6avEMg" assignTo="_tQKDHOUSEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKDIeUSEeSLOfY-6avEMg" parameter="_tQKCJ-USEeSLOfY-6avEMg">
+          <value xsi:type="ram:OpaqueExpression" xmi:id="_tQKDIuUSEeSLOfY-6avEMg" body="e"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKDI-USEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDJOUSEeSLOfY-6avEMg" message="_tQKDGuUSEeSLOfY-6avEMg" name="in_getMaximumKey"/>
+      <formalGates xmi:id="_tQKDJeUSEeSLOfY-6avEMg" message="_tQKDHeUSEeSLOfY-6avEMg" name="out_getMaximumKey"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDJuUSEeSLOfY-6avEMg" specifies="_tQKCHeUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDJ-USEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDKOUSEeSLOfY-6avEMg" covered="_tQKDLOUSEeSLOfY-6avEMg" message="_tQKDLuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDKeUSEeSLOfY-6avEMg" covered="_tQKDLOUSEeSLOfY-6avEMg" message="_tQKDMeUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDKuUSEeSLOfY-6avEMg" covered="_tQKDLeUSEeSLOfY-6avEMg" message="_tQKDMeUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDK-USEeSLOfY-6avEMg" covered="_tQKDLOUSEeSLOfY-6avEMg" message="_tQKDMOUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDLOUSEeSLOfY-6avEMg" represents="_tQKDNuUSEeSLOfY-6avEMg" coveredBy="_tQKDKOUSEeSLOfY-6avEMg _tQKDK-USEeSLOfY-6avEMg _tQKDKeUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDLeUSEeSLOfY-6avEMg" represents="_tQKCKuUSEeSLOfY-6avEMg" coveredBy="_tQKDKuUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDLuUSEeSLOfY-6avEMg" sendEvent="_tQKDN-USEeSLOfY-6avEMg" receiveEvent="_tQKDKOUSEeSLOfY-6avEMg" signature="_tQKCHeUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKDL-USEeSLOfY-6avEMg" name="value" lowerBound="1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDMOUSEeSLOfY-6avEMg" sendEvent="_tQKDK-USEeSLOfY-6avEMg" receiveEvent="_tQKDOOUSEeSLOfY-6avEMg" signature="_tQKCHeUSEeSLOfY-6avEMg" messageSort="reply"/>
+      <messages xmi:id="_tQKDMeUSEeSLOfY-6avEMg" sendEvent="_tQKDKeUSEeSLOfY-6avEMg" receiveEvent="_tQKDKuUSEeSLOfY-6avEMg" signature="_tQKCNOUSEeSLOfY-6avEMg" assignTo="_tQKDL-USEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKDMuUSEeSLOfY-6avEMg" parameter="_tQKCNeUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKDM-USEeSLOfY-6avEMg" parameter="_tQKCHuUSEeSLOfY-6avEMg"/>
+        </arguments>
+        <arguments xmi:id="_tQKDNOUSEeSLOfY-6avEMg" parameter="_tQKCNuUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKDNeUSEeSLOfY-6avEMg" parameter="_tQKCH-USEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKDNuUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDN-USEeSLOfY-6avEMg" message="_tQKDLuUSEeSLOfY-6avEMg" name="out_add"/>
+      <formalGates xmi:id="_tQKDOOUSEeSLOfY-6avEMg" message="_tQKDMOUSEeSLOfY-6avEMg" name="in_add"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDOeUSEeSLOfY-6avEMg" specifies="_tQKCIOUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDOuUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDO-USEeSLOfY-6avEMg" covered="_tQKDP-USEeSLOfY-6avEMg" message="_tQKDQeUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDPOUSEeSLOfY-6avEMg" covered="_tQKDP-USEeSLOfY-6avEMg" message="_tQKDROUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDPeUSEeSLOfY-6avEMg" covered="_tQKDQOUSEeSLOfY-6avEMg" message="_tQKDROUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDPuUSEeSLOfY-6avEMg" covered="_tQKDP-USEeSLOfY-6avEMg" message="_tQKDQ-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDP-USEeSLOfY-6avEMg" represents="_tQKDR-USEeSLOfY-6avEMg" coveredBy="_tQKDO-USEeSLOfY-6avEMg _tQKDPuUSEeSLOfY-6avEMg _tQKDPOUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDQOUSEeSLOfY-6avEMg" represents="_tQKCKuUSEeSLOfY-6avEMg" coveredBy="_tQKDPeUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDQeUSEeSLOfY-6avEMg" sendEvent="_tQKDSOUSEeSLOfY-6avEMg" receiveEvent="_tQKDO-USEeSLOfY-6avEMg" signature="_tQKCIOUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKDQuUSEeSLOfY-6avEMg" name="value" lowerBound="1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDQ-USEeSLOfY-6avEMg" sendEvent="_tQKDPuUSEeSLOfY-6avEMg" receiveEvent="_tQKDSeUSEeSLOfY-6avEMg" signature="_tQKCIOUSEeSLOfY-6avEMg" messageSort="reply"/>
+      <messages xmi:id="_tQKDROUSEeSLOfY-6avEMg" sendEvent="_tQKDPOUSEeSLOfY-6avEMg" receiveEvent="_tQKDPeUSEeSLOfY-6avEMg" signature="_tQKCN-USEeSLOfY-6avEMg" assignTo="_tQKDQuUSEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKDReUSEeSLOfY-6avEMg" parameter="_tQKCOOUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKDRuUSEeSLOfY-6avEMg" parameter="_tQKCIeUSEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKDR-USEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDSOUSEeSLOfY-6avEMg" message="_tQKDQeUSEeSLOfY-6avEMg" name="out_remove"/>
+      <formalGates xmi:id="_tQKDSeUSEeSLOfY-6avEMg" message="_tQKDQ-USEeSLOfY-6avEMg" name="in_remove"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDSuUSEeSLOfY-6avEMg" specifies="_tQKCIuUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDS-USEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDTOUSEeSLOfY-6avEMg" covered="_tQKDUOUSEeSLOfY-6avEMg" message="_tQKDUuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDTeUSEeSLOfY-6avEMg" covered="_tQKDUOUSEeSLOfY-6avEMg" message="_tQKDVuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDTuUSEeSLOfY-6avEMg" covered="_tQKDUeUSEeSLOfY-6avEMg" message="_tQKDVuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDT-USEeSLOfY-6avEMg" covered="_tQKDUOUSEeSLOfY-6avEMg" message="_tQKDVOUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDUOUSEeSLOfY-6avEMg" represents="_tQKDWeUSEeSLOfY-6avEMg" coveredBy="_tQKDTOUSEeSLOfY-6avEMg _tQKDT-USEeSLOfY-6avEMg _tQKDTeUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDUeUSEeSLOfY-6avEMg" represents="_tQKCKuUSEeSLOfY-6avEMg" coveredBy="_tQKDTuUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDUuUSEeSLOfY-6avEMg" sendEvent="_tQKDWuUSEeSLOfY-6avEMg" receiveEvent="_tQKDTOUSEeSLOfY-6avEMg" signature="_tQKCIuUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_tQKDU-USEeSLOfY-6avEMg" name="containsValue" type="_tQKCSeUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDVOUSEeSLOfY-6avEMg" sendEvent="_tQKDT-USEeSLOfY-6avEMg" receiveEvent="_tQKDW-USEeSLOfY-6avEMg" signature="_tQKCIuUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKDVeUSEeSLOfY-6avEMg" value="_tQKDU-USEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDVuUSEeSLOfY-6avEMg" sendEvent="_tQKDTeUSEeSLOfY-6avEMg" receiveEvent="_tQKDTuUSEeSLOfY-6avEMg" signature="_tQKCOeUSEeSLOfY-6avEMg" assignTo="_tQKDU-USEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKDV-USEeSLOfY-6avEMg" parameter="_tQKCOuUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKDWOUSEeSLOfY-6avEMg" parameter="_tQKCI-USEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKDWeUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDWuUSEeSLOfY-6avEMg" message="_tQKDUuUSEeSLOfY-6avEMg" name="out_contains"/>
+      <formalGates xmi:id="_tQKDW-USEeSLOfY-6avEMg" message="_tQKDVOUSEeSLOfY-6avEMg" name="in_contains"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDXOUSEeSLOfY-6avEMg" specifies="_tQKCJOUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDXeUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDXuUSEeSLOfY-6avEMg" covered="_tQKDYuUSEeSLOfY-6avEMg" message="_tQKDZOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDX-USEeSLOfY-6avEMg" covered="_tQKDYuUSEeSLOfY-6avEMg" message="_tQKDaOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDYOUSEeSLOfY-6avEMg" covered="_tQKDY-USEeSLOfY-6avEMg" message="_tQKDaOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDYeUSEeSLOfY-6avEMg" covered="_tQKDYuUSEeSLOfY-6avEMg" message="_tQKDZuUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDYuUSEeSLOfY-6avEMg" represents="_tQKDa-USEeSLOfY-6avEMg" coveredBy="_tQKDXuUSEeSLOfY-6avEMg _tQKDYeUSEeSLOfY-6avEMg _tQKDX-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDY-USEeSLOfY-6avEMg" represents="_tQKCKuUSEeSLOfY-6avEMg" coveredBy="_tQKDYOUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDZOUSEeSLOfY-6avEMg" sendEvent="_tQKDbOUSEeSLOfY-6avEMg" receiveEvent="_tQKDXuUSEeSLOfY-6avEMg" signature="_tQKCJOUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_tQKDZeUSEeSLOfY-6avEMg" name="containsKey" type="_tQKCSeUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDZuUSEeSLOfY-6avEMg" sendEvent="_tQKDYeUSEeSLOfY-6avEMg" receiveEvent="_tQKDbeUSEeSLOfY-6avEMg" signature="_tQKCJOUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKDZ-USEeSLOfY-6avEMg" value="_tQKDZeUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDaOUSEeSLOfY-6avEMg" sendEvent="_tQKDX-USEeSLOfY-6avEMg" receiveEvent="_tQKDYOUSEeSLOfY-6avEMg" signature="_tQKCO-USEeSLOfY-6avEMg" assignTo="_tQKDZeUSEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKDaeUSEeSLOfY-6avEMg" parameter="_tQKCPOUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKDauUSEeSLOfY-6avEMg" parameter="_tQKCJeUSEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKDa-USEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDbOUSEeSLOfY-6avEMg" message="_tQKDZOUSEeSLOfY-6avEMg" name="out_containsKey"/>
+      <formalGates xmi:id="_tQKDbeUSEeSLOfY-6avEMg" message="_tQKDZuUSEeSLOfY-6avEMg" name="in_containsKey"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDbuUSEeSLOfY-6avEMg" specifies="_tQKCJuUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDb-USEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDcOUSEeSLOfY-6avEMg" covered="_tQKDdOUSEeSLOfY-6avEMg" message="_tQKDduUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDceUSEeSLOfY-6avEMg" covered="_tQKDdOUSEeSLOfY-6avEMg" message="_tQKDeuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDcuUSEeSLOfY-6avEMg" covered="_tQKDdeUSEeSLOfY-6avEMg" message="_tQKDeuUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDc-USEeSLOfY-6avEMg" covered="_tQKDdOUSEeSLOfY-6avEMg" message="_tQKDeOUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDdOUSEeSLOfY-6avEMg" represents="_tQKDfeUSEeSLOfY-6avEMg" coveredBy="_tQKDcOUSEeSLOfY-6avEMg _tQKDc-USEeSLOfY-6avEMg _tQKDceUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDdeUSEeSLOfY-6avEMg" represents="_tQKCKuUSEeSLOfY-6avEMg" coveredBy="_tQKDcuUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDduUSEeSLOfY-6avEMg" sendEvent="_tQKDfuUSEeSLOfY-6avEMg" receiveEvent="_tQKDcOUSEeSLOfY-6avEMg" signature="_tQKCJuUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKDd-USEeSLOfY-6avEMg" name="value" lowerBound="1" type="_tQKCLOUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDeOUSEeSLOfY-6avEMg" sendEvent="_tQKDc-USEeSLOfY-6avEMg" receiveEvent="_tQKDf-USEeSLOfY-6avEMg" signature="_tQKCJuUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKDeeUSEeSLOfY-6avEMg" value="_tQKDd-USEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDeuUSEeSLOfY-6avEMg" sendEvent="_tQKDceUSEeSLOfY-6avEMg" receiveEvent="_tQKDcuUSEeSLOfY-6avEMg" signature="_tQKCPeUSEeSLOfY-6avEMg" assignTo="_tQKDd-USEeSLOfY-6avEMg">
+        <arguments xmi:id="_tQKDe-USEeSLOfY-6avEMg" parameter="_tQKCPuUSEeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_tQKDfOUSEeSLOfY-6avEMg" parameter="_tQKCJ-USEeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_tQKDfeUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDfuUSEeSLOfY-6avEMg" message="_tQKDduUSEeSLOfY-6avEMg" name="in_get"/>
+      <formalGates xmi:id="_tQKDf-USEeSLOfY-6avEMg" message="_tQKDeOUSEeSLOfY-6avEMg" name="out_get"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDgOUSEeSLOfY-6avEMg" specifies="_tQKCKOUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDgeUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDguUSEeSLOfY-6avEMg" covered="_tQKDhuUSEeSLOfY-6avEMg" message="_tQKDiOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDg-USEeSLOfY-6avEMg" covered="_tQKDhuUSEeSLOfY-6avEMg" message="_tQKDjOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDhOUSEeSLOfY-6avEMg" covered="_tQKDh-USEeSLOfY-6avEMg" message="_tQKDjOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDheUSEeSLOfY-6avEMg" covered="_tQKDhuUSEeSLOfY-6avEMg" message="_tQKDiuUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDhuUSEeSLOfY-6avEMg" represents="_tQKDjeUSEeSLOfY-6avEMg" coveredBy="_tQKDguUSEeSLOfY-6avEMg _tQKDheUSEeSLOfY-6avEMg _tQKDg-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDh-USEeSLOfY-6avEMg" represents="_tQKCKuUSEeSLOfY-6avEMg" coveredBy="_tQKDhOUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDiOUSEeSLOfY-6avEMg" sendEvent="_tQKDjuUSEeSLOfY-6avEMg" receiveEvent="_tQKDguUSEeSLOfY-6avEMg" signature="_tQKCKOUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKDieUSEeSLOfY-6avEMg" name="keySet" lowerBound="1" type="_tQKCROUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDiuUSEeSLOfY-6avEMg" sendEvent="_tQKDheUSEeSLOfY-6avEMg" receiveEvent="_tQKDj-USEeSLOfY-6avEMg" signature="_tQKCKOUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKDi-USEeSLOfY-6avEMg" value="_tQKDieUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDjOUSEeSLOfY-6avEMg" sendEvent="_tQKDg-USEeSLOfY-6avEMg" receiveEvent="_tQKDhOUSEeSLOfY-6avEMg" signature="_tQKCP-USEeSLOfY-6avEMg" assignTo="_tQKDieUSEeSLOfY-6avEMg"/>
+      <properties xmi:id="_tQKDjeUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDjuUSEeSLOfY-6avEMg" message="_tQKDiOUSEeSLOfY-6avEMg" name="in_keySet"/>
+      <formalGates xmi:id="_tQKDj-USEeSLOfY-6avEMg" message="_tQKDiuUSEeSLOfY-6avEMg" name="out_keySet"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDkOUSEeSLOfY-6avEMg" specifies="_tQKCKeUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDkeUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDkuUSEeSLOfY-6avEMg" covered="_tQKDluUSEeSLOfY-6avEMg" message="_tQKDmOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDk-USEeSLOfY-6avEMg" covered="_tQKDluUSEeSLOfY-6avEMg" message="_tQKDnOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDlOUSEeSLOfY-6avEMg" covered="_tQKDl-USEeSLOfY-6avEMg" message="_tQKDnOUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDleUSEeSLOfY-6avEMg" covered="_tQKDluUSEeSLOfY-6avEMg" message="_tQKDmuUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDluUSEeSLOfY-6avEMg" represents="_tQKDneUSEeSLOfY-6avEMg" coveredBy="_tQKDkuUSEeSLOfY-6avEMg _tQKDleUSEeSLOfY-6avEMg _tQKDk-USEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDl-USEeSLOfY-6avEMg" represents="_tQKCKuUSEeSLOfY-6avEMg" coveredBy="_tQKDlOUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDmOUSEeSLOfY-6avEMg" sendEvent="_tQKDnuUSEeSLOfY-6avEMg" receiveEvent="_tQKDkuUSEeSLOfY-6avEMg" signature="_tQKCKeUSEeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_tQKDmeUSEeSLOfY-6avEMg" name="values" lowerBound="1" type="_tQKCMOUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDmuUSEeSLOfY-6avEMg" sendEvent="_tQKDleUSEeSLOfY-6avEMg" receiveEvent="_tQKDn-USEeSLOfY-6avEMg" signature="_tQKCKeUSEeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_tQKDm-USEeSLOfY-6avEMg" value="_tQKDmeUSEeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_tQKDnOUSEeSLOfY-6avEMg" sendEvent="_tQKDk-USEeSLOfY-6avEMg" receiveEvent="_tQKDlOUSEeSLOfY-6avEMg" signature="_tQKCQOUSEeSLOfY-6avEMg" assignTo="_tQKDmeUSEeSLOfY-6avEMg"/>
+      <properties xmi:id="_tQKDneUSEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDnuUSEeSLOfY-6avEMg" message="_tQKDmOUSEeSLOfY-6avEMg" name="in_values"/>
+      <formalGates xmi:id="_tQKDn-USEeSLOfY-6avEMg" message="_tQKDmuUSEeSLOfY-6avEMg" name="out_values"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_tQKDoOUSEeSLOfY-6avEMg" specifies="_tQKCJOUSEeSLOfY-6avEMg">
+    <specification xmi:id="_tQKDoeUSEeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDouUSEeSLOfY-6avEMg" covered="_tQKDpOUSEeSLOfY-6avEMg" message="_tQKDpeUSEeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_tQKDo-USEeSLOfY-6avEMg" covered="_tQKDpOUSEeSLOfY-6avEMg" message="_tQKDpuUSEeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_tQKDpOUSEeSLOfY-6avEMg" represents="_tQKDp-USEeSLOfY-6avEMg" coveredBy="_tQKDouUSEeSLOfY-6avEMg _tQKDo-USEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDpeUSEeSLOfY-6avEMg" sendEvent="_tQKDqOUSEeSLOfY-6avEMg" receiveEvent="_tQKDouUSEeSLOfY-6avEMg" signature="_tQKCJOUSEeSLOfY-6avEMg"/>
+      <messages xmi:id="_tQKDpuUSEeSLOfY-6avEMg" sendEvent="_tQKDo-USEeSLOfY-6avEMg" receiveEvent="_tQKDqeUSEeSLOfY-6avEMg" signature="_tQKCJOUSEeSLOfY-6avEMg" messageSort="reply"/>
+      <properties xmi:id="_tQKDp-USEeSLOfY-6avEMg" name="target" lowerBound="1" type="_tQKCEuUSEeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_tQKDqOUSEeSLOfY-6avEMg" message="_tQKDpeUSEeSLOfY-6avEMg" name="in_containsKey"/>
+      <formalGates xmi:id="_tQKDqeUSEeSLOfY-6avEMg" message="_tQKDpuUSEeSLOfY-6avEMg" name="out_containsKey"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_tQKDquUSEeSLOfY-6avEMg">
+    <containers xmi:id="_tQKDq-USEeSLOfY-6avEMg" key="_tQKCEeUSEeSLOfY-6avEMg"/>
+  </layout>
+  <wovenAspects xmi:id="_tQKDrOUSEeSLOfY-6avEMg" name="Counter">
+    <comesFrom href="Counter.ram#_dUCwsEUOEeSCVrBlhJ8sdw"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_tQKDreUSEeSLOfY-6avEMg" name="Association&lt;Association,HashMap,KeyIndexed>">
+    <comesFrom href="Reused_Association/Woven_Association_Association_HashMap_KeyIndexed.ram#_nggCgKWWEeS4a-PcpF0cKg"/>
+  </wovenAspects>
+</ram:Aspect>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ASCII"?>
+<intermediateWorkflow:IwModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intermediateWorkflow="http:///intermediateWorkflow.ecore" name="Bellairs_stubonly">
+  <concerns name="Authentication">
+    <workflows name="Authentication" startPoints="//@concerns.0/@workflows.0/@nodes.11">
+      <nodes xsi:type="intermediateWorkflow:IwOrFork" name="CheckAuthenticated" preds="//@concerns.0/@workflows.0/@nodes.6/@succs.0" step="//@concerns.0/@steps.0">
+        <succs conditionName="fail" target="//@concerns.0/@workflows.0/@nodes.5"/>
+        <succs conditionName="success" target="//@concerns.0/@workflows.0/@nodes.2"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwOrFork" name="CheckBlock" preds="//@concerns.0/@workflows.0/@nodes.8/@succs.0" step="//@concerns.0/@steps.0">
+        <succs conditionName="blocked" target="//@concerns.0/@workflows.0/@nodes.4"/>
+        <succs conditionName="else" target="//@concerns.0/@workflows.0/@nodes.3"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwEndPoint" name="authenticated" preds="//@concerns.0/@workflows.0/@nodes.0/@succs.1 //@concerns.0/@workflows.0/@nodes.3/@succs.1" step="//@concerns.0/@steps.0" outBindings="//@concerns.1/@workflows.0/@nodes.10/@pluginBindings.0/@outBindings.0 //@concerns.1/@workflows.0/@nodes.11/@pluginBindings.0/@outBindings.0 //@concerns.1/@workflows.1/@nodes.12/@pluginBindings.0/@outBindings.0 //@concerns.1/@workflows.1/@nodes.13/@pluginBindings.0/@outBindings.0 //@concerns.1/@workflows.1/@nodes.16/@pluginBindings.0/@outBindings.0"/>
+      <nodes xsi:type="intermediateWorkflow:IwOrFork" name="CheckAuthenticatedAndIdle" preds="//@concerns.0/@workflows.0/@nodes.1/@succs.1" step="//@concerns.0/@steps.0">
+        <succs conditionName="else" target="//@concerns.0/@workflows.0/@nodes.9"/>
+        <succs conditionName="alreadyAuthenticated_AND_idleLessThan30min" target="//@concerns.0/@workflows.0/@nodes.2"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwEndPoint" name="fail" preds="//@concerns.0/@workflows.0/@nodes.1/@succs.0 //@concerns.0/@workflows.0/@nodes.7/@succs.0" step="//@concerns.0/@steps.0"/>
+      <nodes xsi:type="intermediateWorkflow:IwOrFork" name="CheckTrials" preds="//@concerns.0/@workflows.0/@nodes.0/@succs.0" step="//@concerns.0/@steps.0">
+        <succs conditionName="lessThan4Times" target="//@concerns.0/@workflows.0/@nodes.9"/>
+        <succs conditionName="moreThan3Times" target="//@concerns.0/@workflows.0/@nodes.7"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="authenticate" preds="//@concerns.0/@workflows.0/@nodes.10/@succs.0" step="//@concerns.0/@steps.0">
+        <succs target="//@concerns.0/@workflows.0/@nodes.0"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="block" preds="//@concerns.0/@workflows.0/@nodes.5/@succs.1" step="//@concerns.0/@steps.0">
+        <succs target="//@concerns.0/@workflows.0/@nodes.4"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="checkAuthentication" preds="//@concerns.0/@workflows.0/@nodes.11/@succs.0" step="//@concerns.0/@steps.0">
+        <succs target="//@concerns.0/@workflows.0/@nodes.1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwOutput" name="AskEnterCredentials" preds="//@concerns.0/@workflows.0/@nodes.3/@succs.0 //@concerns.0/@workflows.0/@nodes.5/@succs.0" step="//@concerns.0/@steps.0">
+        <succs target="//@concerns.0/@workflows.0/@nodes.10"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwInput" name="EnterUserCredentials" preds="//@concerns.0/@workflows.0/@nodes.9/@succs.0" step="//@concerns.0/@steps.0">
+        <succs target="//@concerns.0/@workflows.0/@nodes.6"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwStartPoint" name="RequiresAuthentication_Out1" step="//@concerns.0/@steps.0" startPointType="bound" inBindings="//@concerns.1/@workflows.0/@nodes.10/@pluginBindings.0/@inBindings.0 //@concerns.1/@workflows.0/@nodes.11/@pluginBindings.0/@inBindings.0 //@concerns.1/@workflows.1/@nodes.12/@pluginBindings.0/@inBindings.0 //@concerns.1/@workflows.1/@nodes.13/@pluginBindings.0/@inBindings.0 //@concerns.1/@workflows.1/@nodes.16/@pluginBindings.0/@inBindings.0">
+        <succs target="//@concerns.0/@workflows.0/@nodes.8"/>
+      </nodes>
+    </workflows>
+    <steps name="EnterUserCredentials" nodes="//@concerns.0/@workflows.0/@nodes.10 //@concerns.0/@workflows.0/@nodes.6 //@concerns.0/@workflows.0/@nodes.0 //@concerns.0/@workflows.0/@nodes.5 //@concerns.0/@workflows.0/@nodes.11 //@concerns.0/@workflows.0/@nodes.8 //@concerns.0/@workflows.0/@nodes.1 //@concerns.0/@workflows.0/@nodes.4 //@concerns.0/@workflows.0/@nodes.3 //@concerns.0/@workflows.0/@nodes.9 //@concerns.0/@workflows.0/@nodes.7 //@concerns.0/@workflows.0/@nodes.2"/>
+  </concerns>
+  <concerns name="BaseStub">
+    <workflows name="DevelopRoutePlanComplexStub" startPoints="//@concerns.1/@workflows.0/@nodes.4">
+      <nodes xsi:type="intermediateWorkflow:IwStub" name="ProposeRoute" preds="//@concerns.1/@workflows.0/@nodes.3/@succs.0" step="//@concerns.1/@steps.2" stubType="static" outboundInSteps="//@concerns.1/@steps.1 //@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.0/@nodes.9" outBinding="//@concerns.1/@workflows.0/@nodes.0/@pluginBindings.0/@outBindings.0" stubExitIndexAsString="1"/>
+        <succs target="//@concerns.1/@workflows.0/@nodes.7" outBinding="//@concerns.1/@workflows.0/@nodes.0/@pluginBindings.0/@outBindings.1" stubExitIndexAsString="2"/>
+        <pluginBindings>
+          <inBindings disjunctiveStubEntries="//@concerns.1/@workflows.0/@nodes.3/@succs.0" pluginStartPoint="//@concerns.1/@workflows.1/@nodes.8"/>
+          <outBindings stubExit="//@concerns.1/@workflows.0/@nodes.0/@succs.0" pluginEndPoint="//@concerns.1/@workflows.1/@nodes.1"/>
+          <outBindings stubExit="//@concerns.1/@workflows.0/@nodes.0/@succs.1" pluginEndPoint="//@concerns.1/@workflows.1/@nodes.4"/>
+        </pluginBindings>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwOutput" name="EnterNumFireTruck" preds="//@concerns.1/@workflows.0/@nodes.8/@succs.1" step="//@concerns.1/@steps.0">
+        <succs target="//@concerns.1/@workflows.0/@nodes.2"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwInput" name="FireRouteParameters" preds="//@concerns.1/@workflows.0/@nodes.1/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.0/@nodes.10" inBinding="//@concerns.1/@workflows.0/@nodes.10/@pluginBindings.0/@inBindings.0" stubEntryIndexAsString="1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwAndJoin" name="AndJoin115936" preds="//@concerns.1/@workflows.0/@nodes.12/@succs.0 //@concerns.1/@workflows.0/@nodes.13/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.0/@nodes.0" inBinding="//@concerns.1/@workflows.0/@nodes.0/@pluginBindings.0/@inBindings.0" stubEntryIndexAsString="1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwStartPoint" name="develop" step="//@concerns.1/@steps.0" startPointType="global">
+        <succs target="//@concerns.1/@workflows.0/@nodes.8"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwOutput" name="EnterNumPoliceVehicle" preds="//@concerns.1/@workflows.0/@nodes.8/@succs.0" step="//@concerns.1/@steps.0">
+        <succs target="//@concerns.1/@workflows.0/@nodes.6"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwInput" name="PoliceRouteParameters" preds="//@concerns.1/@workflows.0/@nodes.5/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.0/@nodes.11" inBinding="//@concerns.1/@workflows.0/@nodes.11/@pluginBindings.0/@inBindings.0" stubEntryIndexAsString="1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwEndPoint" name="routesCoordinated" preds="//@concerns.1/@workflows.0/@nodes.0/@succs.1" step="//@concerns.1/@steps.2"/>
+      <nodes xsi:type="intermediateWorkflow:IwAndFork" name="AndFork115896" preds="//@concerns.1/@workflows.0/@nodes.4/@succs.0" step="//@concerns.1/@steps.0">
+        <succs target="//@concerns.1/@workflows.0/@nodes.5"/>
+        <succs target="//@concerns.1/@workflows.0/@nodes.1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwEndPoint" name="routesNotCoordinated" preds="//@concerns.1/@workflows.0/@nodes.0/@succs.0" step="//@concerns.1/@steps.1"/>
+      <nodes xsi:type="intermediateWorkflow:IwStub" name="aspectMarker117632" preds="//@concerns.1/@workflows.0/@nodes.2/@succs.0" step="//@concerns.1/@steps.2" stubType="aspectMarker">
+        <succs target="//@concerns.1/@workflows.0/@nodes.12" outBinding="//@concerns.1/@workflows.0/@nodes.10/@pluginBindings.0/@outBindings.0" stubExitIndexAsString="1"/>
+        <pluginBindings>
+          <inBindings disjunctiveStubEntries="//@concerns.1/@workflows.0/@nodes.2/@succs.0" pluginStartPoint="//@concerns.0/@workflows.0/@nodes.11"/>
+          <outBindings stubExit="//@concerns.1/@workflows.0/@nodes.10/@succs.0" pluginEndPoint="//@concerns.0/@workflows.0/@nodes.2"/>
+        </pluginBindings>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwStub" name="aspectMarker117636" preds="//@concerns.1/@workflows.0/@nodes.6/@succs.0" step="//@concerns.1/@steps.2" stubType="aspectMarker">
+        <succs target="//@concerns.1/@workflows.0/@nodes.13" outBinding="//@concerns.1/@workflows.0/@nodes.11/@pluginBindings.0/@outBindings.0" stubExitIndexAsString="1"/>
+        <pluginBindings>
+          <inBindings disjunctiveStubEntries="//@concerns.1/@workflows.0/@nodes.6/@succs.0" pluginStartPoint="//@concerns.0/@workflows.0/@nodes.11"/>
+          <outBindings stubExit="//@concerns.1/@workflows.0/@nodes.11/@succs.0" pluginEndPoint="//@concerns.0/@workflows.0/@nodes.2"/>
+        </pluginBindings>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="ProcessFireRouteParameters" preds="//@concerns.1/@workflows.0/@nodes.10/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.0/@nodes.3"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="ProcessPoliceRouteParameters" preds="//@concerns.1/@workflows.0/@nodes.11/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.0/@nodes.3"/>
+      </nodes>
+    </workflows>
+    <workflows name="ProposeRoute" startPoints="//@concerns.1/@workflows.1/@nodes.8">
+      <nodes xsi:type="intermediateWorkflow:IwOutput" name="AlertFSCNotCoordinated" preds="//@concerns.1/@workflows.1/@nodes.7/@succs.1" step="//@concerns.1/@steps.1">
+        <succs target="//@concerns.1/@workflows.1/@nodes.1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwEndPoint" name="routesNotCoordinated" preds="//@concerns.1/@workflows.1/@nodes.0/@succs.0" step="//@concerns.1/@steps.1" outBindings="//@concerns.1/@workflows.0/@nodes.0/@pluginBindings.0/@outBindings.0"/>
+      <nodes xsi:type="intermediateWorkflow:IwOutput" name="AskForPoliceRoute" preds="//@concerns.1/@workflows.1/@nodes.10/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.1/@nodes.3"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwInput" name="PoliceRouteProposal" preds="//@concerns.1/@workflows.1/@nodes.2/@succs.0" step="//@concerns.1/@steps.1">
+        <succs target="//@concerns.1/@workflows.1/@nodes.13" inBinding="//@concerns.1/@workflows.1/@nodes.13/@pluginBindings.0/@inBindings.0" stubEntryIndexAsString="1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwEndPoint" name="routesCoordinated" preds="//@concerns.1/@workflows.1/@nodes.9/@succs.1" step="//@concerns.1/@steps.2" outBindings="//@concerns.1/@workflows.0/@nodes.0/@pluginBindings.0/@outBindings.1"/>
+      <nodes xsi:type="intermediateWorkflow:IwOutput" name="AskForFireRoute" preds="//@concerns.1/@workflows.1/@nodes.10/@succs.1" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.1/@nodes.6"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwInput" name="FireRouteProposal" preds="//@concerns.1/@workflows.1/@nodes.5/@succs.0" step="//@concerns.1/@steps.1">
+        <succs target="//@concerns.1/@workflows.1/@nodes.12" inBinding="//@concerns.1/@workflows.1/@nodes.12/@pluginBindings.0/@inBindings.0" stubEntryIndexAsString="1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwOrFork" name="OrFork117115" preds="//@concerns.1/@workflows.1/@nodes.11/@succs.0" step="//@concerns.1/@steps.1">
+        <succs conditionName="else" target="//@concerns.1/@workflows.1/@nodes.14"/>
+        <succs conditionName="noRouteProposed" target="//@concerns.1/@workflows.1/@nodes.0"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwStartPoint" name="propose" step="//@concerns.1/@steps.2" startPointType="bound" inBindings="//@concerns.1/@workflows.0/@nodes.0/@pluginBindings.0/@inBindings.0">
+        <succs target="//@concerns.1/@workflows.1/@nodes.10"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwOrFork" name="OrFork117600" preds="//@concerns.1/@workflows.1/@nodes.19/@succs.0" step="//@concerns.1/@steps.2">
+        <succs conditionName="else" target="//@concerns.1/@workflows.1/@nodes.10"/>
+        <succs conditionName="RouteConfirmed" target="//@concerns.1/@workflows.1/@nodes.4"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwAndFork" name="AndFork115939" preds="//@concerns.1/@workflows.1/@nodes.8/@succs.0 //@concerns.1/@workflows.1/@nodes.9/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.1/@nodes.2"/>
+        <succs target="//@concerns.1/@workflows.1/@nodes.5"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwAndJoin" name="AndJoin115953" preds="//@concerns.1/@workflows.1/@nodes.17/@succs.0 //@concerns.1/@workflows.1/@nodes.18/@succs.0" step="//@concerns.1/@steps.1">
+        <succs target="//@concerns.1/@workflows.1/@nodes.7"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwStub" name="aspectMarker117641" preds="//@concerns.1/@workflows.1/@nodes.6/@succs.0" step="//@concerns.1/@steps.1" stubType="aspectMarker">
+        <succs target="//@concerns.1/@workflows.1/@nodes.18" outBinding="//@concerns.1/@workflows.1/@nodes.12/@pluginBindings.0/@outBindings.0" stubExitIndexAsString="1"/>
+        <pluginBindings>
+          <inBindings disjunctiveStubEntries="//@concerns.1/@workflows.1/@nodes.6/@succs.0" pluginStartPoint="//@concerns.0/@workflows.0/@nodes.11"/>
+          <outBindings stubExit="//@concerns.1/@workflows.1/@nodes.12/@succs.0" pluginEndPoint="//@concerns.0/@workflows.0/@nodes.2"/>
+        </pluginBindings>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwStub" name="aspectMarker117643" preds="//@concerns.1/@workflows.1/@nodes.3/@succs.0" step="//@concerns.1/@steps.1" stubType="aspectMarker">
+        <succs target="//@concerns.1/@workflows.1/@nodes.17" outBinding="//@concerns.1/@workflows.1/@nodes.13/@pluginBindings.0/@outBindings.0" stubExitIndexAsString="1"/>
+        <pluginBindings>
+          <inBindings disjunctiveStubEntries="//@concerns.1/@workflows.1/@nodes.3/@succs.0" pluginStartPoint="//@concerns.0/@workflows.0/@nodes.11"/>
+          <outBindings stubExit="//@concerns.1/@workflows.1/@nodes.13/@succs.0" pluginEndPoint="//@concerns.0/@workflows.0/@nodes.2"/>
+        </pluginBindings>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwOutput" name="ProposedRouteToFSC" preds="//@concerns.1/@workflows.1/@nodes.7/@succs.0" step="//@concerns.1/@steps.1">
+        <succs target="//@concerns.1/@workflows.1/@nodes.15"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwInput" name="FSCRouteConfirmation" preds="//@concerns.1/@workflows.1/@nodes.14/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.1/@nodes.16" inBinding="//@concerns.1/@workflows.1/@nodes.16/@pluginBindings.0/@inBindings.0" stubEntryIndexAsString="1"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwStub" name="aspectMarker117655" preds="//@concerns.1/@workflows.1/@nodes.15/@succs.0" step="//@concerns.1/@steps.2" stubType="aspectMarker">
+        <succs target="//@concerns.1/@workflows.1/@nodes.19" outBinding="//@concerns.1/@workflows.1/@nodes.16/@pluginBindings.0/@outBindings.0" stubExitIndexAsString="1"/>
+        <pluginBindings>
+          <inBindings disjunctiveStubEntries="//@concerns.1/@workflows.1/@nodes.15/@succs.0" pluginStartPoint="//@concerns.0/@workflows.0/@nodes.11"/>
+          <outBindings stubExit="//@concerns.1/@workflows.1/@nodes.16/@succs.0" pluginEndPoint="//@concerns.0/@workflows.0/@nodes.2"/>
+        </pluginBindings>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="ProcessPoliceRouteProposal" preds="//@concerns.1/@workflows.1/@nodes.13/@succs.0" step="//@concerns.1/@steps.1">
+        <succs target="//@concerns.1/@workflows.1/@nodes.11"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="ProcessFireRouteProposal" preds="//@concerns.1/@workflows.1/@nodes.12/@succs.0" step="//@concerns.1/@steps.1">
+        <succs target="//@concerns.1/@workflows.1/@nodes.11"/>
+      </nodes>
+      <nodes xsi:type="intermediateWorkflow:IwCustomizableNode" name="ProcessFSCRouteConfirmation" preds="//@concerns.1/@workflows.1/@nodes.16/@succs.0" step="//@concerns.1/@steps.2">
+        <succs target="//@concerns.1/@workflows.1/@nodes.9"/>
+      </nodes>
+    </workflows>
+    <steps name="develop" nodes="//@concerns.1/@workflows.0/@nodes.4 //@concerns.1/@workflows.0/@nodes.8 //@concerns.1/@workflows.0/@nodes.5 //@concerns.1/@workflows.0/@nodes.1"/>
+    <steps name="FireRouteProposal_PoliceRouteProposal" nodes="//@concerns.1/@workflows.1/@nodes.6 //@concerns.1/@workflows.1/@nodes.12 //@concerns.1/@workflows.1/@nodes.18 //@concerns.1/@workflows.1/@nodes.3 //@concerns.1/@workflows.1/@nodes.13 //@concerns.1/@workflows.1/@nodes.17 //@concerns.1/@workflows.1/@nodes.11 //@concerns.1/@workflows.1/@nodes.7 //@concerns.1/@workflows.1/@nodes.14 //@concerns.1/@workflows.1/@nodes.0 //@concerns.1/@workflows.1/@nodes.1 //@concerns.1/@workflows.0/@nodes.9" outboundStubs="//@concerns.1/@workflows.0/@nodes.0"/>
+    <steps name="FSCRouteConfirmation_PoliceRouteParameters_FireRouteParameters" nodes="//@concerns.1/@workflows.0/@nodes.2 //@concerns.1/@workflows.0/@nodes.10 //@concerns.1/@workflows.0/@nodes.12 //@concerns.1/@workflows.1/@nodes.15 //@concerns.1/@workflows.1/@nodes.16 //@concerns.1/@workflows.1/@nodes.19 //@concerns.1/@workflows.1/@nodes.9 //@concerns.1/@workflows.0/@nodes.6 //@concerns.1/@workflows.0/@nodes.11 //@concerns.1/@workflows.0/@nodes.13 //@concerns.1/@workflows.0/@nodes.3 //@concerns.1/@workflows.0/@nodes.0 //@concerns.1/@workflows.1/@nodes.8 //@concerns.1/@workflows.1/@nodes.10 //@concerns.1/@workflows.1/@nodes.2 //@concerns.1/@workflows.1/@nodes.4 //@concerns.1/@workflows.0/@nodes.7 //@concerns.1/@workflows.1/@nodes.5" outboundStubs="//@concerns.1/@workflows.0/@nodes.0"/>
+  </concerns>
+</intermediateWorkflow:IwModel>

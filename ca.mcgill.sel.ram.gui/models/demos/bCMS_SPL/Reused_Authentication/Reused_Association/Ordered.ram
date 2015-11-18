@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_3WYVMKaKEeSAKObocMolaA" name="Ordered">
+  <structuralView xmi:id="_3WYVMaaKEeSAKObocMolaA">
+    <classes xsi:type="ram:Class" xmi:id="_3WYVMqaKEeSAKObocMolaA" name="Data" partiality="public"/>
+    <types xsi:type="ram:RVoid" xmi:id="_3WYVM6aKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_3WYVNKaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_3WYVNaaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_3WYVNqaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_3WYVN6aKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RString" xmi:id="_3WYVOKaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_3WYVOaaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_3WYVOqaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_3WYVO6aKEeSAKObocMolaA"/>
+  </structuralView>
+  <instantiations xmi:id="_309HkKaKEeSAKObocMolaA" type="Extends">
+    <externalAspect href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+  </instantiations>
+  <layout xmi:id="_3WYVPKaKEeSAKObocMolaA">
+    <containers xmi:id="_3WYVPaaKEeSAKObocMolaA" key="_3WYVMaaKEeSAKObocMolaA">
+      <value xmi:id="_3WYVPqaKEeSAKObocMolaA" key="_3WYVMqaKEeSAKObocMolaA">
+        <value xmi:id="_3WYVP6aKEeSAKObocMolaA" x="463.0" y="237.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_5Vp9oHSrEeSgxaBFLSPZWg" name="TestCase03A">
+  <structuralView xmi:id="_5Vp9oXSrEeSgxaBFLSPZWg">
+    <classes xsi:type="ram:Class" xmi:id="_5Vp9onSrEeSgxaBFLSPZWg" name="A"/>
+    <types xsi:type="ram:RVoid" xmi:id="_5Vp9o3SrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RAny" xmi:id="_5Vp9pHSrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_5Vp9pXSrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RInt" xmi:id="_5Vp9pnSrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RChar" xmi:id="_5Vp9p3SrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RString" xmi:id="_5Vp9qHSrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_5Vp9qXSrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_5Vp9qnSrEeSgxaBFLSPZWg"/>
+    <types xsi:type="ram:RLong" xmi:id="_5Vp9q3SrEeSgxaBFLSPZWg"/>
+  </structuralView>
+  <instantiations xmi:id="_-HNBEHSrEeSgxaBFLSPZWg" type="Extends">
+    <mappings xmi:id="_BjrvAHSsEeSgxaBFLSPZWg" toElement="_5Vp9onSrEeSgxaBFLSPZWg">
+      <fromElement xsi:type="ram:Class" href="TestCase03B.ram#_8sfWknSrEeSgxaBFLSPZWg"/>
+    </mappings>
+    <externalAspect href="TestCase03B.ram#_8sfWkHSrEeSgxaBFLSPZWg"/>
+  </instantiations>
+  <layout xmi:id="_5Vp9rHSrEeSgxaBFLSPZWg">
+    <containers xmi:id="_5Vp9rXSrEeSgxaBFLSPZWg" key="_5Vp9oXSrEeSgxaBFLSPZWg">
+      <value xmi:id="_5Vp9rnSrEeSgxaBFLSPZWg" key="_5Vp9onSrEeSgxaBFLSPZWg">
+        <value xmi:id="_5Vp9r3SrEeSgxaBFLSPZWg" x="557.0" y="245.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

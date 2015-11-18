@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_Mvg64HsmEeScXMllMu3aKQ" name="TestCoverageC">
+  <structuralView xmi:id="_Mvg64XsmEeScXMllMu3aKQ">
+    <classes xsi:type="ram:Class" xmi:id="_Mvg64nsmEeScXMllMu3aKQ" name="C" partiality="public"/>
+    <classes xsi:type="ram:Class" xmi:id="_Mvg643smEeScXMllMu3aKQ" name="E"/>
+    <types xsi:type="ram:RVoid" xmi:id="_Mvg65HsmEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_Mvg65XsmEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Mvg65nsmEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_Mvg653smEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_Mvg66HsmEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RString" xmi:id="_Mvg66XsmEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_Mvg66nsmEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_Mvg663smEeScXMllMu3aKQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_Mvg67HsmEeScXMllMu3aKQ"/>
+  </structuralView>
+  <layout xmi:id="_Mvg67XsmEeScXMllMu3aKQ">
+    <containers xmi:id="_Mvg67nsmEeScXMllMu3aKQ" key="_Mvg64XsmEeScXMllMu3aKQ">
+      <value xmi:id="_Mvg673smEeScXMllMu3aKQ" key="_Mvg64nsmEeScXMllMu3aKQ">
+        <value xmi:id="_Mvg68HsmEeScXMllMu3aKQ" x="495.0" y="322.0"/>
+      </value>
+      <value xmi:id="_Mvg68XsmEeScXMllMu3aKQ" key="_Mvg643smEeScXMllMu3aKQ">
+        <value xmi:id="_Mvg68nsmEeScXMllMu3aKQ" x="839.0" y="474.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

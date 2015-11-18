@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_6fI3UN4sEeS1koPVI5W3kQ" name="Allocation">
+  <realizes href="ResourceManagement.core#_ze4A8N4pEeS1koPVI5W3kQ"/>
+  <structuralView xmi:id="_6fI3Ud4sEeS1koPVI5W3kQ">
+    <types xsi:type="ram:RVoid" xmi:id="_6fI3Ut4sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_6fI3U94sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_6fI3VN4sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_6fI3Vd4sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_6fI3Vt4sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RString" xmi:id="_6fI3V94sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_6fI3WN4sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_6fI3Wd4sEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_6fI3Wt4sEeS1koPVI5W3kQ"/>
+  </structuralView>
+  <instantiations xmi:id="_7zolEN4sEeS1koPVI5W3kQ">
+    <externalAspect href="Reused_Association/Woven_Association_ArrayList_Association_Ordered.ram#_vF2D0N4sEeS1koPVI5W3kQ"/>
+  </instantiations>
+  <layout xmi:id="_6fI3W94sEeS1koPVI5W3kQ">
+    <containers xmi:id="_6fI3XN4sEeS1koPVI5W3kQ" key="_6fI3Ud4sEeS1koPVI5W3kQ"/>
+  </layout>
+</ram:Aspect>

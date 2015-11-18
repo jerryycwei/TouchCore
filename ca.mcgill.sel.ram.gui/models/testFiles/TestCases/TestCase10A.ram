@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_aFkMkHSwEeSlgfy69r75xg" name="TestCase10A">
+  <structuralView xmi:id="_aFkMkXSwEeSlgfy69r75xg">
+    <classes xsi:type="ram:Class" xmi:id="_aFkMknSwEeSlgfy69r75xg" name="A">
+      <attributes xmi:id="_aFkMk3SwEeSlgfy69r75xg" name="name" type="_aFkMnnSwEeSlgfy69r75xg"/>
+      <attributes xmi:id="_aFkMlHSwEeSlgfy69r75xg" name="address" type="_aFkMnnSwEeSlgfy69r75xg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_aFkMlXSwEeSlgfy69r75xg" name="C">
+      <attributes xmi:id="_aFkMlnSwEeSlgfy69r75xg" name="x" type="_aFkMoHSwEeSlgfy69r75xg"/>
+      <attributes xmi:id="_aFkMl3SwEeSlgfy69r75xg" name="y" type="_aFkMoHSwEeSlgfy69r75xg"/>
+      <attributes xmi:id="_aFkMmHSwEeSlgfy69r75xg" name="z" type="_aFkMoHSwEeSlgfy69r75xg"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_aFkMmXSwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RAny" xmi:id="_aFkMmnSwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_aFkMm3SwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RInt" xmi:id="_aFkMnHSwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RChar" xmi:id="_aFkMnXSwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RString" xmi:id="_aFkMnnSwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_aFkMn3SwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_aFkMoHSwEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RLong" xmi:id="_aFkMoXSwEeSlgfy69r75xg"/>
+  </structuralView>
+  <instantiations xmi:id="_aFkMonSwEeSlgfy69r75xg" type="Extends">
+    <mappings xmi:id="_aFkMo3SwEeSlgfy69r75xg" toElement="_aFkMknSwEeSlgfy69r75xg">
+      <fromElement xsi:type="ram:Class" href="TestCase10B.ram#_NiEPwnSwEeSlgfy69r75xg"/>
+    </mappings>
+    <mappings xmi:id="_aFkMpHSwEeSlgfy69r75xg" toElement="_aFkMlXSwEeSlgfy69r75xg">
+      <fromElement xsi:type="ram:Class" href="TestCase10B.ram#_NiEPwnSwEeSlgfy69r75xg"/>
+    </mappings>
+    <externalAspect href="TestCase10B.ram#_NiEPwHSwEeSlgfy69r75xg"/>
+  </instantiations>
+  <layout xmi:id="_aFkMpXSwEeSlgfy69r75xg">
+    <containers xmi:id="_aFkMpnSwEeSlgfy69r75xg" key="_aFkMkXSwEeSlgfy69r75xg">
+      <value xmi:id="_aFkMp3SwEeSlgfy69r75xg" key="_aFkMknSwEeSlgfy69r75xg">
+        <value xmi:id="_aFkMqHSwEeSlgfy69r75xg" x="485.0" y="306.0"/>
+      </value>
+      <value xmi:id="_aFkMqXSwEeSlgfy69r75xg" key="_aFkMlXSwEeSlgfy69r75xg">
+        <value xmi:id="_aFkMqnSwEeSlgfy69r75xg" x="825.0" y="292.9999"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

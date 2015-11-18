@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_D7D1QH2VEeGoA-SWkq1ANA" name="requestDriverConfirmation">
+  <structuralView xmi:id="_D7D1QX2VEeGoA-SWkq1ANA">
+    <classes xsi:type="ram:Class" xmi:id="_D7D1Qn2VEeGoA-SWkq1ANA" name="showVehicleListOutput" superTypes="_D7D1SH2VEeGoA-SWkq1ANA">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_D7D1Q32VEeGoA-SWkq1ANA" name="showVehicleList" superTypes="_D7D1SX2VEeGoA-SWkq1ANA">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_D7D1RH2VEeGoA-SWkq1ANA" name="requestDriverConfirmationInput" superTypes="_D7D1R32VEeGoA-SWkq1ANA">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_D7D1RX2VEeGoA-SWkq1ANA" name="showAssignmentOutput" superTypes="_D7D1SH2VEeGoA-SWkq1ANA">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_D7D1Rn2VEeGoA-SWkq1ANA" name="showAssignment" superTypes="_D7D1SX2VEeGoA-SWkq1ANA">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_D7D1R32VEeGoA-SWkq1ANA" name="InputData">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_D7D1SH2VEeGoA-SWkq1ANA" name="OutputData">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_D7D1SX2VEeGoA-SWkq1ANA" name="CustomizableNode">
+      
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_6BSX0YP3EeG8sOfrbqp-Ew"/>
+    <types xsi:type="ram:RAny" xmi:id="_6BS-4IP3EeG8sOfrbqp-Ew"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_6BTl8IP3EeG8sOfrbqp-Ew"/>
+    <types xsi:type="ram:RInt" xmi:id="_6BUNAIP3EeG8sOfrbqp-Ew"/>
+    <types xsi:type="ram:RChar" xmi:id="_6BUNAYP3EeG8sOfrbqp-Ew"/>
+    <types xsi:type="ram:RString" xmi:id="_6BU0EIP3EeG8sOfrbqp-Ew"/>
+  </structuralView>
+  <instantiations xmi:id="_D7D1Sn2VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D7D1S32VEeGoA-SWkq1ANA" toElement="_D7D1R32VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="Lib/ReactiveSystemWorkflow.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <mappings xmi:id="_D7D1TH2VEeGoA-SWkq1ANA" toElement="_D7D1SH2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="Lib/ReactiveSystemWorkflow.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="Lib/ReactiveSystemWorkflow.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_D7D1TX2VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D7D1Tn2VEeGoA-SWkq1ANA" toElement="_D7D1SX2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="Lib/Workflow.ram#_stle2HdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <externalAspect href="Lib/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

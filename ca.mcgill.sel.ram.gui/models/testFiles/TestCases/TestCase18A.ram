@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_opwXUHTHEeSClP9URdCAqA" name="TestCase18A">
+  <structuralView xmi:id="_opwXUXTHEeSClP9URdCAqA">
+    <classes xsi:type="ram:Class" xmi:id="_opwXUnTHEeSClP9URdCAqA" name="A">
+      <operations  xmi:id="_opwXU3THEeSClP9URdCAqA" name="count" returnType="_opwXVHTHEeSClP9URdCAqA" visibility="public"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_opwXVHTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RAny" xmi:id="_opwXVXTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_opwXVnTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RInt" xmi:id="_opwXV3THEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RChar" xmi:id="_opwXWHTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RString" xmi:id="_opwXWXTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_opwXWnTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_opwXW3THEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RLong" xmi:id="_opwXXHTHEeSClP9URdCAqA"/>
+  </structuralView>
+  <instantiations xmi:id="_opwXXXTHEeSClP9URdCAqA" type="Extends">
+    <mappings xmi:id="_opwXXnTHEeSClP9URdCAqA" toElement="_opwXUnTHEeSClP9URdCAqA">
+      <operationMappings xmi:id="_opwXX3THEeSClP9URdCAqA" toElement="_opwXU3THEeSClP9URdCAqA">
+        <fromElement href="TestCase18B.ram#_hgX503THEeSClP9URdCAqA"/>
+      </operationMappings>
+      <fromElement xsi:type="ram:Class" href="TestCase18B.ram#_hgX50nTHEeSClP9URdCAqA"/>
+    </mappings>
+    <externalAspect href="TestCase18B.ram#_hgX50HTHEeSClP9URdCAqA"/>
+  </instantiations>
+  <layout xmi:id="_opwXYHTHEeSClP9URdCAqA">
+    <containers xmi:id="_opwXYXTHEeSClP9URdCAqA" key="_opwXUXTHEeSClP9URdCAqA">
+      <value xmi:id="_opwXYnTHEeSClP9URdCAqA" key="_opwXUnTHEeSClP9URdCAqA">
+        <value xmi:id="_opwXY3THEeSClP9URdCAqA" x="647.0" y="276.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

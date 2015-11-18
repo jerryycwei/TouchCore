@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_DmqkoHNSEeSNTtDn7hK1DQ" name="B">
+  <structuralView xmi:id="_DmqkoXNSEeSNTtDn7hK1DQ">
+    <classes xsi:type="ram:Class" xmi:id="_FbjCoHNSEeSNTtDn7hK1DQ" name="B">
+      <operations  xmi:id="_HzKaQHNSEeSNTtDn7hK1DQ" name="k" returnType="_DmqkonNSEeSNTtDn7hK1DQ" visibility="public"/>
+      <associationEnds xmi:id="_UHi9AXNSEeSNTtDn7hK1DQ" name="myD" lowerBound="1" assoc="_UHjkEHNSEeSNTtDn7hK1DQ"/>
+      <attributes xmi:id="_G7smwHNSEeSNTtDn7hK1DQ" name="fruitCount" type="_DmqkpXNSEeSNTtDn7hK1DQ"/>
+      <attributes xmi:id="_1FBWQHSoEeSbNs79P5MzZg" name="moose" type="_Dmqkp3NSEeSNTtDn7hK1DQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_IWa4UHNSEeSNTtDn7hK1DQ" name="D">
+      <operations  xmi:id="_KrbA0HNSEeSNTtDn7hK1DQ" name="donuts" returnType="_DmqkonNSEeSNTtDn7hK1DQ" visibility="public">
+        <parameters xmi:id="_KrbA0XNSEeSNTtDn7hK1DQ" name="count" type="_DmqkpXNSEeSNTtDn7hK1DQ"/>
+      </operations>
+      <associationEnds xmi:id="_UHi9AHNSEeSNTtDn7hK1DQ" name="myB" lowerBound="1" assoc="_UHjkEHNSEeSNTtDn7hK1DQ"/>
+      <attributes xmi:id="_Jb0aIHNSEeSNTtDn7hK1DQ" name="isFresh" type="_DmqkpHNSEeSNTtDn7hK1DQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_N1GHgHNSEeSNTtDn7hK1DQ" name="F">
+      <operations  xmi:id="_QzkDwHNSEeSNTtDn7hK1DQ" name="testF" returnType="_FbjCoHNSEeSNTtDn7hK1DQ" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_ONrmoHNSEeSNTtDn7hK1DQ" name="G" superTypes="_N1GHgHNSEeSNTtDn7hK1DQ">
+      <operations  xmi:id="_SLuJgHNSEeSNTtDn7hK1DQ" name="testG" extendedVisibility="private" returnType="_DmqkpHNSEeSNTtDn7hK1DQ" visibility="public"/>
+    </classes>
+    <associations xmi:id="_UHjkEHNSEeSNTtDn7hK1DQ" name="D_B" ends="_UHi9AHNSEeSNTtDn7hK1DQ _UHi9AXNSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_DmqkonNSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_Dmqko3NSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_DmqkpHNSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_DmqkpXNSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_DmqkpnNSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RString" xmi:id="_Dmqkp3NSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_DmqkqHNSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_DmqkqXNSEeSNTtDn7hK1DQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_DmqkqnNSEeSNTtDn7hK1DQ"/>
+  </structuralView>
+  <layout xmi:id="_Dmqkq3NSEeSNTtDn7hK1DQ">
+    <containers xmi:id="_DmqkrHNSEeSNTtDn7hK1DQ" key="_DmqkoXNSEeSNTtDn7hK1DQ">
+      <value xmi:id="_FbjpsHNSEeSNTtDn7hK1DQ" key="_FbjCoHNSEeSNTtDn7hK1DQ">
+        <value xmi:id="_FbjpsXNSEeSNTtDn7hK1DQ" x="421.0" y="347.0"/>
+      </value>
+      <value xmi:id="_IWbfYHNSEeSNTtDn7hK1DQ" key="_IWa4UHNSEeSNTtDn7hK1DQ">
+        <value xmi:id="_IWbfYXNSEeSNTtDn7hK1DQ" x="582.9995" y="499.00006"/>
+      </value>
+      <value xmi:id="_N1HVoHNSEeSNTtDn7hK1DQ" key="_N1GHgHNSEeSNTtDn7hK1DQ">
+        <value xmi:id="_N1HVoXNSEeSNTtDn7hK1DQ" x="903.0" y="151.99973"/>
+      </value>
+      <value xmi:id="_ONsNsHNSEeSNTtDn7hK1DQ" key="_ONrmoHNSEeSNTtDn7hK1DQ">
+        <value xmi:id="_ONsNsXNSEeSNTtDn7hK1DQ" x="931.0004" y="384.00012"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

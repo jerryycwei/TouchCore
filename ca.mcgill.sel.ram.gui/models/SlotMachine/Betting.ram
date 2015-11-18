@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_mCjEUMSBEeKHNqMRHw52-A" name="Betting">
+  <structuralView xmi:id="_mCjEUcSBEeKHNqMRHw52-A">
+    <classes xsi:type="ram:Class" xmi:id="_mCjEUsSBEeKHNqMRHw52-A" name="Machine" superTypes="_mCjEUsSBEeKHNqMRHw52-A">
+      <operations  xmi:id="_mCjEU8SBEeKHNqMRHw52-A" name="currentCredits" returnType="_mCjEacSBEeKHNqMRHw52-A" visibility="public"/>
+      <operations  xmi:id="_mCjEVMSBEeKHNqMRHw52-A" name="withdrawCredits" returnType="_mCjEZsSBEeKHNqMRHw52-A" visibility="public">
+        <parameters xmi:id="_mCjEVcSBEeKHNqMRHw52-A" name="amount" type="_mCjEacSBEeKHNqMRHw52-A"/>
+      </operations>
+      <operations  xmi:id="_mCjEVsSBEeKHNqMRHw52-A" name="depositCredits" returnType="_mCjEZsSBEeKHNqMRHw52-A" visibility="public">
+        <parameters xmi:id="_mCjEV8SBEeKHNqMRHw52-A" name="amount" type="_mCjEacSBEeKHNqMRHw52-A"/>
+      </operations>
+      <associationEnds xmi:id="_nZVwwcSEEeKyiIshv01pKw" name="myPayTable" lowerBound="1" assoc="_nZhW8MSEEeKyiIshv01pKw"/>
+      <attributes xmi:id="_mCjEWcSBEeKHNqMRHw52-A" name="credits" type="_mCjEacSBEeKHNqMRHw52-A"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_mCjEWsSBEeKHNqMRHw52-A" name="PayTable">
+      <operations  xmi:id="__1OWAMbjEeKH7KW0AlkgpA" name="create" returnType="_mCjEWsSBEeKHNqMRHw52-A" visibility="public">
+        <parameters xmi:id="__1OWAcbjEeKH7KW0AlkgpA" name="filename" type="_mCjEa8SBEeKHNqMRHw52-A"/>
+      </operations>
+      <operations  xmi:id="_mCjEW8SBEeKHNqMRHw52-A" name="payout" returnType="_mCjEacSBEeKHNqMRHw52-A" visibility="public">
+        <parameters xmi:id="_mCjEXMSBEeKHNqMRHw52-A" name="first" type="_mCjEZMSBEeKHNqMRHw52-A"/>
+        <parameters xmi:id="_mCjEXcSBEeKHNqMRHw52-A" name="second" type="_mCjEZMSBEeKHNqMRHw52-A"/>
+        <parameters xmi:id="_mCjEXsSBEeKHNqMRHw52-A" name="third" type="_mCjEZMSBEeKHNqMRHw52-A"/>
+        <parameters xmi:id="_mCjEX8SBEeKHNqMRHw52-A" name="fourth" type="_mCjEZMSBEeKHNqMRHw52-A"/>
+        <parameters xmi:id="_mCjEYMSBEeKHNqMRHw52-A" name="fifth" type="_mCjEZMSBEeKHNqMRHw52-A"/>
+      </operations>
+      <associationEnds xmi:id="_nZVwwsSEEeKyiIshv01pKw" name="myMachine" lowerBound="1" navigable="false" assoc="_nZhW8MSEEeKyiIshv01pKw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_mCjEZMSBEeKHNqMRHw52-A" name="Symbol"/>
+    <associations xmi:id="_nZhW8MSEEeKyiIshv01pKw" name="Machine_PayTable" ends="_nZVwwcSEEeKyiIshv01pKw _nZVwwsSEEeKyiIshv01pKw"/>
+    <types xsi:type="ram:RVoid" xmi:id="_mCjEZsSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RAny" xmi:id="_mCjEZ8SBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_mCjEaMSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RInt" xmi:id="_mCjEacSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RChar" xmi:id="_mCjEasSBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RString" xmi:id="_mCjEa8SBEeKHNqMRHw52-A"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_mCjEbMSBEeKHNqMRHw52-A">
+    <source xsi:type="ram:Aspect" href="Game.ram#_zlzjUMPkEeK6GJcfYETlBw"/>
+  </instantiations>
+  <layout xmi:id="_mCjEbcSBEeKHNqMRHw52-A">
+    <containers xmi:id="_mCjEbsSBEeKHNqMRHw52-A" key="_mCjEUcSBEeKHNqMRHw52-A">
+      <value xmi:id="_mCjEb8SBEeKHNqMRHw52-A" key="_mCjEUsSBEeKHNqMRHw52-A">
+        <value xmi:id="_mCjEcMSBEeKHNqMRHw52-A" x="534.9816" y="212.79364"/>
+      </value>
+      <value xmi:id="_mCjEccSBEeKHNqMRHw52-A" key="_mCjEWsSBEeKHNqMRHw52-A">
+        <value xmi:id="_mCjEcsSBEeKHNqMRHw52-A" x="372.90454" y="563.3276"/>
+      </value>
+      <value xmi:id="_mCjEc8SBEeKHNqMRHw52-A" key="_mCjEZMSBEeKHNqMRHw52-A">
+        <value xmi:id="_mCjEdMSBEeKHNqMRHw52-A" x="757.9488" y="411.55362"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

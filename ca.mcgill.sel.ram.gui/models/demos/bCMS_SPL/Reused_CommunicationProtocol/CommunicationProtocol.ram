@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_kValcNzfEeSgAJE1ei2YzA" name="CommunicationProtocol">
+  <realizes href="CommunicationProtocol.core#_kkd1ctzcEeSHzvt1c4u95Q"/>
+  <structuralView xmi:id="_kValcdzfEeSgAJE1ei2YzA">
+    <types xsi:type="ram:RVoid" xmi:id="_kValctzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RAny" xmi:id="_kValc9zfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_kValdNzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RInt" xmi:id="_kValddzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RChar" xmi:id="_kValdtzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RString" xmi:id="_kVald9zfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_kValeNzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_kValedzfEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RLong" xmi:id="_kValetzfEeSgAJE1ei2YzA"/>
+  </structuralView>
+  <instantiations xmi:id="_myZlQNzfEeSgAJE1ei2YzA">
+    <externalAspect href="Reused_Networking/Woven_Networking_Networking.ram#_myYXINzfEeSgAJE1ei2YzA"/>
+  </instantiations>
+  <layout xmi:id="_kVale9zfEeSgAJE1ei2YzA">
+    <containers xmi:id="_kValfNzfEeSgAJE1ei2YzA" key="_kValcdzfEeSgAJE1ei2YzA"/>
+  </layout>
+</ram:Aspect>

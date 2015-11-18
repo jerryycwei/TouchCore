@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_A3HQockwEeKjHsjAZn6WyQ" name="Blockable">
+  <structuralView xmi:id="_A3HQoskwEeKjHsjAZn6WyQ">
+    <classes xsi:type="ram:Class" xmi:id="_A3HQo8kwEeKjHsjAZn6WyQ" name="Blockable" partiality="public">
+      <operations  xmi:id="_A3HQpMkwEeKjHsjAZn6WyQ" name="skip" returnType="_A3HQrMkwEeKjHsjAZn6WyQ" visibility="public">
+        <parameters xmi:id="_A3HQpckwEeKjHsjAZn6WyQ" name="value" type="_A3HQq8kwEeKjHsjAZn6WyQ"/>
+      </operations>
+      <operations  xmi:id="_A3HQpskwEeKjHsjAZn6WyQ" name="continue" returnType="_A3HQrMkwEeKjHsjAZn6WyQ" visibility="public"/>
+      <operations  xmi:id="_A3HQp8kwEeKjHsjAZn6WyQ" name="block" returnType="_A3HQrMkwEeKjHsjAZn6WyQ" visibility="public"/>
+      <operations  xmi:id="_A3HQqMkwEeKjHsjAZn6WyQ" name="blockableOperation" returnType="_A3HQq8kwEeKjHsjAZn6WyQ" partiality="public" visibility="public"/>
+      <attributes xmi:id="_A3HQqckwEeKjHsjAZn6WyQ" name="skip" type="_A3HQrskwEeKjHsjAZn6WyQ"/>
+      <attributes xmi:id="_A3HQqskwEeKjHsjAZn6WyQ" name="blocked" type="_A3HQrskwEeKjHsjAZn6WyQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_A3HQq8kwEeKjHsjAZn6WyQ" name="ReturnType" partiality="public"/>
+    <types xsi:type="ram:RVoid" xmi:id="_A3HQrMkwEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_A3HQrckwEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_A3HQrskwEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_A3HQr8kwEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_A3HQsMkwEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RString" xmi:id="_A3HQsckwEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <layout xmi:id="_A3H3sMkwEeKjHsjAZn6WyQ">
+    <containers xmi:id="_A3H3sckwEeKjHsjAZn6WyQ" key="_A3HQoskwEeKjHsjAZn6WyQ">
+      <value xmi:id="_A3H3sskwEeKjHsjAZn6WyQ" key="_A3HQo8kwEeKjHsjAZn6WyQ">
+        <value xmi:id="_A3H3s8kwEeKjHsjAZn6WyQ" x="410.99982" y="185.99994"/>
+      </value>
+      <value xmi:id="_A3H3tMkwEeKjHsjAZn6WyQ" key="_A3HQq8kwEeKjHsjAZn6WyQ">
+        <value xmi:id="_A3H3tckwEeKjHsjAZn6WyQ" x="132.0" y="227.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

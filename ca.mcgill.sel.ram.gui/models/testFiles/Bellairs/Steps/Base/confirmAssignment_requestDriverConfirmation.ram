@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_D8sM8H2VEeGoA-SWkq1ANA" name="confirmAssignment_requestDriverConfirmation">
+  <structuralView xmi:id="_D8sM8X2VEeGoA-SWkq1ANA">
+    <classes xsi:type="ram:Class" xmi:id="_D8sM8n2VEeGoA-SWkq1ANA" name="ProcessconfirmAssignment" superTypes="_D8sM-32VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM832VEeGoA-SWkq1ANA" name="confirmAssignmentInput" superTypes="_D8sM-X2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM9H2VEeGoA-SWkq1ANA" name="showVehicleListOutput" superTypes="_D8sM-n2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM9X2VEeGoA-SWkq1ANA" name="showVehicleList" superTypes="_D8sM-32VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM9n2VEeGoA-SWkq1ANA" name="requestDriverConfirmationInput" superTypes="_D8sM-X2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM932VEeGoA-SWkq1ANA" name="showAssignmentOutput" superTypes="_D8sM-n2VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM-H2VEeGoA-SWkq1ANA" name="showAssignment" superTypes="_D8sM-32VEeGoA-SWkq1ANA"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM-X2VEeGoA-SWkq1ANA" name="InputData"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM-n2VEeGoA-SWkq1ANA" name="OutputData"/>
+    <classes xsi:type="ram:Class" xmi:id="_D8sM-32VEeGoA-SWkq1ANA" name="CustomizableNode"/>
+  </structuralView>
+  <instantiations xmi:id="_D8sM_H2VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D8sM_X2VEeGoA-SWkq1ANA" toElement="_D8sM-X2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#//@structuralView/@classes.0"/>
+    </mappings>
+    <mappings xmi:id="_D8sM_n2VEeGoA-SWkq1ANA" toElement="_D8sM-n2VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#//@structuralView/@classes.1"/>
+    </mappings>
+    <externalAspect href="../../Lib/ReactiveSystemWorkflow.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_D8sM_32VEeGoA-SWkq1ANA">
+    <mappings xmi:id="_D8sNAH2VEeGoA-SWkq1ANA" toElement="_D8sM-32VEeGoA-SWkq1ANA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/Workflow.ram#//@structuralView/@classes.0"/>
+    </mappings>
+    <externalAspect href="../../Lib/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

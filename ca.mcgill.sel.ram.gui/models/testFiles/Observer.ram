@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_apfG0Io_EeGYMOvWx4MkYQ" name="Observer">
+  <structuralView xmi:id="_d9FlkIo_EeGYMOvWx4MkYQ">
+    <classes xsi:type="ram:Class" xmi:id="_e7XywIo_EeGYMOvWx4MkYQ" name="Subject" partiality="public">
+      <associationEnds navigable="false" assoc="//@structuralView/@associations.0"/>
+      <operations  xmi:id="_jQn7wIo_EeGYMOvWx4MkYQ" name="notify" extendedVisibility="package" returnType="_lu4t8Io_EeGYMOvWx4MkYQ" visibility="public"/>
+      <operations  xmi:id="_nqxL0Io_EeGYMOvWx4MkYQ" name="getObservers" returnType="_qR0GkIo_EeGYMOvWx4MkYQ" visibility="public"/>
+      <operations  xmi:id="_v3dgcIo_EeGYMOvWx4MkYQ" name="modify" returnType="_lu4t8Io_EeGYMOvWx4MkYQ" partiality="public" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_rSUhUIo_EeGYMOvWx4MkYQ" name="Observer" partiality="public">
+      <associationEnds name="MySubject" assoc="//@structuralView/@associations.0" lowerBound="1"/>
+      <operations  xmi:id="_06EesIo_EeGYMOvWx4MkYQ" name="startObserving" returnType="_lu4t8Io_EeGYMOvWx4MkYQ" visibility="public">
+        <parameters xmi:id="_B2bncIpAEeGYMOvWx4MkYQ" name="s" type="_e7XywIo_EeGYMOvWx4MkYQ"/>
+      </operations>
+      <operations  xmi:id="_4M7WkIo_EeGYMOvWx4MkYQ" name="stopObserving" returnType="_lu4t8Io_EeGYMOvWx4MkYQ" visibility="public">
+        <parameters xmi:id="_AmaxEIpAEeGYMOvWx4MkYQ" name="s" type="_e7XywIo_EeGYMOvWx4MkYQ"/>
+      </operations>
+      <operations  xmi:id="_6sBPMIo_EeGYMOvWx4MkYQ" name="update" returnType="_lu4t8Io_EeGYMOvWx4MkYQ" partiality="public" visibility="public">
+        <parameters xmi:id="_9zIxIIo_EeGYMOvWx4MkYQ" name="s" type="_e7XywIo_EeGYMOvWx4MkYQ"/>
+      </operations>
+    </classes>
+    <associations name="ObserverSubject" ends="//@structuralView/@classes.1/@associationEnds.0 //@structuralView/@classes.0/@associationEnds.0"/>
+    <types xsi:type="ram:RVoid" xmi:id="_lu4t8Io_EeGYMOvWx4MkYQ"/>
+    <types xsi:type="ram:RSet" xmi:id="_qR0GkIo_EeGYMOvWx4MkYQ" type="_rSUhUIo_EeGYMOvWx4MkYQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_Xjla8IpBEeGYMOvWx4MkYQ">
+    <mappings xmi:id="_YiFqkIpBEeGYMOvWx4MkYQ" toElement="_e7XywIo_EeGYMOvWx4MkYQ">
+      <fromElement xsi:type="ram:Class" href="Bellairs/Lib/ZeroToMany.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <mappings xmi:id="_dZLVUIpBEeGYMOvWx4MkYQ" toElement="_rSUhUIo_EeGYMOvWx4MkYQ">
+      <fromElement xsi:type="ram:Class" href="Bellairs/Lib/ZeroToMany.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <mappings xmi:id="_fVU48IpBEeGYMOvWx4MkYQ" toElement="_nqxL0Io_EeGYMOvWx4MkYQ">
+      <fromElement xsi:type="ram:Operation" href="Bellairs/Lib/ZeroToMany.ram#_FRO_wIfiEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="Bellairs/Lib/ZeroToMany.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

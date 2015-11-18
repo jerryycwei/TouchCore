@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/1.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_wIiXQN4pEeS1koPVI5W3kQ" name="ResourceManagement" models="_wIiXQd4pEeS1koPVI5W3kQ">
+  <featureModel xmi:id="_wIiXQd4pEeS1koPVI5W3kQ" coreConcern="_wIiXQN4pEeS1koPVI5W3kQ" root="_wIiXQt4pEeS1koPVI5W3kQ">
+    <features xmi:id="_wIiXQt4pEeS1koPVI5W3kQ" name="ResourceManagement" children="_ze4A8N4pEeS1koPVI5W3kQ _zyoqcN4pEeS1koPVI5W3kQ">
+      <realizedBy xsi:type="ram:Aspect" href="ResourceManagement.ram#_ogcdIN4sEeS1koPVI5W3kQ"/>
+    </features>
+    <features xmi:id="_ze4A8N4pEeS1koPVI5W3kQ" name="Allocation" parent="_wIiXQt4pEeS1koPVI5W3kQ" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="Allocation.ram#_6fI3UN4sEeS1koPVI5W3kQ"/>
+      <reuses xmi:id="_7zYGYN4sEeS1koPVI5W3kQ" selectedConfiguration="_7zYGYd4sEeS1koPVI5W3kQ">
+        <reusedConcern href="Reused_Association/Association.core#_R-i5kKpPEeSChcgNbAqzEQ"/>
+        <configurations xmi:id="_7zYGYd4sEeS1koPVI5W3kQ">
+          <selected href="Reused_Association/Association.core#_SzWaoKpPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_Z-w4cKpPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_zyoqcN4pEeS1koPVI5W3kQ" name="Search" children="_kJG7YN4qEeS1koPVI5W3kQ" parent="_wIiXQt4pEeS1koPVI5W3kQ" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="Search.ram#_HUjDgN4tEeS1koPVI5W3kQ"/>
+      <reuses xmi:id="_K-iB8N4tEeS1koPVI5W3kQ" selectedConfiguration="_K-iB8d4tEeS1koPVI5W3kQ">
+        <reusedConcern href="Reused_Association/Association.core#_R-i5kKpPEeSChcgNbAqzEQ"/>
+        <configurations xmi:id="_K-iB8d4tEeS1koPVI5W3kQ">
+          <selected href="Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_Z-w4cKpPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_SzWaoKpPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_M-GtAN4tEeS1koPVI5W3kQ" selectedConfiguration="_M-GtAd4tEeS1koPVI5W3kQ">
+        <reusedConcern href="Reused_Association/Association.core#_R-i5kKpPEeSChcgNbAqzEQ"/>
+        <configurations xmi:id="_M-GtAd4tEeS1koPVI5W3kQ">
+          <selected href="Reused_Association/Association.core#_oodswKpPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_VFHB4KpPEeSChcgNbAqzEQ"/>
+          <selected href="Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_kJG7YN4qEeS1koPVI5W3kQ" name="Optimal" parent="_zyoqcN4pEeS1koPVI5W3kQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Optimal.ram#_rQPOwN4tEeS1koPVI5W3kQ"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

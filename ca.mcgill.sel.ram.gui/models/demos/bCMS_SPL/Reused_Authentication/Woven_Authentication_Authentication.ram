@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_uqxNAOLwEeSL-_lRREviTQ" name="Authentication&lt;Authentication>">
+  <structuralView xmi:id="_uqxNAeLwEeSL-_lRREviTQ">
+    <classes xsi:type="ram:Class" xmi:id="_uqxNAuLwEeSL-_lRREviTQ" name="Authenticatable" comesFrom="_uqxOL-LwEeSL-_lRREviTQ _uqxOMOLwEeSL-_lRREviTQ" partiality="public">
+      <associationEnds xmi:id="_uqxNA-LwEeSL-_lRREviTQ" name="session" lowerBound="1" navigable="false" assoc="_uqxNOOLwEeSL-_lRREviTQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_uqxNBOLwEeSL-_lRREviTQ" name="AuthenticationException" comesFrom="_uqxOL-LwEeSL-_lRREviTQ">
+      <operations  xmi:id="_uqxNBeLwEeSL-_lRREviTQ" name="create" comesFrom="_uqxOL-LwEeSL-_lRREviTQ" returnType="_uqxNBOLwEeSL-_lRREviTQ" operationType="Constructor" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_uqxNBuLwEeSL-_lRREviTQ" name="Session" comesFrom="_uqxOL-LwEeSL-_lRREviTQ _uqxOMeLwEeSL-_lRREviTQ">
+      <operations  xmi:id="_uqxNB-LwEeSL-_lRREviTQ" name="getCurrentSession" comesFrom="_uqxOL-LwEeSL-_lRREviTQ _uqxOMeLwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNBuLwEeSL-_lRREviTQ" static="true" visibility="public"/>
+      <operations  xmi:id="_uqxNCOLwEeSL-_lRREviTQ" name="setCurrentAuthenticated" comesFrom="_uqxOL-LwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNO-LwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNCeLwEeSL-_lRREviTQ" name="a" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNCuLwEeSL-_lRREviTQ" name="getCurrentAuthenticated" comesFrom="_uqxOL-LwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNAuLwEeSL-_lRREviTQ" visibility="public"/>
+      <operations  xmi:id="_uqxNC-LwEeSL-_lRREviTQ" name="create" comesFrom="_uqxOMeLwEeSL-_lRREviTQ" extendedVisibility="private" returnType="_uqxNBuLwEeSL-_lRREviTQ" operationType="Constructor" visibility="public"/>
+      <associationEnds xmi:id="_uqxNDOLwEeSL-_lRREviTQ" name="currentAuthenticated" assoc="_uqxNOOLwEeSL-_lRREviTQ"/>
+      <associationEnds xmi:id="_uqxNDeLwEeSL-_lRREviTQ" name="instance" static="true" assoc="_uqxNOuLwEeSL-_lRREviTQ"/>
+      <associationEnds xmi:id="_uqxNDuLwEeSL-_lRREviTQ" name="self" navigable="false" assoc="_uqxNOuLwEeSL-_lRREviTQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_uqxND-LwEeSL-_lRREviTQ" name="Credential" comesFrom="_uqxOL-LwEeSL-_lRREviTQ _uqxOMOLwEeSL-_lRREviTQ" partiality="public">
+      <operations  xmi:id="_uqxNEOLwEeSL-_lRREviTQ" name="check" comesFrom="_uqxOL-LwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNPeLwEeSL-_lRREviTQ" partiality="public" visibility="public">
+        <parameters xmi:id="_uqxNEeLwEeSL-_lRREviTQ" name="other" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_uqxNEuLwEeSL-_lRREviTQ" name="AuthenticationManager" comesFrom="_uqxOL-LwEeSL-_lRREviTQ _uqxOMOLwEeSL-_lRREviTQ">
+      <operations  xmi:id="_uqxNE-LwEeSL-_lRREviTQ" name="authenticate" comesFrom="_uqxOL-LwEeSL-_lRREviTQ" returnType="_uqxNPeLwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNFOLwEeSL-_lRREviTQ" name="a" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+        <parameters xmi:id="_uqxNFeLwEeSL-_lRREviTQ" name="c" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNFuLwEeSL-_lRREviTQ" name="getCredentials" comesFrom="_uqxOL-LwEeSL-_lRREviTQ _uqxOMOLwEeSL-_lRREviTQ" extendedVisibility="private" returnType="_uqxND-LwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNF-LwEeSL-_lRREviTQ" name="key" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNGOLwEeSL-_lRREviTQ" name="addAuthenticatable" comesFrom="_uqxOL-LwEeSL-_lRREviTQ _uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxNO-LwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNGeLwEeSL-_lRREviTQ" name="key" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+        <parameters xmi:id="_uqxNGuLwEeSL-_lRREviTQ" name="value" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNG-LwEeSL-_lRREviTQ" name="remove" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNO-LwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNHOLwEeSL-_lRREviTQ" name="k" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNHeLwEeSL-_lRREviTQ" name="contains" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNPeLwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNHuLwEeSL-_lRREviTQ" name="a" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNH-LwEeSL-_lRREviTQ" name="containsKey" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNPeLwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNIOLwEeSL-_lRREviTQ" name="k" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNIeLwEeSL-_lRREviTQ" name="keySet" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNNuLwEeSL-_lRREviTQ" visibility="public"/>
+      <operations  xmi:id="_uqxNIuLwEeSL-_lRREviTQ" name="values" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" extendedVisibility="package" returnType="_uqxNJuLwEeSL-_lRREviTQ" visibility="public"/>
+      <associationEnds xmi:id="_uqxNI-LwEeSL-_lRREviTQ" name="hashMap" lowerBound="1" referenceType="Composition" assoc="_uqxNOeLwEeSL-_lRREviTQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_uqxNJOLwEeSL-_lRREviTQ" name="ProtectedClass" comesFrom="_uqxOL-LwEeSL-_lRREviTQ" partiality="public">
+      <operations  xmi:id="_uqxNJeLwEeSL-_lRREviTQ" name="protectedMethod" comesFrom="_uqxOL-LwEeSL-_lRREviTQ" returnType="_uqxNPOLwEeSL-_lRREviTQ" partiality="public" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_uqxNJuLwEeSL-_lRREviTQ" name="Collection" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" instanceClassName="java.util.Collection"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_uqxNJ-LwEeSL-_lRREviTQ" name="HashMap" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" instanceClassName="java.util.HashMap">
+      <operations  xmi:id="_uqxNKOLwEeSL-_lRREviTQ" name="put" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxND-LwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNKeLwEeSL-_lRREviTQ" name="arg0" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+        <parameters xmi:id="_uqxNKuLwEeSL-_lRREviTQ" name="arg1" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNK-LwEeSL-_lRREviTQ" name="remove" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxND-LwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNLOLwEeSL-_lRREviTQ" name="arg0" type="_uqxNN-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNLeLwEeSL-_lRREviTQ" name="containsValue" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxNPeLwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNLuLwEeSL-_lRREviTQ" name="arg0" type="_uqxNN-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNL-LwEeSL-_lRREviTQ" name="containsKey" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxNPeLwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNMOLwEeSL-_lRREviTQ" name="arg0" type="_uqxNN-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNMeLwEeSL-_lRREviTQ" name="get" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxND-LwEeSL-_lRREviTQ" visibility="public">
+        <parameters xmi:id="_uqxNMuLwEeSL-_lRREviTQ" name="arg0" type="_uqxNN-LwEeSL-_lRREviTQ"/>
+      </operations>
+      <operations  xmi:id="_uqxNM-LwEeSL-_lRREviTQ" name="keySet" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxNNuLwEeSL-_lRREviTQ" visibility="public"/>
+      <operations  xmi:id="_uqxNNOLwEeSL-_lRREviTQ" name="values" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" returnType="_uqxNJuLwEeSL-_lRREviTQ" visibility="public"/>
+      <associationEnds xmi:id="_uqxNNeLwEeSL-_lRREviTQ" name="data" lowerBound="1" navigable="false" assoc="_uqxNOeLwEeSL-_lRREviTQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_uqxNNuLwEeSL-_lRREviTQ" name="Set" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" instanceClassName="java.util.Set"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_uqxNN-LwEeSL-_lRREviTQ" name="Object" comesFrom="_uqxOMOLwEeSL-_lRREviTQ" instanceClassName="java.lang.Object"/>
+    <associations xmi:id="_uqxNOOLwEeSL-_lRREviTQ" name="Session_Authenticatable" ends="_uqxNDOLwEeSL-_lRREviTQ _uqxNA-LwEeSL-_lRREviTQ"/>
+    <associations xmi:id="_uqxNOeLwEeSL-_lRREviTQ" name="Data_HashMap" ends="_uqxNI-LwEeSL-_lRREviTQ _uqxNNeLwEeSL-_lRREviTQ"/>
+    <associations xmi:id="_uqxNOuLwEeSL-_lRREviTQ" name="instance" ends="_uqxNDuLwEeSL-_lRREviTQ _uqxNDeLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_uqxNO-LwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_uqxNPOLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_uqxNPeLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_uqxNPuLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_uqxNP-LwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RString" xmi:id="_uqxNQOLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_uqxNQeLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_uqxNQuLwEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_uqxNQ-LwEeSL-_lRREviTQ"/>
+  </structuralView>
+  <messageViews xsi:type="ram:AspectMessageView" xmi:id="_uqxNROLwEeSL-_lRREviTQ" name="enforceAuthentication">
+    <pointcut href="Authentication.ram#_NyKWwwYOEeSiwsYTSMcCVw"/>
+    <advice xmi:id="_uqxNReLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNRuLwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ" message="_uqxNW-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNR-LwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ" message="_uqxNX-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNSOLwEeSL-_lRREviTQ" covered="_uqxNWOLwEeSL-_lRREviTQ" message="_uqxNX-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNSeLwEeSL-_lRREviTQ" covered="_uqxNWOLwEeSL-_lRREviTQ" message="_uqxNYOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNSuLwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ" message="_uqxNYOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNS-LwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ" message="_uqxNYeLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNTOLwEeSL-_lRREviTQ" covered="_uqxNWeLwEeSL-_lRREviTQ" message="_uqxNYeLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNTeLwEeSL-_lRREviTQ" covered="_uqxNWeLwEeSL-_lRREviTQ" message="_uqxNYuLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNTuLwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ" message="_uqxNYuLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_uqxNT-LwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ _uqxNWuLwEeSL-_lRREviTQ" interactionOperator="opt">
+        <operands xmi:id="_uqxNUOLwEeSL-_lRREviTQ">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNUeLwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ" message="_uqxNY-LwEeSL-_lRREviTQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNUuLwEeSL-_lRREviTQ" covered="_uqxNWuLwEeSL-_lRREviTQ" message="_uqxNY-LwEeSL-_lRREviTQ"/>
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_uqxNU-LwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_uqxNVOLwEeSL-_lRREviTQ" body="throw exception;" language="java"/>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_uqxNVeLwEeSL-_lRREviTQ" body="currentAuthenticated == null" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:OriginalBehaviorExecution" xmi:id="_uqxNVuLwEeSL-_lRREviTQ" covered="_uqxNV-LwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNV-LwEeSL-_lRREviTQ" represents="_uqxNZOLwEeSL-_lRREviTQ" coveredBy="_uqxNRuLwEeSL-_lRREviTQ _uqxNR-LwEeSL-_lRREviTQ _uqxNSuLwEeSL-_lRREviTQ _uqxNS-LwEeSL-_lRREviTQ _uqxNTuLwEeSL-_lRREviTQ _uqxNT-LwEeSL-_lRREviTQ _uqxNUeLwEeSL-_lRREviTQ _uqxNU-LwEeSL-_lRREviTQ _uqxNVuLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNWOLwEeSL-_lRREviTQ" represents="_uqxNZeLwEeSL-_lRREviTQ" coveredBy="_uqxNSOLwEeSL-_lRREviTQ _uqxNSeLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNWeLwEeSL-_lRREviTQ" represents="_uqxNXOLwEeSL-_lRREviTQ" coveredBy="_uqxNTOLwEeSL-_lRREviTQ _uqxNTeLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNWuLwEeSL-_lRREviTQ" represents="_uqxNXuLwEeSL-_lRREviTQ" coveredBy="_uqxNUuLwEeSL-_lRREviTQ _uqxNT-LwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNW-LwEeSL-_lRREviTQ" sendEvent="_uqxNZuLwEeSL-_lRREviTQ" receiveEvent="_uqxNRuLwEeSL-_lRREviTQ" signature="_uqxNJeLwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxNXOLwEeSL-_lRREviTQ" name="currentSession" lowerBound="1" type="_uqxNBuLwEeSL-_lRREviTQ"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxNXeLwEeSL-_lRREviTQ" name="currentAuthenticated" lowerBound="1" type="_uqxNAuLwEeSL-_lRREviTQ"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxNXuLwEeSL-_lRREviTQ" name="exception" lowerBound="1" type="_uqxNBOLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxNX-LwEeSL-_lRREviTQ" sendEvent="_uqxNR-LwEeSL-_lRREviTQ" receiveEvent="_uqxNSOLwEeSL-_lRREviTQ" signature="_uqxNB-LwEeSL-_lRREviTQ" assignTo="_uqxNXOLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNYOLwEeSL-_lRREviTQ" sendEvent="_uqxNSeLwEeSL-_lRREviTQ" receiveEvent="_uqxNSuLwEeSL-_lRREviTQ" signature="_uqxNB-LwEeSL-_lRREviTQ" messageSort="reply"/>
+      <messages xmi:id="_uqxNYeLwEeSL-_lRREviTQ" sendEvent="_uqxNS-LwEeSL-_lRREviTQ" receiveEvent="_uqxNTOLwEeSL-_lRREviTQ" signature="_uqxNCuLwEeSL-_lRREviTQ" assignTo="_uqxNXeLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNYuLwEeSL-_lRREviTQ" sendEvent="_uqxNTeLwEeSL-_lRREviTQ" receiveEvent="_uqxNTuLwEeSL-_lRREviTQ" signature="_uqxNCuLwEeSL-_lRREviTQ" messageSort="reply"/>
+      <messages xmi:id="_uqxNY-LwEeSL-_lRREviTQ" sendEvent="_uqxNUeLwEeSL-_lRREviTQ" receiveEvent="_uqxNUuLwEeSL-_lRREviTQ" signature="_uqxNBeLwEeSL-_lRREviTQ" assignTo="_uqxNXuLwEeSL-_lRREviTQ" messageSort="createMessage"/>
+      <properties xmi:id="_uqxNZOLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNJOLwEeSL-_lRREviTQ"/>
+      <properties xmi:id="_uqxNZeLwEeSL-_lRREviTQ" static="true" lowerBound="1" type="_uqxNBuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxNZuLwEeSL-_lRREviTQ" message="_uqxNW-LwEeSL-_lRREviTQ" name="in_protectedMethod"/>
+    </advice>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxNZ-LwEeSL-_lRREviTQ" specifies="_uqxNE-LwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxNaOLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNaeLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNfuLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNauLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNhOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNa-LwEeSL-_lRREviTQ" covered="_uqxNe-LwEeSL-_lRREviTQ" message="_uqxNhOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNbOLwEeSL-_lRREviTQ" covered="_uqxNe-LwEeSL-_lRREviTQ" message="_uqxNheLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNbeLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNheLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNbuLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNhuLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNb-LwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNhuLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNcOLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNieLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNceLwEeSL-_lRREviTQ" covered="_uqxNfOLwEeSL-_lRREviTQ" message="_uqxNieLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNcuLwEeSL-_lRREviTQ" covered="_uqxNfOLwEeSL-_lRREviTQ" message="_uqxNjOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNc-LwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNjOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_uqxNdOLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ _uqxNfeLwEeSL-_lRREviTQ" interactionOperator="opt">
+        <operands xmi:id="_uqxNdeLwEeSL-_lRREviTQ">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNduLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNjuLwEeSL-_lRREviTQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNd-LwEeSL-_lRREviTQ" covered="_uqxNfeLwEeSL-_lRREviTQ" message="_uqxNjuLwEeSL-_lRREviTQ"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_uqxNeOLwEeSL-_lRREviTQ" body="validCredentials" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNeeLwEeSL-_lRREviTQ" covered="_uqxNeuLwEeSL-_lRREviTQ" message="_uqxNguLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNeuLwEeSL-_lRREviTQ" represents="_uqxNkeLwEeSL-_lRREviTQ" coveredBy="_uqxNaeLwEeSL-_lRREviTQ _uqxNeeLwEeSL-_lRREviTQ _uqxNauLwEeSL-_lRREviTQ _uqxNbeLwEeSL-_lRREviTQ _uqxNbuLwEeSL-_lRREviTQ _uqxNb-LwEeSL-_lRREviTQ _uqxNcOLwEeSL-_lRREviTQ _uqxNc-LwEeSL-_lRREviTQ _uqxNdOLwEeSL-_lRREviTQ _uqxNduLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNe-LwEeSL-_lRREviTQ" represents="_uqxNkuLwEeSL-_lRREviTQ" coveredBy="_uqxNa-LwEeSL-_lRREviTQ _uqxNbOLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNfOLwEeSL-_lRREviTQ" represents="_uqxNgOLwEeSL-_lRREviTQ" coveredBy="_uqxNceLwEeSL-_lRREviTQ _uqxNcuLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNfeLwEeSL-_lRREviTQ" represents="_uqxNf-LwEeSL-_lRREviTQ" coveredBy="_uqxNdOLwEeSL-_lRREviTQ _uqxNd-LwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNfuLwEeSL-_lRREviTQ" sendEvent="_uqxNk-LwEeSL-_lRREviTQ" receiveEvent="_uqxNaeLwEeSL-_lRREviTQ" signature="_uqxNE-LwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxNf-LwEeSL-_lRREviTQ" name="currentSession" lowerBound="1" type="_uqxNBuLwEeSL-_lRREviTQ"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxNgOLwEeSL-_lRREviTQ" name="credentials" lowerBound="1" type="_uqxND-LwEeSL-_lRREviTQ"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_uqxNgeLwEeSL-_lRREviTQ" name="validCredentials" type="_uqxNPeLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxNguLwEeSL-_lRREviTQ" sendEvent="_uqxNeeLwEeSL-_lRREviTQ" receiveEvent="_uqxNlOLwEeSL-_lRREviTQ" signature="_uqxNE-LwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxNg-LwEeSL-_lRREviTQ" value="_uqxNgeLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxNhOLwEeSL-_lRREviTQ" sendEvent="_uqxNauLwEeSL-_lRREviTQ" receiveEvent="_uqxNa-LwEeSL-_lRREviTQ" signature="_uqxNB-LwEeSL-_lRREviTQ" assignTo="_uqxNf-LwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNheLwEeSL-_lRREviTQ" sendEvent="_uqxNbOLwEeSL-_lRREviTQ" receiveEvent="_uqxNbeLwEeSL-_lRREviTQ" signature="_uqxNB-LwEeSL-_lRREviTQ" messageSort="reply"/>
+      <messages xmi:id="_uqxNhuLwEeSL-_lRREviTQ" sendEvent="_uqxNbuLwEeSL-_lRREviTQ" receiveEvent="_uqxNb-LwEeSL-_lRREviTQ" signature="_uqxNFuLwEeSL-_lRREviTQ" assignTo="_uqxNgOLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxNh-LwEeSL-_lRREviTQ" parameter="_uqxNF-LwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxNiOLwEeSL-_lRREviTQ" parameter="_uqxNFOLwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_uqxNieLwEeSL-_lRREviTQ" sendEvent="_uqxNcOLwEeSL-_lRREviTQ" receiveEvent="_uqxNceLwEeSL-_lRREviTQ" signature="_uqxNEOLwEeSL-_lRREviTQ" assignTo="_uqxNgeLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxNiuLwEeSL-_lRREviTQ" parameter="_uqxNEeLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxNi-LwEeSL-_lRREviTQ" parameter="_uqxNFeLwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_uqxNjOLwEeSL-_lRREviTQ" sendEvent="_uqxNcuLwEeSL-_lRREviTQ" receiveEvent="_uqxNc-LwEeSL-_lRREviTQ" signature="_uqxNEOLwEeSL-_lRREviTQ" messageSort="reply">
+        <arguments xmi:id="_uqxNjeLwEeSL-_lRREviTQ" parameter="_uqxNEeLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxNjuLwEeSL-_lRREviTQ" sendEvent="_uqxNduLwEeSL-_lRREviTQ" receiveEvent="_uqxNd-LwEeSL-_lRREviTQ" signature="_uqxNCOLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxNj-LwEeSL-_lRREviTQ" parameter="_uqxNCeLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxNkOLwEeSL-_lRREviTQ" parameter="_uqxNFOLwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_uqxNkeLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <properties xmi:id="_uqxNkuLwEeSL-_lRREviTQ" static="true" lowerBound="1" type="_uqxNBuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxNk-LwEeSL-_lRREviTQ" message="_uqxNfuLwEeSL-_lRREviTQ" name="in_authenticate"/>
+      <formalGates xmi:id="_uqxNlOLwEeSL-_lRREviTQ" message="_uqxNguLwEeSL-_lRREviTQ" name="out_authenticate"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxNleLwEeSL-_lRREviTQ" affectedBy="_uqxNROLwEeSL-_lRREviTQ" specifies="_uqxNJeLwEeSL-_lRREviTQ"/>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxNluLwEeSL-_lRREviTQ" specifies="_uqxNCuLwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxNl-LwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNmOLwEeSL-_lRREviTQ" covered="_uqxNmuLwEeSL-_lRREviTQ" message="_uqxNm-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNmeLwEeSL-_lRREviTQ" covered="_uqxNmuLwEeSL-_lRREviTQ" message="_uqxNnOLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNmuLwEeSL-_lRREviTQ" represents="_uqxNnuLwEeSL-_lRREviTQ" coveredBy="_uqxNmOLwEeSL-_lRREviTQ _uqxNmeLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNm-LwEeSL-_lRREviTQ" sendEvent="_uqxNn-LwEeSL-_lRREviTQ" receiveEvent="_uqxNmOLwEeSL-_lRREviTQ" signature="_uqxNCuLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNnOLwEeSL-_lRREviTQ" sendEvent="_uqxNmeLwEeSL-_lRREviTQ" receiveEvent="_uqxNoOLwEeSL-_lRREviTQ" signature="_uqxNCuLwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxNneLwEeSL-_lRREviTQ" value="_uqxNDOLwEeSL-_lRREviTQ"/>
+      </messages>
+      <properties xmi:id="_uqxNnuLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNBuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxNn-LwEeSL-_lRREviTQ" message="_uqxNm-LwEeSL-_lRREviTQ" name="in_getCurrentAuthenticated"/>
+      <formalGates xmi:id="_uqxNoOLwEeSL-_lRREviTQ" message="_uqxNnOLwEeSL-_lRREviTQ" name="out_getCurrentAuthenticated"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxNoeLwEeSL-_lRREviTQ" specifies="_uqxNGOLwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxNouLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNo-LwEeSL-_lRREviTQ" covered="_uqxNp-LwEeSL-_lRREviTQ" message="_uqxNqeLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNpOLwEeSL-_lRREviTQ" covered="_uqxNp-LwEeSL-_lRREviTQ" message="_uqxNrOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNpeLwEeSL-_lRREviTQ" covered="_uqxNqOLwEeSL-_lRREviTQ" message="_uqxNrOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNpuLwEeSL-_lRREviTQ" covered="_uqxNp-LwEeSL-_lRREviTQ" message="_uqxNq-LwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNp-LwEeSL-_lRREviTQ" represents="_uqxNseLwEeSL-_lRREviTQ" coveredBy="_uqxNo-LwEeSL-_lRREviTQ _uqxNpuLwEeSL-_lRREviTQ _uqxNpOLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNqOLwEeSL-_lRREviTQ" represents="_uqxNI-LwEeSL-_lRREviTQ" coveredBy="_uqxNpeLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNqeLwEeSL-_lRREviTQ" sendEvent="_uqxNsuLwEeSL-_lRREviTQ" receiveEvent="_uqxNo-LwEeSL-_lRREviTQ" signature="_uqxNGOLwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxNquLwEeSL-_lRREviTQ" name="value" lowerBound="1" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxNq-LwEeSL-_lRREviTQ" sendEvent="_uqxNpuLwEeSL-_lRREviTQ" receiveEvent="_uqxNs-LwEeSL-_lRREviTQ" signature="_uqxNGOLwEeSL-_lRREviTQ" messageSort="reply"/>
+      <messages xmi:id="_uqxNrOLwEeSL-_lRREviTQ" sendEvent="_uqxNpOLwEeSL-_lRREviTQ" receiveEvent="_uqxNpeLwEeSL-_lRREviTQ" signature="_uqxNKOLwEeSL-_lRREviTQ" assignTo="_uqxNquLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxNreLwEeSL-_lRREviTQ" parameter="_uqxNKeLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxNruLwEeSL-_lRREviTQ" parameter="_uqxNGeLwEeSL-_lRREviTQ"/>
+        </arguments>
+        <arguments xmi:id="_uqxNr-LwEeSL-_lRREviTQ" parameter="_uqxNKuLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxNsOLwEeSL-_lRREviTQ" parameter="_uqxNGuLwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_uqxNseLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxNsuLwEeSL-_lRREviTQ" message="_uqxNqeLwEeSL-_lRREviTQ" name="out_add"/>
+      <formalGates xmi:id="_uqxNs-LwEeSL-_lRREviTQ" message="_uqxNq-LwEeSL-_lRREviTQ" name="in_add"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxNtOLwEeSL-_lRREviTQ" specifies="_uqxNG-LwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxNteLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNtuLwEeSL-_lRREviTQ" covered="_uqxNuuLwEeSL-_lRREviTQ" message="_uqxNvOLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNt-LwEeSL-_lRREviTQ" covered="_uqxNuuLwEeSL-_lRREviTQ" message="_uqxNv-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNuOLwEeSL-_lRREviTQ" covered="_uqxNu-LwEeSL-_lRREviTQ" message="_uqxNv-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNueLwEeSL-_lRREviTQ" covered="_uqxNuuLwEeSL-_lRREviTQ" message="_uqxNvuLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNuuLwEeSL-_lRREviTQ" represents="_uqxNwuLwEeSL-_lRREviTQ" coveredBy="_uqxNtuLwEeSL-_lRREviTQ _uqxNueLwEeSL-_lRREviTQ _uqxNt-LwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNu-LwEeSL-_lRREviTQ" represents="_uqxNI-LwEeSL-_lRREviTQ" coveredBy="_uqxNuOLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNvOLwEeSL-_lRREviTQ" sendEvent="_uqxNw-LwEeSL-_lRREviTQ" receiveEvent="_uqxNtuLwEeSL-_lRREviTQ" signature="_uqxNG-LwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxNveLwEeSL-_lRREviTQ" name="value" lowerBound="1" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxNvuLwEeSL-_lRREviTQ" sendEvent="_uqxNueLwEeSL-_lRREviTQ" receiveEvent="_uqxNxOLwEeSL-_lRREviTQ" signature="_uqxNG-LwEeSL-_lRREviTQ" messageSort="reply"/>
+      <messages xmi:id="_uqxNv-LwEeSL-_lRREviTQ" sendEvent="_uqxNt-LwEeSL-_lRREviTQ" receiveEvent="_uqxNuOLwEeSL-_lRREviTQ" signature="_uqxNK-LwEeSL-_lRREviTQ" assignTo="_uqxNveLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxNwOLwEeSL-_lRREviTQ" parameter="_uqxNLOLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxNweLwEeSL-_lRREviTQ" parameter="_uqxNHOLwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_uqxNwuLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxNw-LwEeSL-_lRREviTQ" message="_uqxNvOLwEeSL-_lRREviTQ" name="out_remove"/>
+      <formalGates xmi:id="_uqxNxOLwEeSL-_lRREviTQ" message="_uqxNvuLwEeSL-_lRREviTQ" name="in_remove"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxNxeLwEeSL-_lRREviTQ" specifies="_uqxNHeLwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxNxuLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNx-LwEeSL-_lRREviTQ" covered="_uqxNy-LwEeSL-_lRREviTQ" message="_uqxNzeLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNyOLwEeSL-_lRREviTQ" covered="_uqxNy-LwEeSL-_lRREviTQ" message="_uqxN0eLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNyeLwEeSL-_lRREviTQ" covered="_uqxNzOLwEeSL-_lRREviTQ" message="_uqxN0eLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxNyuLwEeSL-_lRREviTQ" covered="_uqxNy-LwEeSL-_lRREviTQ" message="_uqxNz-LwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNy-LwEeSL-_lRREviTQ" represents="_uqxN1OLwEeSL-_lRREviTQ" coveredBy="_uqxNx-LwEeSL-_lRREviTQ _uqxNyuLwEeSL-_lRREviTQ _uqxNyOLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxNzOLwEeSL-_lRREviTQ" represents="_uqxNI-LwEeSL-_lRREviTQ" coveredBy="_uqxNyeLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxNzeLwEeSL-_lRREviTQ" sendEvent="_uqxN1eLwEeSL-_lRREviTQ" receiveEvent="_uqxNx-LwEeSL-_lRREviTQ" signature="_uqxNHeLwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_uqxNzuLwEeSL-_lRREviTQ" name="containsValue" type="_uqxNPeLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxNz-LwEeSL-_lRREviTQ" sendEvent="_uqxNyuLwEeSL-_lRREviTQ" receiveEvent="_uqxN1uLwEeSL-_lRREviTQ" signature="_uqxNHeLwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxN0OLwEeSL-_lRREviTQ" value="_uqxNzuLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxN0eLwEeSL-_lRREviTQ" sendEvent="_uqxNyOLwEeSL-_lRREviTQ" receiveEvent="_uqxNyeLwEeSL-_lRREviTQ" signature="_uqxNLeLwEeSL-_lRREviTQ" assignTo="_uqxNzuLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxN0uLwEeSL-_lRREviTQ" parameter="_uqxNLuLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxN0-LwEeSL-_lRREviTQ" parameter="_uqxNHuLwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_uqxN1OLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxN1eLwEeSL-_lRREviTQ" message="_uqxNzeLwEeSL-_lRREviTQ" name="out_contains"/>
+      <formalGates xmi:id="_uqxN1uLwEeSL-_lRREviTQ" message="_uqxNz-LwEeSL-_lRREviTQ" name="in_contains"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxN1-LwEeSL-_lRREviTQ" specifies="_uqxNH-LwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxN2OLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN2eLwEeSL-_lRREviTQ" covered="_uqxN3eLwEeSL-_lRREviTQ" message="_uqxN3-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN2uLwEeSL-_lRREviTQ" covered="_uqxN3eLwEeSL-_lRREviTQ" message="_uqxN4-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN2-LwEeSL-_lRREviTQ" covered="_uqxN3uLwEeSL-_lRREviTQ" message="_uqxN4-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN3OLwEeSL-_lRREviTQ" covered="_uqxN3eLwEeSL-_lRREviTQ" message="_uqxN4eLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxN3eLwEeSL-_lRREviTQ" represents="_uqxN5uLwEeSL-_lRREviTQ" coveredBy="_uqxN2eLwEeSL-_lRREviTQ _uqxN3OLwEeSL-_lRREviTQ _uqxN2uLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxN3uLwEeSL-_lRREviTQ" represents="_uqxNI-LwEeSL-_lRREviTQ" coveredBy="_uqxN2-LwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxN3-LwEeSL-_lRREviTQ" sendEvent="_uqxN5-LwEeSL-_lRREviTQ" receiveEvent="_uqxN2eLwEeSL-_lRREviTQ" signature="_uqxNH-LwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_uqxN4OLwEeSL-_lRREviTQ" name="containsKey" type="_uqxNPeLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxN4eLwEeSL-_lRREviTQ" sendEvent="_uqxN3OLwEeSL-_lRREviTQ" receiveEvent="_uqxN6OLwEeSL-_lRREviTQ" signature="_uqxNH-LwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxN4uLwEeSL-_lRREviTQ" value="_uqxN4OLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxN4-LwEeSL-_lRREviTQ" sendEvent="_uqxN2uLwEeSL-_lRREviTQ" receiveEvent="_uqxN2-LwEeSL-_lRREviTQ" signature="_uqxNL-LwEeSL-_lRREviTQ" assignTo="_uqxN4OLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxN5OLwEeSL-_lRREviTQ" parameter="_uqxNMOLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxN5eLwEeSL-_lRREviTQ" parameter="_uqxNIOLwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_uqxN5uLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxN5-LwEeSL-_lRREviTQ" message="_uqxN3-LwEeSL-_lRREviTQ" name="out_containsKey"/>
+      <formalGates xmi:id="_uqxN6OLwEeSL-_lRREviTQ" message="_uqxN4eLwEeSL-_lRREviTQ" name="in_containsKey"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxN6eLwEeSL-_lRREviTQ" specifies="_uqxNFuLwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxN6uLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN6-LwEeSL-_lRREviTQ" covered="_uqxN7-LwEeSL-_lRREviTQ" message="_uqxN8eLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN7OLwEeSL-_lRREviTQ" covered="_uqxN7-LwEeSL-_lRREviTQ" message="_uqxN9eLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN7eLwEeSL-_lRREviTQ" covered="_uqxN8OLwEeSL-_lRREviTQ" message="_uqxN9eLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN7uLwEeSL-_lRREviTQ" covered="_uqxN7-LwEeSL-_lRREviTQ" message="_uqxN8-LwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxN7-LwEeSL-_lRREviTQ" represents="_uqxN-OLwEeSL-_lRREviTQ" coveredBy="_uqxN6-LwEeSL-_lRREviTQ _uqxN7uLwEeSL-_lRREviTQ _uqxN7OLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxN8OLwEeSL-_lRREviTQ" represents="_uqxNI-LwEeSL-_lRREviTQ" coveredBy="_uqxN7eLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxN8eLwEeSL-_lRREviTQ" sendEvent="_uqxN-eLwEeSL-_lRREviTQ" receiveEvent="_uqxN6-LwEeSL-_lRREviTQ" signature="_uqxNFuLwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxN8uLwEeSL-_lRREviTQ" name="value" lowerBound="1" type="_uqxND-LwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxN8-LwEeSL-_lRREviTQ" sendEvent="_uqxN7uLwEeSL-_lRREviTQ" receiveEvent="_uqxN-uLwEeSL-_lRREviTQ" signature="_uqxNFuLwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxN9OLwEeSL-_lRREviTQ" value="_uqxN8uLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxN9eLwEeSL-_lRREviTQ" sendEvent="_uqxN7OLwEeSL-_lRREviTQ" receiveEvent="_uqxN7eLwEeSL-_lRREviTQ" signature="_uqxNMeLwEeSL-_lRREviTQ" assignTo="_uqxN8uLwEeSL-_lRREviTQ">
+        <arguments xmi:id="_uqxN9uLwEeSL-_lRREviTQ" parameter="_uqxNMuLwEeSL-_lRREviTQ">
+          <value xsi:type="ram:ParameterValue" xmi:id="_uqxN9-LwEeSL-_lRREviTQ" parameter="_uqxNF-LwEeSL-_lRREviTQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_uqxN-OLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxN-eLwEeSL-_lRREviTQ" message="_uqxN8eLwEeSL-_lRREviTQ" name="in_get"/>
+      <formalGates xmi:id="_uqxN-uLwEeSL-_lRREviTQ" message="_uqxN8-LwEeSL-_lRREviTQ" name="out_get"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxN--LwEeSL-_lRREviTQ" specifies="_uqxNIeLwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxN_OLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN_eLwEeSL-_lRREviTQ" covered="_uqxOAeLwEeSL-_lRREviTQ" message="_uqxOA-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN_uLwEeSL-_lRREviTQ" covered="_uqxOAeLwEeSL-_lRREviTQ" message="_uqxOB-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxN_-LwEeSL-_lRREviTQ" covered="_uqxOAuLwEeSL-_lRREviTQ" message="_uqxOB-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxOAOLwEeSL-_lRREviTQ" covered="_uqxOAeLwEeSL-_lRREviTQ" message="_uqxOBeLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxOAeLwEeSL-_lRREviTQ" represents="_uqxOCOLwEeSL-_lRREviTQ" coveredBy="_uqxN_eLwEeSL-_lRREviTQ _uqxOAOLwEeSL-_lRREviTQ _uqxN_uLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxOAuLwEeSL-_lRREviTQ" represents="_uqxNI-LwEeSL-_lRREviTQ" coveredBy="_uqxN_-LwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxOA-LwEeSL-_lRREviTQ" sendEvent="_uqxOCeLwEeSL-_lRREviTQ" receiveEvent="_uqxN_eLwEeSL-_lRREviTQ" signature="_uqxNIeLwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxOBOLwEeSL-_lRREviTQ" name="keySet" lowerBound="1" type="_uqxNNuLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxOBeLwEeSL-_lRREviTQ" sendEvent="_uqxOAOLwEeSL-_lRREviTQ" receiveEvent="_uqxOCuLwEeSL-_lRREviTQ" signature="_uqxNIeLwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxOBuLwEeSL-_lRREviTQ" value="_uqxOBOLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxOB-LwEeSL-_lRREviTQ" sendEvent="_uqxN_uLwEeSL-_lRREviTQ" receiveEvent="_uqxN_-LwEeSL-_lRREviTQ" signature="_uqxNM-LwEeSL-_lRREviTQ" assignTo="_uqxOBOLwEeSL-_lRREviTQ"/>
+      <properties xmi:id="_uqxOCOLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxOCeLwEeSL-_lRREviTQ" message="_uqxOA-LwEeSL-_lRREviTQ" name="in_keySet"/>
+      <formalGates xmi:id="_uqxOCuLwEeSL-_lRREviTQ" message="_uqxOBeLwEeSL-_lRREviTQ" name="out_keySet"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxOC-LwEeSL-_lRREviTQ" specifies="_uqxNIuLwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxODOLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxODeLwEeSL-_lRREviTQ" covered="_uqxOEeLwEeSL-_lRREviTQ" message="_uqxOE-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxODuLwEeSL-_lRREviTQ" covered="_uqxOEeLwEeSL-_lRREviTQ" message="_uqxOF-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxOD-LwEeSL-_lRREviTQ" covered="_uqxOEuLwEeSL-_lRREviTQ" message="_uqxOF-LwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxOEOLwEeSL-_lRREviTQ" covered="_uqxOEeLwEeSL-_lRREviTQ" message="_uqxOFeLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxOEeLwEeSL-_lRREviTQ" represents="_uqxOGOLwEeSL-_lRREviTQ" coveredBy="_uqxODeLwEeSL-_lRREviTQ _uqxOEOLwEeSL-_lRREviTQ _uqxODuLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxOEuLwEeSL-_lRREviTQ" represents="_uqxNI-LwEeSL-_lRREviTQ" coveredBy="_uqxOD-LwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxOE-LwEeSL-_lRREviTQ" sendEvent="_uqxOGeLwEeSL-_lRREviTQ" receiveEvent="_uqxODeLwEeSL-_lRREviTQ" signature="_uqxNIuLwEeSL-_lRREviTQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_uqxOFOLwEeSL-_lRREviTQ" name="values" lowerBound="1" type="_uqxNJuLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxOFeLwEeSL-_lRREviTQ" sendEvent="_uqxOEOLwEeSL-_lRREviTQ" receiveEvent="_uqxOGuLwEeSL-_lRREviTQ" signature="_uqxNIuLwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxOFuLwEeSL-_lRREviTQ" value="_uqxOFOLwEeSL-_lRREviTQ"/>
+      </messages>
+      <messages xmi:id="_uqxOF-LwEeSL-_lRREviTQ" sendEvent="_uqxODuLwEeSL-_lRREviTQ" receiveEvent="_uqxOD-LwEeSL-_lRREviTQ" signature="_uqxNNOLwEeSL-_lRREviTQ" assignTo="_uqxOFOLwEeSL-_lRREviTQ"/>
+      <properties xmi:id="_uqxOGOLwEeSL-_lRREviTQ" name="target" lowerBound="1" type="_uqxNEuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxOGeLwEeSL-_lRREviTQ" message="_uqxOE-LwEeSL-_lRREviTQ" name="in_values"/>
+      <formalGates xmi:id="_uqxOGuLwEeSL-_lRREviTQ" message="_uqxOFeLwEeSL-_lRREviTQ" name="out_values"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_uqxOG-LwEeSL-_lRREviTQ" specifies="_uqxNB-LwEeSL-_lRREviTQ">
+    <specification xmi:id="_uqxOHOLwEeSL-_lRREviTQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxOHeLwEeSL-_lRREviTQ" covered="_uqxOJOLwEeSL-_lRREviTQ" message="_uqxOJuLwEeSL-_lRREviTQ"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_uqxOHuLwEeSL-_lRREviTQ" covered="_uqxOJOLwEeSL-_lRREviTQ _uqxOJeLwEeSL-_lRREviTQ" interactionOperator="opt">
+        <operands xmi:id="_uqxOH-LwEeSL-_lRREviTQ">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxOIOLwEeSL-_lRREviTQ" covered="_uqxOJOLwEeSL-_lRREviTQ" message="_uqxOJ-LwEeSL-_lRREviTQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxOIeLwEeSL-_lRREviTQ" covered="_uqxOJeLwEeSL-_lRREviTQ" message="_uqxOJ-LwEeSL-_lRREviTQ"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_uqxOIuLwEeSL-_lRREviTQ" body="instance == null" language="Java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_uqxOI-LwEeSL-_lRREviTQ" covered="_uqxOJOLwEeSL-_lRREviTQ" message="_uqxOKOLwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxOJOLwEeSL-_lRREviTQ" represents="_uqxOKuLwEeSL-_lRREviTQ" coveredBy="_uqxOHeLwEeSL-_lRREviTQ _uqxOHuLwEeSL-_lRREviTQ _uqxOIOLwEeSL-_lRREviTQ _uqxOI-LwEeSL-_lRREviTQ"/>
+      <lifelines xmi:id="_uqxOJeLwEeSL-_lRREviTQ" represents="_uqxNDeLwEeSL-_lRREviTQ" coveredBy="_uqxOHuLwEeSL-_lRREviTQ _uqxOIeLwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxOJuLwEeSL-_lRREviTQ" sendEvent="_uqxOK-LwEeSL-_lRREviTQ" receiveEvent="_uqxOHeLwEeSL-_lRREviTQ" signature="_uqxNB-LwEeSL-_lRREviTQ"/>
+      <messages xmi:id="_uqxOJ-LwEeSL-_lRREviTQ" sendEvent="_uqxOIOLwEeSL-_lRREviTQ" receiveEvent="_uqxOIeLwEeSL-_lRREviTQ" signature="_uqxNC-LwEeSL-_lRREviTQ" assignTo="_uqxNDeLwEeSL-_lRREviTQ" messageSort="createMessage"/>
+      <messages xmi:id="_uqxOKOLwEeSL-_lRREviTQ" sendEvent="_uqxOI-LwEeSL-_lRREviTQ" receiveEvent="_uqxOLOLwEeSL-_lRREviTQ" signature="_uqxNB-LwEeSL-_lRREviTQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_uqxOKeLwEeSL-_lRREviTQ" value="_uqxNDeLwEeSL-_lRREviTQ"/>
+      </messages>
+      <properties xmi:id="_uqxOKuLwEeSL-_lRREviTQ" name="singleton" static="true" lowerBound="1" type="_uqxNBuLwEeSL-_lRREviTQ"/>
+      <formalGates xmi:id="_uqxOK-LwEeSL-_lRREviTQ" message="_uqxOJuLwEeSL-_lRREviTQ" name="in_getInstance"/>
+      <formalGates xmi:id="_uqxOLOLwEeSL-_lRREviTQ" message="_uqxOKOLwEeSL-_lRREviTQ" name="out_getInstance"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_uqxOLeLwEeSL-_lRREviTQ">
+    <containers xmi:id="_uqxOLuLwEeSL-_lRREviTQ" key="_uqxNAeLwEeSL-_lRREviTQ"/>
+  </layout>
+  <wovenAspects xmi:id="_uqxOL-LwEeSL-_lRREviTQ" name="Authentication">
+    <comesFrom href="Authentication.ram#_NyKWwAYOEeSiwsYTSMcCVw"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_uqxOMOLwEeSL-_lRREviTQ" name="Association&lt;HashMap>">
+    <comesFrom href="Reused_Association/Woven_Association_Association_HashMap_KeyIndexed.ram#_leOG4KpmEeSNvp5qWq2xaA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_uqxOMeLwEeSL-_lRREviTQ" name="Singleton&lt;Singleton>">
+    <comesFrom href="Reused_Singleton/Woven_Singleton_Singleton.ram#_5_GJ_qpmEeSNvp5qWq2xaA"/>
+  </wovenAspects>
+</ram:Aspect>

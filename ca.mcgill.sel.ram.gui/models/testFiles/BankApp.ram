@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_eFkeMP3lEeGFv4JVSLxhsg" name="BankApp">
+  <structuralView xmi:id="_eFkeMf3lEeGFv4JVSLxhsg">
+    <classes xsi:type="ram:Class" xmi:id="_eFkeMv3lEeGFv4JVSLxhsg" name="Bank">
+      <operations  xmi:id="_6yz2MP4bEeG9or78xVjnPg" name="getAccount" returnType="_eFkeM_3lEeGFv4JVSLxhsg" visibility="public"/>
+      <operations  xmi:id="_ZvqsQAHHEeKki6ajwNFITQ" name="getBank" returnType="_eFkeMv3lEeGFv4JVSLxhsg" static="true" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_eFkeM_3lEeGFv4JVSLxhsg" name="Account">
+      <operations  xmi:id="_eFkeNP3lEeGFv4JVSLxhsg" name="deposit" returnType="_eFkeOP3lEeGFv4JVSLxhsg" visibility="public">
+        <parameters xmi:id="_eFkeNf3lEeGFv4JVSLxhsg" name="amount" type="_eFkeO_3lEeGFv4JVSLxhsg"/>
+      </operations>
+      <operations  xmi:id="_eFkeNv3lEeGFv4JVSLxhsg" name="withdraw" returnType="_eFkeOP3lEeGFv4JVSLxhsg" visibility="public">
+        <parameters xmi:id="_eFkeN_3lEeGFv4JVSLxhsg" name="amount" type="_eFkeO_3lEeGFv4JVSLxhsg"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_eFkeOP3lEeGFv4JVSLxhsg"/>
+    <types xsi:type="ram:RAny" xmi:id="_eFkeOf3lEeGFv4JVSLxhsg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_eFkeOv3lEeGFv4JVSLxhsg"/>
+    <types xsi:type="ram:RInt" xmi:id="_eFkeO_3lEeGFv4JVSLxhsg"/>
+    <types xsi:type="ram:RChar" xmi:id="_eFkePP3lEeGFv4JVSLxhsg"/>
+    <types xsi:type="ram:RString" xmi:id="_eFkePf3lEeGFv4JVSLxhsg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_eFkePv3lEeGFv4JVSLxhsg">
+    <mappings xmi:id="_eFlFQP3lEeGFv4JVSLxhsg" toElement="_eFkeMv3lEeGFv4JVSLxhsg">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/design_patterns/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <mappings xmi:id="_vV-f4f6yEeGnU63R3sWxGw" toElement="_ZvqsQAHHEeKki6ajwNFITQ">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/design_patterns/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/design_patterns/Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_9BcQ8P4bEeG9or78xVjnPg">
+    <mappings xmi:id="_9a550P4bEeG9or78xVjnPg" toElement="_eFkeMv3lEeGFv4JVSLxhsg">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/util/ZeroToMany.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <mappings xmi:id="_-wM40P4bEeG9or78xVjnPg" toElement="_eFkeM_3lEeGFv4JVSLxhsg">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/util/ZeroToMany.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/util/ZeroToMany.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_x55OIP6yEeGnU63R3sWxGw">
+    <mappings xmi:id="_x56cQP6yEeGnU63R3sWxGw" toElement="_eFkeM_3lEeGFv4JVSLxhsg">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <mappings xmi:id="_x58RcP6yEeGnU63R3sWxGw" toElement="_eFkeNP3lEeGFv4JVSLxhsg">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/workflow/Workflow.ram#_Cl0A8IdWEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <layout xmi:id="_gR4cEAHHEeKki6ajwNFITQ">
+    <containers xmi:id="_gR4cEQHHEeKki6ajwNFITQ" key="_eFkeMf3lEeGFv4JVSLxhsg">
+      <value xmi:id="_gR4cEgHHEeKki6ajwNFITQ" key="_eFkeMv3lEeGFv4JVSLxhsg">
+        <value xmi:id="_gR4cEwHHEeKki6ajwNFITQ" x="209.99854" y="148.27414"/>
+      </value>
+      <value xmi:id="_gR4cFAHHEeKki6ajwNFITQ" key="_eFkeM_3lEeGFv4JVSLxhsg">
+        <value xmi:id="_gR4cFQHHEeKki6ajwNFITQ" x="567.99854" y="147.27438"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

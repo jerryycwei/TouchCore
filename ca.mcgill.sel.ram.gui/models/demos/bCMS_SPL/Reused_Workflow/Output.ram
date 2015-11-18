@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_LADg4NWmEeSds4IMcVofUQ" name="Output">
+  <modelReuses xmi:id="_ljyaAOUXEeSnOL7SrAbYYw" compositions="_ljyaAeUXEeSnOL7SrAbYYw"/>
+  <realizes href="workflow.core#_lWfNEKusEeSDH71cDqVaSw"/>
+  <structuralView xmi:id="_LADg4dWmEeSds4IMcVofUQ">
+    <types xsi:type="ram:RVoid" xmi:id="_LADg4tWmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_LADg49WmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_LADg5NWmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_LADg5dWmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_LADg5tWmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RString" xmi:id="_LADg59WmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_LADg6NWmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_LADg6dWmEeSds4IMcVofUQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_LADg6tWmEeSds4IMcVofUQ"/>
+  </structuralView>
+  <instantiations xmi:id="_LADg69WmEeSds4IMcVofUQ" type="Extends">
+    <externalAspect href="Input.ram#_eywYcJRBEeSxiIO43J4lMw"/>
+  </instantiations>
+  <instantiations xmi:id="_ljyaAeUXEeSnOL7SrAbYYw" source="_LADg4NWmEeSds4IMcVofUQ">
+    <externalAspect href="Reused_Command/Woven_Command_Command_NetworkCommand.ram#_f2mNsOUXEeSnOL7SrAbYYw"/>
+  </instantiations>
+  <layout xmi:id="_LADg7NWmEeSds4IMcVofUQ">
+    <containers xmi:id="_LADg7dWmEeSds4IMcVofUQ" key="_LADg4dWmEeSds4IMcVofUQ"/>
+  </layout>
+</ram:Aspect>

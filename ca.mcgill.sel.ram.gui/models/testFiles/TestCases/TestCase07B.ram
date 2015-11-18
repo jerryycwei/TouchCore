@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_EThugHSuEeSlgfy69r75xg" name="TestCase07B">
+  <structuralView xmi:id="_EThugXSuEeSlgfy69r75xg">
+    <classes xsi:type="ram:Class" xmi:id="_EThugnSuEeSlgfy69r75xg" name="B" partiality="public">
+      <attributes xmi:id="_EThug3SuEeSlgfy69r75xg" name="count" type="_EThuh3SuEeSlgfy69r75xg"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_EThuhHSuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RAny" xmi:id="_EThuhXSuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_EThuhnSuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RInt" xmi:id="_EThuh3SuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RChar" xmi:id="_EThuiHSuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RString" xmi:id="_EThuiXSuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_EThuinSuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_EThui3SuEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RLong" xmi:id="_EThujHSuEeSlgfy69r75xg"/>
+  </structuralView>
+  <layout xmi:id="_EThujXSuEeSlgfy69r75xg">
+    <containers xmi:id="_EThujnSuEeSlgfy69r75xg" key="_EThugXSuEeSlgfy69r75xg">
+      <value xmi:id="_EThuj3SuEeSlgfy69r75xg" key="_EThugnSuEeSlgfy69r75xg">
+        <value xmi:id="_EThukHSuEeSlgfy69r75xg" x="591.0" y="326.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

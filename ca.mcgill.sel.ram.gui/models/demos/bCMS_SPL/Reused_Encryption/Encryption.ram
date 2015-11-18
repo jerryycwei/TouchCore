@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_EzmDUN4lEeS1koPVI5W3kQ" name="Encryption">
+  <realizes href="Encryption.core#_FkX1cd4kEeS1koPVI5W3kQ"/>
+  <structuralView xmi:id="_EzmDUd4lEeS1koPVI5W3kQ">
+    <classes xsi:type="ram:Class" xmi:id="_EzmDUt4lEeS1koPVI5W3kQ" name="Encryptable" visibility="public">
+      <operations  xmi:id="_EzmDU94lEeS1koPVI5W3kQ" name="encryptedMethod" returnType="_EzmDVd4lEeS1koPVI5W3kQ" partiality="public" visibility="public"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_EzmDVN4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_EzmDVd4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_EzmDVt4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_EzmDV94lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_EzmDWN4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RString" xmi:id="_EzmDWd4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_EzmDWt4lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_EzmDW94lEeS1koPVI5W3kQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_EzmDXN4lEeS1koPVI5W3kQ"/>
+  </structuralView>
+  <layout xmi:id="_EzmDXd4lEeS1koPVI5W3kQ">
+    <containers xmi:id="_EzmDXt4lEeS1koPVI5W3kQ" key="_EzmDUd4lEeS1koPVI5W3kQ">
+      <value xmi:id="_EzmDX94lEeS1koPVI5W3kQ" key="_EzmDUt4lEeS1koPVI5W3kQ">
+        <value xmi:id="_EzmDYN4lEeS1koPVI5W3kQ" x="1074.0" y="205.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

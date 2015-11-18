@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_MbmyEMkxEeKjHsjAZn6WyQ" name="CriticalError">
+  <structuralView xmi:id="_MbmyEckxEeKjHsjAZn6WyQ">
+    <classes xsi:type="ram:Class" xmi:id="_MbmyEskxEeKjHsjAZn6WyQ" name="CriticalError">
+      <operations  xmi:id="_MbmyE8kxEeKjHsjAZn6WyQ" name="create" returnType="_MbmyEskxEeKjHsjAZn6WyQ" visibility="public">
+        <parameters xmi:id="_MbmyFMkxEeKjHsjAZn6WyQ" name="errorName" type="_MbmyJMkxEeKjHsjAZn6WyQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_MbmyFckxEeKjHsjAZn6WyQ" name="Machine">
+      <operations  xmi:id="_MbmyFskxEeKjHsjAZn6WyQ" name="withdrawAllCredits" returnType="_MbmyH8kxEeKjHsjAZn6WyQ" visibility="public"/>
+      <operations  xmi:id="_MbmyF8kxEeKjHsjAZn6WyQ" name="ceasePlaying" returnType="_MbmyH8kxEeKjHsjAZn6WyQ" visibility="public"/>
+      <operations  xmi:id="_MbmyGMkxEeKjHsjAZn6WyQ" name="unblockMachine" returnType="_MbmyH8kxEeKjHsjAZn6WyQ" visibility="public"/>
+      <operations  xmi:id="_MbmyGckxEeKjHsjAZn6WyQ" name="blockMachine" returnType="_MbmyH8kxEeKjHsjAZn6WyQ" visibility="public">
+        <parameters xmi:id="_MbmyGskxEeKjHsjAZn6WyQ" name="e" type="_MbmyEskxEeKjHsjAZn6WyQ"/>
+      </operations>
+      <operations  xmi:id="_qShXcMkxEeKjHsjAZn6WyQ" name="getMachine" returnType="_MbmyFckxEeKjHsjAZn6WyQ" static="true" visibility="public"/>
+      <associationEnds xmi:id="_MbmyG8kxEeKjHsjAZn6WyQ" name="myReportingInterface" lowerBound="1" assoc="_MbmyHskxEeKjHsjAZn6WyQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_MbmyHMkxEeKjHsjAZn6WyQ" name="ReportingInterface" partiality="public">
+      <operations  xmi:id="_EBDgQMk0EeK9U5b9o3fuSw" name="clearReport" returnType="_MbmyH8kxEeKjHsjAZn6WyQ" visibility="public"/>
+      <operations  xmi:id="_CpCkcMk0EeK9U5b9o3fuSw" name="reportCritical" returnType="_MbmyH8kxEeKjHsjAZn6WyQ" visibility="public">
+        <parameters xmi:id="_CpCkcck0EeK9U5b9o3fuSw" name="e" type="_MbmyEskxEeKjHsjAZn6WyQ"/>
+      </operations>
+      <associationEnds xmi:id="_MbmyHckxEeKjHsjAZn6WyQ" name="myMachine" lowerBound="1" navigable="false" assoc="_MbmyHskxEeKjHsjAZn6WyQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_udHIkMkxEeKjHsjAZn6WyQ" name="RandomReels">
+      <operations  xmi:id="_0l8vEMkxEeKjHsjAZn6WyQ" name="spinReels" returnType="_xwbTcMkxEeKjHsjAZn6WyQ" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_xwbTcMkxEeKjHsjAZn6WyQ" name="ArrayOfInt"/>
+    <classes xsi:type="ram:Class" xmi:id="_1kez4MkxEeKjHsjAZn6WyQ" name="PayTable">
+      <operations  xmi:id="_6uL4oMkxEeKjHsjAZn6WyQ" name="payout" returnType="_MbmyIskxEeKjHsjAZn6WyQ" visibility="public">
+        <parameters xmi:id="_8IHgAMkxEeKjHsjAZn6WyQ" name="first" type="_7D6RAMkxEeKjHsjAZn6WyQ"/>
+        <parameters xmi:id="_843ngMkxEeKjHsjAZn6WyQ" name="second" type="_7D6RAMkxEeKjHsjAZn6WyQ"/>
+        <parameters xmi:id="_-Oq80MkxEeKjHsjAZn6WyQ" name="third" type="_7D6RAMkxEeKjHsjAZn6WyQ"/>
+        <parameters xmi:id="_-5CIcMkxEeKjHsjAZn6WyQ" name="fourth" type="_7D6RAMkxEeKjHsjAZn6WyQ"/>
+        <parameters xmi:id="__tE0gMkxEeKjHsjAZn6WyQ" name="fifth" type="_7D6RAMkxEeKjHsjAZn6WyQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_7D6RAMkxEeKjHsjAZn6WyQ" name="Symbol"/>
+    <associations xmi:id="_MbmyHskxEeKjHsjAZn6WyQ" name="Machine_ReportingInterface" ends="_MbmyG8kxEeKjHsjAZn6WyQ _MbmyHckxEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_MbmyH8kxEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_MbmyIMkxEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_MbmyIckxEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_MbmyIskxEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_MbmyI8kxEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RString" xmi:id="_MbmyJMkxEeKjHsjAZn6WyQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_OT7loMkxEeKjHsjAZn6WyQ">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_OvanwMkxEeKjHsjAZn6WyQ" to="_MbmyEskxEeKjHsjAZn6WyQ">
+      <from xsi:type="ram:Class" href="../reusable_model_library/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="../reusable_model_library/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <instantiations xmi:id="_gPmhAMkxEeKjHsjAZn6WyQ">
+    <source xsi:type="ram:Aspect" href="Betting.ram#_mCjEUMSBEeKHNqMRHw52-A"/>
+  </instantiations>
+  <instantiations xmi:id="_nbJhsMkxEeKjHsjAZn6WyQ">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_oX3ooMkxEeKjHsjAZn6WyQ" to="_MbmyFckxEeKjHsjAZn6WyQ">
+      <operationMappings xmi:id="_pPLrIMkxEeKjHsjAZn6WyQ" to="_qShXcMkxEeKjHsjAZn6WyQ">
+        <from href="../reusable_model_library/design_patterns/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="../reusable_model_library/design_patterns/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="../reusable_model_library/design_patterns/Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_lp8-8ckzEeK9U5b9o3fuSw">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_mOxjQMkzEeK9U5b9o3fuSw" to="_udHIkMkxEeKjHsjAZn6WyQ">
+      <operationMappings xmi:id="_nXQ1UMkzEeK9U5b9o3fuSw" to="_0l8vEMkxEeKjHsjAZn6WyQ">
+        <from href="Blockable.ram#_A3HQqMkwEeKjHsjAZn6WyQ"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="Blockable.ram#_A3HQo8kwEeKjHsjAZn6WyQ"/>
+    </mappings>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_mpKZMMkzEeK9U5b9o3fuSw" to="_xwbTcMkxEeKjHsjAZn6WyQ">
+      <from xsi:type="ram:Class" href="Blockable.ram#_A3HQq8kwEeKjHsjAZn6WyQ"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="Blockable.ram#_A3HQockwEeKjHsjAZn6WyQ"/>
+  </instantiations>
+  <instantiations xmi:id="_ocjpcMkzEeK9U5b9o3fuSw">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_piv1cMkzEeK9U5b9o3fuSw" to="_1kez4MkxEeKjHsjAZn6WyQ">
+      <operationMappings xmi:id="_qkjQsMkzEeK9U5b9o3fuSw" to="_6uL4oMkxEeKjHsjAZn6WyQ">
+        <from href="Blockable.ram#_A3HQqMkwEeKjHsjAZn6WyQ"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="Blockable.ram#_A3HQo8kwEeKjHsjAZn6WyQ"/>
+    </mappings>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_p2ScgMkzEeK9U5b9o3fuSw" to="_MbmyIskxEeKjHsjAZn6WyQ">
+      <from xsi:type="ram:Class" href="Blockable.ram#_A3HQq8kwEeKjHsjAZn6WyQ"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="Blockable.ram#_A3HQockwEeKjHsjAZn6WyQ"/>
+  </instantiations>
+  <layout xmi:id="_MbmyJckxEeKjHsjAZn6WyQ">
+    <containers xmi:id="_MbmyJskxEeKjHsjAZn6WyQ" key="_MbmyEckxEeKjHsjAZn6WyQ">
+      <value xmi:id="_MbmyJ8kxEeKjHsjAZn6WyQ" key="_MbmyEskxEeKjHsjAZn6WyQ">
+        <value xmi:id="_MbmyKMkxEeKjHsjAZn6WyQ" x="100.99994" y="149.00003"/>
+      </value>
+      <value xmi:id="_MbmyKckxEeKjHsjAZn6WyQ" key="_MbmyFckxEeKjHsjAZn6WyQ">
+        <value xmi:id="_MbmyKskxEeKjHsjAZn6WyQ" x="546.0001" y="221.79262"/>
+      </value>
+      <value xmi:id="_MbmyK8kxEeKjHsjAZn6WyQ" key="_MbmyHMkxEeKjHsjAZn6WyQ">
+        <value xmi:id="_MbmyLMkxEeKjHsjAZn6WyQ" x="31.677853" y="303.84158"/>
+      </value>
+      <value xmi:id="_udHvoMkxEeKjHsjAZn6WyQ" key="_udHIkMkxEeKjHsjAZn6WyQ">
+        <value xmi:id="_udHvockxEeKjHsjAZn6WyQ" x="415.79266" y="-63.000046"/>
+      </value>
+      <value xmi:id="_xwb6gMkxEeKjHsjAZn6WyQ" key="_xwbTcMkxEeKjHsjAZn6WyQ">
+        <value xmi:id="_xwb6gckxEeKjHsjAZn6WyQ" x="698.0" y="-62.00006"/>
+      </value>
+      <value xmi:id="_1kfa8MkxEeKjHsjAZn6WyQ" key="_1kez4MkxEeKjHsjAZn6WyQ">
+        <value xmi:id="_1kfa8ckxEeKjHsjAZn6WyQ" x="97.99963" y="507.2578"/>
+      </value>
+      <value xmi:id="_7D64EMkxEeKjHsjAZn6WyQ" key="_7D6RAMkxEeKjHsjAZn6WyQ">
+        <value xmi:id="_7D64EckxEeKjHsjAZn6WyQ" x="868.0002" y="499.0002"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

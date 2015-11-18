@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_q61c8KrcEeSxDLZ7wGlAEw" name="Authorization">
+  <models xsi:type="core:COREFeatureModel" href="#_q62EAKrcEeSxDLZ7wGlAEw"/>
+  <models xsi:type="ram:Aspect" href="Authorization.ram#_dPkxYKrdEeSxDLZ7wGlAEw"/>
+  <models xsi:type="ram:Aspect" href="SoD.ram#_FbqcEKylEeStjOtydxo5sA"/>
+  <featureModel xmi:id="_q62EAKrcEeSxDLZ7wGlAEw" coreConcern="_q61c8KrcEeSxDLZ7wGlAEw" root="_q62EAarcEeSxDLZ7wGlAEw">
+    <features xmi:id="_q62EAarcEeSxDLZ7wGlAEw" name="Authorization" children="_d2Pv0KrdEeSxDLZ7wGlAEw _f5XeIKrdEeSxDLZ7wGlAEw">
+      <realizedBy xsi:type="ram:Aspect" href="Authorization.ram#_dPkxYKrdEeSxDLZ7wGlAEw"/>
+      <reuses xmi:id="_fiI1YCWpEeWiqbwSFmJigg" name="Named_Role" selectedConfiguration="_fiI1YSWpEeWiqbwSFmJigg">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_fiI1YSWpEeWiqbwSFmJigg" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_lkjq0CWpEeWiqbwSFmJigg" name="Singleton_AuthorizationManager" selectedConfiguration="_lkjq0SWpEeWiqbwSFmJigg">
+        <reusedConcern href="Reused_Singleton/Singleton.core#_d1_oUKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_lkjq0SWpEeWiqbwSFmJigg" name="Singleton_Singleton">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Singleton/Singleton.core#_d1_oUaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_qAAaECW3EeWiqbwSFmJigg" name="Authentication_User" selectedConfiguration="_qAAaESW3EeWiqbwSFmJigg">
+        <reusedConcern href="Reused_Authentication/Authentication.core#_gFhYwKAyEeSaEq_8EhRMPA"/>
+        <configurations xmi:id="_qAAaESW3EeWiqbwSFmJigg" name="Authentication_AuthenticationAuthentication Means">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Authentication/Authentication.core#_gFhYwaAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_gFhYwqAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_hq6pQKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_wz1JIKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_w8fV4KAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_nEKl4KAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_hZb3sKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_MbwYcKrpEeStCcnk_Fh-rQ"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_hTvfYKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_nKvvAKAyEeSaEq_8EhRMPA"/>
+          <reexposed href="Reused_Authentication/Authentication.core#_oJ77IKAyEeSaEq_8EhRMPA"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_cBYtoCW4EeWYJ8pRhlXY0w" name="Association_AuthorizationManager_Roles" selectedConfiguration="_cBYtoSW4EeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_cBYtoSW4EeWYJ8pRhlXY0w" name="Association_AssociationKeyIndexedHashMap">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_ndvLsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_r80mIACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_41QhoCW4EeWYJ8pRhlXY0w" name="Association_Action_Permission" selectedConfiguration="_41QhoSW4EeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_41QhoSW4EeWYJ8pRhlXY0w" name="Association_HashSetUnorderedAssociationPlainKind">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_DebZ0ACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_CYjzYACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_GpV8kCW5EeWYJ8pRhlXY0w" name="Association_Permissio_Role" selectedConfiguration="_GpV8kSW5EeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_GpV8kSW5EeWYJ8pRhlXY0w" name="Association_AssociationKindHashSetUnorderedPlain">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_DebZ0ACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_CYjzYACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_4mmK0CXJEeWYJ8pRhlXY0w" name="Named_Permission" selectedConfiguration="_4mmK0SXJEeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_4mmK0SXJEeWYJ8pRhlXY0w" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_d2Pv0KrdEeSxDLZ7wGlAEw" name="Hierarchical" parent="_q62EAarcEeSxDLZ7wGlAEw" parentRelationship="Optional"/>
+    <features xmi:id="_f5XeIKrdEeSxDLZ7wGlAEw" name="SoD" parent="_q62EAarcEeSxDLZ7wGlAEw" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="SoD.ram#_FbqcEKylEeStjOtydxo5sA"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_DCv9EJRmEeGOVPsJ2LtqbA" name="DomainBase">
+  <structuralView xmi:id="_DCv9EZRmEeGOVPsJ2LtqbA">
+    <classes xsi:type="ram:Class" xmi:id="_DCv9HpRmEeGOVPsJ2LtqbA" name="Coordinator">
+      <operations  xmi:id="_DCv9H5RmEeGOVPsJ2LtqbA" name="create" extendedVisibility="private" returnType="_DCv9HpRmEeGOVPsJ2LtqbA" visibility="public">
+        <parameters xmi:id="_DCv9IJRmEeGOVPsJ2LtqbA" name="hostname" type="_DCv9KpRmEeGOVPsJ2LtqbA"/>
+      </operations>
+      <operations  xmi:id="_DCv9IZRmEeGOVPsJ2LtqbA" name="getHostname" returnType="_DCv9KpRmEeGOVPsJ2LtqbA" visibility="public"/>
+      <operations  xmi:id="_DCv9IpRmEeGOVPsJ2LtqbA" name="getCoordinator" returnType="_DCv9HpRmEeGOVPsJ2LtqbA" static="true" visibility="public"/>
+      <attributes xmi:id="_DCv9I5RmEeGOVPsJ2LtqbA" name="hostname" type="_DCv9KpRmEeGOVPsJ2LtqbA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_u2p6gZVSEeGXxKEJllDFfA" name="LocalContext">
+      <associationEnds xmi:id="_6U7UoJVSEeGXxKEJllDFfA" name="psc" lowerBound="1" assoc="_6U7UopVSEeGXxKEJllDFfA"/>
+      <associationEnds xmi:id="_6eKwMJVSEeGXxKEJllDFfA" name="fsc" lowerBound="1" assoc="_6eKwMpVSEeGXxKEJllDFfA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_w-voYJVSEeGXxKEJllDFfA" name="PSC" superTypes="_DCv9HpRmEeGOVPsJ2LtqbA">
+      <associationEnds xmi:id="_6U7UoZVSEeGXxKEJllDFfA" name="localContext" lowerBound="1" navigable="false" assoc="_6U7UopVSEeGXxKEJllDFfA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_yRQZIJVSEeGXxKEJllDFfA" name="FSC" superTypes="_DCv9HpRmEeGOVPsJ2LtqbA">
+      <associationEnds xmi:id="_6eKwMZVSEeGXxKEJllDFfA" name="localContext" lowerBound="1" navigable="false" assoc="_6eKwMpVSEeGXxKEJllDFfA"/>
+    </classes>
+    <associations xmi:id="_6U7UopVSEeGXxKEJllDFfA" name="LocalContext_PSC" ends="_6U7UoJVSEeGXxKEJllDFfA _6U7UoZVSEeGXxKEJllDFfA"/>
+    <associations xmi:id="_6eKwMpVSEeGXxKEJllDFfA" name="LocalContext_FSC" ends="_6eKwMJVSEeGXxKEJllDFfA _6eKwMZVSEeGXxKEJllDFfA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_DCv9JZRmEeGOVPsJ2LtqbA"/>
+    <types xsi:type="ram:RAny" xmi:id="_DCv9JpRmEeGOVPsJ2LtqbA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_DCv9J5RmEeGOVPsJ2LtqbA"/>
+    <types xsi:type="ram:RInt" xmi:id="_DCv9KJRmEeGOVPsJ2LtqbA"/>
+    <types xsi:type="ram:RChar" xmi:id="_DCv9KZRmEeGOVPsJ2LtqbA"/>
+    <types xsi:type="ram:RString" xmi:id="_DCv9KpRmEeGOVPsJ2LtqbA"/>
+  </structuralView>
+  <instantiations xmi:id="_DCv9LpRmEeGOVPsJ2LtqbA">
+    <mappings xmi:id="_DCv9L5RmEeGOVPsJ2LtqbA" toElement="_DCv9HpRmEeGOVPsJ2LtqbA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/design_patterns/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <mappings xmi:id="_DCv9MJRmEeGOVPsJ2LtqbA" toElement="_DCv9H5RmEeGOVPsJ2LtqbA">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/design_patterns/Singleton.ram#_mRK_QYdYEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <mappings xmi:id="_DCv9MZRmEeGOVPsJ2LtqbA" toElement="_DCv9IpRmEeGOVPsJ2LtqbA">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/design_patterns/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/design_patterns/Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_PtqlEJVZEeGElJXlSRblog">
+    <mappings xmi:id="_PtrMIJVZEeGElJXlSRblog" toElement="_DCv9HpRmEeGOVPsJ2LtqbA">
+      <fromElement xsi:type="ram:Class" href="../../Lib/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <mappings xmi:id="_Rw1WsJVZEeGElJXlSRblog" toElement="_DCv9IZRmEeGOVPsJ2LtqbA">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/util/Named.ram#_coJYcIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <layout xmi:id="_0PUCMLDmEeGMKIs8WBp3gg">
+    <containers xmi:id="_0PUpQLDmEeGMKIs8WBp3gg" key="_DCv9EZRmEeGOVPsJ2LtqbA">
+      <value xmi:id="_0PUpQbDmEeGMKIs8WBp3gg" key="_u2p6gZVSEeGXxKEJllDFfA">
+        <value xmi:id="_0PUpQrDmEeGMKIs8WBp3gg" x="707.22687" y="289.9418"/>
+      </value>
+      <value xmi:id="_0PUpQ7DmEeGMKIs8WBp3gg" key="_DCv9HpRmEeGOVPsJ2LtqbA">
+        <value xmi:id="_0PUpRLDmEeGMKIs8WBp3gg" x="1228.667" y="256.0101"/>
+      </value>
+      <value xmi:id="_0PUpRbDmEeGMKIs8WBp3gg" key="_yRQZIJVSEeGXxKEJllDFfA">
+        <value xmi:id="_0PUpRrDmEeGMKIs8WBp3gg" x="963.89905" y="364.9487"/>
+      </value>
+      <value xmi:id="_0PUpR7DmEeGMKIs8WBp3gg" key="_w-voYJVSEeGXxKEJllDFfA">
+        <value xmi:id="_0PUpSLDmEeGMKIs8WBp3gg" x="926.9575" y="190.237"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

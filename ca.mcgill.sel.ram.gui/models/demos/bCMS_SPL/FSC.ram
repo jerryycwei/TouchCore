@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_G_3csN4cEeShWMZBxz4Iew" name="FSC">
+  <realizes href="bCMS_SPL.core#_uz8uENaCEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_G_3csd4cEeShWMZBxz4Iew">
+    <classes xsi:type="ram:Class" xmi:id="_HVJwMN4cEeShWMZBxz4Iew" name="Coordinator"/>
+    <classes xsi:type="ram:Class" xmi:id="_IMfA0N4cEeShWMZBxz4Iew" name="FSC" superTypes="_HVJwMN4cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RVoid" xmi:id="_G_3cst4cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RAny" xmi:id="_G_3cs94cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_G_3ctN4cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RInt" xmi:id="_G_3ctd4cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RChar" xmi:id="_G_3ctt4cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RString" xmi:id="_G_3ct94cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RDouble" xmi:id="_G_3cuN4cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RFloat" xmi:id="_G_3cud4cEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RLong" xmi:id="_G_3cut4cEeShWMZBxz4Iew"/>
+  </structuralView>
+  <instantiations xmi:id="_G_3cu94cEeShWMZBxz4Iew">
+    <source xsi:type="ram:Aspect" href="CoordinatorMultiplicity.ram#_-RNEcN4QEeShWMZBxz4Iew"/>
+  </instantiations>
+  <layout xmi:id="_G_3cvN4cEeShWMZBxz4Iew">
+    <containers xmi:id="_G_3cvd4cEeShWMZBxz4Iew" key="_G_3csd4cEeShWMZBxz4Iew">
+      <value xmi:id="_HVLlYN4cEeShWMZBxz4Iew" key="_HVJwMN4cEeShWMZBxz4Iew">
+        <value xmi:id="_HVLlYd4cEeShWMZBxz4Iew" x="590.0" y="192.0"/>
+      </value>
+      <value xmi:id="_IMhdEN4cEeShWMZBxz4Iew" key="_IMfA0N4cEeShWMZBxz4Iew">
+        <value xmi:id="_IMhdEd4cEeShWMZBxz4Iew" x="596.00006" y="402.99997"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

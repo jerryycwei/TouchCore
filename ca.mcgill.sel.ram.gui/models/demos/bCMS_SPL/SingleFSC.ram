@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_CspOQNZsEeS_4sG2PJA2iA" name="SingleFSC">
+  <realizes href="bCMS_SPL.core#_gxLhQNZeEeS_4sG2PJA2iA"/>
+  <structuralView xmi:id="_Csp1UNZsEeS_4sG2PJA2iA">
+    <classes xsi:type="ram:Class" xmi:id="_Csp1UdZsEeS_4sG2PJA2iA" name="LocalContext">
+      <associationEnds xmi:id="_Csp1UtZsEeS_4sG2PJA2iA" name="myFSC" lowerBound="1" assoc="_Csp1VdZsEeS_4sG2PJA2iA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Csp1U9ZsEeS_4sG2PJA2iA" name="FSC">
+      <associationEnds xmi:id="_Csp1VNZsEeS_4sG2PJA2iA" name="myLocalContext" lowerBound="1" navigable="false" assoc="_Csp1VdZsEeS_4sG2PJA2iA"/>
+    </classes>
+    <associations xmi:id="_Csp1VdZsEeS_4sG2PJA2iA" name="LocalContext_FSC" ends="_Csp1UtZsEeS_4sG2PJA2iA _Csp1VNZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_Csp1VtZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RAny" xmi:id="_Csp1V9ZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Csp1WNZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RInt" xmi:id="_Csp1WdZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RChar" xmi:id="_Csp1WtZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RString" xmi:id="_Csp1W9ZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_Csp1XNZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_Csp1XdZsEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RLong" xmi:id="_Csp1XtZsEeS_4sG2PJA2iA"/>
+  </structuralView>
+  <instantiations xmi:id="_o6NXEN4jEeS1koPVI5W3kQ">
+    <source xsi:type="ram:Aspect" href="FSC.ram#_G_3csN4cEeShWMZBxz4Iew"/>
+  </instantiations>
+  <layout xmi:id="_Csp1YNZsEeS_4sG2PJA2iA">
+    <containers xmi:id="_Csp1YdZsEeS_4sG2PJA2iA" key="_Csp1UNZsEeS_4sG2PJA2iA">
+      <value xmi:id="_Csp1YtZsEeS_4sG2PJA2iA" key="_Csp1UdZsEeS_4sG2PJA2iA">
+        <value xmi:id="_Csp1Y9ZsEeS_4sG2PJA2iA" x="455.99957" y="264.0"/>
+      </value>
+      <value xmi:id="_Csp1ZNZsEeS_4sG2PJA2iA" key="_Csp1U9ZsEeS_4sG2PJA2iA">
+        <value xmi:id="_Csp1ZdZsEeS_4sG2PJA2iA" x="917.0001" y="273.9999"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

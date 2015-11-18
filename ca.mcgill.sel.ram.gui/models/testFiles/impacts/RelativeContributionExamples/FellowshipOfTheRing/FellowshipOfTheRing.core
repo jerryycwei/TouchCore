@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_Gmb0ELhAEeSpS_ZmaKJ-sA" name="FellowshipOfTheRing">
+  <FeatureModel xmi:id="_Gmb0EbhAEeSpS_ZmaKJ-sA" root="_Gmb0ErhAEeSpS_ZmaKJ-sA">
+    <features xmi:id="_Gmb0ErhAEeSpS_ZmaKJ-sA" name="FellowshipOfTheRing" children="_SLytoLhAEeSpS_ZmaKJ-sA _TnWFoLhAEeSpS_ZmaKJ-sA _T1eoQLhAEeSpS_ZmaKJ-sA _V1PgkLhAEeSpS_ZmaKJ-sA _YtHFkLhAEeSpS_ZmaKJ-sA"/>
+    <features xmi:id="_SLytoLhAEeSpS_ZmaKJ-sA" name="Hobbits" children="_bBLZ8LhAEeSpS_ZmaKJ-sA _b9wW8LhAEeSpS_ZmaKJ-sA" parent="_Gmb0ErhAEeSpS_ZmaKJ-sA" parentRelationship="Optional">
+      <contributions xmi:id="_2--aMLhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29rhDEeSpS_ZmaKJ-sA" contributionValue="15"/>
+    </features>
+    <features xmi:id="_TnWFoLhAEeSpS_ZmaKJ-sA" name="Dwarves" children="_hF3gQLhAEeSpS_ZmaKJ-sA" parent="_Gmb0ErhAEeSpS_ZmaKJ-sA" parentRelationship="Optional">
+      <contributions xmi:id="_S4YUkLhFEeSTG43zlm31lw" name="50" impacted="_83w9ErhEEeSTG43zlm31lw" contributionValue="80"/>
+      <contributions xmi:id="_2w3swLhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29rhDEeSpS_ZmaKJ-sA" contributionValue="10"/>
+      <contributions xmi:id="_68CssLhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX297hDEeSpS_ZmaKJ-sA" contributionValue="90"/>
+    </features>
+    <features xmi:id="_T1eoQLhAEeSpS_ZmaKJ-sA" name="Elves" children="_9MvrYLhAEeSpS_ZmaKJ-sA _lel-kLhBEeSpS_ZmaKJ-sA" parent="_Gmb0ErhAEeSpS_ZmaKJ-sA" parentRelationship="Optional"/>
+    <features xmi:id="_V1PgkLhAEeSpS_ZmaKJ-sA" name="Humans" children="__iaiQLhAEeSpS_ZmaKJ-sA _A0VdILhBEeSpS_ZmaKJ-sA" parent="_Gmb0ErhAEeSpS_ZmaKJ-sA" parentRelationship="Optional"/>
+    <features xmi:id="_YtHFkLhAEeSpS_ZmaKJ-sA" name="Wizard" children="_WGgaQLhBEeSpS_ZmaKJ-sA _XPFL4LhBEeSpS_ZmaKJ-sA _Yrii0LhBEeSpS_ZmaKJ-sA" parent="_Gmb0ErhAEeSpS_ZmaKJ-sA" parentRelationship="Mandatory"/>
+    <features xmi:id="_bBLZ8LhAEeSpS_ZmaKJ-sA" name="Frodo" parent="_SLytoLhAEeSpS_ZmaKJ-sA" parentRelationship="Optional">
+      <contributions xmi:id="_735Q8LhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX297hDEeSpS_ZmaKJ-sA" contributionValue="20"/>
+    </features>
+    <features xmi:id="_b9wW8LhAEeSpS_ZmaKJ-sA" name="Sam" children="_Dwz_4LhCEeSpS_ZmaKJ-sA" parent="_SLytoLhAEeSpS_ZmaKJ-sA" parentRelationship="Optional">
+      <contributions xmi:id="_9FtH4LhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX297hDEeSpS_ZmaKJ-sA" contributionValue="2"/>
+      <contributions xmi:id="_isMLkLhFEeSTG43zlm31lw" name="50" impacted="_83w9E7hEEeSTG43zlm31lw" contributionValue="90"/>
+    </features>
+    <features xmi:id="_hF3gQLhAEeSpS_ZmaKJ-sA" name="Gimli" children="_1Am68LhBEeSpS_ZmaKJ-sA _25ehELhBEeSpS_ZmaKJ-sA _4WJTYLhBEeSpS_ZmaKJ-sA" parent="_TnWFoLhAEeSpS_ZmaKJ-sA" parentRelationship="Mandatory">
+    </features>
+    <features xmi:id="_9MvrYLhAEeSpS_ZmaKJ-sA" name="Legolas" children="_pz1ggLhBEeSpS_ZmaKJ-sA" parent="_T1eoQLhAEeSpS_ZmaKJ-sA" parentRelationship="OR">
+      <contributions xmi:id="_2dPmILhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29rhDEeSpS_ZmaKJ-sA" contributionValue="90"/>
+    </features>
+    <features xmi:id="__iaiQLhAEeSpS_ZmaKJ-sA" name="Boromir" parent="_V1PgkLhAEeSpS_ZmaKJ-sA" parentRelationship="OR">
+      <contributions xmi:id="_-AIv0LhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX297hDEeSpS_ZmaKJ-sA" contributionValue="6"/>
+      <contributions xmi:id="_jn5l4LhFEeSTG43zlm31lw" name="50" impacted="_83w9E7hEEeSTG43zlm31lw" contributionValue="40"/>
+    </features>
+    <features xmi:id="_A0VdILhBEeSpS_ZmaKJ-sA" name="Faramir" parent="_V1PgkLhAEeSpS_ZmaKJ-sA" parentRelationship="OR">
+      <contributions xmi:id="_kT_24LhFEeSTG43zlm31lw" name="50" impacted="_83w9E7hEEeSTG43zlm31lw" contributionValue="30"/>
+    </features>
+    <features xmi:id="_WGgaQLhBEeSpS_ZmaKJ-sA" name="Gandalf" children="_7gHVALhBEeSpS_ZmaKJ-sA _9TA2ALhBEeSpS_ZmaKJ-sA" parent="_YtHFkLhAEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="_BgqQQLhEEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29LhDEeSpS_ZmaKJ-sA" contributionValue="60"/>
+      <contributions xmi:id="_ToMn8LhFEeSTG43zlm31lw" name="50" impacted="_83w9ErhEEeSTG43zlm31lw" contributionValue="30"/>
+    </features>
+    <features xmi:id="_XPFL4LhBEeSpS_ZmaKJ-sA" name="Saruman" parent="_YtHFkLhAEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="_CvmvoLhEEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29LhDEeSpS_ZmaKJ-sA" contributionValue="80"/>
+      <contributions xmi:id="_X6AbYLhFEeSTG43zlm31lw" name="50" impacted="_83w9ErhEEeSTG43zlm31lw" contributionValue="35"/>
+    </features>
+    <features xmi:id="_Yrii0LhBEeSpS_ZmaKJ-sA" name="Radagast" parent="_YtHFkLhAEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="_EQ_p4LhEEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29LhDEeSpS_ZmaKJ-sA" contributionValue="30"/>
+      <contributions xmi:id="_ZP9hsLhFEeSTG43zlm31lw" name="50" impacted="_83w9ErhEEeSTG43zlm31lw" contributionValue="70"/>
+    </features>
+    <features xmi:id="_lel-kLhBEeSpS_ZmaKJ-sA" name="Elrond" children="_n87pQLhBEeSpS_ZmaKJ-sA" parent="_T1eoQLhAEeSpS_ZmaKJ-sA" parentRelationship="OR">
+      <contributions xmi:id="_SG_68LhFEeSTG43zlm31lw" name="50" impacted="_83w9ErhEEeSTG43zlm31lw" contributionValue="100"/>
+    </features>
+    <features xmi:id="_n87pQLhBEeSpS_ZmaKJ-sA" name="House" parent="_lel-kLhBEeSpS_ZmaKJ-sA" parentRelationship="Mandatory"/>
+    <features xmi:id="_pz1ggLhBEeSpS_ZmaKJ-sA" name="Lembas" parent="_9MvrYLhAEeSpS_ZmaKJ-sA" parentRelationship="Optional">
+      <contributions xmi:id="_hukswLhFEeSTG43zlm31lw" name="50" impacted="_83w9E7hEEeSTG43zlm31lw" contributionValue="70"/>
+    </features>
+    <features xmi:id="_1Am68LhBEeSpS_ZmaKJ-sA" name="Axe" parent="_hF3gQLhAEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="__WjJILhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29bhDEeSpS_ZmaKJ-sA" contributionValue="60"/>
+    </features>
+    <features xmi:id="_25ehELhBEeSpS_ZmaKJ-sA" name="Mace" parent="_hF3gQLhAEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="__l5zwLhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29bhDEeSpS_ZmaKJ-sA" contributionValue="50"/>
+    </features>
+    <features xmi:id="_4WJTYLhBEeSpS_ZmaKJ-sA" name="Sword" parent="_hF3gQLhAEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="_AgVbsLhEEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29bhDEeSpS_ZmaKJ-sA" contributionValue="40"/>
+    </features>
+    <features xmi:id="_7gHVALhBEeSpS_ZmaKJ-sA" name="Grey" parent="_WGgaQLhBEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="_Htm6sLhEEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29LhDEeSpS_ZmaKJ-sA" contributionValue="10"/>
+      <contributions xmi:id="_UmBiILhFEeSTG43zlm31lw" name="50" impacted="_83w9ErhEEeSTG43zlm31lw" contributionValue="40"/>
+    </features>
+    <features xmi:id="_9TA2ALhBEeSpS_ZmaKJ-sA" name="White" parent="_WGgaQLhBEeSpS_ZmaKJ-sA" parentRelationship="XOR">
+      <contributions xmi:id="_InGugLhEEeSpS_ZmaKJ-sA" name="50" impacted="_QjX29LhDEeSpS_ZmaKJ-sA" contributionValue="30"/>
+      <contributions xmi:id="_VptzwLhFEeSTG43zlm31lw" name="50" impacted="_83w9ErhEEeSTG43zlm31lw" contributionValue="3"/>
+    </features>
+    <features xmi:id="_Dwz_4LhCEeSpS_ZmaKJ-sA" name="Merry and Pippin" parent="_b9wW8LhAEeSpS_ZmaKJ-sA" parentRelationship="Mandatory"/>
+  </FeatureModel>
+  <ImpactModel xmi:id="_QjX28LhDEeSpS_ZmaKJ-sA" name="1- Take the Ring to Mordor">
+    <impactModelElements xmi:id="_QjX28bhDEeSpS_ZmaKJ-sA" name="Take the Ring to Mount Doom"/>
+    <impactModelElements xmi:id="_QjX28rhDEeSpS_ZmaKJ-sA" name="Move Fast">
+      <contributions xmi:id="_vnTpELhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX28bhDEeSpS_ZmaKJ-sA" contributionValue="50"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_QjX287hDEeSpS_ZmaKJ-sA" name="Stay Strong">
+      <contributions xmi:id="_v1nx4LhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX28bhDEeSpS_ZmaKJ-sA" contributionValue="50"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_QjX29LhDEeSpS_ZmaKJ-sA" name="Use Magic">
+      <contributions xmi:id="_whVBULhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX287hDEeSpS_ZmaKJ-sA" contributionValue="70"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_QjX29bhDEeSpS_ZmaKJ-sA" name="Count on Weapons">
+      <contributions xmi:id="_wUSq4LhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX287hDEeSpS_ZmaKJ-sA" contributionValue="20"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_QjX29rhDEeSpS_ZmaKJ-sA" name="Long Steps">
+      <contributions xmi:id="_vJoOkLhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX28rhDEeSpS_ZmaKJ-sA" contributionValue="80"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_QjX297hDEeSpS_ZmaKJ-sA" name="Less Drama">
+      <contributions xmi:id="_vYDsILhDEeSpS_ZmaKJ-sA" name="50" impacted="_QjX28rhDEeSpS_ZmaKJ-sA" contributionValue="40"/>
+    </impactModelElements>
+    <layout xmi:id="_SHZuILhGEeSx2uCoOfdUvw" key="_QjX28bhDEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHZuIbhGEeSx2uCoOfdUvw" xPosition="666.99976" yPosition="77.64995"/>
+    </layout>
+    <layout xmi:id="_SHaVMLhGEeSx2uCoOfdUvw" key="_QjX28rhDEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVMbhGEeSx2uCoOfdUvw" xPosition="439.99976" yPosition="196.65009"/>
+    </layout>
+    <layout xmi:id="_SHaVMrhGEeSx2uCoOfdUvw" key="_QjX287hDEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVM7hGEeSx2uCoOfdUvw" xPosition="868.99994" yPosition="198.6503"/>
+    </layout>
+    <layout xmi:id="_SHaVNLhGEeSx2uCoOfdUvw" key="_QjX29LhDEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVNbhGEeSx2uCoOfdUvw" xPosition="1030.0" yPosition="291.65036"/>
+    </layout>
+    <layout xmi:id="_SHaVNrhGEeSx2uCoOfdUvw" key="_QjX29bhDEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVN7hGEeSx2uCoOfdUvw" xPosition="801.99976" yPosition="303.6501"/>
+    </layout>
+    <layout xmi:id="_SHaVOLhGEeSx2uCoOfdUvw" key="_QjX29rhDEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVObhGEeSx2uCoOfdUvw" xPosition="340.99997" yPosition="320.6501"/>
+    </layout>
+    <layout xmi:id="_SHaVOrhGEeSx2uCoOfdUvw" key="_QjX297hDEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVO7hGEeSx2uCoOfdUvw" xPosition="578.00037" yPosition="321.6501"/>
+    </layout>
+    <layout xmi:id="_SHaVPLhGEeSx2uCoOfdUvw" key="_1Am68LhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVPbhGEeSx2uCoOfdUvw" xPosition="629.99994" yPosition="525.0001"/>
+    </layout>
+    <layout xmi:id="_SHaVPrhGEeSx2uCoOfdUvw" key="_25ehELhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVP7hGEeSx2uCoOfdUvw" xPosition="708.99994" yPosition="618.9997"/>
+    </layout>
+    <layout xmi:id="_SHaVQLhGEeSx2uCoOfdUvw" key="_4WJTYLhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVQbhGEeSx2uCoOfdUvw" xPosition="779.9999" yPosition="573.99976"/>
+    </layout>
+    <layout xmi:id="_SHaVQrhGEeSx2uCoOfdUvw" key="_9MvrYLhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVQ7hGEeSx2uCoOfdUvw" xPosition="180.99963" yPosition="444.99994"/>
+    </layout>
+    <layout xmi:id="_SHaVRLhGEeSx2uCoOfdUvw" key="_WGgaQLhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVRbhGEeSx2uCoOfdUvw" xPosition="970.00006" yPosition="534.99976"/>
+    </layout>
+    <layout xmi:id="_SHaVRrhGEeSx2uCoOfdUvw" key="_XPFL4LhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVR7hGEeSx2uCoOfdUvw" xPosition="1076.0001" yPosition="461.9999"/>
+    </layout>
+    <layout xmi:id="_SHaVSLhGEeSx2uCoOfdUvw" key="_Yrii0LhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVSbhGEeSx2uCoOfdUvw" xPosition="1158.0" yPosition="390.99982"/>
+    </layout>
+    <layout xmi:id="_SHaVSrhGEeSx2uCoOfdUvw" key="_TnWFoLhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVS7hGEeSx2uCoOfdUvw" xPosition="391.99982" yPosition="430.99976"/>
+    </layout>
+    <layout xmi:id="_SHaVTLhGEeSx2uCoOfdUvw" key="_SLytoLhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVTbhGEeSx2uCoOfdUvw" xPosition="301.0001" yPosition="509.0"/>
+    </layout>
+    <layout xmi:id="_SHaVTrhGEeSx2uCoOfdUvw" key="_bBLZ8LhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHaVT7hGEeSx2uCoOfdUvw" xPosition="451.00024" yPosition="515.00006"/>
+    </layout>
+    <layout xmi:id="_SHa8QLhGEeSx2uCoOfdUvw" key="_b9wW8LhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHa8QbhGEeSx2uCoOfdUvw" xPosition="563.9999" yPosition="473.00027"/>
+    </layout>
+    <layout xmi:id="_SHa8QrhGEeSx2uCoOfdUvw" key="__iaiQLhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHa8Q7hGEeSx2uCoOfdUvw" xPosition="620.0003" yPosition="415.99963"/>
+    </layout>
+    <layout xmi:id="_SHa8RLhGEeSx2uCoOfdUvw" key="_7gHVALhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHa8RbhGEeSx2uCoOfdUvw" xPosition="885.0001" yPosition="497.99997"/>
+    </layout>
+    <layout xmi:id="_SHa8RrhGEeSx2uCoOfdUvw" key="_9TA2ALhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_SHa8R7hGEeSx2uCoOfdUvw" xPosition="837.00055" yPosition="417.0"/>
+    </layout>
+  </ImpactModel>
+  <ImpactModel xmi:id="_83w9ELhEEeSTG43zlm31lw" name="2- Do not spend all your money doing it">
+    <impactModelElements xmi:id="_83w9EbhEEeSTG43zlm31lw" name="Spend Less Gold"/>
+    <impactModelElements xmi:id="_83w9ErhEEeSTG43zlm31lw" name="Spend Less for Accomodation">
+      <contributions xmi:id="_lmkSALhFEeSTG43zlm31lw" name="50" impacted="_83w9EbhEEeSTG43zlm31lw" contributionValue="70"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_83w9E7hEEeSTG43zlm31lw" name="Eat what you can find">
+      <contributions xmi:id="_lXdfALhFEeSTG43zlm31lw" name="50" impacted="_83w9EbhEEeSTG43zlm31lw" contributionValue="40"/>
+    </impactModelElements>
+    <layout xmi:id="_XVVyoLhGEeSx2uCoOfdUvw" key="_83w9EbhEEeSTG43zlm31lw">
+      <value xmi:id="_XVVyobhGEeSx2uCoOfdUvw" xPosition="629.9999" yPosition="103.65007"/>
+    </layout>
+    <layout xmi:id="_XVVyorhGEeSx2uCoOfdUvw" key="_83w9ErhEEeSTG43zlm31lw">
+      <value xmi:id="_XVVyo7hGEeSx2uCoOfdUvw" xPosition="925.0" yPosition="239.65012"/>
+    </layout>
+    <layout xmi:id="_XVVypLhGEeSx2uCoOfdUvw" key="_83w9E7hEEeSTG43zlm31lw">
+      <value xmi:id="_XVVypbhGEeSx2uCoOfdUvw" xPosition="416.9998" yPosition="244.65004"/>
+    </layout>
+    <layout xmi:id="_XVVyprhGEeSx2uCoOfdUvw" key="_lel-kLhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVVyp7hGEeSx2uCoOfdUvw" xPosition="604.0001" yPosition="322.99982"/>
+    </layout>
+    <layout xmi:id="_XVVyqLhGEeSx2uCoOfdUvw" key="_TnWFoLhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVVyqbhGEeSx2uCoOfdUvw" xPosition="649.0001" yPosition="415.99997"/>
+    </layout>
+    <layout xmi:id="_XVVyqrhGEeSx2uCoOfdUvw" key="_pz1ggLhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVVyq7hGEeSx2uCoOfdUvw" xPosition="201.00024" yPosition="390.0002"/>
+    </layout>
+    <layout xmi:id="_XVVyrLhGEeSx2uCoOfdUvw" key="_b9wW8LhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVVyrbhGEeSx2uCoOfdUvw" xPosition="308.99997" yPosition="440.99982"/>
+    </layout>
+    <layout xmi:id="_XVWZsLhGEeSx2uCoOfdUvw" key="_WGgaQLhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVWZsbhGEeSx2uCoOfdUvw" xPosition="864.0002" yPosition="479.00012"/>
+    </layout>
+    <layout xmi:id="_XVWZsrhGEeSx2uCoOfdUvw" key="_7gHVALhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVWZs7hGEeSx2uCoOfdUvw" xPosition="989.0003" yPosition="544.99963"/>
+    </layout>
+    <layout xmi:id="_XVWZtLhGEeSx2uCoOfdUvw" key="_9TA2ALhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVWZtbhGEeSx2uCoOfdUvw" xPosition="770.0004" yPosition="539.99994"/>
+    </layout>
+    <layout xmi:id="_XVWZtrhGEeSx2uCoOfdUvw" key="_XPFL4LhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVWZt7hGEeSx2uCoOfdUvw" xPosition="1110.0005" yPosition="437.00012"/>
+    </layout>
+    <layout xmi:id="_XVWZuLhGEeSx2uCoOfdUvw" key="_Yrii0LhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVWZubhGEeSx2uCoOfdUvw" xPosition="1161.0005" yPosition="336.99985"/>
+    </layout>
+    <layout xmi:id="_XVWZurhGEeSx2uCoOfdUvw" key="__iaiQLhAEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVWZu7hGEeSx2uCoOfdUvw" xPosition="418.00012" yPosition="461.0"/>
+    </layout>
+    <layout xmi:id="_XVWZvLhGEeSx2uCoOfdUvw" key="_A0VdILhBEeSpS_ZmaKJ-sA">
+      <value xmi:id="_XVWZvbhGEeSx2uCoOfdUvw" xPosition="521.99994" yPosition="401.9998"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

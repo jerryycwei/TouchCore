@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_5ACCkOLuEeSL-_lRREviTQ" name="Association&lt;Association>">
+  <structuralView xmi:id="_5ACCkeLuEeSL-_lRREviTQ">
+    <classes xsi:type="ram:Class" xmi:id="_5ACCkuLuEeSL-_lRREviTQ" name="Data" comesFrom="_5ACCoeLuEeSL-_lRREviTQ">
+      <operations  xmi:id="_5ACCk-LuEeSL-_lRREviTQ" name="contains" comesFrom="_5ACCoeLuEeSL-_lRREviTQ" returnType="_5ACCmOLuEeSL-_lRREviTQ" partiality="public" visibility="public">
+        <parameters xmi:id="_5ACClOLuEeSL-_lRREviTQ" name="a" type="_5ACCleLuEeSL-_lRREviTQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_5ACCleLuEeSL-_lRREviTQ" name="Associated" comesFrom="_5ACCoeLuEeSL-_lRREviTQ" partiality="public"/>
+    <types xsi:type="ram:RVoid" xmi:id="_5ACCluLuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_5ACCl-LuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_5ACCmOLuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_5ACCmeLuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_5ACCmuLuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RString" xmi:id="_5ACCm-LuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_5ACCnOLuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_5ACCneLuEeSL-_lRREviTQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_5ACCnuLuEeSL-_lRREviTQ"/>
+  </structuralView>
+  <layout xmi:id="_5ACCn-LuEeSL-_lRREviTQ">
+    <containers xmi:id="_5ACCoOLuEeSL-_lRREviTQ" key="_5ACCkeLuEeSL-_lRREviTQ"/>
+  </layout>
+  <wovenAspects xmi:id="_5ACCoeLuEeSL-_lRREviTQ" name="Association">
+    <comesFrom href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+  </wovenAspects>
+</ram:Aspect>

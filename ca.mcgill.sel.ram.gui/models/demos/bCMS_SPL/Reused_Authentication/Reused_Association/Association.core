@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/1.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_R-i5kKpPEeSChcgNbAqzEQ" name="Association">
+  <featureModel xmi:id="_R-jgoKpPEeSChcgNbAqzEQ" root="_R-jgoapPEeSChcgNbAqzEQ">
+    <features xmi:id="_R-jgoapPEeSChcgNbAqzEQ" name="Association" children="_SzWaoKpPEeSChcgNbAqzEQ _UmyuMKpPEeSChcgNbAqzEQ _VFHB4KpPEeSChcgNbAqzEQ">
+      <realizedBy xsi:type="ram:Aspect" href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+    </features>
+    <features xmi:id="_SzWaoKpPEeSChcgNbAqzEQ" name="Ordered" children="_Z-w4cKpPEeSChcgNbAqzEQ _a0V1kKpPEeSChcgNbAqzEQ _ePV80KpPEeSChcgNbAqzEQ" parent="_R-jgoapPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Ordered.ram#_3WYVMKaKEeSAKObocMolaA"/>
+    </features>
+    <features xmi:id="_UmyuMKpPEeSChcgNbAqzEQ" name="Unordered" children="_hu-scKpPEeSChcgNbAqzEQ _nBOCIKpPEeSChcgNbAqzEQ" parent="_R-jgoapPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Unordered.ram#_Z3l1INxZEeOLe_W5cUN4CA"/>
+    </features>
+    <features xmi:id="_VFHB4KpPEeSChcgNbAqzEQ" name="KeyIndexed" children="_oodswKpPEeSChcgNbAqzEQ _qMXIcKpPEeSChcgNbAqzEQ" parent="_R-jgoapPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="KeyIndexed.ram#__rlwYNxaEeOLe_W5cUN4CA"/>
+    </features>
+    <features xmi:id="_Z-w4cKpPEeSChcgNbAqzEQ" name="ArrayList" parent="_SzWaoKpPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="ArrayList.ram#_zWzAQNrhEeOjbYigm5_oCw"/>
+      <contributions xmi:id="_nfAfcKpREeSChcgNbAqzEQ" name="50" impacted="_GbQ8QapSEeSChcgNbAqzEQ" contributionValue="75"/>
+    </features>
+    <features xmi:id="_a0V1kKpPEeSChcgNbAqzEQ" name="LinkedList" parent="_SzWaoKpPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="LinkedList.ram#_oVh0cNxQEeOnIsad9LWapQ"/>
+      <contributions xmi:id="_sEWS4KpREeSChcgNbAqzEQ" name="50" impacted="_GbQ8QapSEeSChcgNbAqzEQ" contributionValue="75"/>
+    </features>
+    <features xmi:id="_ePV80KpPEeSChcgNbAqzEQ" name="Stack" parent="_SzWaoKpPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Stack.ram#_e-E4IKaLEeSAKObocMolaA"/>
+      <contributions xmi:id="_CZvAgKpSEeSChcgNbAqzEQ" name="50" impacted="_GbQ8QapSEeSChcgNbAqzEQ" contributionValue="75"/>
+    </features>
+    <features xmi:id="_hu-scKpPEeSChcgNbAqzEQ" name="HashSet" parent="_UmyuMKpPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="HashSet.ram#_01Jl4NrnEeOwm7v1Cdkh_g"/>
+      <contributions xmi:id="_vsTRAKpREeSChcgNbAqzEQ" name="50" impacted="_GbQ8QapSEeSChcgNbAqzEQ" contributionValue="100"/>
+    </features>
+    <features xmi:id="_nBOCIKpPEeSChcgNbAqzEQ" name="TreeSet" parent="_UmyuMKpPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="TreeSet.ram#_QxfNkNrrEeOiKaOAPqVfuA"/>
+      <contributions xmi:id="_9Wd68KpREeSChcgNbAqzEQ" name="50" impacted="_GbQ8QapSEeSChcgNbAqzEQ" contributionValue="75"/>
+    </features>
+    <features xmi:id="_oodswKpPEeSChcgNbAqzEQ" name="HashMap" parent="_VFHB4KpPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="HashMap.ram#_PD6TUNxdEeOWzK3gwh7MSw"/>
+      <contributions xmi:id="_zYFmQKpREeSChcgNbAqzEQ" name="50" impacted="_GbQ8QapSEeSChcgNbAqzEQ" contributionValue="100"/>
+    </features>
+    <features xmi:id="_qMXIcKpPEeSChcgNbAqzEQ" name="TreeMap" parent="_VFHB4KpPEeSChcgNbAqzEQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="TreeMap.ram#_MS_cAOBcEeO79rVsrluJOQ"/>
+      <contributions xmi:id="_4r4bIKpREeSChcgNbAqzEQ" name="50" impacted="_GbQ8QapSEeSChcgNbAqzEQ" contributionValue="75"/>
+    </features>
+  </featureModel>
+  <impactModel xmi:id="_GbQ8QKpSEeSChcgNbAqzEQ" name="IncreasePerformance">
+    <impactModelElements xmi:id="_GbQ8QapSEeSChcgNbAqzEQ" name="IncreasePerformance"/>
+    <layout xmi:id="_OMPv0KpTEeSvov3MJGGWEg" key="_GbQ8QapSEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv0apTEeSvov3MJGGWEg" xPosition="818.0" yPosition="203.40634"/>
+    </layout>
+    <layout xmi:id="_OMPv0qpTEeSvov3MJGGWEg" key="_Z-w4cKpPEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv06pTEeSvov3MJGGWEg" xPosition="512.0" yPosition="576.0"/>
+    </layout>
+    <layout xmi:id="_OMPv1KpTEeSvov3MJGGWEg" key="_a0V1kKpPEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv1apTEeSvov3MJGGWEg" xPosition="651.0001" yPosition="557.0"/>
+    </layout>
+    <layout xmi:id="_OMPv1qpTEeSvov3MJGGWEg" key="_hu-scKpPEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv16pTEeSvov3MJGGWEg" xPosition="339.00006" yPosition="584.0001"/>
+    </layout>
+    <layout xmi:id="_OMPv2KpTEeSvov3MJGGWEg" key="_oodswKpPEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv2apTEeSvov3MJGGWEg" xPosition="221.99985" yPosition="507.0"/>
+    </layout>
+    <layout xmi:id="_OMPv2qpTEeSvov3MJGGWEg" key="_qMXIcKpPEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv26pTEeSvov3MJGGWEg" xPosition="159.99994" yPosition="415.99988"/>
+    </layout>
+    <layout xmi:id="_OMPv3KpTEeSvov3MJGGWEg" key="_nBOCIKpPEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv3apTEeSvov3MJGGWEg" xPosition="745.0002" yPosition="463.99994"/>
+    </layout>
+    <layout xmi:id="_OMPv3qpTEeSvov3MJGGWEg" key="_ePV80KpPEeSChcgNbAqzEQ">
+      <value xmi:id="_OMPv36pTEeSvov3MJGGWEg" xPosition="949.00006" yPosition="456.99985"/>
+    </layout>
+  </impactModel>
+</core:COREConcern>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ucm:UseCaseMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm="http://cs.mcgill.ca/sel/ucm/1.0" xmi:id="_NC_aMFVkEeWoU7F2bo28bg" name="Retinal Scan2">
+  <realizes href="reusable_concern_library/security/Authentication/authentication.core#_w8fV4KAyEeSaEq_8EhRMPA"/>
+  <coreConcern href="reusable_concern_library/security/Authentication/authentication.core#_gFhYwKAyEeSaEq_8EhRMPA"/>
+  <connections xmi:id="_NC_aMVVkEeWoU7F2bo28bg" source="_NC_aM1VkEeWoU7F2bo28bg" target="_NC_aNFVkEeWoU7F2bo28bg"/>
+  <connections xmi:id="_NC_aMlVkEeWoU7F2bo28bg" source="_NC_aNFVkEeWoU7F2bo28bg" target="_NC_aNVVkEeWoU7F2bo28bg"/>
+  <nodes xsi:type="ucm:StartPoint" xmi:id="_NC_aM1VkEeWoU7F2bo28bg" name="PathNode" successors="_NC_aMVVkEeWoU7F2bo28bg"/>
+  <nodes xsi:type="ucm:ResponsibilityRef" xmi:id="_NC_aNFVkEeWoU7F2bo28bg" name="PathNode1" successors="_NC_aMlVkEeWoU7F2bo28bg" predecessors="_NC_aMVVkEeWoU7F2bo28bg"/>
+  <nodes xsi:type="ucm:EndPoint" xmi:id="_NC_aNVVkEeWoU7F2bo28bg" name="PathNode2" predecessors="_NC_aMlVkEeWoU7F2bo28bg"/>
+  <layoutMaps xmi:id="_NC_aNlVkEeWoU7F2bo28bg" key="_NC_aM1VkEeWoU7F2bo28bg">
+    <value xmi:id="_NC_aN1VkEeWoU7F2bo28bg" x="100.0" y="200.0"/>
+  </layoutMaps>
+  <layoutMaps xmi:id="_NC_aOFVkEeWoU7F2bo28bg" key="_NC_aNFVkEeWoU7F2bo28bg">
+    <value xmi:id="_NC_aOVVkEeWoU7F2bo28bg" x="300.0" y="200.0"/>
+  </layoutMaps>
+  <layoutMaps xmi:id="_NC_aOlVkEeWoU7F2bo28bg" key="_NC_aNVVkEeWoU7F2bo28bg">
+    <value xmi:id="_NC_aO1VkEeWoU7F2bo28bg" x="500.0" y="200.0"/>
+  </layoutMaps>
+</ucm:UseCaseMap>

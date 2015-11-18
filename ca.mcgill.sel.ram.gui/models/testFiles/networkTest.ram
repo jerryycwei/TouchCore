@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_AYImsANQEeK8hO5mgPdHeA" name="networkTest">
+  <structuralView xmi:id="_AYImsQNQEeK8hO5mgPdHeA">
+    <classes xsi:type="ram:Class" xmi:id="_AYImsgNQEeK8hO5mgPdHeA" name="MyCommand"/>
+    <types xsi:type="ram:RVoid" xmi:id="_AYImswNQEeK8hO5mgPdHeA"/>
+    <types xsi:type="ram:RAny" xmi:id="_AYImtANQEeK8hO5mgPdHeA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_AYImtQNQEeK8hO5mgPdHeA"/>
+    <types xsi:type="ram:RInt" xmi:id="_AYImtgNQEeK8hO5mgPdHeA"/>
+    <types xsi:type="ram:RChar" xmi:id="_AYImtwNQEeK8hO5mgPdHeA"/>
+    <types xsi:type="ram:RString" xmi:id="_AYImuANQEeK8hO5mgPdHeA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_AYImuQNQEeK8hO5mgPdHeA">
+    <mappings xmi:id="_AYImugNQEeK8hO5mgPdHeA" toElement="_AYImsgNQEeK8hO5mgPdHeA">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/network/NetworkCommand.ram#_Z4LZIIpUEeG5EZ-nvE23vQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/network/NetworkCommand.ram#_pJWSkIpTEeG5EZ-nvE23vQ"/>
+  </instantiations>
+  <layout xmi:id="_AYJNwANQEeK8hO5mgPdHeA">
+    <containers xmi:id="_AYJNwQNQEeK8hO5mgPdHeA" key="_AYImsQNQEeK8hO5mgPdHeA">
+      <value xmi:id="_AYJNwgNQEeK8hO5mgPdHeA" key="_AYImsgNQEeK8hO5mgPdHeA">
+        <value xmi:id="_AYJNwwNQEeK8hO5mgPdHeA" x="858.0" y="334.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

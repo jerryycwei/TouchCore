@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_ZDE4ANZcEeS_4sG2PJA2iA" name="Named&lt;Named>">
+  <structuralView xmi:id="_ZDE4AdZcEeS_4sG2PJA2iA">
+    <classes xsi:type="ram:Class" xmi:id="_ZDE4AtZcEeS_4sG2PJA2iA" name="Named" comesFrom="_ZDFfIdZcEeS_4sG2PJA2iA" partiality="public">
+      <operations  xmi:id="_ZDE4A9ZcEeS_4sG2PJA2iA" name="create" comesFrom="_ZDFfIdZcEeS_4sG2PJA2iA" returnType="_ZDE4AtZcEeS_4sG2PJA2iA" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_ZDE4BNZcEeS_4sG2PJA2iA" name="name" type="_ZDE4DNZcEeS_4sG2PJA2iA"/>
+      </operations>
+      <operations  xmi:id="_ZDE4BdZcEeS_4sG2PJA2iA" name="getName" comesFrom="_ZDFfIdZcEeS_4sG2PJA2iA" returnType="_ZDE4DNZcEeS_4sG2PJA2iA" visibility="public"/>
+      <attributes xmi:id="_ZDE4BtZcEeS_4sG2PJA2iA" name="name" comesFrom="_ZDFfIdZcEeS_4sG2PJA2iA" type="_ZDE4DNZcEeS_4sG2PJA2iA"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_ZDE4B9ZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RAny" xmi:id="_ZDE4CNZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_ZDE4CdZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RInt" xmi:id="_ZDE4CtZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RChar" xmi:id="_ZDE4C9ZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RString" xmi:id="_ZDE4DNZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_ZDE4DdZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_ZDE4DtZcEeS_4sG2PJA2iA"/>
+    <types xsi:type="ram:RLong" xmi:id="_ZDE4D9ZcEeS_4sG2PJA2iA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_ZDE4ENZcEeS_4sG2PJA2iA" specifies="_ZDE4A9ZcEeS_4sG2PJA2iA">
+    <specification xmi:id="_ZDE4EdZcEeS_4sG2PJA2iA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_ZDE4EtZcEeS_4sG2PJA2iA" covered="_ZDE4FtZcEeS_4sG2PJA2iA" message="_ZDFfENZcEeS_4sG2PJA2iA"/>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_ZDE4E9ZcEeS_4sG2PJA2iA" covered="_ZDE4FtZcEeS_4sG2PJA2iA">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ZDE4FNZcEeS_4sG2PJA2iA" body="this.name = name" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_ZDE4FdZcEeS_4sG2PJA2iA" covered="_ZDE4FtZcEeS_4sG2PJA2iA" message="_ZDFfEdZcEeS_4sG2PJA2iA"/>
+      <lifelines xmi:id="_ZDE4FtZcEeS_4sG2PJA2iA" represents="_ZDFfEtZcEeS_4sG2PJA2iA" coveredBy="_ZDE4EtZcEeS_4sG2PJA2iA _ZDE4FdZcEeS_4sG2PJA2iA _ZDE4E9ZcEeS_4sG2PJA2iA"/>
+      <messages xmi:id="_ZDFfENZcEeS_4sG2PJA2iA" sendEvent="_ZDFfE9ZcEeS_4sG2PJA2iA" receiveEvent="_ZDE4EtZcEeS_4sG2PJA2iA" signature="_ZDE4A9ZcEeS_4sG2PJA2iA" messageSort="createMessage"/>
+      <messages xmi:id="_ZDFfEdZcEeS_4sG2PJA2iA" sendEvent="_ZDE4FdZcEeS_4sG2PJA2iA" receiveEvent="_ZDFfFNZcEeS_4sG2PJA2iA" signature="_ZDE4A9ZcEeS_4sG2PJA2iA" messageSort="reply"/>
+      <properties xmi:id="_ZDFfEtZcEeS_4sG2PJA2iA" name="target" lowerBound="1" type="_ZDE4AtZcEeS_4sG2PJA2iA"/>
+      <formalGates xmi:id="_ZDFfE9ZcEeS_4sG2PJA2iA" message="_ZDFfENZcEeS_4sG2PJA2iA" name="in_create"/>
+      <formalGates xmi:id="_ZDFfFNZcEeS_4sG2PJA2iA" message="_ZDFfEdZcEeS_4sG2PJA2iA" name="out_create"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_ZDFfFdZcEeS_4sG2PJA2iA" specifies="_ZDE4BdZcEeS_4sG2PJA2iA">
+    <specification xmi:id="_ZDFfFtZcEeS_4sG2PJA2iA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_ZDFfF9ZcEeS_4sG2PJA2iA" covered="_ZDFfGdZcEeS_4sG2PJA2iA" message="_ZDFfGtZcEeS_4sG2PJA2iA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_ZDFfGNZcEeS_4sG2PJA2iA" covered="_ZDFfGdZcEeS_4sG2PJA2iA" message="_ZDFfG9ZcEeS_4sG2PJA2iA"/>
+      <lifelines xmi:id="_ZDFfGdZcEeS_4sG2PJA2iA" represents="_ZDFfHNZcEeS_4sG2PJA2iA" coveredBy="_ZDFfF9ZcEeS_4sG2PJA2iA _ZDFfGNZcEeS_4sG2PJA2iA"/>
+      <messages xmi:id="_ZDFfGtZcEeS_4sG2PJA2iA" sendEvent="_ZDFfHdZcEeS_4sG2PJA2iA" receiveEvent="_ZDFfF9ZcEeS_4sG2PJA2iA" signature="_ZDE4BdZcEeS_4sG2PJA2iA"/>
+      <messages xmi:id="_ZDFfG9ZcEeS_4sG2PJA2iA" sendEvent="_ZDFfGNZcEeS_4sG2PJA2iA" receiveEvent="_ZDFfHtZcEeS_4sG2PJA2iA" signature="_ZDE4BdZcEeS_4sG2PJA2iA" messageSort="reply"/>
+      <properties xmi:id="_ZDFfHNZcEeS_4sG2PJA2iA" name="target" lowerBound="1" type="_ZDE4AtZcEeS_4sG2PJA2iA"/>
+      <formalGates xmi:id="_ZDFfHdZcEeS_4sG2PJA2iA" message="_ZDFfGtZcEeS_4sG2PJA2iA" name="in_getName"/>
+      <formalGates xmi:id="_ZDFfHtZcEeS_4sG2PJA2iA" message="_ZDFfG9ZcEeS_4sG2PJA2iA" name="out_getName"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_ZDFfH9ZcEeS_4sG2PJA2iA">
+    <containers xmi:id="_ZDFfINZcEeS_4sG2PJA2iA" key="_ZDE4AdZcEeS_4sG2PJA2iA"/>
+  </layout>
+  <wovenAspects xmi:id="_ZDFfIdZcEeS_4sG2PJA2iA" name="Named">
+    <comesFrom href="../../reusable_concern_library/utility/Named/Named.ram#_etpFkDx2EeSYrv9m_C8Hww"/>
+  </wovenAspects>
+</ram:Aspect>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_3WYVMKaKEeSAKObocMolaA" name="Ordered">
+  <realizes href="Association.core#_SzWaoKpPEeSChcgNbAqzEQ"/>
+  <coreConcern href="Association.core#_R-i5kKpPEeSChcgNbAqzEQ"/>
+  <structuralView xmi:id="_3WYVMaaKEeSAKObocMolaA">
+    <classes xsi:type="ram:Class" xmi:id="_3WYVMqaKEeSAKObocMolaA" name="Data" partiality="public">
+      <operations  xmi:id="_FoabgNfPEeSyv40WPjxBIA" name="add" returnType="_3WYVNaaKEeSAKObocMolaA" partiality="public" visibility="public">
+        <parameters xmi:id="_FoabgdfPEeSyv40WPjxBIA" name="a">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+      <operations  xmi:id="_OdNR8NfPEeSyv40WPjxBIA" name="remove" returnType="_3WYVNaaKEeSAKObocMolaA" partiality="public" visibility="public">
+        <parameters xmi:id="_OdNR8dfPEeSyv40WPjxBIA" name="a">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+      <operations  xmi:id="_o26JkNfPEeSyv40WPjxBIA" name="add" returnType="_3WYVM6aKEeSAKObocMolaA" partiality="public" visibility="public">
+        <parameters xmi:id="_o26JkdfPEeSyv40WPjxBIA" name="arg0" type="_3WYVNqaKEeSAKObocMolaA"/>
+        <parameters xmi:id="_o26JktfPEeSyv40WPjxBIA" name="a">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+      <operations  xmi:id="_iijaINfQEeSyv40WPjxBIA" name="remove" visibility="public">
+        <returnType xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        <parameters xmi:id="_iijaIdfQEeSyv40WPjxBIA" name="arg0" type="_3WYVNqaKEeSAKObocMolaA"/>
+      </operations>
+      <operations  xmi:id="_k9sm4NfQEeSyv40WPjxBIA" name="get" visibility="public">
+        <returnType xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        <parameters xmi:id="_k9sm4dfQEeSyv40WPjxBIA" name="arg0" type="_3WYVNqaKEeSAKObocMolaA"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_3WYVM6aKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_3WYVNKaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_3WYVNaaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_3WYVNqaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_3WYVN6aKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RString" xmi:id="_3WYVOKaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_3WYVOaaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_3WYVOqaKEeSAKObocMolaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_3WYVO6aKEeSAKObocMolaA"/>
+  </structuralView>
+  <instantiations xmi:id="_309HkKaKEeSAKObocMolaA" type="Extends">
+    <externalAspect href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+  </instantiations>
+  <layout xmi:id="_3WYVPKaKEeSAKObocMolaA">
+    <containers xmi:id="_3WYVPaaKEeSAKObocMolaA" key="_3WYVMaaKEeSAKObocMolaA">
+      <value xmi:id="_3WYVPqaKEeSAKObocMolaA" key="_3WYVMqaKEeSAKObocMolaA">
+        <value xmi:id="_3WYVP6aKEeSAKObocMolaA" x="290.00003" y="242.00018"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_979u0OOjEeSK_sZKrYdfrg" name="Desktop Notification">
+  <modelReuses xmi:id="_9AJqAOOnEeSpQIlmI1xStA" compositions="_9AJqAeOnEeSpQIlmI1xStA"/>
+  <modelReuses xmi:id="__Ci_kOOnEeSpQIlmI1xStA" compositions="__Ci_keOnEeSpQIlmI1xStA"/>
+  <realizes href="bCMS_SPL.core#_lKHtENaCEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_979u0eOjEeSK_sZKrYdfrg">
+    <classes xsi:type="ram:Class" xmi:id="_979u0uOjEeSK_sZKrYdfrg" name="Aaaa"/>
+    <types xsi:type="ram:RVoid" xmi:id="_979u0-OjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RAny" xmi:id="_979u1OOjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_979u1eOjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RInt" xmi:id="_979u1uOjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RChar" xmi:id="_979u1-OjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RString" xmi:id="_979u2OOjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_979u2eOjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_979u2uOjEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RLong" xmi:id="_979u2-OjEeSK_sZKrYdfrg"/>
+  </structuralView>
+  <instantiations xmi:id="_9AJqAeOnEeSpQIlmI1xStA" source="_979u0OOjEeSK_sZKrYdfrg">
+    <source xsi:type="ram:Aspect" href="Reused_CommunicationProtocol/Woven_CommunicationProtocol_CommunicationProtocol.ram#_RJPnUNzmEeSgAJE1ei2YzA"/>
+  </instantiations>
+  <instantiations xmi:id="__Ci_keOnEeSpQIlmI1xStA" source="_979u0OOjEeSK_sZKrYdfrg">
+    <source xsi:type="ram:Aspect" href="Reused_Observer/Woven_Observer_Association_Observer.ram#_2Wv0cOOkEeSK_sZKrYdfrg"/>
+  </instantiations>
+  <layout xmi:id="_979u3OOjEeSK_sZKrYdfrg">
+    <containers xmi:id="_979u3eOjEeSK_sZKrYdfrg" key="_979u0eOjEeSK_sZKrYdfrg">
+      <value xmi:id="_979u3uOjEeSK_sZKrYdfrg" key="_979u0uOjEeSK_sZKrYdfrg">
+        <value xmi:id="_979u3-OjEeSK_sZKrYdfrg" x="465.0" y="357.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

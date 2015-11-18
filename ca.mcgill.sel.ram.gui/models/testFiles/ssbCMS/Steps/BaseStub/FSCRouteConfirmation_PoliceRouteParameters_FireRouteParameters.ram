@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_tX0xkJU9EeG1U-m28TVE4A" name="FSCRouteConfirmation_PoliceRouteParameters_FireRouteParameters">
+  <structuralView xmi:id="_tX0xkZU9EeG1U-m28TVE4A">
+    <classes xsi:type="ram:Class" xmi:id="_tX0xkpU9EeG1U-m28TVE4A" name="ProcessPoliceRouteParameters"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xk5U9EeG1U-m28TVE4A" name="ProcessFireRouteParameters"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xlJU9EeG1U-m28TVE4A" name="ProcessFSCRouteConfirmation"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xlZU9EeG1U-m28TVE4A" name="FireRouteParametersInput"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xlpU9EeG1U-m28TVE4A" name="FSCRouteConfirmationInput"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xl5U9EeG1U-m28TVE4A" name="PoliceRouteParametersInput"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xmJU9EeG1U-m28TVE4A" name="AskForPoliceRouteOutput"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xmZU9EeG1U-m28TVE4A" name="AskForPoliceRoute"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xmpU9EeG1U-m28TVE4A" name="AskForFireRouteOutput"/>
+    <classes xsi:type="ram:Class" xmi:id="_tX0xm5U9EeG1U-m28TVE4A" name="AskForFireRoute"/>
+  </structuralView>
+  <instantiations xmi:id="_tX0xnJU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_tX0xnZU9EeG1U-m28TVE4A" toElement="_tX0xkpU9EeG1U-m28TVE4A _tX0xk5U9EeG1U-m28TVE4A _tX0xlJU9EeG1U-m28TVE4A _tX0xmZU9EeG1U-m28TVE4A _tX0xm5U9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_tX0xnpU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_tX0xn5U9EeG1U-m28TVE4A" toElement="_tX0xlZU9EeG1U-m28TVE4A _tX0xlpU9EeG1U-m28TVE4A _tX0xl5U9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Input.ram#_mhaIQZTNEeGJh_L7_SakMQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Input.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_tX0xoJU9EeG1U-m28TVE4A" type="Extends">
+    <mappings xmi:id="_tX0xoZU9EeG1U-m28TVE4A" toElement="_tX0xmJU9EeG1U-m28TVE4A _tX0xmpU9EeG1U-m28TVE4A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Output.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Output.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

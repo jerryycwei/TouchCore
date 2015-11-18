@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_Q4mNcJFDEeGgKbKNsvKi6A" name="SelectedVehicleCompleted">
+  <structuralView xmi:id="_Q4mNcZFDEeGgKbKNsvKi6A">
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNdJFDEeGgKbKNsvKi6A" name="SelectedVehicleInput">
+      <operations  xmi:id="_2j0VELDeEeGa990f5d4XXg" name="getLicensePlate" extendedVisibility="package" returnType="_9zh5sZFFEeGcPpQhqZFqFA" visibility="public"/>
+      <attributes xmi:id="_RZHX0LDEEeGxbeX_hHD8lQ" name="licensePlate" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNdZFDEeGgKbKNsvKi6A" name="ShowAssignmentOutput"/>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNdpFDEeGgKbKNsvKi6A" name="ShowAssignment">
+      <operations  xmi:id="_xXliIJPREeGDI-b-j7mTsQ" name="execute" extendedVisibility="package" returnType="_9zgrkZFFEeGcPpQhqZFqFA" visibility="public">
+        <parameters xmi:id="_YHjT0LDGEeGkVtIw5JconA" name="c" type="_Ov4rwLDEEeGxbeX_hHD8lQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Ov4rwLDEEeGxbeX_hHD8lQ" name="LocalContext">
+      <operations  xmi:id="_1gmG4LDFEeGi5pALoF9nIA" name="getVehicle" extendedVisibility="package" returnType="_9zgrkZFFEeGcPpQhqZFqFA" visibility="public">
+        <parameters xmi:id="_1gmG4bDFEeGi5pALoF9nIA" name="licensePlate" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_VK24MLDREeG4-qoXJEG0Lg" name="Vehicle">
+      <operations  xmi:id="_3iV2QJCGEeG7cMsksRMbkg" name="getDriver" returnType="_dFlbYIzoEeGpeIH37hJjzg" visibility="public"/>
+      <operations  xmi:id="_FD3hkJCHEeG7cMsksRMbkg" name="setDriver" returnType="_9zgrkZFFEeGcPpQhqZFqFA" visibility="public">
+        <parameters xmi:id="_I9znkJCHEeG7cMsksRMbkg" name="driver" type="_dFlbYIzoEeGpeIH37hJjzg"/>
+      </operations>
+      <associationEnds xmi:id="_NH6HEI7zEeGCGt017eVmqA" name="myDriver" lowerBound="1" assoc="_NH6uIY7zEeGCGt017eVmqA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_dFlbYIzoEeGpeIH37hJjzg" name="Driver">
+      <operations  xmi:id="_MJYGAIz1EeGpeIH37hJjzg" name="create" returnType="_dFlbYIzoEeGpeIH37hJjzg" visibility="public">
+        <parameters xmi:id="_X3cPoIz1EeGpeIH37hJjzg" name="name" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+        <parameters xmi:id="_YOQ0MIz1EeGpeIH37hJjzg" name="hostname" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+      </operations>
+      <operations  xmi:id="_FcQC8JFkEeGX1PgMyJUdIQ" name="getHostname" returnType="_9zh5sZFFEeGcPpQhqZFqFA" visibility="public"/>
+      <operations  xmi:id="_LjH6kJFkEeGX1PgMyJUdIQ" name="getName" returnType="_9zh5sZFFEeGcPpQhqZFqFA" visibility="public"/>
+      <associationEnds xmi:id="_NH6uII7zEeGCGt017eVmqA" name="" lowerBound="1" navigable="false" assoc="_NH6uIY7zEeGCGt017eVmqA"/>
+      <attributes xmi:id="_N1zyoIz1EeGpeIH37hJjzg" name="hostname" type="_9zh5sZFFEeGcPpQhqZFqFA"/>
+    </classes>
+    <associations xmi:id="_NH6uIY7zEeGCGt017eVmqA" name="ASSOC_VEHICLE_DRIVER" ends="_NH6HEI7zEeGCGt017eVmqA _NH6uII7zEeGCGt017eVmqA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_9zgrkZFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RAny" xmi:id="_9zhSoJFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_9zhSoZFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RInt" xmi:id="_9zhSopFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RChar" xmi:id="_9zh5sJFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RString" xmi:id="_9zh5sZFFEeGcPpQhqZFqFA"/>
+  </structuralView>
+  <instantiations xmi:id="_zIJF8bC-EeG4ldHzR69KCg" type="Extends">
+    <mappings xmi:id="_zIMJQLC-EeG4ldHzR69KCg" toElement="_Q4mNdpFDEeGgKbKNsvKi6A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <mappings xmi:id="_1gNJgLC-EeG4ldHzR69KCg" toElement="_xXliIJPREeGDI-b-j7mTsQ">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/workflow/Workflow.ram#_Cl0A8IdWEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_3PDQ8LC-EeG4ldHzR69KCg" type="Extends">
+    <mappings xmi:id="_3PD4ALC-EeG4ldHzR69KCg" toElement="_Q4mNdJFDEeGgKbKNsvKi6A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Input.ram#_mhaIQZTNEeGJh_L7_SakMQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Input.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_3osgALC-EeG4ldHzR69KCg" type="Extends">
+    <mappings xmi:id="_3otHELC-EeG4ldHzR69KCg" toElement="_Q4mNdZFDEeGgKbKNsvKi6A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Output.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Output.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_jMn44bDIEeGbDtJ8THE75g" type="Extends">
+    <externalAspect href="DomainBase.ram#_Q4mNcJFDEeGgKbKNsvKi6A"/>
+  </instantiations>
+  <instantiations xmi:id="_ZYm1kbDSEeGKnoCx_jvWCQ">
+    <mappings xmi:id="_ZYoDsLDSEeGKnoCx_jvWCQ" toElement="_dFlbYIzoEeGpeIH37hJjzg">
+      <fromElement xsi:type="ram:Class" href="../../Lib/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <layout xmi:id="_JJVuYbQDEeG0JcKcPJ3RtQ">
+    <containers xmi:id="_JJVuYrQDEeG0JcKcPJ3RtQ" key="_Q4mNcZFDEeGgKbKNsvKi6A">
+      <value xmi:id="_JJVuY7QDEeG0JcKcPJ3RtQ" key="_Q4mNdZFDEeGgKbKNsvKi6A">
+        <value xmi:id="_JJVuZLQDEeG0JcKcPJ3RtQ" x="763.8191" y="167.07907"/>
+      </value>
+      <value xmi:id="_JJVuZbQDEeG0JcKcPJ3RtQ" key="_dFlbYIzoEeGpeIH37hJjzg">
+        <value xmi:id="_JJVuZrQDEeG0JcKcPJ3RtQ" x="1197.214" y="556.8152"/>
+      </value>
+      <value xmi:id="_JJVuZ7QDEeG0JcKcPJ3RtQ" key="_VK24MLDREeG4-qoXJEG0Lg">
+        <value xmi:id="_JJWVcLQDEeG0JcKcPJ3RtQ" x="600.2079" y="577.44836"/>
+      </value>
+      <value xmi:id="_JJWVcbQDEeG0JcKcPJ3RtQ" key="_Ov4rwLDEEeGxbeX_hHD8lQ">
+        <value xmi:id="_JJWVcrQDEeG0JcKcPJ3RtQ" x="1259.9999" y="267.0003"/>
+      </value>
+      <value xmi:id="_JJWVc7QDEeG0JcKcPJ3RtQ" key="_Q4mNdJFDEeGgKbKNsvKi6A">
+        <value xmi:id="_JJWVdLQDEeG0JcKcPJ3RtQ" x="300.81885" y="171.07892"/>
+      </value>
+      <value xmi:id="_JJWVdbQDEeG0JcKcPJ3RtQ" key="_Q4mNdpFDEeGgKbKNsvKi6A">
+        <value xmi:id="_JJWVdrQDEeG0JcKcPJ3RtQ" x="698.81836" y="376.0791"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

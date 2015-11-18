@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/1.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_GcFioKBBEeS-cby9IJCtzQ" name="Observer">
+  <models xsi:type="ram:Aspect" href="Observer.ram#_Hod6sESCEeSPZZUzZmb1Lg"/>
+  <models xsi:type="ram:Aspect" href="Controller.ram#_Cd_jwEWcEeSKH5wBRt271w"/>
+  <models xsi:type="ram:Aspect" href="PullObserver.ram#_VFNdMMovEeOpP4Q9VsHH6Q"/>
+  <models xsi:type="ram:Aspect" href="PushObserver.ram#_NEOG4MmuEeOjc-JSG1BdPA"/>
+  <models xsi:type="core:COREFeatureModel" href="#_GcFioaBBEeS-cby9IJCtzQ"/>
+  <featureModel xmi:id="_GcFioaBBEeS-cby9IJCtzQ" coreConcern="_GcFioKBBEeS-cby9IJCtzQ" root="_GcFioqBBEeS-cby9IJCtzQ">
+    <features xmi:id="_GcFioqBBEeS-cby9IJCtzQ" name="Observer" children="_PJW0wKBBEeS-cby9IJCtzQ _PPTEsKBBEeS-cby9IJCtzQ">
+      <realizedBy xsi:type="ram:Aspect" href="Observer.ram#_Hod6sESCEeSPZZUzZmb1Lg"/>
+      <reuses xmi:id="_4_OKQOLuEeSL-_lRREviTQ" selectedConfiguration="_4_OKQeLuEeSL-_lRREviTQ">
+        <reusedConcern href="Reused_Association/Association.core#_R-i5kKpPEeSChcgNbAqzEQ"/>
+        <configurations xmi:id="_4_OKQeLuEeSL-_lRREviTQ">
+          <selected href="Reused_Association/Association.core#_R-jgoapPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_a0V1kKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_UmyuMKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_SzWaoKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_oodswKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_qMXIcKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_nBOCIKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_hu-scKpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_ePV80KpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_VFHB4KpPEeSChcgNbAqzEQ"/>
+          <reexposed href="Reused_Association/Association.core#_Z-w4cKpPEeSChcgNbAqzEQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_PJW0wKBBEeS-cby9IJCtzQ" name="NotificationMethod" children="_Rj3IUKBBEeS-cby9IJCtzQ _Rq5kcKBBEeS-cby9IJCtzQ" parent="_GcFioqBBEeS-cby9IJCtzQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_PPTEsKBBEeS-cby9IJCtzQ" name="Controller" parent="_GcFioqBBEeS-cby9IJCtzQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Controller.ram#_Cd_jwEWcEeSKH5wBRt271w"/>
+      <contributions xmi:id="_SF4doMvuEeSfHuASB4SrSA" name="50" impacted="_8X1c0cvtEeSfHuASB4SrSA" contributionValue="50"/>
+    </features>
+    <features xmi:id="_Rj3IUKBBEeS-cby9IJCtzQ" name="Pull" parent="_PJW0wKBBEeS-cby9IJCtzQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="PullObserver.ram#_VFNdMMovEeOpP4Q9VsHH6Q"/>
+      <contributions xmi:id="_5jcpoMvtEeSfHuASB4SrSA" name="50" impacted="_8X1c0cvtEeSfHuASB4SrSA" contributionValue="50"/>
+      <contributions xmi:id="_LZVGEMvuEeSfHuASB4SrSA" name="50" impacted="_QYgV0cvuEeSfHuASB4SrSA" contributionValue="50"/>
+      <contributions xmi:id="_ovUvsMvuEeSfHuASB4SrSA" name="50" impacted="_q-CqAcvuEeSfHuASB4SrSA" contributionValue="100"/>
+    </features>
+    <features xmi:id="_Rq5kcKBBEeS-cby9IJCtzQ" name="Push" parent="_PJW0wKBBEeS-cby9IJCtzQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="PushObserver.ram#_NEOG4MmuEeOjc-JSG1BdPA"/>
+      <contributions xmi:id="_29J80MvtEeSfHuASB4SrSA" name="50" impacted="_8X1c0cvtEeSfHuASB4SrSA" contributionValue="25"/>
+      <contributions xmi:id="_I-1ZkMvuEeSfHuASB4SrSA" name="50" impacted="_QYgV0cvuEeSfHuASB4SrSA" contributionValue="100"/>
+      <contributions xmi:id="_pBwjgMvuEeSfHuASB4SrSA" name="50" impacted="_q-CqAcvuEeSfHuASB4SrSA" contributionValue="50"/>
+    </features>
+  </featureModel>
+  <impactModel xmi:id="_8X1c0MvtEeSfHuASB4SrSA" name="Reduce Number of Messages">
+    <impactModelElements xmi:id="_8X1c0cvtEeSfHuASB4SrSA" name="Increase Number Of Messages"/>
+    <layout xmi:id="_eVnJ4MvuEeSfHuASB4SrSA" key="_8X1c0cvtEeSfHuASB4SrSA">
+      <value xmi:id="_eVnJ4cvuEeSfHuASB4SrSA" xPosition="586.5" yPosition="176.16245"/>
+    </layout>
+    <layout xmi:id="_eVnJ4svuEeSfHuASB4SrSA" key="_Rj3IUKBBEeS-cby9IJCtzQ">
+      <value xmi:id="_eVnJ48vuEeSfHuASB4SrSA" xPosition="531.0002" yPosition="456.9995"/>
+    </layout>
+    <layout xmi:id="_eVnJ5MvuEeSfHuASB4SrSA" key="_Rq5kcKBBEeS-cby9IJCtzQ">
+      <value xmi:id="_eVnJ5cvuEeSfHuASB4SrSA" xPosition="272.99994" yPosition="426.99988"/>
+    </layout>
+    <layout xmi:id="_eVnJ5svuEeSfHuASB4SrSA" key="_PPTEsKBBEeS-cby9IJCtzQ">
+      <value xmi:id="_eVnJ58vuEeSfHuASB4SrSA" xPosition="709.0001" yPosition="447.99982"/>
+    </layout>
+  </impactModel>
+  <impactModel xmi:id="_QYgV0MvuEeSfHuASB4SrSA" name="Increase Performance for Small Data">
+    <impactModelElements xmi:id="_QYgV0cvuEeSfHuASB4SrSA" name="Increase Performance for Small Data"/>
+    <layout xmi:id="_QYgV0svuEeSfHuASB4SrSA" key="_QYgV0cvuEeSfHuASB4SrSA">
+      <value xmi:id="_QYgV08vuEeSfHuASB4SrSA" xPosition="495.00003" yPosition="221.08116"/>
+    </layout>
+    <layout xmi:id="_QYgV1MvuEeSfHuASB4SrSA" key="_Rq5kcKBBEeS-cby9IJCtzQ">
+      <value xmi:id="_QYgV1cvuEeSfHuASB4SrSA" xPosition="364.99997" yPosition="503.0"/>
+    </layout>
+    <layout xmi:id="_QYgV1svuEeSfHuASB4SrSA" key="_Rj3IUKBBEeS-cby9IJCtzQ">
+      <value xmi:id="_QYgV18vuEeSfHuASB4SrSA" xPosition="599.00006" yPosition="502.0"/>
+    </layout>
+  </impactModel>
+  <impactModel xmi:id="_q-CqAMvuEeSfHuASB4SrSA" name="Increase Performance for Big Data">
+    <impactModelElements xmi:id="_q-CqAcvuEeSfHuASB4SrSA" name="Increase Performance for Big Data"/>
+    <layout xmi:id="_q-CqAsvuEeSfHuASB4SrSA" key="_q-CqAcvuEeSfHuASB4SrSA">
+      <value xmi:id="_q-CqA8vuEeSfHuASB4SrSA" xPosition="526.5" yPosition="233.08139"/>
+    </layout>
+    <layout xmi:id="_q-CqBMvuEeSfHuASB4SrSA" key="_Rj3IUKBBEeS-cby9IJCtzQ">
+      <value xmi:id="_q-CqBcvuEeSfHuASB4SrSA" xPosition="584.00006" yPosition="432.99997"/>
+    </layout>
+    <layout xmi:id="_q-CqBsvuEeSfHuASB4SrSA" key="_Rq5kcKBBEeS-cby9IJCtzQ">
+      <value xmi:id="_q-CqB8vuEeSfHuASB4SrSA" xPosition="384.99994" yPosition="439.99994"/>
+    </layout>
+  </impactModel>
+</core:COREConcern>

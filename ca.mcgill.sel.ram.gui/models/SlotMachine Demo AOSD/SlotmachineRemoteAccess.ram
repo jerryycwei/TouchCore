@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fakeaourn="http://fakeaourn/1.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_fWflwMntEeOwqtcFVOVDnw" name="SlotmachineRemoteAccess">
+  <structuralView xmi:id="_fWflwcntEeOwqtcFVOVDnw">
+    <classes xsi:type="ram:Class" xmi:id="_fWflwsntEeOwqtcFVOVDnw" name="ReadCurrentCredits">
+      <operations  xmi:id="_BOgCAMnuEeOqGNR6Al5NLA" name="execute" extendedVisibility="private" returnType="_fWflx8ntEeOwqtcFVOVDnw" visibility="public">
+        <parameters xmi:id="_BOgCAcnuEeOqGNR6Al5NLA" name="c">
+          <type xsi:type="ram:Class" href="Woven_Input_Output.ram#_2zaja8ntEeOqGNR6Al5NLA"/>
+        </parameters>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_fWflw8ntEeOwqtcFVOVDnw" name="CreditOutput">
+      <operations  xmi:id="_fWflxMntEeOwqtcFVOVDnw" name="create" returnType="_fWflw8ntEeOwqtcFVOVDnw" static="true" visibility="public">
+        <parameters xmi:id="_fWflxcntEeOwqtcFVOVDnw" name="c" type="_fWflysntEeOwqtcFVOVDnw"/>
+      </operations>
+      <attributes xmi:id="_fWflxsntEeOwqtcFVOVDnw" name="credits" type="_fWflysntEeOwqtcFVOVDnw"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_fWflx8ntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RAny" xmi:id="_fWflyMntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_fWflycntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RInt" xmi:id="_fWflysntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RChar" xmi:id="_fWfly8ntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RString" xmi:id="_fWflzMntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_fWflzcntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_fWflzsntEeOwqtcFVOVDnw"/>
+    <types xsi:type="ram:RLong" xmi:id="_fWflz8ntEeOwqtcFVOVDnw"/>
+  </structuralView>
+  <instantiations xmi:id="_fWfl0MntEeOwqtcFVOVDnw">
+    <source xsi:type="ram:Aspect" href="SlotmachineGUI.ram#_SQffAMnQEeOeJZ7xKw2pYg"/>
+  </instantiations>
+  <instantiations xmi:id="_2z8usMntEeOqGNR6Al5NLA">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_8LHnsMntEeOqGNR6Al5NLA" to="_fWflw8ntEeOwqtcFVOVDnw">
+      <from xsi:type="ram:Class" href="Woven_Input_Output.ram#_2zbKWcntEeOqGNR6Al5NLA"/>
+    </mappings>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="__QrDYMntEeOqGNR6Al5NLA" to="_fWflwsntEeOwqtcFVOVDnw">
+      <operationMappings xmi:id="__6omYMntEeOqGNR6Al5NLA" to="_BOgCAMnuEeOqGNR6Al5NLA">
+        <from href="Woven_Input_Output.ram#_2zbKfMntEeOqGNR6Al5NLA"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="Woven_Input_Output.ram#_2zbKe8ntEeOqGNR6Al5NLA"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="Woven_Input_Output.ram#_2zZ8IMntEeOqGNR6Al5NLA"/>
+  </instantiations>
+  <layout xmi:id="_fWfl0cntEeOwqtcFVOVDnw">
+    <containers xmi:id="_fWfl0sntEeOwqtcFVOVDnw" key="_fWflwcntEeOwqtcFVOVDnw">
+      <value xmi:id="_fWfl08ntEeOwqtcFVOVDnw" key="_fWflwsntEeOwqtcFVOVDnw">
+        <value xmi:id="_fWfl1MntEeOwqtcFVOVDnw" x="205.99994" y="298.99997"/>
+      </value>
+      <value xmi:id="_fWfl1cntEeOwqtcFVOVDnw" key="_fWflw8ntEeOwqtcFVOVDnw">
+        <value xmi:id="_fWfl1sntEeOwqtcFVOVDnw" x="567.0001" y="303.99994"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

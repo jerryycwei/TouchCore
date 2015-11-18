@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_LlR3IMSIEeKjsJfsrANSUQ" name="CompleteSlotMachine">
+  <structuralView xmi:id="_LlR3IcSIEeKjsJfsrANSUQ">
+    <types xsi:type="ram:RVoid" xmi:id="_LlR3IsSIEeKjsJfsrANSUQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_LlR3I8SIEeKjsJfsrANSUQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_LlR3JMSIEeKjsJfsrANSUQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_LlR3JcSIEeKjsJfsrANSUQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_LlR3JsSIEeKjsJfsrANSUQ"/>
+    <types xsi:type="ram:RString" xmi:id="_LlR3J8SIEeKjsJfsrANSUQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_LlR3KMSIEeKjsJfsrANSUQ">
+    <source xsi:type="ram:Aspect" href="SlotmachineMetering.ram#_s8qQoMPaEeKG4MQmu4EncA"/>
+  </instantiations>
+  <instantiations xmi:id="_LlR3KcSIEeKjsJfsrANSUQ">
+    <source xsi:type="ram:Aspect" href="BettingUI.ram#_6POZAcSBEeK3VoX-lWdC8Q"/>
+  </instantiations>
+  <layout xmi:id="_LlSeMMSIEeKjsJfsrANSUQ">
+    <containers xmi:id="_LlSeMcSIEeKjsJfsrANSUQ" key="_LlR3IcSIEeKjsJfsrANSUQ"/>
+  </layout>
+</ram:Aspect>

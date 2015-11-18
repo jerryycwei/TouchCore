@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_Q4mNcJFDEeGgKbKNsvKi6A" name="informDriver">
+  <structuralView xmi:id="_Q4mNcZFDEeGgKbKNsvKi6A">
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNcpFDEeGgKbKNsvKi6A" name="showVehicleListOutput" superTypes="_Q4mNeJFDEeGgKbKNsvKi6A"/>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNc5FDEeGgKbKNsvKi6A" name="showVehicleList">
+      <operations  xmi:id="_wWmmQZPREeGDI-b-j7mTsQ" name="execute" returnType="_9zgrkZFFEeGcPpQhqZFqFA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNdJFDEeGgKbKNsvKi6A" name="informDriverInput" superTypes="_Q4mNd5FDEeGgKbKNsvKi6A"/>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNdZFDEeGgKbKNsvKi6A" name="showAssignmentOutput" superTypes="_Q4mNeJFDEeGgKbKNsvKi6A"/>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNdpFDEeGgKbKNsvKi6A" name="showAssignment">
+      <operations  xmi:id="_xXliIJPREeGDI-b-j7mTsQ" name="execute" returnType="_9zgrkZFFEeGcPpQhqZFqFA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNd5FDEeGgKbKNsvKi6A" name="InputData"/>
+    <classes xsi:type="ram:Class" xmi:id="_Q4mNeJFDEeGgKbKNsvKi6A" name="OutputData"/>
+    <types xsi:type="ram:RVoid" xmi:id="_9zgrkZFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RAny" xmi:id="_9zhSoJFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_9zhSoZFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RInt" xmi:id="_9zhSopFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RChar" xmi:id="_9zh5sJFFEeGcPpQhqZFqFA"/>
+    <types xsi:type="ram:RString" xmi:id="_9zh5sZFFEeGcPpQhqZFqFA"/>
+  </structuralView>
+  <instantiations xmi:id="_Q4mNeZFDEeGgKbKNsvKi6A">
+    <mappings xmi:id="_Q4mNepFDEeGgKbKNsvKi6A" toElement="_Q4mNd5FDEeGgKbKNsvKi6A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <mappings xmi:id="_Q4mNe5FDEeGgKbKNsvKi6A" toElement="_Q4mNeJFDEeGgKbKNsvKi6A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/ReactiveSystemWorkflow.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/ReactiveSystemWorkflow.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_Q4mNfJFDEeGgKbKNsvKi6A">
+    <mappings xmi:id="_Q4mNfZFDEeGgKbKNsvKi6A" toElement="_Q4mNc5FDEeGgKbKNsvKi6A _Q4mNdpFDEeGgKbKNsvKi6A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <layout xmi:id="_yTzSwJPREeGDI-b-j7mTsQ">
+    <containers xmi:id="_yTz50JPREeGDI-b-j7mTsQ" key="_Q4mNcZFDEeGgKbKNsvKi6A">
+      <value xmi:id="_yTz50ZPREeGDI-b-j7mTsQ" key="_Q4mNeJFDEeGgKbKNsvKi6A">
+        <value xmi:id="_yTz50pPREeGDI-b-j7mTsQ" x="726.99927" y="100.999664"/>
+      </value>
+      <value xmi:id="_yTz505PREeGDI-b-j7mTsQ" key="_Q4mNd5FDEeGgKbKNsvKi6A">
+        <value xmi:id="_yTz51JPREeGDI-b-j7mTsQ" x="318.99893" y="98.99994"/>
+      </value>
+      <value xmi:id="_yTz51ZPREeGDI-b-j7mTsQ" key="_Q4mNdpFDEeGgKbKNsvKi6A">
+        <value xmi:id="_yTz51pPREeGDI-b-j7mTsQ" x="390.9994" y="448.0"/>
+      </value>
+      <value xmi:id="_yTz515PREeGDI-b-j7mTsQ" key="_Q4mNcpFDEeGgKbKNsvKi6A">
+        <value xmi:id="_yTz52JPREeGDI-b-j7mTsQ" x="512.9991" y="305.00027"/>
+      </value>
+      <value xmi:id="_yTz52ZPREeGDI-b-j7mTsQ" key="_Q4mNc5FDEeGgKbKNsvKi6A">
+        <value xmi:id="_yTz52pPREeGDI-b-j7mTsQ" x="708.9997" y="448.00043"/>
+      </value>
+      <value xmi:id="_yTz525PREeGDI-b-j7mTsQ" key="_Q4mNdZFDEeGgKbKNsvKi6A">
+        <value xmi:id="_yTz53JPREeGDI-b-j7mTsQ" x="818.0007" y="304.00003"/>
+      </value>
+      <value xmi:id="_yTz53ZPREeGDI-b-j7mTsQ" key="_Q4mNdJFDEeGgKbKNsvKi6A">
+        <value xmi:id="_yTz53pPREeGDI-b-j7mTsQ" x="276.99954" y="306.0002"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

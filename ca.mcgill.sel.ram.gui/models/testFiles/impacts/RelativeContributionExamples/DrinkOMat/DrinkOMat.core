@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_2e39ULIuEeShhbafuBlcEQ" name="DrinkOMat">
+  <FeatureModel xmi:id="_2e4kYLIuEeShhbafuBlcEQ" root="_2e4kYbIuEeShhbafuBlcEQ">
+    <features xmi:id="_2e4kYbIuEeShhbafuBlcEQ" name="DrinkOMat" children="_lz0f0LIvEeST6KNTjuJ92w _mAfC0LIvEeST6KNTjuJ92w _mKq5kLIvEeST6KNTjuJ92w _mTihsLIvEeST6KNTjuJ92w"/>
+    <features xmi:id="_lz0f0LIvEeST6KNTjuJ92w" name="Drinks" children="_ttyFsLIvEeST6KNTjuJ92w _t1TC8LIvEeST6KNTjuJ92w" parent="_2e4kYbIuEeShhbafuBlcEQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_mAfC0LIvEeST6KNTjuJ92w" name="Internal Mechanism" children="_vj7H8LIvEeST6KNTjuJ92w _vtCAoLIvEeST6KNTjuJ92w" parent="_2e4kYbIuEeShhbafuBlcEQ" parentRelationship="Optional"/>
+    <features xmi:id="_mKq5kLIvEeST6KNTjuJ92w" name="Container" children="_wtlesLIvEeST6KNTjuJ92w _w0QucLIvEeST6KNTjuJ92w" parent="_2e4kYbIuEeShhbafuBlcEQ" parentRelationship="Optional"/>
+    <features xmi:id="_mTihsLIvEeST6KNTjuJ92w" name="Payment Mechanism" children="_yPBcQLIvEeST6KNTjuJ92w _yWWzULIvEeST6KNTjuJ92w _ye98wLIvEeST6KNTjuJ92w" parent="_2e4kYbIuEeShhbafuBlcEQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_ttyFsLIvEeST6KNTjuJ92w" name="Coffee" children="_JKX9sLIwEeST6KNTjuJ92w _KN2M4LIwEeST6KNTjuJ92w _LHxegLIwEeST6KNTjuJ92w" parent="_lz0f0LIvEeST6KNTjuJ92w" parentRelationship="XOR"/>
+    <features xmi:id="_t1TC8LIvEeST6KNTjuJ92w" name="Soft Drink" parent="_lz0f0LIvEeST6KNTjuJ92w" parentRelationship="XOR">
+      <contributions xmi:id="_NGEhwLIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="2"/>
+      <contributions xmi:id="_t7fqMLIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4dLIyEeSv4t8_UPJBsg" contributionValue="40"/>
+    </features>
+    <features xmi:id="_vj7H8LIvEeST6KNTjuJ92w" name="Cooler" children="_wD8r0LIvEeST6KNTjuJ92w _wLW7YLIvEeST6KNTjuJ92w" parent="_mAfC0LIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_NjSCMLIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="26"/>
+    </features>
+    <features xmi:id="_vtCAoLIvEeST6KNTjuJ92w" name="Heating" parent="_mAfC0LIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_NywBkLIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="22"/>
+    </features>
+    <features xmi:id="_wD8r0LIvEeST6KNTjuJ92w" name="Ice Cubes" parent="_vj7H8LIvEeST6KNTjuJ92w" parentRelationship="Optional">
+      <contributions xmi:id="_NUq-cLIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="31"/>
+    </features>
+    <features xmi:id="_wLW7YLIvEeST6KNTjuJ92w" name="Crushed Ice" parent="_vj7H8LIvEeST6KNTjuJ92w" parentRelationship="Optional"/>
+    <features xmi:id="_wtlesLIvEeST6KNTjuJ92w" name="Container Type" children="_7DgwsLIvEeST6KNTjuJ92w _-4XiYLIvEeST6KNTjuJ92w __Np14LIvEeST6KNTjuJ92w" parent="_mKq5kLIvEeST6KNTjuJ92w" parentRelationship="Mandatory"/>
+    <features xmi:id="_w0QucLIvEeST6KNTjuJ92w" name="Container Dispenser" parent="_mKq5kLIvEeST6KNTjuJ92w" parentRelationship="Mandatory"/>
+    <features xmi:id="_yPBcQLIvEeST6KNTjuJ92w" name="Coins" parent="_mTihsLIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_glwYILIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4crIyEeSv4t8_UPJBsg" contributionValue="5"/>
+    </features>
+    <features xmi:id="_yWWzULIvEeST6KNTjuJ92w" name="Credit Card" children="_Da7HkLIwEeST6KNTjuJ92w _EqFCULIwEeST6KNTjuJ92w" parent="_mTihsLIvEeST6KNTjuJ92w" parentRelationship="OR"/>
+    <features xmi:id="_ye98wLIvEeST6KNTjuJ92w" name="Bills" parent="_mTihsLIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_hHiPgLIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4crIyEeSv4t8_UPJBsg" contributionValue="15"/>
+    </features>
+    <features xmi:id="_7DgwsLIvEeST6KNTjuJ92w" name="Plastic Cup" parent="_wtlesLIvEeST6KNTjuJ92w" parentRelationship="XOR">
+      <contributions xmi:id="_OAPD8LIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="1"/>
+      <contributions xmi:id="_iRwm8LIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4crIyEeSv4t8_UPJBsg" contributionValue="5"/>
+    </features>
+    <features xmi:id="_-4XiYLIvEeST6KNTjuJ92w" name="Paper Cup" parent="_wtlesLIvEeST6KNTjuJ92w" parentRelationship="XOR">
+      <contributions xmi:id="_iEb8oLIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4crIyEeSv4t8_UPJBsg" contributionValue="10"/>
+    </features>
+    <features xmi:id="__Np14LIvEeST6KNTjuJ92w" name="Styrofoam Cup" parent="_wtlesLIvEeST6KNTjuJ92w" parentRelationship="XOR">
+      <contributions xmi:id="_OO6ZILIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="3"/>
+      <contributions xmi:id="_hygfILIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4crIyEeSv4t8_UPJBsg" contributionValue="20"/>
+    </features>
+    <features xmi:id="_Da7HkLIwEeST6KNTjuJ92w" name="Chip" parent="_yWWzULIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_hUMLcLIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4crIyEeSv4t8_UPJBsg" contributionValue="30"/>
+    </features>
+    <features xmi:id="_EqFCULIwEeST6KNTjuJ92w" name="Contactless" parent="_yWWzULIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_hjqx4LIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4crIyEeSv4t8_UPJBsg" contributionValue="60"/>
+    </features>
+    <features xmi:id="_JKX9sLIwEeST6KNTjuJ92w" name="Iced Coffee" parent="_ttyFsLIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_MJxRkLIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="13"/>
+      <contributions xmi:id="_uLzXELIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4dLIyEeSv4t8_UPJBsg" contributionValue="4"/>
+    </features>
+    <features xmi:id="_KN2M4LIwEeST6KNTjuJ92w" name="Coffee Slush" parent="_ttyFsLIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_ucDZkLIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4dLIyEeSv4t8_UPJBsg" contributionValue="2"/>
+    </features>
+    <features xmi:id="_LHxegLIwEeST6KNTjuJ92w" name="Hot Coffee" parent="_ttyFsLIvEeST6KNTjuJ92w" parentRelationship="OR">
+      <contributions xmi:id="_M2ktMLIxEeSv4t8_UPJBsg" name="50" impacted="_LSN-gbIxEeSv4t8_UPJBsg" contributionValue="7"/>
+      <contributions xmi:id="_urrJ8LIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4dLIyEeSv4t8_UPJBsg" contributionValue="10"/>
+    </features>
+  </FeatureModel>
+  <ImpactModel xmi:id="_LSN-gLIxEeSv4t8_UPJBsg" name="GM1 - Minimize Cost">
+    <impactModelElements xmi:id="_LSN-gbIxEeSv4t8_UPJBsg" name="Minimize Cost"/>
+    <layout xmi:id="_MtwS8LIyEeSv4t8_UPJBsg" key="_LSN-gbIxEeSv4t8_UPJBsg">
+      <value xmi:id="_MtwS8bIyEeSv4t8_UPJBsg" xPosition="745.9998" yPosition="221.32516"/>
+    </layout>
+    <layout xmi:id="_MtwS8rIyEeSv4t8_UPJBsg" key="_JKX9sLIwEeST6KNTjuJ92w">
+      <value xmi:id="_MtwS87IyEeSv4t8_UPJBsg" xPosition="154.99991" yPosition="285.99994"/>
+    </layout>
+    <layout xmi:id="_MtwS9LIyEeSv4t8_UPJBsg" key="_LHxegLIwEeST6KNTjuJ92w">
+      <value xmi:id="_MtwS9bIyEeSv4t8_UPJBsg" xPosition="241.99982" yPosition="391.99988"/>
+    </layout>
+    <layout xmi:id="_Mtw6ALIyEeSv4t8_UPJBsg" key="_t1TC8LIvEeST6KNTjuJ92w">
+      <value xmi:id="_Mtw6AbIyEeSv4t8_UPJBsg" xPosition="377.00003" yPosition="519.0"/>
+    </layout>
+    <layout xmi:id="_Mtw6ArIyEeSv4t8_UPJBsg" key="_wD8r0LIvEeST6KNTjuJ92w">
+      <value xmi:id="_Mtw6A7IyEeSv4t8_UPJBsg" xPosition="516.00006" yPosition="563.99994"/>
+    </layout>
+    <layout xmi:id="_Mtw6BLIyEeSv4t8_UPJBsg" key="_vj7H8LIvEeST6KNTjuJ92w">
+      <value xmi:id="_Mtw6BbIyEeSv4t8_UPJBsg" xPosition="694.9997" yPosition="562.00006"/>
+    </layout>
+    <layout xmi:id="_Mtw6BrIyEeSv4t8_UPJBsg" key="_vtCAoLIvEeST6KNTjuJ92w">
+      <value xmi:id="_Mtw6B7IyEeSv4t8_UPJBsg" xPosition="785.0" yPosition="492.99988"/>
+    </layout>
+    <layout xmi:id="_Mtw6CLIyEeSv4t8_UPJBsg" key="_7DgwsLIvEeST6KNTjuJ92w">
+      <value xmi:id="_Mtw6CbIyEeSv4t8_UPJBsg" xPosition="858.00024" yPosition="395.99985"/>
+    </layout>
+    <layout xmi:id="_Mtw6CrIyEeSv4t8_UPJBsg" key="__Np14LIvEeST6KNTjuJ92w">
+      <value xmi:id="_Mtw6C7IyEeSv4t8_UPJBsg" xPosition="949.00024" yPosition="288.99994"/>
+    </layout>
+  </ImpactModel>
+  <ImpactModel xmi:id="_YTj4cLIyEeSv4t8_UPJBsg" name="GM2 - Increase Satisfaction">
+    <impactModelElements xmi:id="_YTj4cbIyEeSv4t8_UPJBsg" name="Increase Customer Satisfaction"/>
+    <impactModelElements xmi:id="_YTj4crIyEeSv4t8_UPJBsg" name="Improve Convenience">
+      <contributions xmi:id="_YTj4c7IyEeSv4t8_UPJBsg" name="50" impacted="_YTj4cbIyEeSv4t8_UPJBsg" contributionValue="60"/>
+    </impactModelElements>
+    <impactModelElements xmi:id="_YTj4dLIyEeSv4t8_UPJBsg" name="Offer Varied Drink Selection">
+      <contributions xmi:id="_YTj4dbIyEeSv4t8_UPJBsg" name="50" impacted="_YTj4cbIyEeSv4t8_UPJBsg" contributionValue="40"/>
+    </impactModelElements>
+    <layout xmi:id="_yclPwLIyEeSv4t8_UPJBsg" key="_YTj4cbIyEeSv4t8_UPJBsg">
+      <value xmi:id="_yclPwbIyEeSv4t8_UPJBsg" xPosition="948.0" yPosition="101.24383"/>
+    </layout>
+    <layout xmi:id="_yclPwrIyEeSv4t8_UPJBsg" key="_YTj4crIyEeSv4t8_UPJBsg">
+      <value xmi:id="_yclPw7IyEeSv4t8_UPJBsg" xPosition="642.00006" yPosition="281.24387"/>
+    </layout>
+    <layout xmi:id="_yclPxLIyEeSv4t8_UPJBsg" key="_YTj4dLIyEeSv4t8_UPJBsg">
+      <value xmi:id="_yclPxbIyEeSv4t8_UPJBsg" xPosition="1231.0001" yPosition="293.2438"/>
+    </layout>
+    <layout xmi:id="_yclPxrIyEeSv4t8_UPJBsg" key="_yPBcQLIvEeST6KNTjuJ92w">
+      <value xmi:id="_yclPx7IyEeSv4t8_UPJBsg" xPosition="199.00009" yPosition="393.99994"/>
+    </layout>
+    <layout xmi:id="_yclPyLIyEeSv4t8_UPJBsg" key="_ye98wLIvEeST6KNTjuJ92w">
+      <value xmi:id="_yclPybIyEeSv4t8_UPJBsg" xPosition="259.9995" yPosition="467.99997"/>
+    </layout>
+    <layout xmi:id="_yclPyrIyEeSv4t8_UPJBsg" key="_Da7HkLIwEeST6KNTjuJ92w">
+      <value xmi:id="_ycl20LIyEeSv4t8_UPJBsg" xPosition="335.0001" yPosition="526.99994"/>
+    </layout>
+    <layout xmi:id="_ycl20bIyEeSv4t8_UPJBsg" key="_EqFCULIwEeST6KNTjuJ92w">
+      <value xmi:id="_ycl20rIyEeSv4t8_UPJBsg" xPosition="426.9999" yPosition="587.0"/>
+    </layout>
+    <layout xmi:id="_ycl207IyEeSv4t8_UPJBsg" key="__Np14LIvEeST6KNTjuJ92w">
+      <value xmi:id="_ycl21LIyEeSv4t8_UPJBsg" xPosition="573.9998" yPosition="585.9999"/>
+    </layout>
+    <layout xmi:id="_ycl21bIyEeSv4t8_UPJBsg" key="_-4XiYLIvEeST6KNTjuJ92w">
+      <value xmi:id="_ycl21rIyEeSv4t8_UPJBsg" xPosition="726.0" yPosition="518.0"/>
+    </layout>
+    <layout xmi:id="_ycl217IyEeSv4t8_UPJBsg" key="_7DgwsLIvEeST6KNTjuJ92w">
+      <value xmi:id="_ycl22LIyEeSv4t8_UPJBsg" xPosition="789.9999" yPosition="441.99994"/>
+    </layout>
+    <layout xmi:id="_ycl22bIyEeSv4t8_UPJBsg" key="_t1TC8LIvEeST6KNTjuJ92w">
+      <value xmi:id="_ycl22rIyEeSv4t8_UPJBsg" xPosition="936.9998" yPosition="477.99985"/>
+    </layout>
+    <layout xmi:id="_ycl227IyEeSv4t8_UPJBsg" key="_JKX9sLIwEeST6KNTjuJ92w">
+      <value xmi:id="_ycl23LIyEeSv4t8_UPJBsg" xPosition="1075.9999" yPosition="549.99994"/>
+    </layout>
+    <layout xmi:id="_ycl23bIyEeSv4t8_UPJBsg" key="_KN2M4LIwEeST6KNTjuJ92w">
+      <value xmi:id="_ycl23rIyEeSv4t8_UPJBsg" xPosition="1219.0" yPosition="550.0"/>
+    </layout>
+    <layout xmi:id="_ycl237IyEeSv4t8_UPJBsg" key="_LHxegLIwEeST6KNTjuJ92w">
+      <value xmi:id="_ycl24LIyEeSv4t8_UPJBsg" xPosition="1326.0" yPosition="485.9999"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

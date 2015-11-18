@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_zRbNgHSvEeSlgfy69r75xg" name="TestCase09B">
+  <structuralView xmi:id="_zRbNgXSvEeSlgfy69r75xg">
+    <classes xsi:type="ram:Class" xmi:id="_zRbNgnSvEeSlgfy69r75xg" name="B" partiality="public">
+      <attributes xmi:id="_zRbNg3SvEeSlgfy69r75xg" name="count" type="_zRbNi3SvEeSlgfy69r75xg"/>
+      <attributes xmi:id="_zRbNhHSvEeSlgfy69r75xg" name="number" type="_zRbNi3SvEeSlgfy69r75xg"/>
+      <attributes xmi:id="_zRbNhXSvEeSlgfy69r75xg" name="moose" type="_zRbNi3SvEeSlgfy69r75xg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_zRbNhnSvEeSlgfy69r75xg" name="D">
+      <attributes xmi:id="_zRbNh3SvEeSlgfy69r75xg" name="count" type="_zRbNi3SvEeSlgfy69r75xg"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_zRbNiHSvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RAny" xmi:id="_zRbNiXSvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_zRbNinSvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RInt" xmi:id="_zRbNi3SvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RChar" xmi:id="_zRbNjHSvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RString" xmi:id="_zRbNjXSvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_zRbNjnSvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_zRbNj3SvEeSlgfy69r75xg"/>
+    <types xsi:type="ram:RLong" xmi:id="_zRbNkHSvEeSlgfy69r75xg"/>
+  </structuralView>
+  <layout xmi:id="_zRbNkXSvEeSlgfy69r75xg">
+    <containers xmi:id="_zRbNknSvEeSlgfy69r75xg" key="_zRbNgXSvEeSlgfy69r75xg">
+      <value xmi:id="_zRbNk3SvEeSlgfy69r75xg" key="_zRbNgnSvEeSlgfy69r75xg">
+        <value xmi:id="_zRbNlHSvEeSlgfy69r75xg" x="431.0" y="326.0"/>
+      </value>
+      <value xmi:id="_zRbNlXSvEeSlgfy69r75xg" key="_zRbNhnSvEeSlgfy69r75xg">
+        <value xmi:id="_zRbNlnSvEeSlgfy69r75xg" x="814.0" y="424.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

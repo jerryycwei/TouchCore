@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_SuvIIFMLEeW6rPwsyWQ-oA" name="U" models="_SuvIIVMLEeW6rPwsyWQ-oA">
+  <featureModel xmi:id="_SuvIIVMLEeW6rPwsyWQ-oA" coreConcern="_SuvIIFMLEeW6rPwsyWQ-oA" root="_SuvIIlMLEeW6rPwsyWQ-oA">
+    <features xmi:id="_SuvIIlMLEeW6rPwsyWQ-oA" name="U"/>
+  </featureModel>
+</core:COREConcern>

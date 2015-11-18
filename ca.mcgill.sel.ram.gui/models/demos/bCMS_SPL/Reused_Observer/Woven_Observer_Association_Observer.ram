@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_2Wv0cOOkEeSK_sZKrYdfrg" name="Observer&lt;Observer,Association>">
+  <structuralView xmi:id="_2Wv0ceOkEeSK_sZKrYdfrg">
+    <classes xsi:type="ram:Class" xmi:id="_2Wv0cuOkEeSK_sZKrYdfrg" name="Subject" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" partiality="public">
+      <operations  xmi:id="_2Wv0c-OkEeSK_sZKrYdfrg" name="getObservers" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" extendedVisibility="package" returnType="_2WwbgOOkEeSK_sZKrYdfrg" visibility="public"/>
+      <operations  xmi:id="_2Wv0dOOkEeSK_sZKrYdfrg" name="addObserver" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" returnType="_2Wv0g-OkEeSK_sZKrYdfrg" visibility="public">
+        <parameters xmi:id="_2Wv0deOkEeSK_sZKrYdfrg" name="a" type="_2Wv0eeOkEeSK_sZKrYdfrg"/>
+      </operations>
+      <operations  xmi:id="_2Wv0duOkEeSK_sZKrYdfrg" name="removeObserver" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" returnType="_2Wv0g-OkEeSK_sZKrYdfrg" visibility="public">
+        <parameters xmi:id="_2Wv0d-OkEeSK_sZKrYdfrg" name="a" type="_2Wv0eeOkEeSK_sZKrYdfrg"/>
+      </operations>
+      <associationEnds xmi:id="_2Wv0eOOkEeSK_sZKrYdfrg" name="myObserver" navigable="false" assoc="_2Wv0guOkEeSK_sZKrYdfrg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_2Wv0eeOkEeSK_sZKrYdfrg" name="Observer" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" partiality="public">
+      <operations  xmi:id="_2Wv0euOkEeSK_sZKrYdfrg" name="startObserving" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" returnType="_2Wv0g-OkEeSK_sZKrYdfrg" visibility="public">
+        <parameters xmi:id="_2Wv0e-OkEeSK_sZKrYdfrg" name="s" type="_2Wv0cuOkEeSK_sZKrYdfrg"/>
+      </operations>
+      <operations  xmi:id="_2Wv0fOOkEeSK_sZKrYdfrg" name="stopObserving" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" returnType="_2Wv0g-OkEeSK_sZKrYdfrg" visibility="public"/>
+      <associationEnds xmi:id="_2Wv0feOkEeSK_sZKrYdfrg" name="mySubject" lowerBound="1" assoc="_2Wv0guOkEeSK_sZKrYdfrg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_2Wv0fuOkEeSK_sZKrYdfrg" name="Associated" comesFrom="_2WwboOOkEeSK_sZKrYdfrg _2WwboeOkEeSK_sZKrYdfrg" partiality="public"/>
+    <classes xsi:type="ram:Class" xmi:id="_2Wv0f-OkEeSK_sZKrYdfrg" name="Data" comesFrom="_2WwboOOkEeSK_sZKrYdfrg _2WwboeOkEeSK_sZKrYdfrg">
+      <operations  xmi:id="_2Wv0gOOkEeSK_sZKrYdfrg" name="contains" comesFrom="_2WwboOOkEeSK_sZKrYdfrg _2WwboeOkEeSK_sZKrYdfrg" returnType="_2Wv0heOkEeSK_sZKrYdfrg" partiality="public" visibility="public">
+        <parameters xmi:id="_2Wv0geOkEeSK_sZKrYdfrg" name="a" type="_2Wv0fuOkEeSK_sZKrYdfrg"/>
+      </operations>
+    </classes>
+    <associations xmi:id="_2Wv0guOkEeSK_sZKrYdfrg" name="ObserverSubject" ends="_2Wv0feOkEeSK_sZKrYdfrg _2Wv0eOOkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_2Wv0g-OkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RAny" xmi:id="_2Wv0hOOkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_2Wv0heOkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RInt" xmi:id="_2Wv0huOkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RChar" xmi:id="_2Wv0h-OkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RString" xmi:id="_2Wv0iOOkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_2Wv0ieOkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_2Wv0iuOkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RLong" xmi:id="_2Wv0i-OkEeSK_sZKrYdfrg"/>
+    <types xsi:type="ram:RSet" xmi:id="_2WwbgOOkEeSK_sZKrYdfrg" comesFrom="_2Wwbn-OkEeSK_sZKrYdfrg" type="_2Wv0eeOkEeSK_sZKrYdfrg"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_2WwbgeOkEeSK_sZKrYdfrg" specifies="_2Wv0euOkEeSK_sZKrYdfrg">
+    <specification xmi:id="_2WwbguOkEeSK_sZKrYdfrg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2Wwbg-OkEeSK_sZKrYdfrg" covered="_2WwbiOOkEeSK_sZKrYdfrg" message="_2WwbiuOkEeSK_sZKrYdfrg"/>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_2WwbhOOkEeSK_sZKrYdfrg" covered="_2WwbiOOkEeSK_sZKrYdfrg">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_2WwbheOkEeSK_sZKrYdfrg" body="this.mySubject = s" language="Java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2WwbhuOkEeSK_sZKrYdfrg" covered="_2WwbiOOkEeSK_sZKrYdfrg" message="_2Wwbi-OkEeSK_sZKrYdfrg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2Wwbh-OkEeSK_sZKrYdfrg" covered="_2WwbieOkEeSK_sZKrYdfrg" message="_2Wwbi-OkEeSK_sZKrYdfrg"/>
+      <lifelines xmi:id="_2WwbiOOkEeSK_sZKrYdfrg" represents="_2WwbjuOkEeSK_sZKrYdfrg" coveredBy="_2Wwbg-OkEeSK_sZKrYdfrg _2WwbhuOkEeSK_sZKrYdfrg _2WwbhOOkEeSK_sZKrYdfrg"/>
+      <lifelines xmi:id="_2WwbieOkEeSK_sZKrYdfrg" represents="_2Wv0feOkEeSK_sZKrYdfrg" coveredBy="_2Wwbh-OkEeSK_sZKrYdfrg"/>
+      <messages xmi:id="_2WwbiuOkEeSK_sZKrYdfrg" sendEvent="_2Wwbj-OkEeSK_sZKrYdfrg" receiveEvent="_2Wwbg-OkEeSK_sZKrYdfrg" signature="_2Wv0euOkEeSK_sZKrYdfrg"/>
+      <messages xmi:id="_2Wwbi-OkEeSK_sZKrYdfrg" sendEvent="_2WwbhuOkEeSK_sZKrYdfrg" receiveEvent="_2Wwbh-OkEeSK_sZKrYdfrg" signature="_2Wv0dOOkEeSK_sZKrYdfrg">
+        <arguments xmi:id="_2WwbjOOkEeSK_sZKrYdfrg" parameter="_2Wv0deOkEeSK_sZKrYdfrg">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_2WwbjeOkEeSK_sZKrYdfrg" value="_2WwbjuOkEeSK_sZKrYdfrg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_2WwbjuOkEeSK_sZKrYdfrg" name="target" lowerBound="1" type="_2Wv0eeOkEeSK_sZKrYdfrg"/>
+      <formalGates xmi:id="_2Wwbj-OkEeSK_sZKrYdfrg" message="_2WwbiuOkEeSK_sZKrYdfrg" name="in_startObserving"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_2WwbkOOkEeSK_sZKrYdfrg" specifies="_2Wv0fOOkEeSK_sZKrYdfrg">
+    <specification xmi:id="_2WwbkeOkEeSK_sZKrYdfrg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2WwbkuOkEeSK_sZKrYdfrg" covered="_2WwbleOkEeSK_sZKrYdfrg" message="_2Wwbl-OkEeSK_sZKrYdfrg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2Wwbk-OkEeSK_sZKrYdfrg" covered="_2WwbleOkEeSK_sZKrYdfrg" message="_2WwbmOOkEeSK_sZKrYdfrg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2WwblOOkEeSK_sZKrYdfrg" covered="_2WwbluOkEeSK_sZKrYdfrg" message="_2WwbmOOkEeSK_sZKrYdfrg"/>
+      <lifelines xmi:id="_2WwbleOkEeSK_sZKrYdfrg" represents="_2Wwbm-OkEeSK_sZKrYdfrg" coveredBy="_2WwbkuOkEeSK_sZKrYdfrg _2Wwbk-OkEeSK_sZKrYdfrg"/>
+      <lifelines xmi:id="_2WwbluOkEeSK_sZKrYdfrg" represents="_2Wv0feOkEeSK_sZKrYdfrg" coveredBy="_2WwblOOkEeSK_sZKrYdfrg"/>
+      <messages xmi:id="_2Wwbl-OkEeSK_sZKrYdfrg" sendEvent="_2WwbnOOkEeSK_sZKrYdfrg" receiveEvent="_2WwbkuOkEeSK_sZKrYdfrg" signature="_2Wv0fOOkEeSK_sZKrYdfrg"/>
+      <messages xmi:id="_2WwbmOOkEeSK_sZKrYdfrg" sendEvent="_2Wwbk-OkEeSK_sZKrYdfrg" receiveEvent="_2WwblOOkEeSK_sZKrYdfrg" signature="_2Wv0duOkEeSK_sZKrYdfrg">
+        <arguments xmi:id="_2WwbmeOkEeSK_sZKrYdfrg" parameter="_2Wv0d-OkEeSK_sZKrYdfrg">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_2WwbmuOkEeSK_sZKrYdfrg" value="_2Wwbm-OkEeSK_sZKrYdfrg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_2Wwbm-OkEeSK_sZKrYdfrg" name="target" lowerBound="1" type="_2Wv0eeOkEeSK_sZKrYdfrg"/>
+      <formalGates xmi:id="_2WwbnOOkEeSK_sZKrYdfrg" message="_2Wwbl-OkEeSK_sZKrYdfrg" name="in_stopObserving"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_2WwbneOkEeSK_sZKrYdfrg">
+    <containers xmi:id="_2WwbnuOkEeSK_sZKrYdfrg" key="_2Wv0ceOkEeSK_sZKrYdfrg"/>
+  </layout>
+  <wovenAspects xmi:id="_2Wwbn-OkEeSK_sZKrYdfrg" name="Observer">
+    <comesFrom href="Observer.ram#_Hod6sESCEeSPZZUzZmb1Lg"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_2WwboOOkEeSK_sZKrYdfrg" name="Association">
+    <comesFrom href="Reused_Association/Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_2WwboeOkEeSK_sZKrYdfrg" name="Association&lt;Association>">
+    <comesFrom href="Reused_Association/Woven_Association_Association.ram#_5ACCkOLuEeSL-_lRREviTQ"/>
+  </wovenAspects>
+</ram:Aspect>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_jk9wYLYFEeS787nEkgl9FA" name="Commuting">
+  <FeatureModel xmi:id="_jk9wYbYFEeS787nEkgl9FA" root="_jk-XcLYFEeS787nEkgl9FA">
+    <features xmi:id="_jk-XcLYFEeS787nEkgl9FA" name="Commuting" children="_kO1z0LYFEeS787nEkgl9FA _kXEiwLYFEeS787nEkgl9FA _kjCiMLYFEeS787nEkgl9FA"/>
+    <features xmi:id="_kO1z0LYFEeS787nEkgl9FA" name="Transportation" children="_rvI8gLYFEeS787nEkgl9FA _sAi1kLYFEeS787nEkgl9FA _sT098LYFEeS787nEkgl9FA _smvS4LYFEeS787nEkgl9FA" parent="_jk-XcLYFEeS787nEkgl9FA" parentRelationship="Mandatory"/>
+    <features xmi:id="_kXEiwLYFEeS787nEkgl9FA" name="Alarm System" children="_pXDq0LYFEeS787nEkgl9FA" parent="_jk-XcLYFEeS787nEkgl9FA" parentRelationship="Optional"/>
+    <features xmi:id="_kjCiMLYFEeS787nEkgl9FA" name="Office Access" children="_zFZYYLYFEeS787nEkgl9FA _zh_00LYFEeS787nEkgl9FA" parent="_jk-XcLYFEeS787nEkgl9FA" parentRelationship="Mandatory"/>
+    <features xmi:id="_pXDq0LYFEeS787nEkgl9FA" name="Alternative Alarm" parent="_kXEiwLYFEeS787nEkgl9FA" parentRelationship="Optional"/>
+    <features xmi:id="_rvI8gLYFEeS787nEkgl9FA" name="Regular Bus" parent="_kO1z0LYFEeS787nEkgl9FA" parentRelationship="XOR">
+      <contributions xmi:id="_PBlWcLYGEeS787nEkgl9FA" name="50" impacted="_UARMErYIEeS787nEkgl9FA" contributionValue="80"/>
+    </features>
+    <features xmi:id="_sAi1kLYFEeS787nEkgl9FA" name="Express Bus" parent="_kO1z0LYFEeS787nEkgl9FA" parentRelationship="XOR">
+      <contributions xmi:id="_QVAtMLYGEeS787nEkgl9FA" name="50" impacted="_UARMErYIEeS787nEkgl9FA" contributionValue="40"/>
+    </features>
+    <features xmi:id="_sT098LYFEeS787nEkgl9FA" name="Take Own Car" parent="_kO1z0LYFEeS787nEkgl9FA" parentRelationship="XOR"/>
+    <features xmi:id="_smvS4LYFEeS787nEkgl9FA" name="Hitch a Ride" parent="_kO1z0LYFEeS787nEkgl9FA" parentRelationship="XOR"/>
+    <features xmi:id="_zFZYYLYFEeS787nEkgl9FA" name="Stairs" parent="_kjCiMLYFEeS787nEkgl9FA" parentRelationship="OR"/>
+    <features xmi:id="_zh_00LYFEeS787nEkgl9FA" name="Elevator" parent="_kjCiMLYFEeS787nEkgl9FA" parentRelationship="OR"/>
+  </FeatureModel>
+  <ImpactModel xmi:id="_UARMELYIEeS787nEkgl9FA" name="GM - Minimize Travel Time">
+    <impactModelElements xmi:id="_UARMEbYIEeS787nEkgl9FA" name="Minimize time lost by commute"/>
+    <impactModelElements xmi:id="_UARMErYIEeS787nEkgl9FA" name="Work during commute"/>
+    <impactModelElements xmi:id="_UARME7YIEeS787nEkgl9FA" name="Minimize travel time"/>
+    <layout xmi:id="_UARMFLYIEeS787nEkgl9FA" key="_UARMEbYIEeS787nEkgl9FA">
+      <value xmi:id="_UARMFbYIEeS787nEkgl9FA" xPosition="463.99994" yPosition="85.081184"/>
+    </layout>
+    <layout xmi:id="_UARMFrYIEeS787nEkgl9FA" key="_UARMErYIEeS787nEkgl9FA">
+      <value xmi:id="_UARMF7YIEeS787nEkgl9FA" xPosition="268.0" yPosition="234.08127"/>
+    </layout>
+    <layout xmi:id="_UARMGLYIEeS787nEkgl9FA" key="_UARME7YIEeS787nEkgl9FA">
+      <value xmi:id="_UARMGbYIEeS787nEkgl9FA" xPosition="627.5" yPosition="235.08119"/>
+    </layout>
+    <layout xmi:id="_UARMGrYIEeS787nEkgl9FA" key="_sAi1kLYFEeS787nEkgl9FA">
+      <value xmi:id="_UARMG7YIEeS787nEkgl9FA" xPosition="275.00006" yPosition="462.99982"/>
+    </layout>
+    <layout xmi:id="_UARMHLYIEeS787nEkgl9FA" key="_smvS4LYFEeS787nEkgl9FA">
+      <value xmi:id="_UARMHbYIEeS787nEkgl9FA" xPosition="692.00024" yPosition="464.9999"/>
+    </layout>
+    <layout xmi:id="_UARMHrYIEeS787nEkgl9FA" key="_sT098LYFEeS787nEkgl9FA">
+      <value xmi:id="_UARMH7YIEeS787nEkgl9FA" xPosition="467.0" yPosition="468.00012"/>
+    </layout>
+    <layout xmi:id="_UARMILYIEeS787nEkgl9FA" key="_rvI8gLYFEeS787nEkgl9FA">
+      <value xmi:id="_UARMIbYIEeS787nEkgl9FA" xPosition="63.999847" yPosition="464.99994"/>
+    </layout>
+  </ImpactModel>
+</core:COREConcern>

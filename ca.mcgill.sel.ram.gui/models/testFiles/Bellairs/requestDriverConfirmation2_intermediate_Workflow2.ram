@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" name="requestDriverConfirmation">
+  <structuralView>
+    <classes xsi:type="ram:Class" name="showVehicleListOutput" superTypes="//@structuralView/@classes.6">
+      
+    </classes>
+    <classes xsi:type="ram:Class" name="showVehicleList" superTypes="//@structuralView/@classes.7">
+      
+    </classes>
+    <classes xsi:type="ram:Class" name="requestDriverConfirmationInput" superTypes="//@structuralView/@classes.5">
+      
+    </classes>
+    <classes xsi:type="ram:Class" name="showAssignmentOutput" superTypes="//@structuralView/@classes.6">
+      
+    </classes>
+    <classes xsi:type="ram:Class" name="showAssignment" superTypes="//@structuralView/@classes.7">
+      
+    </classes>
+    <classes xsi:type="ram:Class" name="InputData">
+      
+    </classes>
+    <classes xsi:type="ram:Class" name="OutputData">
+      
+    </classes>
+    <classes xsi:type="ram:Class" name="CustomizableNode">
+      
+    </classes>
+    <types xsi:type="ram:RVoid"/>
+    <types xsi:type="ram:RAny"/>
+    <types xsi:type="ram:RBoolean"/>
+    <types xsi:type="ram:RInt"/>
+    <types xsi:type="ram:RChar"/>
+    <types xsi:type="ram:RString"/>
+  </structuralView>
+  <instantiations>
+    <mappings toElement="//@structuralView/@classes.7">
+      <fromElement xsi:type="ram:Class" href="Lib/Workflow.ram#_stle2HdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <externalAspect href="Lib/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

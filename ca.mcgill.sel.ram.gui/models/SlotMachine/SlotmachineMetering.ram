@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_s8qQoMPaEeKG4MQmu4EncA" name="SlotmachineMetering">
+  <structuralView xmi:id="_s8qQocPaEeKG4MQmu4EncA">
+    <classes xsi:type="ram:Class" xmi:id="_s8qQosPaEeKG4MQmu4EncA" name="Reel">
+      <operations  xmi:id="_s8qQo8PaEeKG4MQmu4EncA" name="setOutcome" returnType="_s8qQpsPaEeKG4MQmu4EncA" visibility="public">
+        <parameters xmi:id="_s8qQpMPaEeKG4MQmu4EncA" name="value" type="_s8qQqMPaEeKG4MQmu4EncA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_vuQ1kMPaEeKG4MQmu4EncA" name="Machine">
+      <operations  xmi:id="_wPO_MMPbEeKG4MQmu4EncA" name="setCredits" returnType="_s8qQpcPaEeKG4MQmu4EncA" visibility="public">
+        <parameters xmi:id="_wPO_McPbEeKG4MQmu4EncA" name="newCredits" type="_s8qQqMPaEeKG4MQmu4EncA"/>
+      </operations>
+      <operations  xmi:id="_x14CUMPaEeKG4MQmu4EncA" name="initializeMeters" returnType="_s8qQpcPaEeKG4MQmu4EncA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_S5RjEMPhEeK6GJcfYETlBw" name="RandomReels">
+      <operations  xmi:id="_WvY5AMPhEeK6GJcfYETlBw" name="spinReels" returnType="_s8qQpsPaEeKG4MQmu4EncA" visibility="public"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_s8qQpcPaEeKG4MQmu4EncA"/>
+    <types xsi:type="ram:RAny" xmi:id="_s8qQpsPaEeKG4MQmu4EncA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_s8qQp8PaEeKG4MQmu4EncA"/>
+    <types xsi:type="ram:RInt" xmi:id="_s8qQqMPaEeKG4MQmu4EncA"/>
+    <types xsi:type="ram:RChar" xmi:id="_s8qQqcPaEeKG4MQmu4EncA"/>
+    <types xsi:type="ram:RString" xmi:id="_s8qQqsPaEeKG4MQmu4EncA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_JRkB8cPhEeK6GJcfYETlBw">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_OGnFUMPhEeK6GJcfYETlBw" to="_s8qQosPaEeKG4MQmu4EncA">
+      <operationMappings xmi:id="_OhAiUMPhEeK6GJcfYETlBw" to="_s8qQo8PaEeKG4MQmu4EncA">
+        <from href="Metering.ram#_qBJvjcPfEeKBBdr5oGqsPg"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="Metering.ram#_qBJvjMPfEeKBBdr5oGqsPg"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="Metering.ram#_qBJvgcPfEeKBBdr5oGqsPg"/>
+  </instantiations>
+  <instantiations xmi:id="_SnJRQMPhEeK6GJcfYETlBw">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_VXi8UMPhEeK6GJcfYETlBw" to="_S5RjEMPhEeK6GJcfYETlBw">
+      <operationMappings xmi:id="_VxS5EMPhEeK6GJcfYETlBw" to="_WvY5AMPhEeK6GJcfYETlBw">
+        <from href="InterceptingReturns.ram#_FbC408PgEeKBBdr5oGqsPg"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="InterceptingReturns.ram#_FbC40sPgEeKBBdr5oGqsPg"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="InterceptingReturns.ram#_FbC40MPgEeKBBdr5oGqsPg"/>
+  </instantiations>
+  <instantiations xmi:id="_flH7ocSGEeK0wp_ndZMJvw">
+    <source xsi:type="ram:Aspect" href="Betting.ram#_mCjEUMSBEeKHNqMRHw52-A"/>
+  </instantiations>
+  <instantiations xmi:id="_laNfsMSGEeK0wp_ndZMJvw">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_m2P_4MSGEeK0wp_ndZMJvw" to="_vuQ1kMPaEeKG4MQmu4EncA">
+      <operationMappings xmi:id="_nZiTIMSGEeK0wp_ndZMJvw" to="_wPO_MMPbEeKG4MQmu4EncA">
+        <from href="Metering.ram#_qBJvjcPfEeKBBdr5oGqsPg"/>
+      </operationMappings>
+      <from xsi:type="ram:Class" href="Metering.ram#_qBJvjMPfEeKBBdr5oGqsPg"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="Metering.ram#_qBJvgcPfEeKBBdr5oGqsPg"/>
+  </instantiations>
+  <layout xmi:id="_s8qQr8PaEeKG4MQmu4EncA">
+    <containers xmi:id="_s8qQsMPaEeKG4MQmu4EncA" key="_s8qQocPaEeKG4MQmu4EncA">
+      <value xmi:id="_s8qQscPaEeKG4MQmu4EncA" key="_s8qQosPaEeKG4MQmu4EncA">
+        <value xmi:id="_s8qQssPaEeKG4MQmu4EncA" x="594.9999" y="212.00003"/>
+      </value>
+      <value xmi:id="_vuQ1kcPaEeKG4MQmu4EncA" key="_vuQ1kMPaEeKG4MQmu4EncA">
+        <value xmi:id="_vuQ1ksPaEeKG4MQmu4EncA" x="1016.8932" y="126.18713"/>
+      </value>
+      <value xmi:id="_S5atAMPhEeK6GJcfYETlBw" key="_S5RjEMPhEeK6GJcfYETlBw">
+        <value xmi:id="_S5atAcPhEeK6GJcfYETlBw" x="468.5705" y="477.36963"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

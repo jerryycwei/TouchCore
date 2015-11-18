@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="__eTSsLCwEeGH1pppjuoo8A" name="FSCRouteConfirmation_PoliceRouteParameters_FireRouteParameters">
+  <structuralView xmi:id="__eTSsbCwEeGH1pppjuoo8A">
+    <classes xsi:type="ram:Class" xmi:id="__eTSsrCwEeGH1pppjuoo8A" name="LocalContext"/>
+    <classes xsi:type="ram:Class" xmi:id="__eTSs7CwEeGH1pppjuoo8A" name="ProcessPoliceRouteParameters">
+      <operations  xmi:id="__eTStLCwEeGH1pppjuoo8A" name="execute" returnType="__eTSx7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__eTStbCwEeGH1pppjuoo8A" name="c" type="__eTSsrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__eTStrCwEeGH1pppjuoo8A" name="ProcessFireRouteParameters">
+      <operations  xmi:id="__eTSt7CwEeGH1pppjuoo8A" name="execute" returnType="__eTSx7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__eTSuLCwEeGH1pppjuoo8A" name="c" type="__eTSsrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__eTSubCwEeGH1pppjuoo8A" name="ProcessFSCRouteConfirmation">
+      <operations  xmi:id="__eTSurCwEeGH1pppjuoo8A" name="execute" returnType="__eTSx7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__eTSu7CwEeGH1pppjuoo8A" name="c" type="__eTSsrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__eTSvLCwEeGH1pppjuoo8A" name="FireRouteParametersInput"/>
+    <classes xsi:type="ram:Class" xmi:id="__eTSvbCwEeGH1pppjuoo8A" name="FSCRouteConfirmationInput"/>
+    <classes xsi:type="ram:Class" xmi:id="__eTSvrCwEeGH1pppjuoo8A" name="PoliceRouteParametersInput"/>
+    <classes xsi:type="ram:Class" xmi:id="__eTSv7CwEeGH1pppjuoo8A" name="AskForPoliceRoute">
+      <operations  xmi:id="__eTSwLCwEeGH1pppjuoo8A" name="execute" returnType="__eTSx7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__eTSwbCwEeGH1pppjuoo8A" name="c" type="__eTSsrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__eTSwrCwEeGH1pppjuoo8A" name="AskForPoliceRouteOutput"/>
+    <classes xsi:type="ram:Class" xmi:id="__eTSw7CwEeGH1pppjuoo8A" name="AskForFireRoute">
+      <operations  xmi:id="__eTSxLCwEeGH1pppjuoo8A" name="execute" returnType="__eTSx7CwEeGH1pppjuoo8A" visibility="public">
+        <parameters xmi:id="__eTSxbCwEeGH1pppjuoo8A" name="c" type="__eTSsrCwEeGH1pppjuoo8A"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="__eTSxrCwEeGH1pppjuoo8A" name="AskForFireRouteOutput"/>
+    <types xsi:type="ram:RVoid" xmi:id="__eTSx7CwEeGH1pppjuoo8A" name="void"/>
+  </structuralView>
+  <instantiations xmi:id="__eTSyLCwEeGH1pppjuoo8A" type="Extends">
+    <mappings xmi:id="__eTSybCwEeGH1pppjuoo8A" toElement="__eTSs7CwEeGH1pppjuoo8A __eTStrCwEeGH1pppjuoo8A __eTSubCwEeGH1pppjuoo8A __eTSv7CwEeGH1pppjuoo8A __eTSw7CwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <mappings xmi:id="__eTSyrCwEeGH1pppjuoo8A" toElement="__eTStLCwEeGH1pppjuoo8A __eTSt7CwEeGH1pppjuoo8A __eTSurCwEeGH1pppjuoo8A __eTSwLCwEeGH1pppjuoo8A __eTSxLCwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Operation" href="../../Lib/workflow/Workflow.ram#_Cl0A8IdWEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="__eTSy7CwEeGH1pppjuoo8A" type="Extends">
+    <mappings xmi:id="__eTSzLCwEeGH1pppjuoo8A" toElement="__eTSvLCwEeGH1pppjuoo8A __eTSvbCwEeGH1pppjuoo8A __eTSvrCwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Input.ram#_mhaIQZTNEeGJh_L7_SakMQ"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Input.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="__eTSzbCwEeGH1pppjuoo8A" type="Extends">
+    <mappings xmi:id="__eTSzrCwEeGH1pppjuoo8A" toElement="__eTSwrCwEeGH1pppjuoo8A __eTSxrCwEeGH1pppjuoo8A">
+      <fromElement xsi:type="ram:Class" href="../../Lib/workflow/Output.ram#_stleMHdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <externalAspect href="../../Lib/workflow/Output.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+</ram:Aspect>

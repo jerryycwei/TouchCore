@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generateImports" nsURI="ca::mcgill::sel::ram::generator::java::generateImports" startHeaderPosition="29" endHeaderPosition="153">
+    <input>
+      <takesTypesFrom href="http://cs.mcgill.ca/sel/ram/3.0#/"/>
+    </input>
+    <imports href="../common/commonHelpers.emtl#/0"/>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateImports" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="// "/>
+      <body xsi:type="mtl:ProtectedAreaBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;import java.util.*;&#xA;_#_"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/generateImplementationClassImports">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateImports/c">
+            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;// "/>
+        <marker xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="for imports">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </marker>
+      </body>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="161" endPosition="233" value="&#xA;Generates Java imports for the given class.&#xA;@param c The class&#xA;&#xA;"/>
+        <parametersDocumentation name="c">
+          <body value=" The class"/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="c">
+        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+      </parameter>
+      <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/replaceAll">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="mtl:QueryInvocation">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <definition href="../common/commonHelpers.emtl#/0/removeMarkedNewLines"/>
+          <argument xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/trim">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/5">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </source>
+          </argument>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_#_">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </source>
+        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="_#_">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </argument>
+      </post>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateImplementationClassImports">
+      <body xsi:type="mtl:ForBlock">
+        <body xsi:type="mtl:IfBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="import "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="ic" referredVariable="/0/generateImplementationClassImports/%/ic">
+              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass/instanceClassName"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;"/>
+          <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="mtl:QueryInvocation" definition="/0/isUsedInClass">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <argument xsi:type="ocl.ecore:VariableExp" name="ic" referredVariable="/0/generateImplementationClassImports/%/ic">
+                  <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+                </argument>
+                <argument xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateImplementationClassImports/c">
+                  <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                </argument>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                  <source xsi:type="ocl.ecore:CollectionLiteralExp" eType="/15/Set(String)">
+                    <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL/Annotations">
+                      <details key="IMPLICIT_SET_CONVERSION" value="true"/>
+                    </eAnnotations>
+                    <part xsi:type="ocl.ecore:CollectionItem">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      <item xsi:type="ocl.ecore:PropertyCallExp">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        <source xsi:type="ocl.ecore:VariableExp" name="ic" referredVariable="/0/generateImplementationClassImports/%/ic">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+                        </source>
+                        <referredProperty xsi:type="ecore:EAttribute" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass/instanceClassName"/>
+                      </item>
+                    </part>
+                  </source>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/size"/>
+                </source>
+                <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="0">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/%3E"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/and"/>
+            </source>
+            <argument xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/matches">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="ic" referredVariable="/0/generateImplementationClassImports/%/ic">
+                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass/instanceClassName"/>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="^java\.(util|lang)\..*">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/not"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/and"/>
+          </ifExpr>
+        </body>
+        <loopVariable name="ic">
+          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+        </loopVariable>
+        <iterSet xsi:type="ocl.ecore:OperationCallExp" eType="/15/OrderedSet(ImplementationClass)" referredOperation="/1/oclstdlib_Collection(T)_Class/filter">
+          <source xsi:type="ocl.ecore:PropertyCallExp" eType="/15/OrderedSet(Classifier)">
+            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/ecore_EObject_Class/eContainer">
+              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//StructuralView"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/generateImplementationClassImports/c">
+                <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+              </source>
+              <argument xsi:type="ocl.ecore:TypeExp" eType="/14/StructuralView">
+                <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//StructuralView"/>
+              </argument>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//StructuralView/classes"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp" eType="/14/ImplementationClass">
+            <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+          </argument>
+        </iterSet>
+      </body>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="472" endPosition="546" value="&#xA;Generates imports for implementation classes.&#xA;@param c The class&#xA;&#xA;"/>
+        <parametersDocumentation name="c">
+          <body value=" The class"/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="c">
+        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+      </parameter>
+      <post xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/trim">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/12">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </source>
+      </post>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="isUsedInClass">
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="943" endPosition="1077" value="&#xA;Returns whether an implementation class is used in the given class.&#xA;@param ic The implementation class&#xA;@param c The class&#xA;&#xA;"/>
+        <parametersDocumentation name="ic">
+          <body value=" The implementation class"/>
+        </parametersDocumentation>
+        <parametersDocumentation name="c">
+          <body value=" The class"/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="ic">
+        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+      </parameter>
+      <parameter name="c">
+        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:LetExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <in xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="types" eType="/15/Set(Type)" referredVariable="/0/isUsedInClass/%.1/types"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="ic" referredVariable="/0/isUsedInClass/ic">
+            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/includes"/>
+        </in>
+        <variable xsi:type="ocl.ecore:Variable" name="types" eType="/15/Set(Type)">
+          <initExpression xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+            <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+              <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                  <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                    <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                      <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(ObjectType)">
+                        <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Sequence(ObjectType)">
+                          <source xsi:type="ocl.ecore:PropertyCallExp" eType="/15/OrderedSet(TypeParameter)">
+                            <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier/typeParameters"/>
+                          </source>
+                          <body xsi:type="ocl.ecore:PropertyCallExp">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ObjectType"/>
+                            <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%/collect/temp1">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypeParameter"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//TypeParameter/genericType"/>
+                          </body>
+                          <iterator xsi:type="ocl.ecore:Variable" name="temp1">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypeParameter"/>
+                          </iterator>
+                        </source>
+                        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/asSet"/>
+                      </source>
+                      <argument xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                        <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Sequence(Type)">
+                          <source xsi:type="ocl.ecore:PropertyCallExp" eType="/15/OrderedSet(Operation)">
+                            <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier/operations"/>
+                          </source>
+                          <body xsi:type="ocl.ecore:PropertyCallExp">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+                            <source xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1/collect/temp2">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation/returnType"/>
+                          </body>
+                          <iterator xsi:type="ocl.ecore:Variable" name="temp2">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+                          </iterator>
+                        </source>
+                        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/asSet"/>
+                      </argument>
+                      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/union.1"/>
+                    </source>
+                    <argument xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                      <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Sequence(Type)">
+                        <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Sequence(Parameter)">
+                          <source xsi:type="ocl.ecore:PropertyCallExp" eType="/15/OrderedSet(Operation)">
+                            <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier/operations"/>
+                          </source>
+                          <body xsi:type="ocl.ecore:PropertyCallExp" eType="/15/OrderedSet(Parameter)">
+                            <source xsi:type="ocl.ecore:VariableExp" name="temp3" referredVariable="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/collect/temp3">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation/parameters"/>
+                          </body>
+                          <iterator xsi:type="ocl.ecore:Variable" name="temp3">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+                          </iterator>
+                        </source>
+                        <body xsi:type="ocl.ecore:PropertyCallExp">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+                          <source xsi:type="ocl.ecore:VariableExp" name="temp4" referredVariable="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/temp4">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Parameter"/>
+                          </source>
+                          <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Parameter/type"/>
+                        </body>
+                        <iterator xsi:type="ocl.ecore:Variable" name="temp4">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Parameter"/>
+                        </iterator>
+                      </source>
+                      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/asSet"/>
+                    </argument>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/union.1"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                    <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Sequence(Type)">
+                      <source xsi:type="ocl.ecore:PropertyCallExp" eType="/15/OrderedSet(AssociationEnd)">
+                        <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                        </source>
+                        <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier/associationEnds"/>
+                      </source>
+                      <body xsi:type="ocl.ecore:OperationCallExp">
+                        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+                        <source xsi:type="ocl.ecore:VariableExp" name="temp5" referredVariable="/0/isUsedInClass/%.1/types/%/%/%/%/%.1/collect/temp5">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//AssociationEnd"/>
+                        </source>
+                        <referredOperation xsi:type="ecore:EOperation" href="http://cs.mcgill.ca/sel/ram/3.0#//AssociationEnd/getType"/>
+                      </body>
+                      <iterator xsi:type="ocl.ecore:Variable" name="temp5">
+                        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//AssociationEnd"/>
+                      </iterator>
+                    </source>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/asSet"/>
+                  </argument>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/union.1"/>
+                </source>
+                <argument xsi:type="ocl.ecore:PropertyCallExp" eType="/15/OrderedSet(Classifier)">
+                  <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier/superTypes"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/union.1"/>
+              </source>
+              <argument xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Type)">
+                <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(Type)">
+                  <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(TypedElement)">
+                    <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(TemporaryProperty)">
+                      <source xsi:type="ocl.ecore:IteratorExp" name="select" eType="/15/Bag(Message)">
+                        <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(Message)">
+                          <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(Interaction)">
+                            <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(MessageView)" referredOperation="/1/oclstdlib_Collection(T)_Class/filter">
+                              <source xsi:type="ocl.ecore:PropertyCallExp" eType="/15/Set(AbstractMessageView)">
+                                <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/ecore_EObject_Class/eContainer">
+                                  <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Aspect"/>
+                                  <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                                  </source>
+                                  <argument xsi:type="ocl.ecore:TypeExp" eType="/14/Aspect">
+                                    <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Aspect"/>
+                                  </argument>
+                                </source>
+                                <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Aspect/messageViews"/>
+                              </source>
+                              <argument xsi:type="ocl.ecore:TypeExp" eType="/14/MessageView">
+                                <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+                              </argument>
+                            </source>
+                            <body xsi:type="ocl.ecore:PropertyCallExp">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction"/>
+                              <source xsi:type="ocl.ecore:VariableExp" name="temp6" referredVariable="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/temp6">
+                                <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+                              </source>
+                              <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView/specification"/>
+                            </body>
+                            <iterator xsi:type="ocl.ecore:Variable" name="temp6">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+                            </iterator>
+                          </source>
+                          <body xsi:type="ocl.ecore:PropertyCallExp" eType="/15/Set(Message)">
+                            <source xsi:type="ocl.ecore:VariableExp" name="temp7" referredVariable="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/temp7">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction/messages"/>
+                          </body>
+                          <iterator xsi:type="ocl.ecore:Variable" name="temp7">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction"/>
+                          </iterator>
+                        </source>
+                        <body xsi:type="ocl.ecore:OperationCallExp">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                          <source xsi:type="ocl.ecore:OperationCallExp">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                            <source xsi:type="ocl.ecore:PropertyCallExp">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageEnd"/>
+                              <source xsi:type="ocl.ecore:VariableExp" name="temp8" referredVariable="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/temp8">
+                                <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                              </source>
+                              <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Message/receiveEvent"/>
+                            </source>
+                            <argument xsi:type="ocl.ecore:TypeExp" eType="/14/InteractionFragment">
+                              <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+                            </argument>
+                            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+                          </source>
+                          <argument xsi:type="ocl.ecore:OperationCallExp">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                            <source xsi:type="ocl.ecore:OperationCallExp">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+                              <source xsi:type="ocl.ecore:PropertyCallExp">
+                                <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+                                <source xsi:type="mtl:QueryInvocation">
+                                  <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Lifeline"/>
+                                  <definition href="../common/commonHelpers.emtl#/0/getLifelineForFragment"/>
+                                  <argument xsi:type="ocl.ecore:OperationCallExp">
+                                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+                                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                                      <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageEnd"/>
+                                      <source xsi:type="ocl.ecore:VariableExp" name="temp8" referredVariable="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/temp8">
+                                        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                                      </source>
+                                      <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Message/receiveEvent"/>
+                                    </source>
+                                    <argument xsi:type="ocl.ecore:TypeExp" eType="/14/InteractionFragment">
+                                      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+                                    </argument>
+                                    <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
+                                  </argument>
+                                </source>
+                                <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Lifeline/represents"/>
+                              </source>
+                              <referredOperation xsi:type="ecore:EOperation" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement/getType"/>
+                            </source>
+                            <argument xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                            </argument>
+                            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+                          </argument>
+                          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/and"/>
+                        </body>
+                        <iterator xsi:type="ocl.ecore:Variable" name="temp8">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                        </iterator>
+                      </source>
+                      <body xsi:type="ocl.ecore:PropertyCallExp" eType="/15/Set(TemporaryProperty)">
+                        <source xsi:type="ocl.ecore:VariableExp" name="temp9" referredVariable="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/temp9">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                        </source>
+                        <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Message/localProperties"/>
+                      </body>
+                      <iterator xsi:type="ocl.ecore:Variable" name="temp9">
+                        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                      </iterator>
+                    </source>
+                    <body xsi:type="ocl.ecore:OperationCallExp">
+                      <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+                      <source xsi:type="ocl.ecore:VariableExp" name="temp10" referredVariable="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/temp10">
+                        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TemporaryProperty"/>
+                      </source>
+                      <argument xsi:type="ocl.ecore:TypeExp" eType="/14/TypedElement">
+                        <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+                      </argument>
+                      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
+                    </body>
+                    <iterator xsi:type="ocl.ecore:Variable" name="temp10">
+                      <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TemporaryProperty"/>
+                    </iterator>
+                  </source>
+                  <body xsi:type="ocl.ecore:OperationCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="temp11" referredVariable="/0/isUsedInClass/%.1/types/%/%/%.1/collect/temp11">
+                      <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+                    </source>
+                    <referredOperation xsi:type="ecore:EOperation" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement/getType"/>
+                  </body>
+                  <iterator xsi:type="ocl.ecore:Variable" name="temp11">
+                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+                  </iterator>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Bag(T)_Class/asSet"/>
+              </argument>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/union.1"/>
+            </source>
+            <argument xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(Classifier)">
+              <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(Classifier)">
+                <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(Operation)">
+                  <source xsi:type="ocl.ecore:IteratorExp" name="select" eType="/15/Bag(Message)">
+                    <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(Message)">
+                      <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/15/Bag(Interaction)">
+                        <source xsi:type="ocl.ecore:OperationCallExp" eType="/15/Set(MessageView)" referredOperation="/1/oclstdlib_Collection(T)_Class/filter">
+                          <source xsi:type="ocl.ecore:PropertyCallExp" eType="/15/Set(AbstractMessageView)">
+                            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/ecore_EObject_Class/eContainer">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Aspect"/>
+                              <source xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                                <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                              </source>
+                              <argument xsi:type="ocl.ecore:TypeExp" eType="/14/Aspect">
+                                <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Aspect"/>
+                              </argument>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Aspect/messageViews"/>
+                          </source>
+                          <argument xsi:type="ocl.ecore:TypeExp" eType="/14/MessageView">
+                            <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+                          </argument>
+                        </source>
+                        <body xsi:type="ocl.ecore:PropertyCallExp">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction"/>
+                          <source xsi:type="ocl.ecore:VariableExp" name="temp12" referredVariable="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/temp12">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+                          </source>
+                          <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView/specification"/>
+                        </body>
+                        <iterator xsi:type="ocl.ecore:Variable" name="temp12">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+                        </iterator>
+                      </source>
+                      <body xsi:type="ocl.ecore:PropertyCallExp" eType="/15/Set(Message)">
+                        <source xsi:type="ocl.ecore:VariableExp" name="temp13" referredVariable="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/temp13">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction"/>
+                        </source>
+                        <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction/messages"/>
+                      </body>
+                      <iterator xsi:type="ocl.ecore:Variable" name="temp13">
+                        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction"/>
+                      </iterator>
+                    </source>
+                    <body xsi:type="ocl.ecore:OperationCallExp">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                      <source xsi:type="ocl.ecore:OperationCallExp">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                        <source xsi:type="ocl.ecore:PropertyCallExp">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageEnd"/>
+                          <source xsi:type="ocl.ecore:VariableExp" name="temp14" referredVariable="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/temp14">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                          </source>
+                          <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Message/sendEvent"/>
+                        </source>
+                        <argument xsi:type="ocl.ecore:TypeExp" eType="/14/InteractionFragment">
+                          <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+                        </argument>
+                        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsKindOf"/>
+                      </source>
+                      <argument xsi:type="ocl.ecore:OperationCallExp">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                        <source xsi:type="ocl.ecore:OperationCallExp">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+                          <source xsi:type="ocl.ecore:PropertyCallExp">
+                            <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+                            <source xsi:type="mtl:QueryInvocation">
+                              <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Lifeline"/>
+                              <definition href="../common/commonHelpers.emtl#/0/getLifelineForFragment"/>
+                              <argument xsi:type="ocl.ecore:OperationCallExp">
+                                <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+                                <source xsi:type="ocl.ecore:PropertyCallExp">
+                                  <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageEnd"/>
+                                  <source xsi:type="ocl.ecore:VariableExp" name="temp14" referredVariable="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/temp14">
+                                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                                  </source>
+                                  <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Message/sendEvent"/>
+                                </source>
+                                <argument xsi:type="ocl.ecore:TypeExp" eType="/14/InteractionFragment">
+                                  <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+                                </argument>
+                                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
+                              </argument>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Lifeline/represents"/>
+                          </source>
+                          <referredOperation xsi:type="ecore:EOperation" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement/getType"/>
+                        </source>
+                        <argument xsi:type="ocl.ecore:VariableExp" name="c" referredVariable="/0/isUsedInClass/c">
+                          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+                        </argument>
+                        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/="/>
+                      </argument>
+                      <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/and"/>
+                    </body>
+                    <iterator xsi:type="ocl.ecore:Variable" name="temp14">
+                      <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                    </iterator>
+                  </source>
+                  <body xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="temp15" referredVariable="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/temp15">
+                      <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://cs.mcgill.ca/sel/ram/3.0#//Message/signature"/>
+                  </body>
+                  <iterator xsi:type="ocl.ecore:Variable" name="temp15">
+                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+                  </iterator>
+                </source>
+                <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/ecore_EObject_Class/eContainer">
+                  <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="temp16" referredVariable="/0/isUsedInClass/%.1/types/%/%.1/collect/temp16">
+                    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+                  </source>
+                  <argument xsi:type="ocl.ecore:TypeExp" eType="/14/Classifier">
+                    <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier"/>
+                  </argument>
+                </body>
+                <iterator xsi:type="ocl.ecore:Variable" name="temp16">
+                  <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+                </iterator>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Bag(T)_Class/asSet"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Set(T)_Class/union.1"/>
+          </initExpression>
+        </variable>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="replaceAll">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="substring">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+        <eParameters name="replacement">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="trim">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+      <eOperations name="matches">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="regex">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="eContainer">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/acceleo/mtl/3.0/mtlnonstdlib.ecore#//OclAny"/>
+        <eParameters name="filter">
+          <eType xsi:type="ocl.ecore:TypeType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclType"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateImports">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateImports"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="c">
+          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateImplementationClassImports">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateImplementationClassImports"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="c">
+          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="isUsedInClass">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/isUsedInClass"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="ic">
+          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+        </eParameters>
+        <eParameters name="c">
+          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getLifelineForFragment">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../common/commonHelpers.emtl#/0/getLifelineForFragment"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Lifeline"/>
+        <eParameters name="f">
+          <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="removeMarkedNewLines">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../common/commonHelpers.emtl#/0/removeMarkedNewLines"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="input">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+        <eParameters name="marker">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+      <eOperations name="filter">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:CollectionType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+        <eParameters name="filter">
+          <eType xsi:type="ocl.ecore:TypeType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclType"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_Class_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_ImplementationClass_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_Classifier_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_AssociationEnd_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//AssociationEnd"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_Operation_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_Message_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_InteractionFragment_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ram_Lifeline_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://cs.mcgill.ca/sel/ram/3.0#//Lifeline"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="types">
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="StructuralView">
+      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//StructuralView"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="ImplementationClass">
+      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Aspect">
+      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Aspect"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="MessageView">
+      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="InteractionFragment">
+      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//InteractionFragment"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="TypedElement">
+      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Classifier">
+      <referredType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Classifier)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(ImplementationClass)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(String)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Type)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(TypeParameter)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypeParameter"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(ObjectType)" instanceClassName="java.util.List">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ObjectType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(ObjectType)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ObjectType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Operation)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(Type)" instanceClassName="java.util.List">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(ObjectType)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ObjectType"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Parameter)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Parameter"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(Parameter)" instanceClassName="java.util.List">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Parameter"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Type)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Type"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(AssociationEnd)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//AssociationEnd"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(AbstractMessageView)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//AbstractMessageView"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(MessageView)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//MessageView"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Interaction)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Interaction"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Message)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Message)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Message"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(TemporaryProperty)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TemporaryProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(TemporaryProperty)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TemporaryProperty"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(TypedElement)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//TypedElement"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Operation)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Operation"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:BagType" name="Bag(Classifier)" instanceClassName="org.eclipse.ocl.util.Bag">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Classifier)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Classifier"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://cs.mcgill.ca/sel/ram/3.0#//ImplementationClass"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generateImports">
+      <details key="start" value="236"/>
+      <details key="end" value="466"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateImports/%">
+      <details key="start" value="344"/>
+      <details key="end" value="347"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateImports/%.1">
+      <details key="start" value="347"/>
+      <details key="end" value="454"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateImports/%.1/%">
+      <details key="start" value="374"/>
+      <details key="end" value="398"/>
+      <details key="line" value="13"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateImports/%.1/%.1">
+      <details key="start" value="399"/>
+      <details key="end" value="436"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateImports/%.1/%.1/c">
+      <details key="start" value="434"/>
+      <details key="end" value="435"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateImports/%.1/%.2">
+      <details key="start" value="438"/>
+      <details key="end" value="442"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateImports/%.1/%.3">
+      <details key="start" value="359"/>
+      <details key="end" value="372"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateImports/%.2">
+      <details key="start" value="158"/>
+      <details key="end" value="235"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateImports/%.2/c">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateImports/c">
+      <details key="start" value="269"/>
+      <details key="end" value="278"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateImports/%.3">
+      <details key="start" value="285"/>
+      <details key="end" value="341"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateImports/%.3/%">
+      <details key="start" value="285"/>
+      <details key="end" value="319"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateImports/%.3/%/%">
+      <details key="start" value="285"/>
+      <details key="end" value="291"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateImports/%.3/%/%/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateImports/%.3/%/%.1">
+      <details key="start" value="313"/>
+      <details key="end" value="318"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateImports/%.3/%.1">
+      <details key="start" value="331"/>
+      <details key="end" value="336"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateImports/%.3/%.2">
+      <details key="start" value="338"/>
+      <details key="end" value="340"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateImplementationClassImports">
+      <details key="start" value="549"/>
+      <details key="end" value="937"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateImplementationClassImports/%">
+      <details key="start" value="627"/>
+      <details key="end" value="925"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateImplementationClassImports/%/%">
+      <details key="start" value="732"/>
+      <details key="end" value="918"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateImplementationClassImports/%/%/%">
+      <details key="start" value="877"/>
+      <details key="end" value="884"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateImplementationClassImports/%/%/%.1">
+      <details key="start" value="885"/>
+      <details key="end" value="905"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateImplementationClassImports/%/%/%.1/ic">
+      <details key="start" value="885"/>
+      <details key="end" value="887"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateImplementationClassImports/%/%/%.2">
+      <details key="start" value="907"/>
+      <details key="end" value="909"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateImplementationClassImports/%/%/%.3">
+      <details key="start" value="736"/>
+      <details key="end" value="875"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateImplementationClassImports/%/%/%.3/%">
+      <details key="start" value="737"/>
+      <details key="end" value="801"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateImplementationClassImports/%/%/%.3/%/%">
+      <details key="start" value="737"/>
+      <details key="end" value="756"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateImplementationClassImports/%/%/%.3/%/%/ic">
+      <details key="start" value="737"/>
+      <details key="end" value="739"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateImplementationClassImports/%/%/%.3/%/%/c">
+      <details key="start" value="754"/>
+      <details key="end" value="755"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateImplementationClassImports/%/%/%.3/%/%.1">
+      <details key="start" value="769"/>
+      <details key="end" value="801"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateImplementationClassImports/%/%/%.3/%/%.1/%">
+      <details key="start" value="769"/>
+      <details key="end" value="797"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateImplementationClassImports/%/%/%.3/%/%.1/%/%">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateImplementationClassImports/%/%/%.3/%/%.1/%/%/%/%">
+      <details key="start" value="769"/>
+      <details key="end" value="789"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateImplementationClassImports/%/%/%.3/%/%.1/%/%/%/%/ic">
+      <details key="start" value="769"/>
+      <details key="end" value="771"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateImplementationClassImports/%/%/%.3/%/%.1/%.1">
+      <details key="start" value="800"/>
+      <details key="end" value="801"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateImplementationClassImports/%/%/%.3/%.1">
+      <details key="start" value="814"/>
+      <details key="end" value="874"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateImplementationClassImports/%/%/%.3/%.1/%">
+      <details key="start" value="818"/>
+      <details key="end" value="874"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateImplementationClassImports/%/%/%.3/%.1/%/%">
+      <details key="start" value="818"/>
+      <details key="end" value="838"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateImplementationClassImports/%/%/%.3/%.1/%/%/ic">
+      <details key="start" value="818"/>
+      <details key="end" value="820"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateImplementationClassImports/%/%/%.3/%.1/%/%.1">
+      <details key="start" value="847"/>
+      <details key="end" value="873"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateImplementationClassImports/%/ic">
+      <details key="start" value="633"/>
+      <details key="end" value="657"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateImplementationClassImports/%/%.1">
+      <details key="start" value="660"/>
+      <details key="end" value="725"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateImplementationClassImports/%/%.1/%">
+      <details key="start" value="660"/>
+      <details key="end" value="696"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateImplementationClassImports/%/%.1/%/%">
+      <details key="start" value="660"/>
+      <details key="end" value="688"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateImplementationClassImports/%/%.1/%/%/c">
+      <details key="start" value="660"/>
+      <details key="end" value="661"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateImplementationClassImports/%/%.1/%/%/%">
+      <details key="start" value="673"/>
+      <details key="end" value="687"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateImplementationClassImports/%/%.1/%.1">
+      <details key="start" value="705"/>
+      <details key="end" value="724"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateImplementationClassImports/%.1">
+      <details key="start" value="469"/>
+      <details key="end" value="548"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateImplementationClassImports/%.1/c">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateImplementationClassImports/c">
+      <details key="start" value="602"/>
+      <details key="end" value="611"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateImplementationClassImports/%.2">
+      <details key="start" value="618"/>
+      <details key="end" value="624"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateImplementationClassImports/%.2/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/isUsedInClass">
+      <details key="start" value="1080"/>
+      <details key="end" value="2177"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/isUsedInClass/%">
+      <details key="start" value="940"/>
+      <details key="end" value="1079"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/isUsedInClass/%/ic">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/isUsedInClass/%/c">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/isUsedInClass/ic">
+      <details key="start" value="1109"/>
+      <details key="end" value="1133"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/isUsedInClass/c">
+      <details key="start" value="1135"/>
+      <details key="end" value="1144"/>
+      <details key="line" value="39"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/isUsedInClass/%.1">
+      <details key="start" value="1162"/>
+      <details key="end" value="2174"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/isUsedInClass/%.1/%">
+      <details key="start" value="2155"/>
+      <details key="end" value="2174"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/isUsedInClass/%.1/%/types">
+      <details key="start" value="2155"/>
+      <details key="end" value="2160"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/isUsedInClass/%.1/%/ic">
+      <details key="start" value="2171"/>
+      <details key="end" value="2173"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/isUsedInClass/%.1/types">
+      <details key="start" value="1166"/>
+      <details key="end" value="2147"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/isUsedInClass/%.1/types/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="2147"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/isUsedInClass/%.1/types/%/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="1799"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/isUsedInClass/%.1/types/%/%/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="1428"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/isUsedInClass/%.1/types/%/%/%/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="1396"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/isUsedInClass/%.1/types/%/%/%/%/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="1340"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="1283"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="1231"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%/collect">
+      <details key="start" value="1194"/>
+      <details key="end" value="1222"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%/collect/%">
+      <details key="start" value="1194"/>
+      <details key="end" value="1210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%/collect/%/c">
+      <details key="start" value="1194"/>
+      <details key="end" value="1195"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%/collect/%.1">
+      <details key="start" value="1211"/>
+      <details key="end" value="1222"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%/collect/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1">
+      <details key="start" value="1249"/>
+      <details key="end" value="1281"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1/collect">
+      <details key="start" value="1249"/>
+      <details key="end" value="1272"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1/collect/%">
+      <details key="start" value="1249"/>
+      <details key="end" value="1261"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1/collect/%/c">
+      <details key="start" value="1249"/>
+      <details key="end" value="1250"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1/collect/%.1">
+      <details key="start" value="1262"/>
+      <details key="end" value="1272"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1/collect/%.1/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%/%.1/collect/temp2">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1">
+      <details key="start" value="1301"/>
+      <details key="end" value="1338"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect">
+      <details key="start" value="1301"/>
+      <details key="end" value="1329"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/collect">
+      <details key="start" value="1301"/>
+      <details key="end" value="1324"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/collect/%">
+      <details key="start" value="1301"/>
+      <details key="end" value="1313"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/collect/%/c">
+      <details key="start" value="1301"/>
+      <details key="end" value="1302"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/collect/%.1">
+      <details key="start" value="1314"/>
+      <details key="end" value="1324"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/collect/%.1/temp3">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/collect/temp3">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/%">
+      <details key="start" value="1325"/>
+      <details key="end" value="1329"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/%/temp4">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/isUsedInClass/%.1/types/%/%/%/%/%/%.1/collect/temp4">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/isUsedInClass/%.1/types/%/%/%/%/%.1">
+      <details key="start" value="1358"/>
+      <details key="end" value="1394"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/isUsedInClass/%.1/types/%/%/%/%/%.1/collect">
+      <details key="start" value="1358"/>
+      <details key="end" value="1385"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/isUsedInClass/%.1/types/%/%/%/%/%.1/collect/%">
+      <details key="start" value="1358"/>
+      <details key="end" value="1375"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/isUsedInClass/%.1/types/%/%/%/%/%.1/collect/%/c">
+      <details key="start" value="1358"/>
+      <details key="end" value="1359"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/isUsedInClass/%.1/types/%/%/%/%/%.1/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/isUsedInClass/%.1/types/%/%/%/%/%.1/collect/%.1/temp5">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/isUsedInClass/%.1/types/%/%/%/%/%.1/collect/temp5">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/isUsedInClass/%.1/types/%/%/%/%.1">
+      <details key="start" value="1414"/>
+      <details key="end" value="1426"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/isUsedInClass/%.1/types/%/%/%/%.1/c">
+      <details key="start" value="1414"/>
+      <details key="end" value="1415"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/isUsedInClass/%.1/types/%/%/%.1">
+      <details key="start" value="1446"/>
+      <details key="end" value="1797"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect">
+      <details key="start" value="1446"/>
+      <details key="end" value="1788"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect">
+      <details key="start" value="1446"/>
+      <details key="end" value="1778"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect">
+      <details key="start" value="1446"/>
+      <details key="end" value="1754"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select">
+      <details key="start" value="1446"/>
+      <details key="end" value="1720"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect">
+      <details key="start" value="1446"/>
+      <details key="end" value="1523"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect">
+      <details key="start" value="1446"/>
+      <details key="end" value="1514"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%">
+      <details key="start" value="1446"/>
+      <details key="end" value="1500"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%/%">
+      <details key="start" value="1446"/>
+      <details key="end" value="1479"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%/%/%">
+      <details key="start" value="1446"/>
+      <details key="end" value="1466"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%/%/%/c">
+      <details key="start" value="1446"/>
+      <details key="end" value="1447"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%/%/%/%">
+      <details key="start" value="1459"/>
+      <details key="end" value="1465"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%/%.1">
+      <details key="start" value="1488"/>
+      <details key="end" value="1499"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%.1">
+      <details key="start" value="1501"/>
+      <details key="end" value="1514"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/%.1/temp6">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/collect/temp6">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/%">
+      <details key="start" value="1515"/>
+      <details key="end" value="1523"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.121" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/%/temp7">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.122" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/collect/temp7">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.123" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%">
+      <details key="start" value="1550"/>
+      <details key="end" value="1719"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.124" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%">
+      <details key="start" value="1550"/>
+      <details key="end" value="1595"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.125" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%/%">
+      <details key="start" value="1550"/>
+      <details key="end" value="1562"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.126" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%/%/temp8">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.127" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%/%.1">
+      <details key="start" value="1575"/>
+      <details key="end" value="1594"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.128" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1">
+      <details key="start" value="1626"/>
+      <details key="end" value="1719"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.129" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/%">
+      <details key="start" value="1626"/>
+      <details key="end" value="1715"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.130" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/%/%">
+      <details key="start" value="1626"/>
+      <details key="end" value="1705"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.131" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/%/%/%">
+      <details key="start" value="1626"/>
+      <details key="end" value="1694"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.132" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/%/%/%/%">
+      <details key="start" value="1626"/>
+      <details key="end" value="1669"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.133" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/%/%/%/%/%">
+      <details key="start" value="1626"/>
+      <details key="end" value="1638"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.134" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/%/%/%/%/%/temp8">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.135" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/%/%/%/%/%.1">
+      <details key="start" value="1649"/>
+      <details key="end" value="1668"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.136" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/%/%.1/c">
+      <details key="start" value="1718"/>
+      <details key="end" value="1719"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.137" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/select/temp8">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.138" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/%">
+      <details key="start" value="1739"/>
+      <details key="end" value="1754"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.139" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/%/temp9">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.140" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/collect/temp9">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.141" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/%">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.142" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/%/temp10">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.143" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/%/%">
+      <details key="start" value="1765"/>
+      <details key="end" value="1777"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.144" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/collect/temp10">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.145" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/%">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.146" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/%/temp11">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.147" references="/0/isUsedInClass/%.1/types/%/%/%.1/collect/temp11">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.148" references="/0/isUsedInClass/%.1/types/%/%.1">
+      <details key="start" value="1817"/>
+      <details key="end" value="2145"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.149" references="/0/isUsedInClass/%.1/types/%/%.1/collect">
+      <details key="start" value="1817"/>
+      <details key="end" value="2136"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.150" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect">
+      <details key="start" value="1817"/>
+      <details key="end" value="2113"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.151" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select">
+      <details key="start" value="1817"/>
+      <details key="end" value="2085"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.152" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect">
+      <details key="start" value="1817"/>
+      <details key="end" value="1894"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.153" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect">
+      <details key="start" value="1817"/>
+      <details key="end" value="1885"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.154" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%">
+      <details key="start" value="1817"/>
+      <details key="end" value="1871"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.155" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%/%">
+      <details key="start" value="1817"/>
+      <details key="end" value="1850"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.156" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%/%/%">
+      <details key="start" value="1817"/>
+      <details key="end" value="1837"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.157" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%/%/%/c">
+      <details key="start" value="1817"/>
+      <details key="end" value="1818"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.158" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%/%/%/%">
+      <details key="start" value="1830"/>
+      <details key="end" value="1836"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.159" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%/%.1">
+      <details key="start" value="1859"/>
+      <details key="end" value="1870"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.160" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%.1">
+      <details key="start" value="1872"/>
+      <details key="end" value="1885"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.161" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/%.1/temp12">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.162" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/collect/temp12">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.163" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/%">
+      <details key="start" value="1886"/>
+      <details key="end" value="1894"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.164" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/%/temp13">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.165" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/collect/temp13">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.166" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%">
+      <details key="start" value="1921"/>
+      <details key="end" value="2084"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.167" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%">
+      <details key="start" value="1921"/>
+      <details key="end" value="1963"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.168" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%/%">
+      <details key="start" value="1921"/>
+      <details key="end" value="1930"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.169" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%/%/temp14">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.170" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%/%.1">
+      <details key="start" value="1943"/>
+      <details key="end" value="1962"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.171" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1">
+      <details key="start" value="1994"/>
+      <details key="end" value="2084"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.172" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/%">
+      <details key="start" value="1994"/>
+      <details key="end" value="2080"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.173" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/%/%">
+      <details key="start" value="1994"/>
+      <details key="end" value="2070"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.174" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/%/%/%">
+      <details key="start" value="1994"/>
+      <details key="end" value="2059"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.175" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/%/%/%/%">
+      <details key="start" value="1994"/>
+      <details key="end" value="2034"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.176" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/%/%/%/%/%">
+      <details key="start" value="1994"/>
+      <details key="end" value="2003"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.177" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/%/%/%/%/%/temp14">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.178" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/%/%/%/%/%.1">
+      <details key="start" value="2014"/>
+      <details key="end" value="2033"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.179" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/%/%.1/c">
+      <details key="start" value="2083"/>
+      <details key="end" value="2084"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.180" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/select/temp14">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.181" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/%">
+      <details key="start" value="2104"/>
+      <details key="end" value="2113"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.182" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/%/temp15">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.183" references="/0/isUsedInClass/%.1/types/%/%.1/collect/collect/temp15">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.184" references="/0/isUsedInClass/%.1/types/%/%.1/collect/%">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.185" references="/0/isUsedInClass/%.1/types/%/%.1/collect/%/temp16">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.186" references="/0/isUsedInClass/%.1/types/%/%.1/collect/%/%">
+      <details key="start" value="2125"/>
+      <details key="end" value="2135"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.187" references="/0/isUsedInClass/%.1/types/%/%.1/collect/temp16">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

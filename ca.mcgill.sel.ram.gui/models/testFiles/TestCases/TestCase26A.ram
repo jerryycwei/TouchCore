@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_s4FG4HZREeSDuoozxNBkeQ" name="TestCase26A">
+  <structuralView xmi:id="_s4Ft8HZREeSDuoozxNBkeQ">
+    <classes xsi:type="ram:Class" xmi:id="_s4Ft8XZREeSDuoozxNBkeQ" name="A"/>
+    <classes xsi:type="ram:Class" xmi:id="_s4Ft8nZREeSDuoozxNBkeQ" name="D" superTypes="_s4Ft8XZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_s4Ft83ZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_s4Ft9HZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_s4Ft9XZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_s4Ft9nZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_s4Ft93ZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RString" xmi:id="_s4Ft-HZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_s4Ft-XZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_s4Ft-nZREeSDuoozxNBkeQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_s4Ft-3ZREeSDuoozxNBkeQ"/>
+  </structuralView>
+  <instantiations xmi:id="_s4Ft_HZREeSDuoozxNBkeQ" type="Extends">
+    <mappings xmi:id="_s4Ft_XZREeSDuoozxNBkeQ" toElement="_s4Ft8XZREeSDuoozxNBkeQ">
+      <fromElement xsi:type="ram:Class" href="TestCase26B.ram#_mUSCsnZREeSDuoozxNBkeQ"/>
+    </mappings>
+    <mappings xmi:id="_s4Ft_nZREeSDuoozxNBkeQ" toElement="_s4Ft8nZREeSDuoozxNBkeQ">
+      <fromElement xsi:type="ram:Class" href="TestCase26B.ram#_mUSCs3ZREeSDuoozxNBkeQ"/>
+    </mappings>
+    <externalAspect href="TestCase26B.ram#_mUSCsHZREeSDuoozxNBkeQ"/>
+  </instantiations>
+  <layout xmi:id="_s4Ft_3ZREeSDuoozxNBkeQ">
+    <containers xmi:id="_s4FuAHZREeSDuoozxNBkeQ" key="_s4Ft8HZREeSDuoozxNBkeQ">
+      <value xmi:id="_s4FuAXZREeSDuoozxNBkeQ" key="_s4Ft8XZREeSDuoozxNBkeQ">
+        <value xmi:id="_s4FuAnZREeSDuoozxNBkeQ" x="491.0" y="342.0"/>
+      </value>
+      <value xmi:id="_s4FuA3ZREeSDuoozxNBkeQ" key="_s4Ft8nZREeSDuoozxNBkeQ">
+        <value xmi:id="_s4FuBHZREeSDuoozxNBkeQ" x="771.0" y="555.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

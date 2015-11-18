@@ -1,0 +1,178 @@
+digraph "FireRouteProposal_PoliceRouteProposal"{
+    rankdir=TD;
+    node[
+        shape=box,
+        width=0.1,
+        height=.45,
+        fontsize=12
+    ];
+
+    subgraph "cluster_ProposeRoute"{
+        label="ProposeRoute"
+
+        "ProposeRoute_FireRouteProposal"[
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\Input16.gif"></img></td>
+                    <td align="center" width="0">FireRouteProposal</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_ProcessFireRouteProposal"[
+            style=filled,
+            fillcolor=gray,
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\Resp16.gif"></img></td>
+                    <td align="center" width="0">ProcessFireRouteProposal</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_PoliceRouteProposal"[
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\Input16.gif"></img></td>
+                    <td align="center" width="0">PoliceRouteProposal</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_ProcessPoliceRouteProposal"[
+            style=filled,
+            fillcolor=gray,
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\Resp16.gif"></img></td>
+                    <td align="center" width="0">ProcessPoliceRouteProposal</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_AndJoin115953"[
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\AndJoin16.gif"></img></td>
+                    <td align="center" width="0">AndJoin115953</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_OrFork117115"[
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\OrFork16.gif"></img></td>
+                    <td align="center" width="0">OrFork117115</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_ProposedRouteToFSC"[
+            style=filled,
+            fillcolor=gray,
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\Output16.gif"></img></td>
+                    <td align="center" width="0">ProposedRouteToFSC</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_AlertFSCNotCoordinated"[
+            style=filled,
+            fillcolor=gray,
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\Output16.gif"></img></td>
+                    <td align="center" width="0">AlertFSCNotCoordinated</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_routesNotCoordinated"[
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\End16.gif"></img></td>
+                    <td align="center" width="0">routesNotCoordinated</td>
+                </tr>
+            </table>>
+        ]
+
+        "ProposeRoute_FSCRouteConfirmation"[label="FSCRouteConfirmation_PoliceRouteParameters_FireRouteParameters\nFSCRouteConfirmation",style=dashed]
+        "ProposeRoute_FireRouteProposal"->"ProposeRoute_ProcessFireRouteProposal"
+        "ProposeRoute_ProcessFireRouteProposal"->"ProposeRoute_AndJoin115953"
+        "ProposeRoute_PoliceRouteProposal"->"ProposeRoute_ProcessPoliceRouteProposal"
+        "ProposeRoute_ProcessPoliceRouteProposal"->"ProposeRoute_AndJoin115953"
+        "ProposeRoute_AndJoin115953"->"ProposeRoute_OrFork117115"
+        "ProposeRoute_OrFork117115"->"ProposeRoute_ProposedRouteToFSC"[label=<<table border="0" cellborder="0" cellpadding="0" cellspacing="0" bgcolor="gray"><tr><td>else</td></tr></table>>]
+        "ProposeRoute_OrFork117115"->"ProposeRoute_AlertFSCNotCoordinated"[label=<<table border="0" cellborder="0" cellpadding="0" cellspacing="0" bgcolor="gray"><tr><td>noRouteProposed</td></tr></table>>]
+        "ProposeRoute_ProposedRouteToFSC"->"ProposeRoute_FSCRouteConfirmation"
+        "ProposeRoute_AlertFSCNotCoordinated"->"ProposeRoute_routesNotCoordinated"
+    }
+
+    subgraph "cluster_DevelopRoutePlanComplexStub"{
+        label="DevelopRoutePlanComplexStub"
+
+        "DevelopRoutePlanComplexStub_routesNotCoordinated"[
+
+            label=
+            <<table border="0" cellborder="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\End16.gif"></img></td>
+                    <td align="center" width="0">routesNotCoordinated</td>
+                </tr>
+            </table>>
+        ]
+
+        "DevelopRoutePlanComplexStub_ProposeRoute"[
+            shape=plaintext,
+            label=
+            <<table border="0" cellborder="1" cellpadding="0" cellspacing="0" >
+                <tr><td>
+                    <table border="0" cellborder="1" cellpadding="0" cellspacing="0" >
+                        <tr>
+                            <td port="in1" height="10"></td>
+                        </tr>
+                    </table>
+                </td></tr>
+                <tr><td>
+                    <table border="1" cellborder="0" cellpadding="0" cellspacing="0" >
+                <tr>
+                    <td cellpadding="3"><img src="C:\Users\Stephane\dev\aoUrnToRam\img\Stub24.gif"></img></td>
+                    <td align="center" width="30">ProposeRoute</td>
+                </tr>
+                    </table>
+                </td></tr>
+                <tr><td>
+                    <table border="0" cellborder="1" cellpadding="0" cellspacing="0" >
+                        <tr>
+                            <td port="out1" height="10"></td>
+                            <td port="out2" height="10"></td>
+                        </tr>
+                    </table>
+                </td></tr>
+            </table>>
+        ]
+        "DevelopRoutePlanComplexStub_ProposeRoute":out1->"DevelopRoutePlanComplexStub_routesNotCoordinated"
+    }
+    "ProposeRoute_routesNotCoordinated"->"DevelopRoutePlanComplexStub_ProposeRoute":out1[style=dashed,arrowhead=onormal]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_jKEU0MazEeS2YoBQeVOIhQ" name="TestReuse">
+  <realizes href="TestReuse.core#_gMLnYcazEeS2YoBQeVOIhQ"/>
+  <structuralView xmi:id="_jKEU0cazEeS2YoBQeVOIhQ">
+    <classes xsi:type="ram:Class" xmi:id="_jKEU0sazEeS2YoBQeVOIhQ" name="Adf"/>
+    <types xsi:type="ram:RVoid" xmi:id="_jKEU08azEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_jKEU1MazEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_jKEU1cazEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_jKEU1sazEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_jKEU18azEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RString" xmi:id="_jKEU2MazEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_jKEU2cazEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_jKEU2sazEeS2YoBQeVOIhQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_jKEU28azEeS2YoBQeVOIhQ"/>
+  </structuralView>
+  <layout xmi:id="_jKFi8MazEeS2YoBQeVOIhQ">
+    <containers xmi:id="_jKFi8cazEeS2YoBQeVOIhQ" key="_jKEU0cazEeS2YoBQeVOIhQ">
+      <value xmi:id="_jKFi8sazEeS2YoBQeVOIhQ" key="_jKEU0sazEeS2YoBQeVOIhQ">
+        <value xmi:id="_jKFi88azEeS2YoBQeVOIhQ" x="550.0" y="167.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

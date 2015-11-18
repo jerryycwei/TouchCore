@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_5_GJ_qpmEeSNvp5qWq2xaA" name="Singleton&lt;Singleton>">
+  <structuralView xmi:id="_5_GJ_6pmEeSNvp5qWq2xaA">
+    <classes xsi:type="ram:Class" xmi:id="_5_GKAKpmEeSNvp5qWq2xaA" name="Singleton" comesFrom="_5_GKI6pmEeSNvp5qWq2xaA" partiality="public">
+      <operations  xmi:id="_5_GKAapmEeSNvp5qWq2xaA" name="create" comesFrom="_5_GKI6pmEeSNvp5qWq2xaA" extendedVisibility="private" returnType="_5_GKAKpmEeSNvp5qWq2xaA" operationType="Constructor" visibility="public"/>
+      <operations  xmi:id="_5_GKAqpmEeSNvp5qWq2xaA" name="getInstance" comesFrom="_5_GKI6pmEeSNvp5qWq2xaA" returnType="_5_GKAKpmEeSNvp5qWq2xaA" static="true" visibility="public"/>
+      <associationEnds xmi:id="_5_GKA6pmEeSNvp5qWq2xaA" name="instance" static="true" assoc="_5_GKBapmEeSNvp5qWq2xaA"/>
+      <associationEnds xmi:id="_5_GKBKpmEeSNvp5qWq2xaA" name="self" navigable="false" assoc="_5_GKBapmEeSNvp5qWq2xaA"/>
+    </classes>
+    <associations xmi:id="_5_GKBapmEeSNvp5qWq2xaA" name="instance" ends="_5_GKBKpmEeSNvp5qWq2xaA _5_GKA6pmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_5_GKBqpmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_5_GKB6pmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_5_GKCKpmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_5_GKCapmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_5_GKCqpmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RString" xmi:id="_5_GKC6pmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_5_GKDKpmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_5_GKDapmEeSNvp5qWq2xaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_5_GKDqpmEeSNvp5qWq2xaA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_5_GKD6pmEeSNvp5qWq2xaA" specifies="_5_GKAqpmEeSNvp5qWq2xaA">
+    <specification xmi:id="_5_GKEKpmEeSNvp5qWq2xaA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_5_GKEapmEeSNvp5qWq2xaA" covered="_5_GKGKpmEeSNvp5qWq2xaA" message="_5_GKGqpmEeSNvp5qWq2xaA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_5_GKEqpmEeSNvp5qWq2xaA" covered="_5_GKGKpmEeSNvp5qWq2xaA _5_GKGapmEeSNvp5qWq2xaA" interactionOperator="opt">
+        <operands xmi:id="_5_GKE6pmEeSNvp5qWq2xaA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_5_GKFKpmEeSNvp5qWq2xaA" covered="_5_GKGKpmEeSNvp5qWq2xaA" message="_5_GKG6pmEeSNvp5qWq2xaA"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_5_GKFapmEeSNvp5qWq2xaA" covered="_5_GKGapmEeSNvp5qWq2xaA" message="_5_GKG6pmEeSNvp5qWq2xaA"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_5_GKFqpmEeSNvp5qWq2xaA" body="instance == null" language="Java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_5_GKF6pmEeSNvp5qWq2xaA" covered="_5_GKGKpmEeSNvp5qWq2xaA" message="_5_GKHKpmEeSNvp5qWq2xaA"/>
+      <lifelines xmi:id="_5_GKGKpmEeSNvp5qWq2xaA" represents="_5_GKHqpmEeSNvp5qWq2xaA" coveredBy="_5_GKEapmEeSNvp5qWq2xaA _5_GKEqpmEeSNvp5qWq2xaA _5_GKFKpmEeSNvp5qWq2xaA _5_GKF6pmEeSNvp5qWq2xaA"/>
+      <lifelines xmi:id="_5_GKGapmEeSNvp5qWq2xaA" represents="_5_GKA6pmEeSNvp5qWq2xaA" coveredBy="_5_GKEqpmEeSNvp5qWq2xaA _5_GKFapmEeSNvp5qWq2xaA"/>
+      <messages xmi:id="_5_GKGqpmEeSNvp5qWq2xaA" sendEvent="_5_GKH6pmEeSNvp5qWq2xaA" receiveEvent="_5_GKEapmEeSNvp5qWq2xaA" signature="_5_GKAqpmEeSNvp5qWq2xaA"/>
+      <messages xmi:id="_5_GKG6pmEeSNvp5qWq2xaA" sendEvent="_5_GKFKpmEeSNvp5qWq2xaA" receiveEvent="_5_GKFapmEeSNvp5qWq2xaA" signature="_5_GKAapmEeSNvp5qWq2xaA" assignTo="_5_GKA6pmEeSNvp5qWq2xaA" messageSort="createMessage"/>
+      <messages xmi:id="_5_GKHKpmEeSNvp5qWq2xaA" sendEvent="_5_GKF6pmEeSNvp5qWq2xaA" receiveEvent="_5_GKIKpmEeSNvp5qWq2xaA" signature="_5_GKAqpmEeSNvp5qWq2xaA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_5_GKHapmEeSNvp5qWq2xaA" value="_5_GKA6pmEeSNvp5qWq2xaA"/>
+      </messages>
+      <properties xmi:id="_5_GKHqpmEeSNvp5qWq2xaA" name="singleton" static="true" lowerBound="1" type="_5_GKAKpmEeSNvp5qWq2xaA"/>
+      <formalGates xmi:id="_5_GKH6pmEeSNvp5qWq2xaA" message="_5_GKGqpmEeSNvp5qWq2xaA" name="in_getInstance"/>
+      <formalGates xmi:id="_5_GKIKpmEeSNvp5qWq2xaA" message="_5_GKHKpmEeSNvp5qWq2xaA" name="out_getInstance"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_5_GKIapmEeSNvp5qWq2xaA">
+    <containers xmi:id="_5_GKIqpmEeSNvp5qWq2xaA" key="_5_GJ_6pmEeSNvp5qWq2xaA"/>
+  </layout>
+  <wovenAspects xmi:id="_5_GKI6pmEeSNvp5qWq2xaA" name="Singleton">
+    <comesFrom href="Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </wovenAspects>
+</ram:Aspect>

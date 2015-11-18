@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_6POZAcSBEeK3VoX-lWdC8Q" name="BettingUI">
+  <structuralView xmi:id="_6POZAsSBEeK3VoX-lWdC8Q">
+    <classes xsi:type="ram:Class" xmi:id="_6POZA8SBEeK3VoX-lWdC8Q" name="Machine">
+      <operations  xmi:id="_CXFQ8MSCEeK3VoX-lWdC8Q" name="currentCredits" returnType="_6POZB8SBEeK3VoX-lWdC8Q" visibility="public"/>
+      <associationEnds xmi:id="_sxgvUMSEEeKyiIshv01pKw" name="myCreditView" lowerBound="1" navigable="false" assoc="_sxgvUcSEEeKyiIshv01pKw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_6owTUMSBEeK3VoX-lWdC8Q" name="CreditView">
+      <operations  xmi:id="_GJ-60MSCEeK3VoX-lWdC8Q" name="displayCurrentCredits" returnType="_6POZBMSBEeK3VoX-lWdC8Q" visibility="public"/>
+      <operations  xmi:id="_A4pkEMSCEeK3VoX-lWdC8Q" name="create" returnType="_6owTUMSBEeK3VoX-lWdC8Q" visibility="public">
+        <parameters xmi:id="_A4pkEcSCEeK3VoX-lWdC8Q" name="m" type="_6POZA8SBEeK3VoX-lWdC8Q"/>
+      </operations>
+      <associationEnds xmi:id="_rxHCQcSEEeKyiIshv01pKw" name="myWindow" lowerBound="1" navigable="false" assoc="_rxHCQsSEEeKyiIshv01pKw"/>
+      <associationEnds xmi:id="_sxgIQMSEEeKyiIshv01pKw" name="myMachine" lowerBound="1" assoc="_sxgvUcSEEeKyiIshv01pKw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_7MTsUMSBEeK3VoX-lWdC8Q" name="Window">
+      <associationEnds xmi:id="_rxHCQMSEEeKyiIshv01pKw" name="myCreditView" lowerBound="1" assoc="_rxHCQsSEEeKyiIshv01pKw"/>
+    </classes>
+    <associations xmi:id="_rxHCQsSEEeKyiIshv01pKw" name="Window_CreditView" ends="_rxHCQMSEEeKyiIshv01pKw _rxHCQcSEEeKyiIshv01pKw"/>
+    <associations xmi:id="_sxgvUcSEEeKyiIshv01pKw" name="CreditView_Machine" ends="_sxgIQMSEEeKyiIshv01pKw _sxgvUMSEEeKyiIshv01pKw"/>
+    <types xsi:type="ram:RVoid" xmi:id="_6POZBMSBEeK3VoX-lWdC8Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_6POZBcSBEeK3VoX-lWdC8Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_6POZBsSBEeK3VoX-lWdC8Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_6POZB8SBEeK3VoX-lWdC8Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_6POZCMSBEeK3VoX-lWdC8Q"/>
+    <types xsi:type="ram:RString" xmi:id="_6POZCcSBEeK3VoX-lWdC8Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_6POZCsSBEeK3VoX-lWdC8Q">
+    <source xsi:type="ram:Aspect" href="Betting.ram#_mCjEUMSBEeKHNqMRHw52-A"/>
+  </instantiations>
+  <instantiations xmi:id="_6POZC8SBEeK3VoX-lWdC8Q">
+    <source xsi:type="ram:Aspect" href="GameUI.ram#_cyIo4cSBEeKHNqMRHw52-A"/>
+  </instantiations>
+  <layout xmi:id="_6POZDMSBEeK3VoX-lWdC8Q">
+    <containers xmi:id="_6POZDcSBEeK3VoX-lWdC8Q" key="_6POZAsSBEeK3VoX-lWdC8Q">
+      <value xmi:id="_6POZDsSBEeK3VoX-lWdC8Q" key="_6POZA8SBEeK3VoX-lWdC8Q">
+        <value xmi:id="_6POZD8SBEeK3VoX-lWdC8Q" x="603.0001" y="422.99994"/>
+      </value>
+      <value xmi:id="_6ow6YMSBEeK3VoX-lWdC8Q" key="_6owTUMSBEeK3VoX-lWdC8Q">
+        <value xmi:id="_6ow6YcSBEeK3VoX-lWdC8Q" x="1210.0" y="441.0"/>
+      </value>
+      <value xmi:id="_7MU6cMSBEeK3VoX-lWdC8Q" key="_7MTsUMSBEeK3VoX-lWdC8Q">
+        <value xmi:id="_7MU6ccSBEeK3VoX-lWdC8Q" x="1167.0" y="708.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

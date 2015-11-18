@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_UOaUgHTHEeSClP9URdCAqA" name="TestCase17A">
+  <structuralView xmi:id="_UOaUgXTHEeSClP9URdCAqA">
+    <classes xsi:type="ram:Class" xmi:id="_UOaUgnTHEeSClP9URdCAqA" name="A">
+      <associationEnds xmi:id="_UOaUg3THEeSClP9URdCAqA" name="myD" lowerBound="1" referenceType="Composition" assoc="_UOaUhnTHEeSClP9URdCAqA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_UOaUhHTHEeSClP9URdCAqA" name="D" partiality="public">
+      <associationEnds xmi:id="_UOaUhXTHEeSClP9URdCAqA" name="myA" lowerBound="1" assoc="_UOaUhnTHEeSClP9URdCAqA"/>
+    </classes>
+    <associations xmi:id="_UOaUhnTHEeSClP9URdCAqA" name="A_D" ends="_UOaUg3THEeSClP9URdCAqA _UOaUhXTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_UOaUh3THEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RAny" xmi:id="_UOaUiHTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_UOaUiXTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RInt" xmi:id="_UOaUinTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RChar" xmi:id="_UOaUi3THEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RString" xmi:id="_UOaUjHTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_UOaUjXTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_UOaUjnTHEeSClP9URdCAqA"/>
+    <types xsi:type="ram:RLong" xmi:id="_UOaUj3THEeSClP9URdCAqA"/>
+  </structuralView>
+  <instantiations xmi:id="_UOaUkHTHEeSClP9URdCAqA" type="Extends">
+    <mappings xmi:id="_UOaUkXTHEeSClP9URdCAqA" toElement="_UOaUgnTHEeSClP9URdCAqA">
+      <fromElement xsi:type="ram:Class" href="TestCase17B.ram#_J0bo8nTHEeSClP9URdCAqA"/>
+    </mappings>
+    <mappings xmi:id="_UOaUknTHEeSClP9URdCAqA" toElement="_UOaUhHTHEeSClP9URdCAqA">
+      <fromElement xsi:type="ram:Class" href="TestCase17B.ram#_J0bo8nTHEeSClP9URdCAqA"/>
+    </mappings>
+    <externalAspect href="TestCase17B.ram#_J0bo8HTHEeSClP9URdCAqA"/>
+  </instantiations>
+  <layout xmi:id="_UOaUk3THEeSClP9URdCAqA">
+    <containers xmi:id="_UOaUlHTHEeSClP9URdCAqA" key="_UOaUgXTHEeSClP9URdCAqA">
+      <value xmi:id="_UOaUlXTHEeSClP9URdCAqA" key="_UOaUgnTHEeSClP9URdCAqA">
+        <value xmi:id="_UOaUlnTHEeSClP9URdCAqA" x="438.0" y="314.0"/>
+      </value>
+      <value xmi:id="_UOaUl3THEeSClP9URdCAqA" key="_UOaUhHTHEeSClP9URdCAqA">
+        <value xmi:id="_UOaUmHTHEeSClP9URdCAqA" x="832.0002" y="343.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

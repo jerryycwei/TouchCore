@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ucm:UseCaseMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm="http://cs.mcgill.ca/sel/ucm/1.0" name="UseCaseMap">
+  <connections source="//@nodes.0" target="//@nodes.1"/>
+  <connections source="//@nodes.1" target="//@nodes.2"/>
+  <connections source="//@nodes.2" target="//@nodes.3"/>
+  <nodes xsi:type="ucm:StartPoint" name="startPoint1" successors="//@connections.0"/>
+  <nodes xsi:type="ucm:ResponsibilityRef" name="respRef1" successors="//@connections.1" predecessors="//@connections.0" responsibilityDefinition="//@responsibilities.0"/>
+  <nodes xsi:type="ucm:ResponsibilityRef" name="respRef2" successors="//@connections.2" predecessors="//@connections.1" responsibilityDefinition="//@responsibilities.1"/>
+  <nodes xsi:type="ucm:EndPoint" name="endPoint1" predecessors="//@connections.2"/>
+  <responsibilities name="resp1" responsibilityReferences="//@nodes.1"/>
+  <responsibilities name="resp2" responsibilityReferences="//@nodes.2"/>
+</ucm:UseCaseMap>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_gX4-ENaLEeSpcrzfbE9JKQ" name="Authentication">
+  <modelReuses xmi:id="_uq6-AOLwEeSL-_lRREviTQ" compositions="_uq6-AeLwEeSL-_lRREviTQ"/>
+  <realizes href="bCMS_SPL.core#_w2RG8NaJEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_gX4-EdaLEeSpcrzfbE9JKQ">
+    <types xsi:type="ram:RVoid" xmi:id="_gX4-EtaLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_gX4-E9aLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_gX4-FNaLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_gX4-FdaLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_gX4-FtaLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RString" xmi:id="_gX4-F9aLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_gX4-GNaLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_gX5lINaLEeSpcrzfbE9JKQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_gX5lIdaLEeSpcrzfbE9JKQ"/>
+  </structuralView>
+  <instantiations xmi:id="_gX5lItaLEeSpcrzfbE9JKQ">
+    <source xsi:type="ram:Aspect" href="BCMS.ram#_oUzpENUREeSfLpvXIPYz0g"/>
+  </instantiations>
+  <instantiations xmi:id="_uq6-AeLwEeSL-_lRREviTQ" source="_gX4-ENaLEeSpcrzfbE9JKQ">
+    <source xsi:type="ram:Aspect" href="Reused_Authentication/Woven_Authentication_Authentication.ram#_uqxNAOLwEeSL-_lRREviTQ"/>
+  </instantiations>
+  <layout xmi:id="_gX5lI9aLEeSpcrzfbE9JKQ">
+    <containers xmi:id="_gX5lJNaLEeSpcrzfbE9JKQ" key="_gX4-EdaLEeSpcrzfbE9JKQ"/>
+  </layout>
+</ram:Aspect>

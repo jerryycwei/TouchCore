@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_W633kOUREeSLOfY-6avEMg" name="Association&lt;HashMap,KeyIndexed,Association>">
+  <structuralView xmi:id="_W633keUREeSLOfY-6avEMg">
+    <classes xsi:type="ram:Class" xmi:id="_W633kuUREeSLOfY-6avEMg" name="Data" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg _W634QeUREeSLOfY-6avEMg" partiality="public">
+      <operations  xmi:id="_W633k-UREeSLOfY-6avEMg" name="add" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg" returnType="_W633uuUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633lOUREeSLOfY-6avEMg" name="k" type="_W633s-UREeSLOfY-6avEMg"/>
+        <parameters xmi:id="_W633leUREeSLOfY-6avEMg" name="a" type="_W633uOUREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633luUREeSLOfY-6avEMg" name="remove" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg" returnType="_W633uuUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633l-UREeSLOfY-6avEMg" name="k" type="_W633s-UREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633mOUREeSLOfY-6avEMg" name="contains" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg _W634QeUREeSLOfY-6avEMg" returnType="_W633vOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633meUREeSLOfY-6avEMg" name="a" type="_W633uOUREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633muUREeSLOfY-6avEMg" name="containsKey" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg" returnType="_W633vOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633m-UREeSLOfY-6avEMg" name="k" type="_W633s-UREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633nOUREeSLOfY-6avEMg" name="get" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg" returnType="_W633uOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633neUREeSLOfY-6avEMg" name="k" type="_W633s-UREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633nuUREeSLOfY-6avEMg" name="keySet" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg" returnType="_W633tuUREeSLOfY-6avEMg" visibility="public"/>
+      <operations  xmi:id="_W633n-UREeSLOfY-6avEMg" name="values" comesFrom="_W634P-UREeSLOfY-6avEMg _W634QOUREeSLOfY-6avEMg" returnType="_W633tOUREeSLOfY-6avEMg" visibility="public"/>
+      <associationEnds xmi:id="_W633oOUREeSLOfY-6avEMg" name="hashMap" lowerBound="1" referenceType="Composition" assoc="_W633ueUREeSLOfY-6avEMg"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_W633oeUREeSLOfY-6avEMg" name="HashMap" comesFrom="_W634P-UREeSLOfY-6avEMg" instanceClassName="java.util.HashMap">
+      <operations  xmi:id="_W633ouUREeSLOfY-6avEMg" name="put" comesFrom="_W634P-UREeSLOfY-6avEMg" returnType="_W633uOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633o-UREeSLOfY-6avEMg" name="arg0" type="_W633s-UREeSLOfY-6avEMg"/>
+        <parameters xmi:id="_W633pOUREeSLOfY-6avEMg" name="arg1" type="_W633uOUREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633peUREeSLOfY-6avEMg" name="remove" comesFrom="_W634P-UREeSLOfY-6avEMg" returnType="_W633uOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633puUREeSLOfY-6avEMg" name="arg0" type="_W633suUREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633p-UREeSLOfY-6avEMg" name="containsValue" comesFrom="_W634P-UREeSLOfY-6avEMg" returnType="_W633vOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633qOUREeSLOfY-6avEMg" name="arg0" type="_W633suUREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633qeUREeSLOfY-6avEMg" name="containsKey" comesFrom="_W634P-UREeSLOfY-6avEMg" returnType="_W633vOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633quUREeSLOfY-6avEMg" name="arg0" type="_W633suUREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633q-UREeSLOfY-6avEMg" name="get" comesFrom="_W634P-UREeSLOfY-6avEMg" returnType="_W633uOUREeSLOfY-6avEMg" visibility="public">
+        <parameters xmi:id="_W633rOUREeSLOfY-6avEMg" name="arg0" type="_W633suUREeSLOfY-6avEMg"/>
+      </operations>
+      <operations  xmi:id="_W633reUREeSLOfY-6avEMg" name="keySet" comesFrom="_W634P-UREeSLOfY-6avEMg" returnType="_W633tuUREeSLOfY-6avEMg" visibility="public"/>
+      <operations  xmi:id="_W633ruUREeSLOfY-6avEMg" name="values" comesFrom="_W634P-UREeSLOfY-6avEMg" returnType="_W633tOUREeSLOfY-6avEMg" visibility="public"/>
+      <associationEnds xmi:id="_W633r-UREeSLOfY-6avEMg" name="data" lowerBound="1" navigable="false" assoc="_W633ueUREeSLOfY-6avEMg"/>
+      <typeParameters xmi:id="_W633sOUREeSLOfY-6avEMg" name="K" genericType="_W633s-UREeSLOfY-6avEMg"/>
+      <typeParameters xmi:id="_W633seUREeSLOfY-6avEMg" name="V" genericType="_W633uOUREeSLOfY-6avEMg"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_W633suUREeSLOfY-6avEMg" name="Object" comesFrom="_W634P-UREeSLOfY-6avEMg" instanceClassName="java.lang.Object"/>
+    <classes xsi:type="ram:Class" xmi:id="_W633s-UREeSLOfY-6avEMg" name="Key" comesFrom="_W634QOUREeSLOfY-6avEMg" partiality="public"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_W633tOUREeSLOfY-6avEMg" name="Collection" comesFrom="_W634QOUREeSLOfY-6avEMg" instanceClassName="java.util.Collection" interface="true">
+      <typeParameters xmi:id="_W633teUREeSLOfY-6avEMg" name="E" genericType="_W633uOUREeSLOfY-6avEMg"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_W633tuUREeSLOfY-6avEMg" name="Set" comesFrom="_W634QOUREeSLOfY-6avEMg" instanceClassName="java.util.Set" interface="true">
+      <typeParameters xmi:id="_W633t-UREeSLOfY-6avEMg" name="E" genericType="_W633s-UREeSLOfY-6avEMg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_W633uOUREeSLOfY-6avEMg" name="Value" comesFrom="_W634QOUREeSLOfY-6avEMg _W634QeUREeSLOfY-6avEMg" partiality="public"/>
+    <associations xmi:id="_W633ueUREeSLOfY-6avEMg" name="Data_HashMap" ends="_W633r-UREeSLOfY-6avEMg _W633oOUREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_W633uuUREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RAny" xmi:id="_W633u-UREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_W633vOUREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RInt" xmi:id="_W633veUREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RChar" xmi:id="_W633vuUREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RString" xmi:id="_W633v-UREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_W633wOUREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_W633weUREeSLOfY-6avEMg"/>
+    <types xsi:type="ram:RLong" xmi:id="_W633wuUREeSLOfY-6avEMg"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_W633w-UREeSLOfY-6avEMg" specifies="_W633k-UREeSLOfY-6avEMg">
+    <specification xmi:id="_W633xOUREeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633xeUREeSLOfY-6avEMg" covered="_W633yeUREeSLOfY-6avEMg" message="_W633y-UREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633xuUREeSLOfY-6avEMg" covered="_W633yeUREeSLOfY-6avEMg" message="_W633zuUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633x-UREeSLOfY-6avEMg" covered="_W633yuUREeSLOfY-6avEMg" message="_W633zuUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633yOUREeSLOfY-6avEMg" covered="_W633yeUREeSLOfY-6avEMg" message="_W633zeUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W633yeUREeSLOfY-6avEMg" represents="_W6330-UREeSLOfY-6avEMg" coveredBy="_W633xeUREeSLOfY-6avEMg _W633yOUREeSLOfY-6avEMg _W633xuUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W633yuUREeSLOfY-6avEMg" represents="_W633oOUREeSLOfY-6avEMg" coveredBy="_W633x-UREeSLOfY-6avEMg"/>
+      <messages xmi:id="_W633y-UREeSLOfY-6avEMg" sendEvent="_W6331OUREeSLOfY-6avEMg" receiveEvent="_W633xeUREeSLOfY-6avEMg" signature="_W633k-UREeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_W633zOUREeSLOfY-6avEMg" name="value" lowerBound="1" type="_W633uOUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W633zeUREeSLOfY-6avEMg" sendEvent="_W633yOUREeSLOfY-6avEMg" receiveEvent="_W6331eUREeSLOfY-6avEMg" signature="_W633k-UREeSLOfY-6avEMg" messageSort="reply"/>
+      <messages xmi:id="_W633zuUREeSLOfY-6avEMg" sendEvent="_W633xuUREeSLOfY-6avEMg" receiveEvent="_W633x-UREeSLOfY-6avEMg" signature="_W633ouUREeSLOfY-6avEMg" assignTo="_W633zOUREeSLOfY-6avEMg">
+        <arguments xmi:id="_W633z-UREeSLOfY-6avEMg" parameter="_W633o-UREeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_W6330OUREeSLOfY-6avEMg" parameter="_W633lOUREeSLOfY-6avEMg"/>
+        </arguments>
+        <arguments xmi:id="_W6330eUREeSLOfY-6avEMg" parameter="_W633pOUREeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_W6330uUREeSLOfY-6avEMg" parameter="_W633leUREeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_W6330-UREeSLOfY-6avEMg" name="target" lowerBound="1" type="_W633kuUREeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_W6331OUREeSLOfY-6avEMg" message="_W633y-UREeSLOfY-6avEMg" name="out_add"/>
+      <formalGates xmi:id="_W6331eUREeSLOfY-6avEMg" message="_W633zeUREeSLOfY-6avEMg" name="in_add"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_W6331uUREeSLOfY-6avEMg" specifies="_W633luUREeSLOfY-6avEMg">
+    <specification xmi:id="_W6331-UREeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6332OUREeSLOfY-6avEMg" covered="_W6333OUREeSLOfY-6avEMg" message="_W6333uUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6332eUREeSLOfY-6avEMg" covered="_W6333OUREeSLOfY-6avEMg" message="_W6334eUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6332uUREeSLOfY-6avEMg" covered="_W6333eUREeSLOfY-6avEMg" message="_W6334eUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6332-UREeSLOfY-6avEMg" covered="_W6333OUREeSLOfY-6avEMg" message="_W6334OUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W6333OUREeSLOfY-6avEMg" represents="_W6335OUREeSLOfY-6avEMg" coveredBy="_W6332OUREeSLOfY-6avEMg _W6332-UREeSLOfY-6avEMg _W6332eUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W6333eUREeSLOfY-6avEMg" represents="_W633oOUREeSLOfY-6avEMg" coveredBy="_W6332uUREeSLOfY-6avEMg"/>
+      <messages xmi:id="_W6333uUREeSLOfY-6avEMg" sendEvent="_W6335eUREeSLOfY-6avEMg" receiveEvent="_W6332OUREeSLOfY-6avEMg" signature="_W633luUREeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_W6333-UREeSLOfY-6avEMg" name="value" lowerBound="1" type="_W633uOUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W6334OUREeSLOfY-6avEMg" sendEvent="_W6332-UREeSLOfY-6avEMg" receiveEvent="_W6335uUREeSLOfY-6avEMg" signature="_W633luUREeSLOfY-6avEMg" messageSort="reply"/>
+      <messages xmi:id="_W6334eUREeSLOfY-6avEMg" sendEvent="_W6332eUREeSLOfY-6avEMg" receiveEvent="_W6332uUREeSLOfY-6avEMg" signature="_W633peUREeSLOfY-6avEMg" assignTo="_W6333-UREeSLOfY-6avEMg">
+        <arguments xmi:id="_W6334uUREeSLOfY-6avEMg" parameter="_W633puUREeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_W6334-UREeSLOfY-6avEMg" parameter="_W633l-UREeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_W6335OUREeSLOfY-6avEMg" name="target" lowerBound="1" type="_W633kuUREeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_W6335eUREeSLOfY-6avEMg" message="_W6333uUREeSLOfY-6avEMg" name="out_remove"/>
+      <formalGates xmi:id="_W6335uUREeSLOfY-6avEMg" message="_W6334OUREeSLOfY-6avEMg" name="in_remove"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_W6335-UREeSLOfY-6avEMg" specifies="_W633mOUREeSLOfY-6avEMg">
+    <specification xmi:id="_W6336OUREeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6336eUREeSLOfY-6avEMg" covered="_W6337eUREeSLOfY-6avEMg" message="_W6337-UREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6336uUREeSLOfY-6avEMg" covered="_W6337eUREeSLOfY-6avEMg" message="_W6338-UREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6336-UREeSLOfY-6avEMg" covered="_W6337uUREeSLOfY-6avEMg" message="_W6338-UREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W6337OUREeSLOfY-6avEMg" covered="_W6337eUREeSLOfY-6avEMg" message="_W6338eUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W6337eUREeSLOfY-6avEMg" represents="_W6339uUREeSLOfY-6avEMg" coveredBy="_W6336eUREeSLOfY-6avEMg _W6337OUREeSLOfY-6avEMg _W6336uUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W6337uUREeSLOfY-6avEMg" represents="_W633oOUREeSLOfY-6avEMg" coveredBy="_W6336-UREeSLOfY-6avEMg"/>
+      <messages xmi:id="_W6337-UREeSLOfY-6avEMg" sendEvent="_W6339-UREeSLOfY-6avEMg" receiveEvent="_W6336eUREeSLOfY-6avEMg" signature="_W633mOUREeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_W6338OUREeSLOfY-6avEMg" name="containsValue" type="_W633vOUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W6338eUREeSLOfY-6avEMg" sendEvent="_W6337OUREeSLOfY-6avEMg" receiveEvent="_W633-OUREeSLOfY-6avEMg" signature="_W633mOUREeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_W6338uUREeSLOfY-6avEMg" value="_W6338OUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W6338-UREeSLOfY-6avEMg" sendEvent="_W6336uUREeSLOfY-6avEMg" receiveEvent="_W6336-UREeSLOfY-6avEMg" signature="_W633p-UREeSLOfY-6avEMg" assignTo="_W6338OUREeSLOfY-6avEMg">
+        <arguments xmi:id="_W6339OUREeSLOfY-6avEMg" parameter="_W633qOUREeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_W6339eUREeSLOfY-6avEMg" parameter="_W633meUREeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_W6339uUREeSLOfY-6avEMg" name="target" lowerBound="1" type="_W633kuUREeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_W6339-UREeSLOfY-6avEMg" message="_W6337-UREeSLOfY-6avEMg" name="out_contains"/>
+      <formalGates xmi:id="_W633-OUREeSLOfY-6avEMg" message="_W6338eUREeSLOfY-6avEMg" name="in_contains"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_W633-eUREeSLOfY-6avEMg" specifies="_W633muUREeSLOfY-6avEMg">
+    <specification xmi:id="_W633-uUREeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633--UREeSLOfY-6avEMg" covered="_W633_-UREeSLOfY-6avEMg" message="_W634AeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633_OUREeSLOfY-6avEMg" covered="_W633_-UREeSLOfY-6avEMg" message="_W634BeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633_eUREeSLOfY-6avEMg" covered="_W634AOUREeSLOfY-6avEMg" message="_W634BeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W633_uUREeSLOfY-6avEMg" covered="_W633_-UREeSLOfY-6avEMg" message="_W634A-UREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W633_-UREeSLOfY-6avEMg" represents="_W634COUREeSLOfY-6avEMg" coveredBy="_W633--UREeSLOfY-6avEMg _W633_uUREeSLOfY-6avEMg _W633_OUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W634AOUREeSLOfY-6avEMg" represents="_W633oOUREeSLOfY-6avEMg" coveredBy="_W633_eUREeSLOfY-6avEMg"/>
+      <messages xmi:id="_W634AeUREeSLOfY-6avEMg" sendEvent="_W634CeUREeSLOfY-6avEMg" receiveEvent="_W633--UREeSLOfY-6avEMg" signature="_W633muUREeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_W634AuUREeSLOfY-6avEMg" name="containsKey" type="_W633vOUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634A-UREeSLOfY-6avEMg" sendEvent="_W633_uUREeSLOfY-6avEMg" receiveEvent="_W634CuUREeSLOfY-6avEMg" signature="_W633muUREeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_W634BOUREeSLOfY-6avEMg" value="_W634AuUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634BeUREeSLOfY-6avEMg" sendEvent="_W633_OUREeSLOfY-6avEMg" receiveEvent="_W633_eUREeSLOfY-6avEMg" signature="_W633qeUREeSLOfY-6avEMg" assignTo="_W634AuUREeSLOfY-6avEMg">
+        <arguments xmi:id="_W634BuUREeSLOfY-6avEMg" parameter="_W633quUREeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_W634B-UREeSLOfY-6avEMg" parameter="_W633m-UREeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_W634COUREeSLOfY-6avEMg" name="target" lowerBound="1" type="_W633kuUREeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_W634CeUREeSLOfY-6avEMg" message="_W634AeUREeSLOfY-6avEMg" name="out_containsKey"/>
+      <formalGates xmi:id="_W634CuUREeSLOfY-6avEMg" message="_W634A-UREeSLOfY-6avEMg" name="in_containsKey"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_W634C-UREeSLOfY-6avEMg" specifies="_W633nOUREeSLOfY-6avEMg">
+    <specification xmi:id="_W634DOUREeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634DeUREeSLOfY-6avEMg" covered="_W634EeUREeSLOfY-6avEMg" message="_W634E-UREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634DuUREeSLOfY-6avEMg" covered="_W634EeUREeSLOfY-6avEMg" message="_W634F-UREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634D-UREeSLOfY-6avEMg" covered="_W634EuUREeSLOfY-6avEMg" message="_W634F-UREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634EOUREeSLOfY-6avEMg" covered="_W634EeUREeSLOfY-6avEMg" message="_W634FeUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W634EeUREeSLOfY-6avEMg" represents="_W634GuUREeSLOfY-6avEMg" coveredBy="_W634DeUREeSLOfY-6avEMg _W634EOUREeSLOfY-6avEMg _W634DuUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W634EuUREeSLOfY-6avEMg" represents="_W633oOUREeSLOfY-6avEMg" coveredBy="_W634D-UREeSLOfY-6avEMg"/>
+      <messages xmi:id="_W634E-UREeSLOfY-6avEMg" sendEvent="_W634G-UREeSLOfY-6avEMg" receiveEvent="_W634DeUREeSLOfY-6avEMg" signature="_W633nOUREeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_W634FOUREeSLOfY-6avEMg" name="value" lowerBound="1" type="_W633uOUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634FeUREeSLOfY-6avEMg" sendEvent="_W634EOUREeSLOfY-6avEMg" receiveEvent="_W634HOUREeSLOfY-6avEMg" signature="_W633nOUREeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_W634FuUREeSLOfY-6avEMg" value="_W634FOUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634F-UREeSLOfY-6avEMg" sendEvent="_W634DuUREeSLOfY-6avEMg" receiveEvent="_W634D-UREeSLOfY-6avEMg" signature="_W633q-UREeSLOfY-6avEMg" assignTo="_W634FOUREeSLOfY-6avEMg">
+        <arguments xmi:id="_W634GOUREeSLOfY-6avEMg" parameter="_W633rOUREeSLOfY-6avEMg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_W634GeUREeSLOfY-6avEMg" parameter="_W633neUREeSLOfY-6avEMg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_W634GuUREeSLOfY-6avEMg" name="target" lowerBound="1" type="_W633kuUREeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_W634G-UREeSLOfY-6avEMg" message="_W634E-UREeSLOfY-6avEMg" name="in_get"/>
+      <formalGates xmi:id="_W634HOUREeSLOfY-6avEMg" message="_W634FeUREeSLOfY-6avEMg" name="out_get"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_W634HeUREeSLOfY-6avEMg" specifies="_W633nuUREeSLOfY-6avEMg">
+    <specification xmi:id="_W634HuUREeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634H-UREeSLOfY-6avEMg" covered="_W634I-UREeSLOfY-6avEMg" message="_W634JeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634IOUREeSLOfY-6avEMg" covered="_W634I-UREeSLOfY-6avEMg" message="_W634KeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634IeUREeSLOfY-6avEMg" covered="_W634JOUREeSLOfY-6avEMg" message="_W634KeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634IuUREeSLOfY-6avEMg" covered="_W634I-UREeSLOfY-6avEMg" message="_W634J-UREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W634I-UREeSLOfY-6avEMg" represents="_W634KuUREeSLOfY-6avEMg" coveredBy="_W634H-UREeSLOfY-6avEMg _W634IuUREeSLOfY-6avEMg _W634IOUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W634JOUREeSLOfY-6avEMg" represents="_W633oOUREeSLOfY-6avEMg" coveredBy="_W634IeUREeSLOfY-6avEMg"/>
+      <messages xmi:id="_W634JeUREeSLOfY-6avEMg" sendEvent="_W634K-UREeSLOfY-6avEMg" receiveEvent="_W634H-UREeSLOfY-6avEMg" signature="_W633nuUREeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_W634JuUREeSLOfY-6avEMg" name="keySet" lowerBound="1" type="_W633tuUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634J-UREeSLOfY-6avEMg" sendEvent="_W634IuUREeSLOfY-6avEMg" receiveEvent="_W634LOUREeSLOfY-6avEMg" signature="_W633nuUREeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_W634KOUREeSLOfY-6avEMg" value="_W634JuUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634KeUREeSLOfY-6avEMg" sendEvent="_W634IOUREeSLOfY-6avEMg" receiveEvent="_W634IeUREeSLOfY-6avEMg" signature="_W633reUREeSLOfY-6avEMg" assignTo="_W634JuUREeSLOfY-6avEMg"/>
+      <properties xmi:id="_W634KuUREeSLOfY-6avEMg" name="target" lowerBound="1" type="_W633kuUREeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_W634K-UREeSLOfY-6avEMg" message="_W634JeUREeSLOfY-6avEMg" name="in_keySet"/>
+      <formalGates xmi:id="_W634LOUREeSLOfY-6avEMg" message="_W634J-UREeSLOfY-6avEMg" name="out_keySet"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_W634LeUREeSLOfY-6avEMg" specifies="_W633n-UREeSLOfY-6avEMg">
+    <specification xmi:id="_W634LuUREeSLOfY-6avEMg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634L-UREeSLOfY-6avEMg" covered="_W634M-UREeSLOfY-6avEMg" message="_W634NeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634MOUREeSLOfY-6avEMg" covered="_W634M-UREeSLOfY-6avEMg" message="_W634OeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634MeUREeSLOfY-6avEMg" covered="_W634NOUREeSLOfY-6avEMg" message="_W634OeUREeSLOfY-6avEMg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_W634MuUREeSLOfY-6avEMg" covered="_W634M-UREeSLOfY-6avEMg" message="_W634N-UREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W634M-UREeSLOfY-6avEMg" represents="_W634OuUREeSLOfY-6avEMg" coveredBy="_W634L-UREeSLOfY-6avEMg _W634MuUREeSLOfY-6avEMg _W634MOUREeSLOfY-6avEMg"/>
+      <lifelines xmi:id="_W634NOUREeSLOfY-6avEMg" represents="_W633oOUREeSLOfY-6avEMg" coveredBy="_W634MeUREeSLOfY-6avEMg"/>
+      <messages xmi:id="_W634NeUREeSLOfY-6avEMg" sendEvent="_W634O-UREeSLOfY-6avEMg" receiveEvent="_W634L-UREeSLOfY-6avEMg" signature="_W633n-UREeSLOfY-6avEMg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_W634NuUREeSLOfY-6avEMg" name="values" lowerBound="1" type="_W633tOUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634N-UREeSLOfY-6avEMg" sendEvent="_W634MuUREeSLOfY-6avEMg" receiveEvent="_W634POUREeSLOfY-6avEMg" signature="_W633n-UREeSLOfY-6avEMg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_W634OOUREeSLOfY-6avEMg" value="_W634NuUREeSLOfY-6avEMg"/>
+      </messages>
+      <messages xmi:id="_W634OeUREeSLOfY-6avEMg" sendEvent="_W634MOUREeSLOfY-6avEMg" receiveEvent="_W634MeUREeSLOfY-6avEMg" signature="_W633ruUREeSLOfY-6avEMg" assignTo="_W634NuUREeSLOfY-6avEMg"/>
+      <properties xmi:id="_W634OuUREeSLOfY-6avEMg" name="target" lowerBound="1" type="_W633kuUREeSLOfY-6avEMg"/>
+      <formalGates xmi:id="_W634O-UREeSLOfY-6avEMg" message="_W634NeUREeSLOfY-6avEMg" name="in_values"/>
+      <formalGates xmi:id="_W634POUREeSLOfY-6avEMg" message="_W634N-UREeSLOfY-6avEMg" name="out_values"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_W634PeUREeSLOfY-6avEMg">
+    <containers xmi:id="_W634PuUREeSLOfY-6avEMg" key="_W633keUREeSLOfY-6avEMg"/>
+  </layout>
+  <wovenAspects xmi:id="_W634P-UREeSLOfY-6avEMg" name="HashMap">
+    <comesFrom href="HashMap.ram#_PD6TUNxdEeOWzK3gwh7MSw"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_W634QOUREeSLOfY-6avEMg" name="KeyIndexed">
+    <comesFrom href="KeyIndexed.ram#__rlwYNxaEeOLe_W5cUN4CA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_W634QeUREeSLOfY-6avEMg" name="Association">
+    <comesFrom href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+  </wovenAspects>
+</ram:Aspect>

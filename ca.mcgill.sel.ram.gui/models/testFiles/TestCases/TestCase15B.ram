@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_PByQ4HTCEeS9RoWmm9ud-A" name="TestCase15B">
+  <structuralView xmi:id="_PByQ4XTCEeS9RoWmm9ud-A">
+    <classes xsi:type="ram:Class" xmi:id="_PByQ4nTCEeS9RoWmm9ud-A" name="B" partiality="public">
+      <operations  xmi:id="_PByQ43TCEeS9RoWmm9ud-A" name="count" returnType="_PByQ7nTCEeS9RoWmm9ud-A" visibility="public">
+        <parameters xmi:id="_PByQ5HTCEeS9RoWmm9ud-A" name="param" type="_PByQ7XTCEeS9RoWmm9ud-A"/>
+      </operations>
+      <operations  xmi:id="_PByQ5XTCEeS9RoWmm9ud-A" name="moose" extendedVisibility="package" returnType="_PByQ7XTCEeS9RoWmm9ud-A" visibility="public">
+        <parameters xmi:id="_PByQ5nTCEeS9RoWmm9ud-A" name="param" type="_PByQ7nTCEeS9RoWmm9ud-A"/>
+        <parameters xmi:id="_PByQ53TCEeS9RoWmm9ud-A" name="param2" type="_PByQ7nTCEeS9RoWmm9ud-A"/>
+      </operations>
+      <operations  xmi:id="_PByQ6HTCEeS9RoWmm9ud-A" name="secret" extendedVisibility="private" returnType="_PByQ63TCEeS9RoWmm9ud-A" visibility="public">
+        <parameters xmi:id="_PByQ6XTCEeS9RoWmm9ud-A" name="param" type="_PByQ7nTCEeS9RoWmm9ud-A"/>
+        <parameters xmi:id="_PByQ6nTCEeS9RoWmm9ud-A" name="param2" type="_PByQ7XTCEeS9RoWmm9ud-A"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_PByQ63TCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RAny" xmi:id="_PByQ7HTCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_PByQ7XTCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RInt" xmi:id="_PByQ7nTCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RChar" xmi:id="_PByQ73TCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RString" xmi:id="_PByQ8HTCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RDouble" xmi:id="_PByQ8XTCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RFloat" xmi:id="_PByQ8nTCEeS9RoWmm9ud-A"/>
+    <types xsi:type="ram:RLong" xmi:id="_PByQ83TCEeS9RoWmm9ud-A"/>
+  </structuralView>
+  <layout xmi:id="_PByQ9HTCEeS9RoWmm9ud-A">
+    <containers xmi:id="_PByQ9XTCEeS9RoWmm9ud-A" key="_PByQ4XTCEeS9RoWmm9ud-A">
+      <value xmi:id="_PByQ9nTCEeS9RoWmm9ud-A" key="_PByQ4nTCEeS9RoWmm9ud-A">
+        <value xmi:id="_PByQ93TCEeS9RoWmm9ud-A" x="477.99994" y="284.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_-RNEcN4QEeShWMZBxz4Iew" name="CoordinatorMultiplicity">
+  <realizes href="bCMS_SPL.core#_O2jkYNaCEeSpcrzfbE9JKQ"/>
+  <structuralView xmi:id="_-RNEcd4QEeShWMZBxz4Iew">
+    <classes xsi:type="ram:Class" xmi:id="_-RNEct4QEeShWMZBxz4Iew" name="Coordinator"/>
+    <types xsi:type="ram:RVoid" xmi:id="_-RNEc94QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RAny" xmi:id="_-RNEdN4QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_-RNEdd4QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RInt" xmi:id="_-RNEdt4QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RChar" xmi:id="_-RNEd94QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RString" xmi:id="_-RNEeN4QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RDouble" xmi:id="_-RNEed4QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RFloat" xmi:id="_-RNEet4QEeShWMZBxz4Iew"/>
+    <types xsi:type="ram:RLong" xmi:id="_-RNEe94QEeShWMZBxz4Iew"/>
+  </structuralView>
+  <instantiations xmi:id="__rWuQN4QEeShWMZBxz4Iew">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_AZK2gN4REeShWMZBxz4Iew" to="_-RNEct4QEeShWMZBxz4Iew">
+      <from xsi:type="ram:Class" href="Reused_Named/Woven_Named_Named.ram#_ZDE4AtZcEeS_4sG2PJA2iA"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="Reused_Named/Woven_Named_Named.ram#_ZDE4ANZcEeS_4sG2PJA2iA"/>
+  </instantiations>
+  <layout xmi:id="_-RNEfN4QEeShWMZBxz4Iew">
+    <containers xmi:id="_-RNEfd4QEeShWMZBxz4Iew" key="_-RNEcd4QEeShWMZBxz4Iew">
+      <value xmi:id="_-RNEft4QEeShWMZBxz4Iew" key="_-RNEct4QEeShWMZBxz4Iew">
+        <value xmi:id="_-RNEf94QEeShWMZBxz4Iew" x="703.0" y="179.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

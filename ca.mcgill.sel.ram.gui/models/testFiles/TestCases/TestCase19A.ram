@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_HG5u4HTLEeSqO_uOkQyZ-w" name="TestCase19A">
+  <structuralView xmi:id="_HG5u4XTLEeSqO_uOkQyZ-w">
+    <classes xsi:type="ram:Class" xmi:id="_HG6V8HTLEeSqO_uOkQyZ-w" name="A">
+      <operations  xmi:id="_HG6V8XTLEeSqO_uOkQyZ-w" name="secret" extendedVisibility="package" returnType="_HG6V83TLEeSqO_uOkQyZ-w" visibility="public">
+        <parameters xmi:id="_SbXswHTLEeSqO_uOkQyZ-w" name="Avalid" type="_HG6V9XTLEeSqO_uOkQyZ-w"/>
+        <parameters xmi:id="_UmQ3AHTLEeSqO_uOkQyZ-w" name="Anew" type="_HG6V9XTLEeSqO_uOkQyZ-w"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_HG6V83TLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RAny" xmi:id="_HG6V9HTLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_HG6V9XTLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RInt" xmi:id="_HG6V9nTLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RChar" xmi:id="_HG6V93TLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RString" xmi:id="_HG6V-HTLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RDouble" xmi:id="_HG6V-XTLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RFloat" xmi:id="_HG6V-nTLEeSqO_uOkQyZ-w"/>
+    <types xsi:type="ram:RLong" xmi:id="_HG6V-3TLEeSqO_uOkQyZ-w"/>
+  </structuralView>
+  <instantiations xmi:id="_HG6V_HTLEeSqO_uOkQyZ-w" type="Extends">
+    <mappings xmi:id="_HG6V_XTLEeSqO_uOkQyZ-w" toElement="_HG6V8HTLEeSqO_uOkQyZ-w">
+      <operationMappings xmi:id="_HG6V_nTLEeSqO_uOkQyZ-w" toElement="_HG6V8XTLEeSqO_uOkQyZ-w">
+        <fromElement href="TestCase19B.ram#_6f7AQ3TKEeSqO_uOkQyZ-w"/>
+      </operationMappings>
+      <fromElement xsi:type="ram:Class" href="TestCase19B.ram#_6f7AQnTKEeSqO_uOkQyZ-w"/>
+    </mappings>
+    <externalAspect href="TestCase19B.ram#_6f7AQHTKEeSqO_uOkQyZ-w"/>
+  </instantiations>
+  <layout xmi:id="_HG6V_3TLEeSqO_uOkQyZ-w">
+    <containers xmi:id="_HG6WAHTLEeSqO_uOkQyZ-w" key="_HG5u4XTLEeSqO_uOkQyZ-w">
+      <value xmi:id="_HG6WAXTLEeSqO_uOkQyZ-w" key="_HG6V8HTLEeSqO_uOkQyZ-w">
+        <value xmi:id="_HG6WAnTLEeSqO_uOkQyZ-w" x="601.0" y="348.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

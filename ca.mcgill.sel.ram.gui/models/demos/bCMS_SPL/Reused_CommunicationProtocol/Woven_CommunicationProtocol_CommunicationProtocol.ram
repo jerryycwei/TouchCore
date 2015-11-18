@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_RJPnUNzmEeSgAJE1ei2YzA" name="CommunicationProtocol&lt;CommunicationProtocol>">
+  <structuralView xmi:id="_RJPnUdzmEeSgAJE1ei2YzA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_RJPnUtzmEeSgAJE1ei2YzA" name="ServerSocket" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" instanceClassName="java.net.ServerSocket">
+      <operations  xmi:id="_RJPnU9zmEeSgAJE1ei2YzA" name="ServerSocket" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" returnType="_RJPnUtzmEeSgAJE1ei2YzA" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_RJPnVNzmEeSgAJE1ei2YzA" name="arg0" type="_RJPnZ9zmEeSgAJE1ei2YzA"/>
+      </operations>
+      <operations  xmi:id="_RJPnVdzmEeSgAJE1ei2YzA" name="accept" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" returnType="_RJPnWdzmEeSgAJE1ei2YzA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_RJPnVtzmEeSgAJE1ei2YzA" name="InputStream" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" instanceClassName="java.io.InputStream"/>
+    <classes xsi:type="ram:Class" xmi:id="_RJPnV9zmEeSgAJE1ei2YzA" name="InputStreamImpl" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" superTypes="_RJPnVtzmEeSgAJE1ei2YzA"/>
+    <classes xsi:type="ram:Class" xmi:id="_RJPnWNzmEeSgAJE1ei2YzA" name="Sendable" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" partiality="public" superTypes="_RJPnYdzmEeSgAJE1ei2YzA"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_RJPnWdzmEeSgAJE1ei2YzA" name="Socket" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" instanceClassName="java.net.Socket">
+      <operations  xmi:id="_RJPnWtzmEeSgAJE1ei2YzA" name="Socket" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" returnType="_RJPnWdzmEeSgAJE1ei2YzA" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_RJPnW9zmEeSgAJE1ei2YzA" name="arg0" type="_RJPnadzmEeSgAJE1ei2YzA"/>
+        <parameters xmi:id="_RJPnXNzmEeSgAJE1ei2YzA" name="arg1" type="_RJPnZ9zmEeSgAJE1ei2YzA"/>
+      </operations>
+      <operations  xmi:id="_RJPnXdzmEeSgAJE1ei2YzA" name="close" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" returnType="_RJPnZNzmEeSgAJE1ei2YzA" visibility="public"/>
+      <operations  xmi:id="_RJPnXtzmEeSgAJE1ei2YzA" name="isConnected" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" returnType="_RJPnZtzmEeSgAJE1ei2YzA" visibility="public"/>
+      <operations  xmi:id="_RJPnX9zmEeSgAJE1ei2YzA" name="getOutputStream" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" returnType="_RJPnY9zmEeSgAJE1ei2YzA" visibility="public"/>
+      <operations  xmi:id="_RJPnYNzmEeSgAJE1ei2YzA" name="getInputStream" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" returnType="_RJPnVtzmEeSgAJE1ei2YzA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_RJPnYdzmEeSgAJE1ei2YzA" name="Serializable" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" instanceClassName="java.io.Serializable" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_RJPnYtzmEeSgAJE1ei2YzA" name="SocketAddress" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" instanceClassName="java.net.SocketAddress"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_RJPnY9zmEeSgAJE1ei2YzA" name="OutputStream" comesFrom="_RJPncNzmEeSgAJE1ei2YzA" instanceClassName="java.io.OutputStream"/>
+    <types xsi:type="ram:RVoid" xmi:id="_RJPnZNzmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RAny" xmi:id="_RJPnZdzmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_RJPnZtzmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RInt" xmi:id="_RJPnZ9zmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RChar" xmi:id="_RJPnaNzmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RString" xmi:id="_RJPnadzmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_RJPnatzmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_RJPna9zmEeSgAJE1ei2YzA"/>
+    <types xsi:type="ram:RLong" xmi:id="_RJPnbNzmEeSgAJE1ei2YzA"/>
+  </structuralView>
+  <layout xmi:id="_RJPnbdzmEeSgAJE1ei2YzA">
+    <containers xmi:id="_RJPnbtzmEeSgAJE1ei2YzA" key="_RJPnUdzmEeSgAJE1ei2YzA"/>
+  </layout>
+  <wovenAspects xmi:id="_RJPnb9zmEeSgAJE1ei2YzA" name="CommunicationProtocol">
+    <comesFrom href="CommunicationProtocol.ram#_kValcNzfEeSgAJE1ei2YzA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_RJPncNzmEeSgAJE1ei2YzA" name="Networking&lt;Networking>">
+    <comesFrom href="Reused_Networking/Woven_Networking_Networking.ram#_myYXINzfEeSgAJE1ei2YzA"/>
+  </wovenAspects>
+</ram:Aspect>

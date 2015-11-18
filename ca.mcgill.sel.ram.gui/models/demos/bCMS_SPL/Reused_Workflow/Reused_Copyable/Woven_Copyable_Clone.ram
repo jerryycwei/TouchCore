@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_aQXCIOUQEeSYt-tQzofPJQ" name="Copyable&lt;Clone>">
+  <structuralView xmi:id="_aQXCIeUQEeSYt-tQzofPJQ">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_aQXCIuUQEeSYt-tQzofPJQ" name="Cloneable" comesFrom="_aQXCWOUQEeSYt-tQzofPJQ" instanceClassName="java.lang.Cloneable" interface="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_aQXCI-UQEeSYt-tQzofPJQ" name="Copyable" comesFrom="_aQXCWOUQEeSYt-tQzofPJQ _aQXCWeUQEeSYt-tQzofPJQ" partiality="public" superTypes="_aQXCIuUQEeSYt-tQzofPJQ">
+      <operations  xmi:id="_aQXCJOUQEeSYt-tQzofPJQ" name="create" comesFrom="_aQXCWOUQEeSYt-tQzofPJQ" extendedVisibility="private" returnType="_aQXCI-UQEeSYt-tQzofPJQ" partiality="public" operationType="Constructor" visibility="public"/>
+      <operations  xmi:id="_aQXCJeUQEeSYt-tQzofPJQ" name="clone" comesFrom="_aQXCWOUQEeSYt-tQzofPJQ" returnType="_aQXCI-UQEeSYt-tQzofPJQ" visibility="public"/>
+      <operations  xmi:id="_aQXCJuUQEeSYt-tQzofPJQ" name="replaceStateWith" comesFrom="_aQXCWeUQEeSYt-tQzofPJQ" returnType="_aQXCKOUQEeSYt-tQzofPJQ" partiality="public" visibility="public">
+        <parameters xmi:id="_aQXCJ-UQEeSYt-tQzofPJQ" name="from" type="_aQXCI-UQEeSYt-tQzofPJQ"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_aQXCKOUQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_aQXCKeUQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_aQXCKuUQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_aQXCK-UQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_aQXCLOUQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RString" xmi:id="_aQXCLeUQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_aQXCLuUQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_aQXCL-UQEeSYt-tQzofPJQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_aQXCMOUQEeSYt-tQzofPJQ"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_aQXCMeUQEeSYt-tQzofPJQ" specifies="_aQXCJeUQEeSYt-tQzofPJQ">
+    <specification xmi:id="_aQXCMuUQEeSYt-tQzofPJQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCM-UQEeSYt-tQzofPJQ" covered="_aQXCOeUQEeSYt-tQzofPJQ" message="_aQXCO-UQEeSYt-tQzofPJQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCNOUQEeSYt-tQzofPJQ" covered="_aQXCOeUQEeSYt-tQzofPJQ" message="_aQXCP-UQEeSYt-tQzofPJQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCNeUQEeSYt-tQzofPJQ" covered="_aQXCOuUQEeSYt-tQzofPJQ" message="_aQXCP-UQEeSYt-tQzofPJQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCNuUQEeSYt-tQzofPJQ" covered="_aQXCOeUQEeSYt-tQzofPJQ" message="_aQXCQOUQEeSYt-tQzofPJQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCN-UQEeSYt-tQzofPJQ" covered="_aQXCOuUQEeSYt-tQzofPJQ" message="_aQXCQOUQEeSYt-tQzofPJQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCOOUQEeSYt-tQzofPJQ" covered="_aQXCOeUQEeSYt-tQzofPJQ" message="_aQXCPeUQEeSYt-tQzofPJQ"/>
+      <lifelines xmi:id="_aQXCOeUQEeSYt-tQzofPJQ" represents="_aQXCQ-UQEeSYt-tQzofPJQ" coveredBy="_aQXCM-UQEeSYt-tQzofPJQ _aQXCOOUQEeSYt-tQzofPJQ _aQXCNOUQEeSYt-tQzofPJQ _aQXCNuUQEeSYt-tQzofPJQ"/>
+      <lifelines xmi:id="_aQXCOuUQEeSYt-tQzofPJQ" represents="_aQXCPOUQEeSYt-tQzofPJQ" coveredBy="_aQXCNeUQEeSYt-tQzofPJQ _aQXCN-UQEeSYt-tQzofPJQ"/>
+      <messages xmi:id="_aQXCO-UQEeSYt-tQzofPJQ" sendEvent="_aQXCROUQEeSYt-tQzofPJQ" receiveEvent="_aQXCM-UQEeSYt-tQzofPJQ" signature="_aQXCJeUQEeSYt-tQzofPJQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_aQXCPOUQEeSYt-tQzofPJQ" name="newCopy" lowerBound="1" type="_aQXCI-UQEeSYt-tQzofPJQ"/>
+      </messages>
+      <messages xmi:id="_aQXCPeUQEeSYt-tQzofPJQ" sendEvent="_aQXCOOUQEeSYt-tQzofPJQ" receiveEvent="_aQXCReUQEeSYt-tQzofPJQ" signature="_aQXCJeUQEeSYt-tQzofPJQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_aQXCPuUQEeSYt-tQzofPJQ" value="_aQXCPOUQEeSYt-tQzofPJQ"/>
+      </messages>
+      <messages xmi:id="_aQXCP-UQEeSYt-tQzofPJQ" sendEvent="_aQXCNOUQEeSYt-tQzofPJQ" receiveEvent="_aQXCNeUQEeSYt-tQzofPJQ" signature="_aQXCJOUQEeSYt-tQzofPJQ" assignTo="_aQXCPOUQEeSYt-tQzofPJQ" messageSort="createMessage"/>
+      <messages xmi:id="_aQXCQOUQEeSYt-tQzofPJQ" sendEvent="_aQXCNuUQEeSYt-tQzofPJQ" receiveEvent="_aQXCN-UQEeSYt-tQzofPJQ" signature="_aQXCJuUQEeSYt-tQzofPJQ">
+        <arguments xmi:id="_aQXCQeUQEeSYt-tQzofPJQ" parameter="_aQXCJ-UQEeSYt-tQzofPJQ">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_aQXCQuUQEeSYt-tQzofPJQ" value="_aQXCQ-UQEeSYt-tQzofPJQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_aQXCQ-UQEeSYt-tQzofPJQ" name="target" lowerBound="1" type="_aQXCI-UQEeSYt-tQzofPJQ"/>
+      <formalGates xmi:id="_aQXCROUQEeSYt-tQzofPJQ" message="_aQXCO-UQEeSYt-tQzofPJQ" name="in_copy"/>
+      <formalGates xmi:id="_aQXCReUQEeSYt-tQzofPJQ" message="_aQXCPeUQEeSYt-tQzofPJQ" name="out_copy"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_aQXCRuUQEeSYt-tQzofPJQ" specifies="_aQXCJuUQEeSYt-tQzofPJQ">
+    <specification xmi:id="_aQXCR-UQEeSYt-tQzofPJQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCSOUQEeSYt-tQzofPJQ" covered="_aQXCSuUQEeSYt-tQzofPJQ" message="_aQXCS-UQEeSYt-tQzofPJQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_aQXCSeUQEeSYt-tQzofPJQ" covered="_aQXCSuUQEeSYt-tQzofPJQ" message="_aQXCTOUQEeSYt-tQzofPJQ"/>
+      <lifelines xmi:id="_aQXCSuUQEeSYt-tQzofPJQ" represents="_aQXCTeUQEeSYt-tQzofPJQ" coveredBy="_aQXCSOUQEeSYt-tQzofPJQ _aQXCSeUQEeSYt-tQzofPJQ"/>
+      <messages xmi:id="_aQXCS-UQEeSYt-tQzofPJQ" sendEvent="_aQXCTuUQEeSYt-tQzofPJQ" receiveEvent="_aQXCSOUQEeSYt-tQzofPJQ" signature="_aQXCJuUQEeSYt-tQzofPJQ"/>
+      <messages xmi:id="_aQXCTOUQEeSYt-tQzofPJQ" sendEvent="_aQXCSeUQEeSYt-tQzofPJQ" receiveEvent="_aQXCT-UQEeSYt-tQzofPJQ" signature="_aQXCJuUQEeSYt-tQzofPJQ" messageSort="reply"/>
+      <properties xmi:id="_aQXCTeUQEeSYt-tQzofPJQ" name="target" lowerBound="1" type="_aQXCI-UQEeSYt-tQzofPJQ"/>
+      <formalGates xmi:id="_aQXCTuUQEeSYt-tQzofPJQ" message="_aQXCS-UQEeSYt-tQzofPJQ" name="in_replaceStateWith"/>
+      <formalGates xmi:id="_aQXCT-UQEeSYt-tQzofPJQ" message="_aQXCTOUQEeSYt-tQzofPJQ" name="out_replaceStateWith"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_aQXCUOUQEeSYt-tQzofPJQ">
+    <containers xmi:id="_aQXCUeUQEeSYt-tQzofPJQ" key="_aQXCIeUQEeSYt-tQzofPJQ"/>
+  </layout>
+  <stateViews xmi:id="_aQXCUuUQEeSYt-tQzofPJQ" name="Copyable" specifies="_aQXCI-UQEeSYt-tQzofPJQ">
+    <stateMachines xmi:id="_aQXCU-UQEeSYt-tQzofPJQ" start="_aQXCVOUQEeSYt-tQzofPJQ">
+      <states xmi:id="_aQXCVOUQEeSYt-tQzofPJQ" name="Created" incomings="_aQXCVuUQEeSYt-tQzofPJQ _aQXCV-UQEeSYt-tQzofPJQ" outgoings="_aQXCV-UQEeSYt-tQzofPJQ"/>
+      <states xmi:id="_aQXCVeUQEeSYt-tQzofPJQ" name="Uninitialized" outgoings="_aQXCVuUQEeSYt-tQzofPJQ"/>
+      <transitions xmi:id="_aQXCVuUQEeSYt-tQzofPJQ" name="create" endState="_aQXCVOUQEeSYt-tQzofPJQ" startState="_aQXCVeUQEeSYt-tQzofPJQ" signature="_aQXCJOUQEeSYt-tQzofPJQ"/>
+      <transitions xmi:id="_aQXCV-UQEeSYt-tQzofPJQ" name="clone" endState="_aQXCVOUQEeSYt-tQzofPJQ" startState="_aQXCVOUQEeSYt-tQzofPJQ" signature="_aQXCJeUQEeSYt-tQzofPJQ"/>
+    </stateMachines>
+  </stateViews>
+  <wovenAspects xmi:id="_aQXCWOUQEeSYt-tQzofPJQ" name="Clone">
+    <comesFrom href="Clone.ram#_F6DtkGQ-EeSHMdf5DpN6fg"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_aQXCWeUQEeSYt-tQzofPJQ" name="ReplaceState">
+    <comesFrom href="ReplaceState.ram#_-kW-4EQeEeSPKotjlAbjzg"/>
+  </wovenAspects>
+</ram:Aspect>

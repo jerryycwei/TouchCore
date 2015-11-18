@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_aMAKoHslEeSfoP1hOKWpPg" name="TestCoverageB">
+  <structuralView xmi:id="_aMAKoXslEeSfoP1hOKWpPg">
+    <classes xsi:type="ram:Class" xmi:id="_aMAKonslEeSfoP1hOKWpPg" name="B">
+      <operations  xmi:id="_aMAKo3slEeSfoP1hOKWpPg" name="citrus" returnType="_aMAKs3slEeSfoP1hOKWpPg" visibility="public"/>
+      <associationEnds xmi:id="_aMAKpHslEeSfoP1hOKWpPg" name="myD" lowerBound="1" assoc="_aMAKsnslEeSfoP1hOKWpPg"/>
+      <attributes xmi:id="_aMAKpXslEeSfoP1hOKWpPg" name="fruitCount" type="_aMAKtnslEeSfoP1hOKWpPg"/>
+      <attributes xmi:id="_aMAKpnslEeSfoP1hOKWpPg" name="type" type="_aMAKuHslEeSfoP1hOKWpPg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_aMAKp3slEeSfoP1hOKWpPg" name="D">
+      <operations  xmi:id="_aMAKqHslEeSfoP1hOKWpPg" name="beet" returnType="_aMAKs3slEeSfoP1hOKWpPg" visibility="public">
+        <parameters xmi:id="_aMAKqXslEeSfoP1hOKWpPg" name="count" type="_aMAKtnslEeSfoP1hOKWpPg"/>
+      </operations>
+      <associationEnds xmi:id="_aMAKqnslEeSfoP1hOKWpPg" name="myB" lowerBound="1" assoc="_aMAKsnslEeSfoP1hOKWpPg"/>
+      <attributes xmi:id="_aMAKq3slEeSfoP1hOKWpPg" name="isFresh" type="_aMAKtXslEeSfoP1hOKWpPg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_aMAKrHslEeSfoP1hOKWpPg" name="F">
+      <operations  xmi:id="_aMAKrXslEeSfoP1hOKWpPg" name="orange" returnType="_aMAKonslEeSfoP1hOKWpPg" visibility="public"/>
+      <operations  xmi:id="_aMAKrnslEeSfoP1hOKWpPg" name="pear" returnType="_aMAKvXslEeSfoP1hOKWpPg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_aMAKr3slEeSfoP1hOKWpPg" name="G" superTypes="_aMAKrHslEeSfoP1hOKWpPg">
+      <operations  xmi:id="_aMAKsHslEeSfoP1hOKWpPg" name="grape" extendedVisibility="private" returnType="_aMAKtXslEeSfoP1hOKWpPg" visibility="public"/>
+      <operations  xmi:id="_aMAKsXslEeSfoP1hOKWpPg" name="kiwi" extendedVisibility="package" returnType="_aMAKvHslEeSfoP1hOKWpPg" visibility="public"/>
+    </classes>
+    <associations xmi:id="_aMAKsnslEeSfoP1hOKWpPg" name="B_D" ends="_aMAKpHslEeSfoP1hOKWpPg _aMAKqnslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_aMAKs3slEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RAny" xmi:id="_aMAKtHslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_aMAKtXslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RInt" xmi:id="_aMAKtnslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RChar" xmi:id="_aMAKt3slEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RString" xmi:id="_aMAKuHslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_aMAKuXslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_aMAKunslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RLong" xmi:id="_aMAKu3slEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RSet" xmi:id="_aMAKvHslEeSfoP1hOKWpPg" type="_aMAKonslEeSfoP1hOKWpPg"/>
+    <types xsi:type="ram:RSet" xmi:id="_aMAKvXslEeSfoP1hOKWpPg" type="_aMAKtnslEeSfoP1hOKWpPg"/>
+  </structuralView>
+  <instantiations xmi:id="_OvCioHsmEeScXMllMu3aKQ" type="Extends">
+    <mappings xmi:id="_PXBIoHsmEeScXMllMu3aKQ" toElement="_aMAKonslEeSfoP1hOKWpPg">
+      <fromElement xsi:type="ram:Class" href="TestCoverageC.ram#_Mvg64nsmEeScXMllMu3aKQ"/>
+    </mappings>
+    <externalAspect href="TestCoverageC.ram#_Mvg64HsmEeScXMllMu3aKQ"/>
+  </instantiations>
+  <layout xmi:id="_aMAKvnslEeSfoP1hOKWpPg">
+    <containers xmi:id="_aMAKv3slEeSfoP1hOKWpPg" key="_aMAKoXslEeSfoP1hOKWpPg">
+      <value xmi:id="_aMAKwHslEeSfoP1hOKWpPg" key="_aMAKonslEeSfoP1hOKWpPg">
+        <value xmi:id="_aMAKwXslEeSfoP1hOKWpPg" x="396.0" y="321.99994"/>
+      </value>
+      <value xmi:id="_aMAxsHslEeSfoP1hOKWpPg" key="_aMAKp3slEeSfoP1hOKWpPg">
+        <value xmi:id="_aMAxsXslEeSfoP1hOKWpPg" x="908.0" y="319.0"/>
+      </value>
+      <value xmi:id="_aMAxsnslEeSfoP1hOKWpPg" key="_aMAKrHslEeSfoP1hOKWpPg">
+        <value xmi:id="_aMAxs3slEeSfoP1hOKWpPg" x="810.00037" y="511.99994"/>
+      </value>
+      <value xmi:id="_aMAxtHslEeSfoP1hOKWpPg" key="_aMAKr3slEeSfoP1hOKWpPg">
+        <value xmi:id="_aMAxtXslEeSfoP1hOKWpPg" x="809.99976" y="688.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

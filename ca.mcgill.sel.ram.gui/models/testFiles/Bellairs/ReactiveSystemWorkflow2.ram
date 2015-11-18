@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_stleYXdvEeGm3uH8rYfPgw" name="ReactiveSystemWorkflow">
+  <structuralView xmi:id="_stleAHdvEeGm3uH8rYfPgw">
+    <classes xsi:type="ram:Class" xmi:id="_stleMHdvEeGm3uH8rYfPgw" name="InputData" partiality="public">
+      
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_stleMHdvEeGm3uH8rYfPgx" name="OutputData" partiality="public">
+      
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_8bzdAYP4EeGC59-frah1Cw"/>
+    <types xsi:type="ram:RAny" xmi:id="_8b0EEIP4EeGC59-frah1Cw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_8b0rIIP4EeGC59-frah1Cw"/>
+    <types xsi:type="ram:RInt" xmi:id="_8b1SMIP4EeGC59-frah1Cw"/>
+    <types xsi:type="ram:RChar" xmi:id="_8b1SMYP4EeGC59-frah1Cw"/>
+    <types xsi:type="ram:RString" xmi:id="_8b15QIP4EeGC59-frah1Cw"/>
+  </structuralView>
+</ram:Aspect>

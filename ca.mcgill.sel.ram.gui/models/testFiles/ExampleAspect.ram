@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_SCyUgH6_EeGQpZ3OZ2jOpg" name="ExampleAspect">
+  <structuralView xmi:id="_SC5CMH6_EeGQpZ3OZ2jOpg">
+    <classes xsi:type="ram:Class" xmi:id="_SDVHEH6_EeGQpZ3OZ2jOpg" name="Observer" partiality="public" superTypes="_SDbNsn6_EeGQpZ3OZ2jOpg">
+      <associationEnds xmi:id="_SDWVMH6_EeGQpZ3OZ2jOpg" name="a_b" assoc="_SDdC4H6_EeGQpZ3OZ2jOpg" upperBound="-1" referenceType="Composition"/>
+      <associationEnds xmi:id="_SDWVMX6_EeGQpZ3OZ2jOpg" name="a_c" assoc="_SDdC4X6_EeGQpZ3OZ2jOpg"/>
+      <associationEnds xmi:id="_SDWVMn6_EeGQpZ3OZ2jOpg" name="a_e" assoc="_SDdC436_EeGQpZ3OZ2jOpg"/>
+      <operations  xmi:id="_SDZ_kH6_EeGQpZ3OZ2jOpg" name="doSomething" returnType="_SDZ_kX6_EeGQpZ3OZ2jOpg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_SDZ_kX6_EeGQpZ3OZ2jOpg" name="SomeClass">
+      <associationEnds xmi:id="_SDZ_kn6_EeGQpZ3OZ2jOpg" name="b_a" navigable="false" assoc="_SDdC4H6_EeGQpZ3OZ2jOpg"/>
+      <associationEnds xmi:id="_SDZ_k36_EeGQpZ3OZ2jOpg" name="b_d" assoc="_SDdC4n6_EeGQpZ3OZ2jOpg"/>
+      <operations  xmi:id="_SDamoH6_EeGQpZ3OZ2jOpg" name="oper" returnType="_SDamoX6_EeGQpZ3OZ2jOpg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_SDamoX6_EeGQpZ3OZ2jOpg" name="Observable" partiality="public">
+      <associationEnds xmi:id="_SDamon6_EeGQpZ3OZ2jOpg" name="c_a" navigable="false" assoc="_SDdC4X6_EeGQpZ3OZ2jOpg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_SDamo36_EeGQpZ3OZ2jOpg" name="SomeOtherClass">
+      <associationEnds xmi:id="_SDampH6_EeGQpZ3OZ2jOpg" name="d_b" assoc="_SDdC4n6_EeGQpZ3OZ2jOpg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_SDampX6_EeGQpZ3OZ2jOpg" name="TestClass">
+      <associationEnds xmi:id="_SDampn6_EeGQpZ3OZ2jOpg" name="e_a" navigable="false" assoc="_SDdC436_EeGQpZ3OZ2jOpg"/>
+      <associationEnds xmi:id="_SDbNsH6_EeGQpZ3OZ2jOpg" name="self1" assoc="_SDdC5H6_EeGQpZ3OZ2jOpg" lowerBound="1"/>
+      <associationEnds xmi:id="_SDbNsX6_EeGQpZ3OZ2jOpg" name="self2" assoc="_SDdC5H6_EeGQpZ3OZ2jOpg" lowerBound="1"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_SDbNsn6_EeGQpZ3OZ2jOpg" name="NamedElement"/>
+    <associations xmi:id="_SDdC4H6_EeGQpZ3OZ2jOpg" name="test1" ends="_SDWVMH6_EeGQpZ3OZ2jOpg _SDZ_kn6_EeGQpZ3OZ2jOpg"/>
+    <associations xmi:id="_SDdC4X6_EeGQpZ3OZ2jOpg" name="test2" ends="_SDWVMX6_EeGQpZ3OZ2jOpg _SDamon6_EeGQpZ3OZ2jOpg"/>
+    <associations xmi:id="_SDdC4n6_EeGQpZ3OZ2jOpg" name="test3" ends="_SDampH6_EeGQpZ3OZ2jOpg _SDZ_k36_EeGQpZ3OZ2jOpg"/>
+    <associations xmi:id="_SDdC436_EeGQpZ3OZ2jOpg" name="test4" ends="_SDWVMn6_EeGQpZ3OZ2jOpg _SDampn6_EeGQpZ3OZ2jOpg"/>
+    <associations xmi:id="_SDdC5H6_EeGQpZ3OZ2jOpg" name="selfReferenceTest" ends="_SDbNsH6_EeGQpZ3OZ2jOpg _SDbNsX6_EeGQpZ3OZ2jOpg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_Nm_0sYRcEeGmV8ocBZNKBA"/>
+    <types xsi:type="ram:RAny" xmi:id="_Nm_0soRcEeGmV8ocBZNKBA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Nm_0s4RcEeGmV8ocBZNKBA"/>
+    <types xsi:type="ram:RInt" xmi:id="_NnF7UIRcEeGmV8ocBZNKBA"/>
+    <types xsi:type="ram:RChar" xmi:id="_NnF7UYRcEeGmV8ocBZNKBA"/>
+    <types xsi:type="ram:RString" xmi:id="_NnF7UoRcEeGmV8ocBZNKBA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <layout xmi:id="_fNiYIYRdEeGjdZFHzJ_3uw">
+    <containers xmi:id="_fNiYIoRdEeGjdZFHzJ_3uw" key="_SC5CMH6_EeGQpZ3OZ2jOpg">
+      <value xmi:id="_fNiYI4RdEeGjdZFHzJ_3uw" key="_SDZ_kX6_EeGQpZ3OZ2jOpg">
+        <value xmi:id="_fNiYJIRdEeGjdZFHzJ_3uw" x="636.7286" y="559.50653"/>
+      </value>
+      <value xmi:id="_fNiYJYRdEeGjdZFHzJ_3uw" key="_SDVHEH6_EeGQpZ3OZ2jOpg">
+        <value xmi:id="_fNiYJoRdEeGjdZFHzJ_3uw" x="594.7283" y="315.5064"/>
+      </value>
+      <value xmi:id="_fNi_MIRdEeGjdZFHzJ_3uw" key="_SDbNsn6_EeGQpZ3OZ2jOpg">
+        <value xmi:id="_fNi_MYRdEeGjdZFHzJ_3uw" x="682.72833" y="75.50624"/>
+      </value>
+      <value xmi:id="_fNi_MoRdEeGjdZFHzJ_3uw" key="_SDampX6_EeGQpZ3OZ2jOpg">
+        <value xmi:id="_fNi_M4RdEeGjdZFHzJ_3uw" x="1121.7288" y="315.5064"/>
+      </value>
+      <value xmi:id="_fNi_NIRdEeGjdZFHzJ_3uw" key="_SDamoX6_EeGQpZ3OZ2jOpg">
+        <value xmi:id="_fNi_NYRdEeGjdZFHzJ_3uw" x="245.7284" y="315.50644"/>
+      </value>
+      <value xmi:id="_fNi_NoRdEeGjdZFHzJ_3uw" key="_SDamo36_EeGQpZ3OZ2jOpg">
+        <value xmi:id="_fNi_N4RdEeGjdZFHzJ_3uw" x="285.72806" y="559.5065"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

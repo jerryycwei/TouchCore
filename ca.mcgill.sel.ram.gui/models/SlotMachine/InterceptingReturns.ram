@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_FbC40MPgEeKBBdr5oGqsPg" name="InterceptingReturns">
+  <structuralView xmi:id="_FbC40cPgEeKBBdr5oGqsPg">
+    <classes xsi:type="ram:Class" xmi:id="_FbC40sPgEeKBBdr5oGqsPg" name="InterceptingReturns" partiality="public">
+      <operations  xmi:id="_FbC408PgEeKBBdr5oGqsPg" name="interceptedMethod" returnType="_FbC41cPgEeKBBdr5oGqsPg" partiality="public" visibility="public"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_FbC41MPgEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RAny" xmi:id="_FbC41cPgEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_FbC41sPgEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RInt" xmi:id="_FbC418PgEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RChar" xmi:id="_FbC42MPgEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RString" xmi:id="_FbC42cPgEeKBBdr5oGqsPg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_PotmsMPgEeKBBdr5oGqsPg">
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_RCYIUMPgEeKBBdr5oGqsPg" to="_FbC40sPgEeKBBdr5oGqsPg">
+      <from xsi:type="ram:Class" href="Metering.ram#_qBJvjMPfEeKBBdr5oGqsPg"/>
+    </mappings>
+    <source xsi:type="ram:Aspect" href="Metering.ram#_qBJvgcPfEeKBBdr5oGqsPg"/>
+  </instantiations>
+  <layout xmi:id="_FbC42sPgEeKBBdr5oGqsPg">
+    <containers xmi:id="_FbC428PgEeKBBdr5oGqsPg" key="_FbC40cPgEeKBBdr5oGqsPg">
+      <value xmi:id="_FbC43MPgEeKBBdr5oGqsPg" key="_FbC40sPgEeKBBdr5oGqsPg">
+        <value xmi:id="_FbC43cPgEeKBBdr5oGqsPg" x="633.1531" y="158.11371"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

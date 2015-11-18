@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_CC_p8AZZEeKI7sDYu8d77Q" name="SLEdemo">
+  <structuralView xmi:id="_CC_p8QZZEeKI7sDYu8d77Q">
+    <classes xsi:type="ram:Class" xmi:id="_CC_p8gZZEeKI7sDYu8d77Q" name="Stock">
+      <operations  xmi:id="_CC_p8wZZEeKI7sDYu8d77Q" name="getPrice" returnType="_CC_qCAZZEeKI7sDYu8d77Q" visibility="public"/>
+      <operations  xmi:id="_CC_p9AZZEeKI7sDYu8d77Q" name="setPrice" returnType="_CC_qBQZZEeKI7sDYu8d77Q" visibility="public"/>
+      <attributes xmi:id="_CC_p9QZZEeKI7sDYu8d77Q" name="price" type="_CC_qCAZZEeKI7sDYu8d77Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_CC_p9gZZEeKI7sDYu8d77Q" name="StockManager">
+      <operations  xmi:id="_CC_p9wZZEeKI7sDYu8d77Q" name="addStock" visibility="public">
+        <returnType xsi:type="ram:RVoid" href="../reusable_model_library/util/Map.ram#_GKx5QIqHEeGP-shl74zfPQ"/>
+        <parameters xmi:id="_CC_p-AZZEeKI7sDYu8d77Q" name="key" type="_CC_qCgZZEeKI7sDYu8d77Q"/>
+        <parameters xmi:id="_CC_p-QZZEeKI7sDYu8d77Q" name="value" type="_CC_p8gZZEeKI7sDYu8d77Q"/>
+      </operations>
+      <operations  xmi:id="_CC_p-gZZEeKI7sDYu8d77Q" name="getStockByName" returnType="_CC_p8gZZEeKI7sDYu8d77Q" visibility="public">
+        <parameters xmi:id="_CC_p-wZZEeKI7sDYu8d77Q" name="key" type="_CC_qCgZZEeKI7sDYu8d77Q"/>
+      </operations>
+      <operations  xmi:id="_CC_p_AZZEeKI7sDYu8d77Q" name="getStockManager" returnType="_CC_p9gZZEeKI7sDYu8d77Q" static="true" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_CC_p_QZZEeKI7sDYu8d77Q" name="StockWindow" superTypes="_CC_qAQZZEeKI7sDYu8d77Q">
+      <operations  xmi:id="_CC_p_gZZEeKI7sDYu8d77Q" name="updateWindow" returnType="_CC_qBQZZEeKI7sDYu8d77Q" visibility="public">
+        <parameters xmi:id="_CC_p_wZZEeKI7sDYu8d77Q" name="s" type="_CC_p8gZZEeKI7sDYu8d77Q"/>
+      </operations>
+      <associationEnds xmi:id="_CC_qAAZZEeKI7sDYu8d77Q" name="myJlabel" lowerBound="1" referenceType="Composition" assoc="_CC_qBAZZEeKI7sDYu8d77Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_CC_qAQZZEeKI7sDYu8d77Q" name="JFrame"/>
+    <classes xsi:type="ram:Class" xmi:id="_CC_qAgZZEeKI7sDYu8d77Q" name="Jlabel">
+      <associationEnds xmi:id="_CC_qAwZZEeKI7sDYu8d77Q" name="myStockWindow" lowerBound="1" navigable="false" assoc="_CC_qBAZZEeKI7sDYu8d77Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_a_zs0AZZEeKnGKqaHWhbsw" name="SetPriceAction">
+      <operations  xmi:id="_dIkJEAZZEeKnGKqaHWhbsw" name="execute" returnType="_CC_qBQZZEeKI7sDYu8d77Q" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_fux9YAZZEeKnGKqaHWhbsw" name="SetPriceActionInput">
+      <attributes xmi:id="_iGliQAZZEeKnGKqaHWhbsw" name="stockName" type="_CC_qCgZZEeKI7sDYu8d77Q"/>
+      <attributes xmi:id="_ivFssAZZEeKnGKqaHWhbsw" name="newPrice" type="_CC_qCAZZEeKI7sDYu8d77Q"/>
+    </classes>
+    <associations xmi:id="_CC_qBAZZEeKI7sDYu8d77Q" name="StockWindow_Jlabel" ends="_CC_qAAZZEeKI7sDYu8d77Q _CC_qAwZZEeKI7sDYu8d77Q"/>
+    <types xsi:type="ram:RVoid" xmi:id="_CC_qBQZZEeKI7sDYu8d77Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_CC_qBgZZEeKI7sDYu8d77Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_CC_qBwZZEeKI7sDYu8d77Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_CC_qCAZZEeKI7sDYu8d77Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_CC_qCQZZEeKI7sDYu8d77Q"/>
+    <types xsi:type="ram:RString" xmi:id="_CC_qCgZZEeKI7sDYu8d77Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <instantiations xmi:id="_CC_qCwZZEeKI7sDYu8d77Q">
+    <mappings xmi:id="_CC_qDAZZEeKI7sDYu8d77Q" toElement="_CC_p8gZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/util/Named.ram#_aKtFoIybEeGP-shl74zfPQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/util/Named.ram#_SrF5cIybEeGP-shl74zfPQ"/>
+  </instantiations>
+  <instantiations xmi:id="_CC_qDQZZEeKI7sDYu8d77Q">
+    <mappings xmi:id="_CC_qDgZZEeKI7sDYu8d77Q" toElement="_CC_p9gZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/util/Map.ram#_UYHfQIimEeGxqtZ4yVqVGg"/>
+    </mappings>
+    <mappings xmi:id="_CC_qDwZZEeKI7sDYu8d77Q" toElement="_CC_p8gZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/util/Map.ram#_VHQdMIimEeGxqtZ4yVqVGg"/>
+    </mappings>
+    <mappings xmi:id="_CC_qEAZZEeKI7sDYu8d77Q" toElement="_CC_qCgZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/util/Map.ram#_5Eij4IimEeGxqtZ4yVqVGg"/>
+    </mappings>
+    <mappings xmi:id="_CC_qEQZZEeKI7sDYu8d77Q" toElement="_CC_p9wZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/util/Map.ram#_2UdB4IimEeGxqtZ4yVqVGg"/>
+    </mappings>
+    <mappings xmi:id="_CC_qEgZZEeKI7sDYu8d77Q" toElement="_CC_p-gZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/util/Map.ram#_3BB0AIimEeGxqtZ4yVqVGg"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/util/Map.ram#_SCiH8IimEeGxqtZ4yVqVGg"/>
+  </instantiations>
+  <instantiations xmi:id="_CC_qEwZZEeKI7sDYu8d77Q">
+    <mappings xmi:id="_CC_qFAZZEeKI7sDYu8d77Q" toElement="_CC_p9gZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/design_patterns/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </mappings>
+    <mappings xmi:id="_CC_qFQZZEeKI7sDYu8d77Q" toElement="_CC_p_AZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/design_patterns/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/design_patterns/Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_CC_qFgZZEeKI7sDYu8d77Q">
+    <mappings xmi:id="_CC_qFwZZEeKI7sDYu8d77Q" toElement="_CC_p8gZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/design_patterns/Observer.ram#_e7XywIo_EeGYMOvWx4MkYQ"/>
+    </mappings>
+    <mappings xmi:id="_CC_qGAZZEeKI7sDYu8d77Q" toElement="_CC_p9AZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/design_patterns/Observer.ram#_v3dgcIo_EeGYMOvWx4MkYQ"/>
+    </mappings>
+    <mappings xmi:id="_CC_qGQZZEeKI7sDYu8d77Q" toElement="_CC_p_QZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/design_patterns/Observer.ram#_rSUhUIo_EeGYMOvWx4MkYQ"/>
+    </mappings>
+    <mappings xmi:id="_CC_qGgZZEeKI7sDYu8d77Q" toElement="_CC_p_gZZEeKI7sDYu8d77Q">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/design_patterns/Observer.ram#_6sBPMIo_EeGYMOvWx4MkYQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/design_patterns/Observer.ram#_apfG0Io_EeGYMOvWx4MkYQ"/>
+  </instantiations>
+  <instantiations xmi:id="_k8af4AZZEeKnGKqaHWhbsw" type="Extends">
+    <mappings xmi:id="_k8af4QZZEeKnGKqaHWhbsw" toElement="_a_zs0AZZEeKnGKqaHWhbsw">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/workflow/Workflow.ram#_stle2HdvEeGm3uH8rYfPgx"/>
+    </mappings>
+    <mappings xmi:id="_k8af4gZZEeKnGKqaHWhbsw" toElement="_dIkJEAZZEeKnGKqaHWhbsw">
+      <fromElement xsi:type="ram:Operation" href="../reusable_model_library/workflow/Workflow.ram#_Cl0A8IdWEeG0oPAT5BSQFQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/workflow/Workflow.ram#_stle2XdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <instantiations xmi:id="_pu_eEAZZEeKnGKqaHWhbsw" type="Extends">
+    <mappings xmi:id="_pu_eEQZZEeKnGKqaHWhbsw" toElement="_fux9YAZZEeKnGKqaHWhbsw">
+      <fromElement xsi:type="ram:Class" href="../reusable_model_library/workflow/Input.ram#_mhaIQZTNEeGJh_L7_SakMQ"/>
+    </mappings>
+    <externalAspect href="../reusable_model_library/workflow/Input.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  </instantiations>
+  <layout xmi:id="_zFGR0AZZEeKnGKqaHWhbsw">
+    <containers xmi:id="_zFGR0QZZEeKnGKqaHWhbsw" key="_CC_p8QZZEeKI7sDYu8d77Q">
+      <value xmi:id="_zFGR0gZZEeKnGKqaHWhbsw" key="_fux9YAZZEeKnGKqaHWhbsw">
+        <value xmi:id="_zFGR0wZZEeKnGKqaHWhbsw" x="335.89752" y="102.536026"/>
+      </value>
+      <value xmi:id="_zFGR1AZZEeKnGKqaHWhbsw" key="_CC_p_QZZEeKI7sDYu8d77Q">
+        <value xmi:id="_zFGR1QZZEeKnGKqaHWhbsw" x="1150.4119" y="327.05078"/>
+      </value>
+      <value xmi:id="_zFGR1gZZEeKnGKqaHWhbsw" key="_a_zs0AZZEeKnGKqaHWhbsw">
+        <value xmi:id="_zFGR1wZZEeKnGKqaHWhbsw" x="732.4598" y="119.560135"/>
+      </value>
+      <value xmi:id="_zFGR2AZZEeKnGKqaHWhbsw" key="_CC_qAgZZEeKI7sDYu8d77Q">
+        <value xmi:id="_zFGR2QZZEeKnGKqaHWhbsw" x="1436.0594" y="4.5088654"/>
+      </value>
+      <value xmi:id="_zFGR2gZZEeKnGKqaHWhbsw" key="_CC_p9gZZEeKI7sDYu8d77Q">
+        <value xmi:id="_zFGR2wZZEeKnGKqaHWhbsw" x="106.30177" y="324.13483"/>
+      </value>
+      <value xmi:id="_zFGR3AZZEeKnGKqaHWhbsw" key="_CC_p8gZZEeKI7sDYu8d77Q">
+        <value xmi:id="_zFGR3QZZEeKnGKqaHWhbsw" x="762.25256" y="334.95654"/>
+      </value>
+      <value xmi:id="_zFGR3gZZEeKnGKqaHWhbsw" key="_CC_qAQZZEeKI7sDYu8d77Q">
+        <value xmi:id="_zFGR3wZZEeKnGKqaHWhbsw" x="1150.1976" y="-8.906296"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>
